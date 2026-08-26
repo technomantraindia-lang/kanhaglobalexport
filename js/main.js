@@ -78,6 +78,27 @@
   const revealEls = document.querySelectorAll('.reveal');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  /* Duplicate each row so its horizontal marquee can loop without a visible reset. */
+  function setupProductMarquees() {
+    if (reducedMotion) return;
+    document.querySelectorAll('[data-rotate-products]').forEach((row) => {
+      const products = Array.from(row.children);
+      if (products.length < 2) return;
+      const track = document.createElement('div');
+      track.className = 'trade-products-track';
+      products.forEach((product) => track.appendChild(product));
+      products.forEach((product) => {
+        const duplicate = product.cloneNode(true);
+        duplicate.setAttribute('aria-hidden', 'true');
+        if (duplicate.matches('a')) duplicate.setAttribute('tabindex', '-1');
+        duplicate.querySelectorAll('a').forEach((link) => link.setAttribute('tabindex', '-1'));
+        track.appendChild(duplicate);
+      });
+      row.appendChild(track);
+    });
+  }
+  setupProductMarquees();
+
   function revealElement(el) {
     el.classList.add('visible');
   }

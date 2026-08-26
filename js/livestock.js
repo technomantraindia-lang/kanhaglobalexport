@@ -2,8 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const livestockGrid = document.getElementById('livestockGrid');
   if (!livestockGrid) return;
 
-  const allProducts = (window.KGE_PRODUCTS && window.KGE_PRODUCTS.poultry) ? window.KGE_PRODUCTS.poultry : [];
-  const livestockProducts = allProducts.filter(p => p.category === 'live-stock-products');
+  const livestockProducts = (window.KGE_PRODUCTS && window.KGE_PRODUCTS.livestock) ? window.KGE_PRODUCTS.livestock : [];
 
   function getFallbackImage(catSlug) {
     if (window.CATEGORY_DEFAULT_IMAGES && window.CATEGORY_DEFAULT_IMAGES[catSlug]) {
@@ -13,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function renderLivestockProducts() {
-    const listToRender = livestockProducts.length > 0 ? livestockProducts : allProducts.slice(0, 8);
+    const listToRender = livestockProducts;
 
     livestockGrid.innerHTML = listToRender.map(prod => {
       const imgSrc = prod.image || getFallbackImage(prod.category);

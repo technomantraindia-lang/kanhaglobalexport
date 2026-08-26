@@ -6,7 +6,7 @@
 - Technology: HTML/CSS/JavaScript
 - Active file at refresh: None
 - Local code graph: 17 files · 13 edges · 0 matched flows
-- Refreshed: 2026-08-21T13:00:52.696Z
+- Refreshed: 2026-08-26T04:35:20.051Z
 
 ## Framework Intelligence (V4.7.8)
 - Profiles: html-static
@@ -15,50 +15,55 @@
 - index.html
 
 ### Styles
-- css/shop-premium.css
 - css/main.css
+- css/shop-premium.css
 
 ## Recently edited files
+- css/main.css
 - product-detail.html
 - shop.html
+- terms-and-condition.html
+- privacy-policy-2.html
+- live-stock-products.html
+- poultry-farm-products.html
+- careers.html
+- contact-us.html
+- about-us.html
 - css/shop-premium.css
-- css/main.css
 - js/shop.js
 - js/products-data.js
 - js/livestock.js
 - js/poultry.js
-- contact-us.html
-- about-us.html
 - js/main.js
-- terms-and-condition.html
-- privacy-policy-2.html
-- poultry-farm-products.html
-- live-stock-products.html
 - index.html
-- careers.html
 
 ## High-value project files
+- css/main.css
 - product-detail.html
 - shop.html
+- terms-and-condition.html
+- privacy-policy-2.html
+- live-stock-products.html
+- poultry-farm-products.html
+- careers.html
+- contact-us.html
+- about-us.html
 - css/shop-premium.css
-- css/main.css
 - js/shop.js
 - js/products-data.js
 - js/livestock.js
 - js/poultry.js
-- contact-us.html
-- about-us.html
 - js/main.js
-- terms-and-condition.html
-- privacy-policy-2.html
-- poultry-farm-products.html
-- live-stock-products.html
 - index.html
-- careers.html
 - .clinerules/05-technomantra-execution-mode.md
 - .clinerules/06-technomantra-developer-mode.md
+- .clinerules/08-technomantra-task-watchdog.md
+- .clinerules/09-technomantra-multitask-isolation.md
 - .clinerules/10-technomantra-project-memory.md
 - .clinerules/11-technomantra-code-knowledge.md
+- .clinerules/12-technomantra-task-capsules.md
+- .clinerules/13-technomantra-runtime-price-optimizer.md
+- .clinerules/14-technomantra-adaptive-cost-optimizer.md
 - .clinerules/90-technomantra-selected-agent.md
 - .clinerules/technomantra-developer-learning.md
 - .clinerules/technomantra-team-learning.md

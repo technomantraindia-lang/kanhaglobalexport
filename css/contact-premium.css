@@ -1,0 +1,950 @@
+/* ============================================================
+   KANHA GLOBAL EXPORTS — ULTRA-PREMIUM CONTACT & RFQ DESK
+   Clean, Unified, Modern B2B Trade Architecture
+   ============================================================ */
+
+:root {
+  --c-primary: #0284c7;
+  --c-primary-dark: #0369a1;
+  --c-accent: #16a34a;
+  --c-dark: #091a24;
+  --c-dark-card: #0d2331;
+  --c-text-main: #0f172a;
+  --c-text-muted: #64748b;
+  --c-border: #e2e8f0;
+  --c-border-subtle: #f1f5f9;
+  --c-card-bg: #ffffff;
+  --c-soft-bg: #f8fafc;
+  --c-radius: 16px;
+  --c-radius-lg: 24px;
+  --c-shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.04);
+  --c-shadow-md: 0 12px 32px -4px rgba(15, 23, 42, 0.06), 0 4px 12px -2px rgba(15, 23, 42, 0.03);
+  --c-shadow-lg: 0 20px 48px -8px rgba(15, 23, 42, 0.09), 0 8px 16px -4px rgba(15, 23, 42, 0.04);
+}
+
+/* ---------------- 1. PAGE HERO ---------------- */
+
+.contact-hero-v2 {
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0 68px;
+  background: radial-gradient(circle at 50% 20%, #11364d 0%, #0d2737 45%, #081720 100%);
+  color: #ffffff;
+  text-align: center;
+}
+
+.contact-hero-v2::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events: none;
+}
+
+.contact-hero-v2 .container {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+}
+
+.contact-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #7dd3fc;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 6px 18px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(12px);
+}
+
+.contact-badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 12px #22c55e;
+}
+
+.contact-hero-v2 h1 {
+  font-size: clamp(2.4rem, 4.4vw, 3.4rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.contact-hero-v2 h1 em {
+  font-style: normal;
+  background: linear-gradient(135deg, #38bdf8 0%, #a7f3d0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-hero-v2 p.hero-lead {
+  font-size: 1.08rem;
+  font-weight: 400;
+  color: #cbd5e1;
+  line-height: 1.65;
+  max-width: 720px;
+  margin: 0 auto 36px;
+}
+
+/* Metric Badges Grid */
+.contact-hero-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-metric-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 14px;
+  padding: 14px 16px;
+  backdrop-filter: blur(12px);
+  text-align: center;
+  transition: all 0.25s ease;
+}
+
+.hero-metric-card:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(56, 189, 248, 0.4);
+}
+
+.hero-metric-card strong {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.hero-metric-card span {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #94a3b8;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ---------------- 2. MAIN SPLIT SECTION ---------------- */
+
+.contact-main-section {
+  padding: 80px 0 90px;
+  background: #f8fafc;
+}
+
+.contact-split-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* LEFT COLUMN: Clean Direct Desk & Trust */
+.contact-info-col {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.section-eyebrow {
+  display: inline-block;
+  color: var(--c-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.contact-info-col h2 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: var(--c-dark);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.contact-info-col p.lead-desc {
+  font-size: 0.96rem;
+  color: var(--c-text-muted);
+  line-height: 1.6;
+}
+
+/* Communication Channel Cards */
+.channel-cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-action-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: #ffffff;
+  border: 1px solid var(--c-border);
+  border-radius: var(--c-radius);
+  padding: 20px 24px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: var(--c-shadow-sm);
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.contact-action-card:hover {
+  transform: translateY(-3px);
+  border-color: #38bdf8;
+  box-shadow: var(--c-shadow-md);
+}
+
+.channel-icon-bubble {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.contact-action-card:hover .channel-icon-bubble {
+  transform: scale(1.08);
+}
+
+.bubble-wa { background: #dcfce7; color: #16a34a; }
+.bubble-phone { background: #e0f2fe; color: #0284c7; }
+.bubble-email { background: #fef3c7; color: #d97706; }
+.bubble-pin { background: #ede9fe; color: #7c3aed; }
+
+.channel-meta {
+  flex: 1;
+}
+
+.channel-meta small {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+  margin-bottom: 3px;
+}
+
+.channel-meta strong {
+  display: block;
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--c-dark);
+  margin-bottom: 3px;
+}
+
+.channel-meta span {
+  display: block;
+  font-size: 0.82rem;
+  color: #64748b;
+}
+
+.channel-chevron {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.contact-action-card:hover .channel-chevron {
+  background: var(--c-primary);
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+/* Compliance Card */
+.contact-compliance-card {
+  background: #ffffff;
+  border: 1px solid var(--c-border);
+  border-radius: var(--c-radius);
+  padding: 24px;
+  box-shadow: var(--c-shadow-sm);
+}
+
+.compliance-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.compliance-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--c-primary);
+  background: #e0f2fe;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.compliance-rating {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #16a34a;
+}
+
+.contact-compliance-card p {
+  font-size: 0.86rem;
+  color: #64748b;
+  line-height: 1.55;
+  margin-bottom: 16px;
+}
+
+.cert-pills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cert-pill {
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: #334155;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  padding: 5px 12px;
+  border-radius: 6px;
+}
+
+/* RIGHT COLUMN: RFQ FORM PANEL */
+.rfq-form-panel {
+  background: #ffffff;
+  border: 1px solid var(--c-border);
+  border-radius: var(--c-radius-lg);
+  padding: 40px 44px;
+  box-shadow: var(--c-shadow-lg);
+  position: relative;
+}
+
+.rfq-form-panel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 44px;
+  right: 44px;
+  height: 4px;
+  background: linear-gradient(90deg, #0284c7 0%, #16a34a 100%);
+  border-radius: 0 0 4px 4px;
+}
+
+.rfq-header {
+  margin-bottom: 24px;
+}
+
+.rfq-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--c-primary);
+  margin-bottom: 8px;
+}
+
+.rfq-kicker-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--c-primary);
+}
+
+.rfq-header h2 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--c-dark);
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+
+.rfq-header p {
+  font-size: 0.92rem;
+  color: var(--c-text-muted);
+  line-height: 1.5;
+}
+
+/* Fast Category Chips */
+.rfq-quick-chips {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 26px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.chips-title {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: #64748b;
+  margin-right: 4px;
+}
+
+.rfq-chip-btn {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+  font-size: 0.76rem;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.rfq-chip-btn:hover {
+  background: #e0f2fe;
+  border-color: #7dd3fc;
+  color: #0284c7;
+}
+
+.rfq-chip-btn.active {
+  background: #0284c7;
+  border-color: #0284c7;
+  color: #ffffff;
+}
+
+/* Form Grid */
+.rfq-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.form-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-field-group.full-width {
+  grid-column: span 2;
+}
+
+.form-field-group label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.form-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.form-input-container svg {
+  position: absolute;
+  left: 15px;
+  color: #94a3b8;
+  pointer-events: none;
+  transition: color 0.2s ease;
+}
+
+.form-input-container input,
+.form-input-container select,
+.form-input-container textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: #0f172a;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 12px 16px 12px 42px;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.form-input-container textarea {
+  padding: 14px 16px;
+  min-height: 110px;
+  resize: vertical;
+}
+
+.form-input-container input:focus,
+.form-input-container select:focus,
+.form-input-container textarea:focus {
+  border-color: #0284c7;
+  box-shadow: 0 0 0 3.5px rgba(2, 132, 199, 0.12);
+}
+
+.form-input-container input:focus + svg,
+.form-input-container select:focus + svg {
+  color: #0284c7;
+}
+
+/* Submit Container */
+.rfq-submit-wrap {
+  grid-column: span 2;
+  margin-top: 6px;
+}
+
+.btn-rfq-submit {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.98rem;
+  font-weight: 600;
+  padding: 15px 24px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(2, 132, 199, 0.25);
+  transition: all 0.25s ease;
+}
+
+.btn-rfq-submit:hover {
+  background: linear-gradient(135deg, #0369a1 0%, #075985 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(2, 132, 199, 0.35);
+}
+
+.rfq-sla-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  color: #64748b;
+  margin-top: 14px;
+  text-align: center;
+}
+
+.rfq-sla-note svg {
+  color: #16a34a;
+}
+
+/* Success Alert */
+.rfq-success-alert {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.rfq-success-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #22c55e;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.rfq-success-text strong {
+  display: block;
+  font-size: 0.96rem;
+  color: #166534;
+  margin-bottom: 4px;
+}
+
+.rfq-success-text p {
+  font-size: 0.85rem;
+  color: #15803d;
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* ---------------- 3. GLOBAL EXPORT HUBS & PORTS ---------------- */
+
+.export-ports-section {
+  padding: 80px 0;
+  background: #ffffff;
+  border-top: 1px solid #e2e8f0;
+}
+
+.ports-heading-center {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 44px;
+}
+
+.ports-heading-center h2 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: var(--c-dark);
+  margin-bottom: 10px;
+}
+
+.ports-heading-center p {
+  font-size: 0.96rem;
+  color: var(--c-text-muted);
+  line-height: 1.6;
+}
+
+.ports-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.port-terminal-card {
+  background: #f8fafc;
+  border: 1px solid var(--c-border);
+  border-radius: var(--c-radius);
+  padding: 28px 24px;
+  transition: all 0.25s ease;
+}
+
+.port-terminal-card:hover {
+  transform: translateY(-4px);
+  background: #ffffff;
+  border-color: #38bdf8;
+  box-shadow: var(--c-shadow-md);
+}
+
+.port-icon-bubble {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  transition: transform 0.25s ease;
+}
+
+.port-terminal-card:hover .port-icon-bubble {
+  transform: scale(1.08);
+}
+
+.bubble-port-blue { background: #e0f2fe; color: #0284c7; }
+.bubble-port-teal { background: #ccfbf1; color: #0d9488; }
+.bubble-port-amber { background: #fef3c7; color: #d97706; }
+
+.port-header-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.port-header-meta h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--c-dark);
+}
+
+.port-badge-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #0284c7;
+  background: #e0f2fe;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.port-terminal-card p {
+  font-size: 0.88rem;
+  color: #64748b;
+  line-height: 1.55;
+  margin-bottom: 18px;
+}
+
+.port-specs-box {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 0.78rem;
+  color: #475569;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.port-terminal-card:hover .port-specs-box {
+  background: #f8fafc;
+}
+
+/* ---------------- 4. FAQ ACCORDION SECTION ---------------- */
+
+.contact-faq-wrap {
+  padding: 80px 0;
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+}
+
+.faq-split-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 52px;
+}
+
+.faq-intro-col h2 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: var(--c-dark);
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.faq-intro-col p {
+  font-size: 0.96rem;
+  color: var(--c-text-muted);
+  line-height: 1.6;
+  margin-bottom: 26px;
+}
+
+.faq-help-box {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: var(--c-shadow-sm);
+}
+
+.faq-help-box strong {
+  display: block;
+  font-size: 0.95rem;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.faq-help-box p {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 16px;
+}
+
+.btn-faq-chat {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #16a34a;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-faq-chat:hover {
+  background: #15803d;
+  transform: translateY(-2px);
+}
+
+.faq-accordion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.faq-item-card {
+  background: #ffffff;
+  border: 1px solid var(--c-border);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--c-shadow-sm);
+  transition: border-color 0.2s ease;
+}
+
+.faq-item-card:hover {
+  border-color: #cbd5e1;
+}
+
+.faq-item-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 22px;
+  background: none;
+  border: none;
+  text-align: left;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #0f172a;
+  cursor: pointer;
+}
+
+.faq-toggle-icon {
+  font-size: 1.2rem;
+  color: #0284c7;
+  font-weight: 700;
+  transition: transform 0.25s ease;
+}
+
+.faq-item-card.open .faq-toggle-icon {
+  transform: rotate(45deg);
+}
+
+.faq-item-body {
+  display: none;
+  padding: 0 22px 18px;
+  font-size: 0.88rem;
+  color: #475569;
+  line-height: 1.65;
+}
+
+.faq-item-card.open .faq-item-body {
+  display: block;
+}
+
+/* ---------------- 5. DIRECT CTA RIBBON ---------------- */
+
+.contact-cta-section {
+  padding: 0 0 80px;
+  background: #f8fafc;
+}
+
+.contact-cta-banner {
+  background: linear-gradient(135deg, #091a24 0%, #0d2737 100%);
+  border-radius: 22px;
+  padding: 44px 52px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+  box-shadow: 0 20px 48px -10px rgba(9, 26, 36, 0.45);
+}
+
+.cta-banner-text h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.cta-banner-text p {
+  font-size: 0.94rem;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.cta-banner-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.btn-cta-phone {
+  background: #ffffff;
+  color: #091a24;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 13px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-cta-phone:hover {
+  background: #f1f5f9;
+  transform: translateY(-2px);
+}
+
+.btn-cta-wa {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #16a34a;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 13px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-cta-wa:hover {
+  background: #15803d;
+  transform: translateY(-2px);
+}
+
+/* ---------------- 6. RESPONSIVE BREAKPOINTS ---------------- */
+
+@media (max-width: 992px) {
+  .contact-split-layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .ports-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .faq-split-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .contact-hero-metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-cta-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 36px 28px;
+  }
+}
+
+@media (max-width: 640px) {
+  .rfq-form-panel {
+    padding: 26px 22px;
+  }
+  .rfq-form-grid {
+    grid-template-columns: 1fr;
+  }
+  .form-field-group.full-width {
+    grid-column: span 1;
+  }
+  .rfq-submit-wrap {
+    grid-column: span 1;
+  }
+  .contact-hero-metrics-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,693 @@
+/* ============================================================
+   KANHA GLOBAL EXPORTS — PRODUCT DETAIL CLEAN PREMIUM STYLES
+   Using site font family (DM Sans), clean non-bold typography,
+   minimalist borders, and uniform export presentation.
+   ============================================================ */
+
+:root {
+  --detail-bg: #f8fafc;
+  --card-bg: #ffffff;
+  --card-border: #eaedf1;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --text-sub: #334155;
+  --accent-blue: #1676B7;
+  --accent-green: #35AD45;
+  --accent-navy: #081d28;
+}
+
+body.product-page-body {
+  background-color: var(--detail-bg);
+  font-family: var(--font-body);
+}
+
+/* ---------------- 1. PAGE HERO & BREADCRUMB ---------------- */
+
+.detail-hero-section {
+  background: linear-gradient(180deg, #091a24 0%, #0d2737 60%, #103348 100%);
+  color: #ffffff;
+  padding: 56px 0 46px;
+  position: relative;
+  overflow: hidden;
+  font-family: var(--font-body);
+}
+
+.detail-hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+
+.detail-hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.detail-breadcrumb-bar {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: #94a3b8;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+  padding: 5px 14px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.detail-breadcrumb-bar a {
+  color: #7dd3fc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.detail-breadcrumb-bar a:hover {
+  color: #ffffff;
+}
+
+.detail-hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.85rem, 3.4vw, 2.6rem);
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 8px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.detail-hero-sub {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  font-weight: 400;
+  max-width: 680px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* ---------------- 2. MAIN SHOWCASE AREA ---------------- */
+
+.product-main-area {
+  padding: 36px 0 70px;
+  background-color: var(--detail-bg);
+  font-family: var(--font-body);
+}
+
+.detail-showcase-card {
+  display: grid;
+  grid-template-columns: 440px 1fr;
+  gap: 36px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 36px;
+  border: 1px solid var(--card-border);
+  box-shadow: 0 4px 18px -4px rgba(6, 19, 26, 0.04);
+  margin-bottom: 36px;
+}
+
+/* Left Media Box */
+.detail-media-box {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.detail-main-img-wrap {
+  position: relative;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 310px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eef2f6;
+  padding: 16px;
+}
+
+.detail-main-img-wrap img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.detail-main-img-wrap:hover img {
+  transform: scale(1.04);
+}
+
+.detail-image-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #f8fafc;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  z-index: 2;
+}
+
+.detail-features-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  background: #f8fafc;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #eaedf1;
+  text-align: center;
+}
+
+.strip-item h6 {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: #94a3b8;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.strip-item p {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0;
+}
+
+/* Right Content Box */
+.detail-info-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-tag-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.tag-pill {
+  font-size: 0.74rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 3px 10px;
+  border-radius: 50px;
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+}
+
+.tag-pill.cat-pill {
+  background: rgba(22, 118, 183, 0.08);
+  color: var(--accent-blue);
+  border-color: rgba(22, 118, 183, 0.2);
+}
+
+.tag-pill.origin-pill {
+  background: #fefce8;
+  color: #854d0e;
+  border-color: #fef08a;
+}
+
+.tag-pill.quality-pill {
+  background: #f0fdf4;
+  color: #166534;
+  border-color: #bbf7d0;
+}
+
+.detail-heading {
+  font-family: var(--font-heading);
+  font-size: 1.85rem;
+  color: #0f172a;
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: 1.25;
+}
+
+.detail-short-desc {
+  font-size: 0.92rem;
+  color: #475569;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Quick Specs Matrix */
+.specs-matrix {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  background: #f8fafc;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid var(--card-border);
+  margin-bottom: 22px;
+}
+
+.spec-cell {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #eaedf1;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.spec-cell .cell-label {
+  font-size: 0.72rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #94a3b8;
+  margin-bottom: 2px;
+}
+
+.spec-cell .cell-value {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* Action Buttons */
+.detail-actions-cluster {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+  flex-wrap: wrap;
+}
+
+.btn-quote-main {
+  background: var(--accent-blue);
+  color: #ffffff;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.88rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.btn-quote-main:hover {
+  background: #0d5a8f;
+  box-shadow: 0 4px 12px rgba(22, 118, 183, 0.3);
+}
+
+.btn-whatsapp-detail {
+  background: #16a34a;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.88rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-whatsapp-detail svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.btn-whatsapp-detail:hover {
+  background: #15803d;
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+}
+
+.btn-back-link {
+  color: #64748b;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.84rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  transition: all 0.15s ease;
+  margin-left: auto;
+}
+
+.btn-back-link:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+/* ---------------- 3. EXTENDED SPECIFICATIONS & SIDEBAR ---------------- */
+
+.detail-extended-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 28px;
+  margin-bottom: 44px;
+}
+
+.detail-card-panel {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 28px 24px;
+  border: 1px solid var(--card-border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.panel-header-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.panel-header-title svg {
+  color: var(--accent-blue);
+}
+
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.specs-table tr {
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.specs-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.specs-table tr:last-child {
+  border-bottom: none;
+}
+
+.specs-table td {
+  padding: 10px 12px;
+  font-size: 0.86rem;
+  vertical-align: middle;
+}
+
+.specs-table td:first-child {
+  width: 36%;
+  color: #64748b;
+  font-weight: 500;
+  background: #fafbfc;
+  border-radius: 4px;
+}
+
+.specs-table td:last-child {
+  color: #0f172a;
+  font-weight: 500;
+}
+
+/* Quality Checklist */
+.qa-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.qa-checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.86rem;
+  color: #475569;
+  line-height: 1.45;
+}
+
+.qa-icon {
+  width: 20px;
+  height: 20px;
+  background: rgba(22, 118, 183, 0.1);
+  color: var(--accent-blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.qa-icon svg {
+  width: 12px;
+  height: 12px;
+}
+
+/* Inquiry Sidebar Card */
+.inquiry-sidebar-card {
+  background: #081d28;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 26px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inquiry-sidebar-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.inquiry-sidebar-card p {
+  color: #cbd5e1;
+  font-size: 0.84rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+.sidebar-contact-info {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 20px;
+}
+
+.sidebar-contact-info div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: #e2e8f0;
+  margin-bottom: 8px;
+}
+
+.sidebar-contact-info div:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-contact-info svg {
+  color: #38bdf8;
+  flex-shrink: 0;
+}
+
+.btn-sidebar-inquiry {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 11px;
+  background: var(--accent-blue);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.86rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.btn-sidebar-inquiry:hover {
+  background: #0d5a8f;
+}
+
+/* ---------------- 4. RELATED COMMODITIES SECTION ---------------- */
+
+.related-commodities-section {
+  margin-top: 40px;
+  padding-top: 36px;
+  border-top: 1px solid var(--card-border);
+}
+
+.related-section-header {
+  margin-bottom: 20px;
+}
+
+.related-section-header h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.related-section-header p {
+  color: #64748b;
+  font-size: 0.86rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* ---------------- 5. WHY CHOOSE KANHA EXPORTS 4-COL ---------------- */
+
+.export-advantages-section {
+  margin-top: 44px;
+  background: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 32px 24px;
+}
+
+.export-advantages-header {
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.export-advantages-header h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.export-advantages-header p {
+  color: #64748b;
+  font-size: 0.86rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.export-advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.adv-card {
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 18px 14px;
+  border: 1px solid #eaedf1;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.adv-card:hover {
+  background: #ffffff;
+  border-color: #cbd5e1;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+}
+
+.adv-icon {
+  width: 38px;
+  height: 38px;
+  background: rgba(22, 118, 183, 0.08);
+  color: var(--accent-blue);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
+
+.adv-card h5 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.adv-card p {
+  font-size: 0.78rem;
+  color: #64748b;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* ---------------- 6. RESPONSIVE BREAKPOINTS ---------------- */
+
+@media (max-width: 1024px) {
+  .detail-showcase-card {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+  .detail-media-box {
+    max-width: 480px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .detail-extended-section {
+    grid-template-columns: 1fr;
+  }
+  .related-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .export-advantages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .detail-showcase-card {
+    padding: 16px;
+  }
+  .specs-matrix {
+    grid-template-columns: 1fr;
+  }
+  .detail-actions-cluster {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .btn-quote-main, .btn-whatsapp-detail, .btn-back-link {
+    justify-content: center;
+    margin-left: 0;
+  }
+  .related-grid {
+    grid-template-columns: 1fr;
+  }
+  .export-advantages-grid {
+    grid-template-columns: 1fr;
+  }
+}

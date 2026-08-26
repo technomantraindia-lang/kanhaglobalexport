@@ -12,57 +12,73 @@
 </head>
 
 <body>
+  <!-- Top Contact / Announcement Bar -->
+  <div class="header-top-bar">
+    <div class="container header-top-inner">
+      <div class="header-top-socials">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://wa.me/919726396898" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 00-3.48-8.413Z"/></svg>
+        </a>
+      </div>
+      <div class="header-top-contact">
+        <a href="mailto:info@kanhaglobalexports.com" class="top-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>info@kanhaglobalexports.com</span>
+        </a>
+        <span class="top-divider">|</span>
+        <a href="tel:+919726396898" class="top-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          <span>+91 97263 96898</span>
+        </a>
+      </div>
+    </div>
+  </div>
 
-  <!-- 1. Premium Header -->
   <header class="site-header" role="banner">
     <div class="container header-inner">
       <a href="index.html" class="logo" aria-label="Kanha Global Exports Home">
         <img src="assets/images/logo.png" alt="Kanha Global Exports" width="180" height="52">
       </a>
-
-      <nav class="nav-main" aria-label="Main navigation">
+      <nav class="nav-main" id="navMain">
         <a href="index.html" class="nav-link">Home</a>
-
         <a href="about-us.html" class="nav-link">About</a>
-
         <div class="has-dropdown">
-          <button type="button" class="nav-link" aria-expanded="false" aria-haspopup="true">
-            Products
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M6 9l6 6 6-6" />
-            </svg>
+          <button type="button" class="nav-link" aria-expanded="false" aria-haspopup="true">Products
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
           </button>
-          <div class="dropdown-panel mega-menu" role="menu">
-            <div class="mega-grid"></div>
+          <div class="dropdown-panel mega-menu">
+            <div class="mega-grid" id="megaGrid">
+              <!-- Injected by main.js -->
+            </div>
             <div class="mega-footer">
               <span>161 export products · 17 categories</span>
               <a href="shop.html" class="mega-poultry-link">View All Products →</a>
             </div>
           </div>
         </div>
-
+        <a href="shop.html" class="nav-link">Export</a>
         <a href="contact-us.html" class="nav-link">Contact</a>
       </nav>
-
       <div class="header-actions">
-        <a href="https://wa.me/919726396898" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer"
-          aria-label="WhatsApp">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path
-              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-            <path
-              d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.528 5.867L0 24l6.222-1.607A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-4.945-1.338l-.35-.207-3.688.958.984-3.593-.228-.37A9.818 9.818 0 1112 21.818z" />
+        <a href="https://wa.me/919726396898" class="btn btn-whatsapp-header" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 00-3.48-8.413Z"/>
           </svg>
-          WhatsApp
+          <span>WhatsApp</span>
         </a>
-        <a href="contact-us.html#quote" class="btn btn-green btn-sm">Request a Quote</a>
+        <a href="contact-us.html#quote" class="btn btn-quote-header">Get a quote</a>
       </div>
-
       <button type="button" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-          aria-hidden="true">
-          <path d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" /></svg>
       </button>
     </div>
   </header>
@@ -86,49 +102,42 @@
       </svg>
 
       <div class="container hero-content">
-        <div class="hero-since">Since 2022</div>
-        <h1 class="display-xl">Globally Connected.<br>Quality Delivered.</h1>
-        <p class="hero-desc">Kanha Global Exports connects Indian excellence with global markets — exporting spices,
-          basmati rice, pulses, fresh produce, seafood and animal feed supplements with uncompromising quality.</p>
+        <div class="hero-since">Merchant exporter of food, feed &amp; agro products</div>
+        <h1 class="display-xl">Sourced with discipline.<br><span>Delivered with confidence.</span></h1>
+        <p class="hero-desc">Kanha Global Exports partners with vetted Indian producers to supply rice, spices, pulses,
+          fruits, marine products and feed ingredients with dependable quality and export-ready coordination.</p>
         <div class="hero-actions">
-          <a href="shop.html" class="btn btn-primary">Explore Products</a>
-          <a href="contact-us.html#quote" class="btn btn-outline">Request a Quote</a>
+          <a href="contact-us.html#quote" class="btn btn-primary">Request a quote <span aria-hidden="true">→</span></a>
+          <a href="shop.html" class="btn btn-outline">Explore products</a>
+        </div>
+        <div class="hero-stats" aria-label="Company highlights">
+          <div><strong>2017</strong><span>Established</span></div>
+          <div><strong>12+</strong><span>Countries served</span></div>
+          <div><strong>25+</strong><span>Years of leadership</span></div>
         </div>
       </div>
 
-      <div class="hero-visual" aria-hidden="true">
-        <div class="hero-badge-floating">
-          <div class="hero-badge-stat">30+</div>
-          <div>Global Export<br>Destinations</div>
-        </div>
-
-        <div class="hero-card hero-card-tall">
-          <img src="assets/images/1121-steam-rice-500x500.jpg" alt="Basmati Rice Export" width="400" height="500">
-          <div class="hero-card-tag">
-            <span>Premium Basmati Rice</span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
+      <div class="hero-visual" aria-label="Featured export and import products">
+        <div class="trade-panel">
+          <div class="trade-group">
+            <div class="trade-label">Export products</div>
+            <div class="trade-products" data-rotate-products>
+              <a href="shop.html?category=basmati-rice" class="trade-product"><img src="assets/images/rice-1121-steam-hd.jpg" alt="Rice"><span>Rice</span></a>
+              <a href="shop.html?category=groundnuts-cashews" class="trade-product"><img src="assets/images/cashew-nuts.jpg" alt="Processed cashew nuts"><span>Processed<br>cashew nuts</span></a>
+              <a href="shop.html?category=spices" class="trade-product"><img src="assets/images/spices.jpg" alt="Spices"><span>Spices</span></a>
+              <a href="shop.html?category=pulses" class="trade-product"><img src="assets/images/toor-dal.jpg" alt="Pulses"><span>Pulses</span></a>
+              <a href="shop.html?category=fresh-fruits" class="trade-product"><img src="assets/images/fresh-alphonso-kesar-mangoes.jpg" alt="Fresh fruits"><span>Fruits</span></a>
+            </div>
           </div>
-        </div>
-
-        <div class="hero-card hero-card-square">
-          <img src="assets/images/spices.jpg" alt="Indian Spices Export" width="400" height="400">
-          <div class="hero-card-tag">
-            <span>Authentic Spices</span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-          </div>
-        </div>
-
-        <div class="hero-card hero-card-square">
-          <img src="assets/images/gettyimages-1247930626-500px.jpg" alt="Fresh Produce Export" width="400" height="400">
-          <div class="hero-card-tag">
-            <span>Fresh Agriculture</span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
+          <div class="trade-divider"></div>
+          <div class="trade-group">
+            <div class="trade-label">Import products</div>
+            <div class="trade-products trade-products-import" data-rotate-products>
+              <a href="shop.html?category=groundnuts-cashews" class="trade-product"><img src="assets/images/cashew-nuts.jpg" alt="Raw cashew nuts"><span>Raw cashew<br>nuts</span></a>
+              <a href="shop.html?category=oil-seeds" class="trade-product"><img src="assets/images/toor-dal.jpg" alt="Soyabean"><span>Soyabean</span></a>
+              <a href="shop.html?category=fresh-fruits" class="trade-product"><img src="assets/images/fresh-alphonso-kesar-mangoes.jpg" alt="Dates & Fruits"><span>Dates</span></a>
+              <a href="shop.html?category=dehydrated" class="trade-product"><img src="assets/images/dehydrated-ginger-powder.jpg" alt="Dry split ginger"><span>Dry split<br>ginger</span></a>
+            </div>
           </div>
         </div>
       </div>
@@ -156,581 +165,529 @@
       </div>
     </div>
 
-    <!-- 4. About Section -->
-    <section class="section section-soft" id="about" aria-labelledby="about-heading">
+    <!-- 3. 360 Degree Partner in Food Trade -->
+    <section class="pillars-section" id="solutions" aria-labelledby="pillars-heading">
       <div class="container">
-        <div class="about-grid">
-          <div class="about-showcase reveal">
-            <div class="about-asymmetric-showcase">
-              <div class="about-img-frame-primary">
-                <img src="assets/images/hero-port.jpg" alt="Global export operations at port" width="600" height="750"
-                  loading="lazy">
-              </div>
-              <div class="about-img-frame-secondary">
-                <img data-src="assets/images/spices.jpg" alt="Premium Indian spices" width="400" height="400"
-                  loading="lazy">
-              </div>
+        <div class="section-header center reveal">
+          <span class="eyebrow" style="color: var(--kanha-blue); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 12px; display: inline-block;">GLOBAL TRADE EXCELLENCE</span>
+          <h2 class="display-lg" id="pillars-heading" style="color: #081d28; font-size: clamp(2rem, 3.2vw, 2.75rem); line-height: 1.2; margin-bottom: 12px; font-weight: 800;">A 360 degree partner in food trade</h2>
+          <p class="body-lg" style="max-width: 720px; margin: 0 auto; color: #64748b;">Kanha Global Exports bridges trusted Indian producers with global importers, delivering certified agro commodities, streamlined freight, and full statutory compliance.</p>
+        </div>
+
+        <div class="pillars-grid reveal">
+          <div class="pillar-card">
+            <div class="pillar-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
             </div>
+            <h3 class="pillar-title">Exports from India</h3>
+            <p class="pillar-desc">Direct procurement and containerized export of authentic Indian Spices, Basmati &amp; Non-Basmati Rice, Pulses, Fresh Fruits, Vegetables, IQF Seafood, and Animal Feed supplements.</p>
+            <a href="shop.html" class="pillar-link">Explore products <span aria-hidden="true">→</span></a>
           </div>
 
-          <div class="about-content-wrapper reveal">
-            <div class="section-header" style="margin-bottom: 0;">
-              <span class="eyebrow">About Kanha Global Exports</span>
-              <h2 class="display-lg" id="about-heading">Connecting Indian Excellence with Global Markets</h2>
+          <div class="pillar-card">
+            <div class="pillar-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
             </div>
+            <h3 class="pillar-title">Imports to India</h3>
+            <p class="pillar-desc">Reliable global sourcing and import facilitation for essential commodities including Raw Cashew Nuts, Soya Bean, Medjool Dates, and Dry Split Ginger with customs clearance.</p>
+            <a href="contact-us.html#quote" class="pillar-link">Partner with us <span aria-hidden="true">→</span></a>
+          </div>
 
-            <div class="about-cards-grid">
-              <div class="about-feature-card">
-                <div class="about-card-header">
-                  <div class="about-card-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3" />
-                    </svg>
-                  </div>
-                  <h3>Who We Are</h3>
-                </div>
-                <p>Established in 2022 in Ahmedabad by brothers Mr. Piyush & Jaymin. Building on 3 generations of family business experience, we export animal feeds, basmati rice, spices, fruits & vegetables globally.</p>
-              </div>
-
-              <div class="about-feature-card" id="leadership">
-                <div class="about-card-header">
-                  <div class="about-card-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
-                      <circle cx="9" cy="7" r="4" />
-                      <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
-                    </svg>
-                  </div>
-                  <h3>Leadership</h3>
-                </div>
-                <p>Built on faith, trust, commitment & passion. Our experienced leadership team is equipped to
-                  source top-tier products at competitive pricing within strict delivery timelines.</p>
-              </div>
-
-              <div class="about-feature-card" id="global-presence">
-                <div class="about-card-header">
-                  <div class="about-card-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <circle cx="12" cy="12" r="10" />
-                      <path
-                        d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
-                    </svg>
-                  </div>
-                  <h3>Global Presence</h3>
-                </div>
-                <p>As merchant exporters, we serve as "Partners in Progress" helping manufacturers scale up
-                  export-quality products across international markets worldwide.</p>
-              </div>
-
-              <div class="about-feature-card">
-                <div class="about-card-header">
-                  <div class="about-card-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                    </svg>
-                  </div>
-                  <h3>Nurturing Goodness</h3>
-                </div>
-                <p>We value planet alongside profit. Quality is our common ingredient across all products, focusing on
-                  customer satisfaction and sustainable global trade.</p>
-              </div>
+          <div class="pillar-card">
+            <div class="pillar-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
             </div>
+            <h3 class="pillar-title">Global Solutions</h3>
+            <p class="pillar-desc">End-to-end international freight coordination, cold-chain temperature preservation, accredited laboratory testing, pre-shipment inspection, and phytosanitary documentation.</p>
+            <a href="about-us.html" class="pillar-link">Learn more <span aria-hidden="true">→</span></a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 5. Product Categories -->
+    <!-- 4. About Story -->
+    <section class="story-section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="story-grid reveal">
+          <div class="story-visual-wrap">
+            <img src="assets/images/quality-inspection.jpg" alt="Kanha Global Exports Quality Inspection and Assurance" class="story-main-img" loading="lazy">
+            <div class="story-badge-card">
+              <div class="story-badge-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+              </div>
+              <div class="story-badge-text">
+                <strong>APEDA &amp; FSSAI Compliant</strong>
+                <span>Batch-Level Traceability</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="story-content">
+            <span class="eyebrow" style="color: var(--kanha-blue); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; display: inline-block;">ABOUT KANHA GLOBAL EXPORTS</span>
+            <h2 id="about-heading">Premium agro commodities, sourced and delivered with integrity</h2>
+            <p class="story-lead">Headquartered in Ahmedabad, Gujarat, Kanha Global Exports operates as a premier merchant exporter delivering authentic Indian agricultural wealth across international destinations.</p>
+            <p class="story-body">Our disciplined procurement model guarantees stringent laboratory testing, full batch traceability, APEDA &amp; FSSAI compliance, and seamless port-to-port logistics for international importers, wholesalers, and retail distributors worldwide.</p>
+            
+            <div class="story-points">
+              <div class="story-point"><span class="story-point-dot"></span>Direct Producer Procurement</div>
+              <div class="story-point"><span class="story-point-dot"></span>Certified Cold-Chain Reefers</div>
+              <div class="story-point"><span class="story-point-dot"></span>100% Export Documentation</div>
+              <div class="story-point"><span class="story-point-dot"></span>Dedicated Trade Desk Support</div>
+            </div>
+
+            <a href="about-us.html" class="btn btn-primary">About Our Company <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. What We Trade (Portfolio) -->
     <section class="section section-dark" id="categories" aria-labelledby="categories-heading">
       <div class="container">
         <div class="section-header center reveal">
-          <span class="eyebrow eyebrow-light">Our Export Portfolio</span>
-          <h2 class="display-lg" id="categories-heading">From India's Finest Origins to the World</h2>
-          <p class="body-lg">Premium agricultural commodities and marine products sourced from India's finest growing
-            regions, delivered to international markets with full traceability.</p>
+          <span class="eyebrow eyebrow-light">OUR PORTFOLIO</span>
+          <h2 class="display-lg" id="categories-heading">What we trade</h2>
+          <p class="body-lg">Direct procurement of finest agricultural commodities and marine products sourced from certified Indian origins with full batch traceability.</p>
         </div>
 
         <div class="category-grid reveal">
-          <a href="shop.html#spices" class="category-card">
-            <img data-src="assets/images/spices.jpg" alt="Spices export" width="400" height="300" loading="lazy">
+          <!-- 1. Rice -->
+          <a href="shop.html?category=basmati-rice" class="category-card">
+            <img src="assets/images/rice-1121-steam-hd.jpg" alt="Basmati & Non-Basmati Rice" width="400" height="300" loading="lazy">
+            <div class="category-card-overlay"></div>
+            <span class="category-badge-tag">1121 Steam &amp; Raw</span>
+            <div class="category-card-content">
+              <div>
+                <h3 class="category-card-title">Basmati &amp; Non-Basmati Rice</h3>
+                <span class="category-card-sub">12+ Export Grades</span>
+              </div>
+              <div class="category-card-arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- 2. Spices -->
+          <a href="shop.html?category=spices" class="category-card">
+            <img src="assets/images/spices.jpg" alt="Indian Spices & Herbs" width="400" height="300" loading="lazy">
             <div class="category-card-overlay"></div>
             <span class="category-badge-tag">Export Grade</span>
             <div class="category-card-content">
               <div>
-                <h3 class="category-card-title">Spices</h3>
-                <span class="category-card-sub">35+ Varieties & Blends</span>
+                <h3 class="category-card-title">Indian Spices</h3>
+                <span class="category-card-sub">35+ Varieties &amp; Blends</span>
               </div>
               <div class="category-card-arrow">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </div>
             </div>
           </a>
 
-          <a href="shop.html#basmati-rice" class="category-card">
-            <img data-src="assets/images/1121-steam-rice-500x500.jpg" alt="Basmati Rice" width="400" height="300"
-              loading="lazy">
+          <!-- 3. Pulses & Lentils -->
+          <a href="shop.html?category=pulses" class="category-card">
+            <img src="assets/images/toor-dal.jpg" alt="Pulses, Lentils & Grains" width="400" height="300" loading="lazy">
             <div class="category-card-overlay"></div>
-            <span class="category-badge-tag">1121 Steam & Raw</span>
+            <span class="category-badge-tag">Quality Sourced</span>
             <div class="category-card-content">
               <div>
-                <h3 class="category-card-title">Basmati Rice</h3>
-                <span class="category-card-sub">12+ Premium Grades</span>
+                <h3 class="category-card-title">Pulses &amp; Grains</h3>
+                <span class="category-card-sub">Toor, Moong, Urad &amp; Chana</span>
               </div>
               <div class="category-card-arrow">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </div>
             </div>
           </a>
 
-          <a href="shop.html#pulses" class="category-card">
-            <img data-src="assets/images/pulses.jpg" alt="Pulses" width="400" height="300" loading="lazy">
+          <!-- 4. Fresh Vegetables -->
+          <a href="shop.html?category=fresh-vegetables" class="category-card">
+            <img src="assets/images/fresh-red-onions-nashik-gujarat.jpg" alt="Fresh Vegetables" width="400" height="300" loading="lazy">
             <div class="category-card-overlay"></div>
-            <span class="category-badge-tag">QUALITY SOURCED</span>
-            <div class="category-card-content">
-              <div>
-                <h3 class="category-card-title">Pulses & Grains</h3>
-                <span class="category-card-sub">18+ Varieties</span>
-              </div>
-              <div class="category-card-arrow">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </div>
-            </div>
-          </a>
-
-          <a href="shop.html#fruits-vegetables" class="category-card">
-            <img data-src="assets/images/gettyimages-1247930626-500px.jpg" alt="Fresh Produce" width="400" height="300"
-              loading="lazy">
-            <div class="category-card-overlay"></div>
-            <span class="category-badge-tag">VERIFIED SOURCING</span>
-            <div class="category-card-content">
-              <div>
-                <h3 class="category-card-title">Fresh Produce</h3>
-                <span class="category-card-sub">Quality Monitored</span>
-              </div>
-              <div class="category-card-arrow">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </div>
-            </div>
-          </a>
-
-          <a href="shop.html#fresh-fruits" class="category-card">
-            <img data-src="assets/images/fresh-fruits.jpg" alt="Fresh Fruits" width="400" height="300" loading="lazy">
-            <div class="category-card-overlay"></div>
-            <span class="category-badge-tag">Cold-Chain Ship</span>
-            <div class="category-card-content">
-              <div>
-                <h3 class="category-card-title">Fresh Fruits</h3>
-                <span class="category-card-sub">Seasonal Selections</span>
-              </div>
-              <div class="category-card-arrow">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </div>
-            </div>
-          </a>
-
-          <a href="shop.html#fresh-vegetables" class="category-card">
-            <img data-src="assets/images/fresh-vegetables.jpg" alt="Fresh Vegetables" width="400" height="300"
-              loading="lazy">
-            <div class="category-card-overlay"></div>
-            <span class="category-badge-tag">APEDA REGISTERED</span>
+            <span class="category-badge-tag">APEDA Registered</span>
             <div class="category-card-content">
               <div>
                 <h3 class="category-card-title">Fresh Vegetables</h3>
-                <span class="category-card-sub">Daily Harvest Fresh</span>
+                <span class="category-card-sub">Nashik Onions, Ginger &amp; Garlic</span>
               </div>
               <div class="category-card-arrow">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </div>
             </div>
           </a>
 
-          <a href="shop.html#marine-products" class="category-card">
-            <img data-src="assets/images/seafood-export.jpg" alt="Marine Products" width="400" height="300" loading="lazy">
+          <!-- 5. Fresh Fruits -->
+          <a href="shop.html?category=fresh-fruits" class="category-card">
+            <img src="assets/images/fresh-alphonso-kesar-mangoes.jpg" alt="Fresh Fruits" width="400" height="300" loading="lazy">
+            <div class="category-card-overlay"></div>
+            <span class="category-badge-tag">Cold-Chain Reefer</span>
+            <div class="category-card-content">
+              <div>
+                <h3 class="category-card-title">Fresh Fruits</h3>
+                <span class="category-card-sub">Alphonso, Pomegranate &amp; Grapes</span>
+              </div>
+              <div class="category-card-arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- 6. Groundnuts & Cashews -->
+          <a href="shop.html?category=groundnuts-cashews" class="category-card">
+            <img src="assets/images/raw-peanuts.jpg" alt="Groundnuts & Cashews" width="400" height="300" loading="lazy">
+            <div class="category-card-overlay"></div>
+            <span class="category-badge-tag">Bold &amp; Java Type</span>
+            <div class="category-card-content">
+              <div>
+                <h3 class="category-card-title">Groundnuts &amp; Cashews</h3>
+                <span class="category-card-sub">Raw, Blanched &amp; W180-W320</span>
+              </div>
+              <div class="category-card-arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- 7. Dehydrated Products -->
+          <a href="shop.html?category=dehydrated" class="category-card">
+            <img src="assets/images/onion-flakes.jpg" alt="Dehydrated Products" width="400" height="300" loading="lazy">
+            <div class="category-card-overlay"></div>
+            <span class="category-badge-tag">Air &amp; Sun Dried</span>
+            <div class="category-card-content">
+              <div>
+                <h3 class="category-card-title">Dehydrated Products</h3>
+                <span class="category-card-sub">Onion, Garlic &amp; Vegetable Flakes</span>
+              </div>
+              <div class="category-card-arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- 8. Marine & Seafood -->
+          <a href="shop.html?category=seafood" class="category-card">
+            <img src="assets/images/seafood-export.jpg" alt="Marine & Seafood" width="400" height="300" loading="lazy">
             <div class="category-card-overlay"></div>
             <span class="category-badge-tag">IQF Frozen</span>
             <div class="category-card-content">
               <div>
-                <h3 class="category-card-title">Marine & Seafood</h3>
-                <span class="category-card-sub">Deep Sea Catch</span>
+                <h3 class="category-card-title">Marine &amp; Seafood</h3>
+                <span class="category-card-sub">Vannamei, Black Tiger &amp; Fish</span>
               </div>
               <div class="category-card-arrow">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </div>
-            </div>
-          </a>
-
-          <a href="poultry-farm-products.html" class="category-card">
-            <img data-src="assets/images/poultryfarm1.jpg" alt="Poultry Division" width="400" height="300"
-              loading="lazy">
-            <div class="category-card-overlay"></div>
-            <span class="category-badge-tag">Specialized Unit</span>
-            <div class="category-card-content">
-              <div>
-                <h3 class="category-card-title">Poultry & Livestock</h3>
-                <span class="category-card-sub">36+ Formulations</span>
-              </div>
-              <div class="category-card-arrow">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </div>
             </div>
           </a>
         </div>
 
         <div class="categories-cta reveal">
-          <a href="shop.html" class="btn btn-primary">Explore All Categories</a>
+          <a href="shop.html" class="btn btn-primary">Explore All 72 Export Products →</a>
         </div>
       </div>
     </section>
 
-    <!-- 6. Values -->
-    <section class="section section-ivory" id="values" aria-labelledby="values-heading">
+    <!-- 6. Trust, Quality and Commitment (Executive B2B Bento Grid) -->
+    <section class="trust-section" id="trust" aria-labelledby="trust-heading">
       <div class="container">
         <div class="section-header center reveal">
-          <span class="eyebrow">Our Core Principles</span>
-          <h2 class="display-lg" id="values-heading">Built on Principles That Drive Global Trade</h2>
-          <p class="body-lg">Foundational commitments to international buyers, ensuring uncompromising quality
-            assurance, supply discipline, transparency, and product consistency across every export shipment.</p>
+          <div class="trust-badge-kicker">
+            <span class="trust-badge-kicker-dot"></span>
+            <span>Why Global Importers Choose Us</span>
+          </div>
+          <h2 class="display-lg" id="trust-heading" style="color: #081d28; font-size: clamp(2.1rem, 3.4vw, 2.85rem); line-height: 1.2; margin-bottom: 12px; font-weight: 800;">Trust, quality and commitment, <em>every shipment</em></h2>
+          <p class="body-lg" style="max-width: 720px; margin: 0 auto; color: #64748b;">From farm-level batch testing to refrigerated ocean voyages, we eliminate supply chain risks across every nautical mile.</p>
         </div>
 
-        <div class="values-showcase-grid reveal">
-          <div class="value-card">
-            <div class="value-card-header">
-              <div class="value-card-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                </svg>
+        <div class="trust-bento-grid reveal">
+          <!-- Bento 1: Lab Testing & Traceability -->
+          <div class="trust-bento-card">
+            <div>
+              <div class="trust-card-top-row">
+                <div class="trust-icon-bubble bubble-blue">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <path d="m9 12 2 2 4-4"/>
+                  </svg>
+                </div>
+                <span class="trust-metric-pill">100% Pre-Shipment Tested</span>
               </div>
-              <span class="value-card-num">01</span>
+              <h3>Batch-Level Traceability &amp; Lab Testing</h3>
+              <p>Every commercial consignment is tested at origin in accredited laboratories for moisture levels, grain elongation, aflatoxin, microbial limits, and pesticide residue. Full batch COA provided prior to container loading.</p>
             </div>
-            <h3>Quality Assurance</h3>
-            <p>Quality Assurance • Global Reliability • Uncompromised Trust • Batch Consistency.</p>
+            <div class="trust-pills-row">
+              <span class="trust-pill">ISO 17025 Labs</span>
+              <span class="trust-pill">Zero Adulteration</span>
+              <span class="trust-pill">SGS &amp; Bureau Veritas</span>
+            </div>
           </div>
 
-          <div class="value-card">
-            <div class="value-card-header">
-              <div class="value-card-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M12 6v6l4 2" />
-                </svg>
+          <!-- Bento 2: Cold-Chain & Reefer Logistics -->
+          <div class="trust-bento-card">
+            <div>
+              <div class="trust-card-top-row">
+                <div class="trust-icon-bubble bubble-green">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                    <line x1="6" y1="12" x2="6.01" y2="12"/>
+                    <line x1="6" y1="16" x2="6.01" y2="16"/>
+                  </svg>
+                </div>
+                <span class="trust-metric-pill">&lt; -18°C Controlled Reefer</span>
               </div>
-              <span class="value-card-num">02</span>
+              <h3>Certified Cold-Chain &amp; Freshness Logistics</h3>
+              <p>Direct contracted bookings with Tier-1 ocean liners (Maersk, MSC, CMA CGM) utilizing smart reefer containers with digital temperature loggers preserving optimal shelf-life, pulp firmness, and aroma.</p>
             </div>
-            <h3>Global Reliability</h3>
-            <p>Quality Assurance • Global Reliability • Uncompromised Trust • Batch Consistency.</p>
+            <div class="trust-pills-row">
+              <span class="trust-pill">Smart Reefers</span>
+              <span class="trust-pill">Pre-Cooling Facilities</span>
+              <span class="trust-pill">IQF Freezing</span>
+            </div>
           </div>
 
-          <div class="value-card">
-            <div class="value-card-header">
-              <div class="value-card-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                </svg>
+          <!-- Bento 3: Export Documentation & Customs -->
+          <div class="trust-bento-card">
+            <div>
+              <div class="trust-card-top-row">
+                <div class="trust-icon-bubble bubble-amber">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <line x1="16" y1="13" x2="8" y2="13"/>
+                    <line x1="16" y1="17" x2="8" y2="17"/>
+                    <polyline points="10 9 9 9 8 9"/>
+                  </svg>
+                </div>
+                <span class="trust-metric-pill">Zero-Defect Documentation</span>
               </div>
-              <span class="value-card-num">03</span>
+              <h3>Compliant Export Documentation &amp; Legalization</h3>
+              <p>Complete statutory documentation tailored to your destination customs: APEDA Health Certificate, Spices Board Phytosanitary, Certificate of Origin, Fumigation Certificate, Non-GMO declarations, and Embassy Attestation.</p>
             </div>
-            <h3>Uncompromised Trust</h3>
-            <p>Quality Assurance • Global Reliability • Uncompromised Trust • Batch Consistency.</p>
+            <div class="trust-pills-row">
+              <span class="trust-pill">Fast Clearance</span>
+              <span class="trust-pill">FSSAI / APEDA</span>
+              <span class="trust-pill">U.S. FDA Registered</span>
+            </div>
           </div>
 
-          <div class="value-card">
-            <div class="value-card-header">
-              <div class="value-card-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                </svg>
+          <!-- Bento 4: Global Fulfillment & Port Velocity -->
+          <div class="trust-bento-card">
+            <div>
+              <div class="trust-card-top-row">
+                <div class="trust-icon-bubble bubble-purple">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                    <path d="M22 12h-4M6 12H2M12 6V2M12 22v-4"/>
+                  </svg>
+                </div>
+                <span class="trust-metric-pill">50+ Global Destination Ports</span>
               </div>
-              <span class="value-card-num">04</span>
+              <h3>Reliable Global Fulfillment &amp; Port Priority</h3>
+              <p>Priority vessel allotment from Mundra, Kandla, and JNPT Mumbai to major transshipment hubs across the Middle East, Europe, North America, and Southeast Asia with transparent tracking and zero container rollovers.</p>
             </div>
-            <h3>Batch Consistency</h3>
-            <p>Quality Assurance • Global Reliability • Uncompromised Trust • Batch Consistency.</p>
+            <div class="trust-pills-row">
+              <span class="trust-pill">FOB / CIF / CFR</span>
+              <span class="trust-pill">Express Inland Freight</span>
+              <span class="trust-pill">Priority Berthing</span>
+            </div>
           </div>
         </div>
 
-        <div class="values-trust-banner reveal">
-          <img data-src="assets/images/quality-inspection.jpg" alt="Quality inspection at export facility" width="1200"
-            height="400" loading="lazy">
-          <div class="values-trust-overlay">
-            <div class="values-trust-content">
-            <h3>Strict International Quality Compliance</h3>
-            <p>Every shipment undergoes rigorous vendor scrutinization, laboratory testing, and <strong>BATCH-LEVEL TRACEABILITY</strong> unless the full process is documented.</p>
-            </div>
-            <div class="values-trust-highlights">
-              <div class="values-trust-pill"><span class="values-trust-pill-dot"></span>QUALITY ASSURED / QUALITY CHECKED</div>
-              <div class="values-trust-pill"><span class="values-trust-pill-dot"></span>APEDA Registered & FSSAI</div>
-              <div class="values-trust-pill"><span class="values-trust-pill-dot"></span>BATCH-LEVEL TRACEABILITY</div>
-            </div>
+        <!-- Live Export Compliance Bar -->
+        <div class="trust-credentials-bar reveal">
+          <div class="trust-cred-label">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Verified Credentials</span>
+          </div>
+          <div class="trust-cred-badges">
+            <span class="cred-badge-item"><span class="cred-dot"></span>IEC Licensed</span>
+            <span class="cred-badge-item"><span class="cred-dot"></span>APEDA Registered</span>
+            <span class="cred-badge-item"><span class="cred-dot"></span>Spices Board of India</span>
+            <span class="cred-badge-item"><span class="cred-dot"></span>FSSAI Central Exporter</span>
+            <span class="cred-badge-item"><span class="cred-dot"></span>FIEO Premier Member</span>
+            <span class="cred-badge-item"><span class="cred-dot"></span>U.S. FDA Facility</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 7. Global Presence -->
-    <section class="section section-dark" id="global" aria-labelledby="global-heading">
+    <!-- 7. Our Certifications -->
+    <section class="certs-section" id="certifications" aria-labelledby="certs-heading">
       <div class="container">
         <div class="section-header center reveal">
-          <span class="eyebrow eyebrow-light">Worldwide Reach</span>
-          <h2 class="display-lg" id="global-heading">Global Presence</h2>
-          <p class="body-lg">Connecting Indian producers with international buyers through a trusted merchant export
-            network.</p>
+          <span class="eyebrow" style="color: var(--kanha-blue); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 12px; display: inline-block;">CREDENTIALS &amp; COMPLIANCE</span>
+          <h2 class="display-lg" id="certs-heading" style="color: #081d28; font-size: clamp(2rem, 3.2vw, 2.75rem); line-height: 1.2; margin-bottom: 12px; font-weight: 800;">Our Certifications</h2>
+          <p class="body-lg" style="max-width: 700px; margin: 0 auto; color: #64748b;">Registered and certified with statutory export and food safety authorities in India and globally.</p>
         </div>
 
-        <div class="global-grid reveal">
-          <div class="map-wrap">
-            <img src="assets/images/world-map-full.png?v=11" data-src="assets/images/world-map-full.png?v=11" alt="Kanha Global Export Flat World Trade Network Map" width="1200" height="600" loading="lazy">
+        <div class="certs-grid reveal">
+          <div class="cert-doc-card">
+            <div class="cert-preview-frame">
+              <span class="cert-doc-badge">Verified</span>
+              <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+              <div class="cert-preview-watermark">APEDA</div>
+            </div>
+            <h3>APEDA Registration</h3>
+            <p class="cert-doc-org">Agricultural &amp; Processed Food Products Export Development Authority</p>
+            <span class="cert-doc-status"><span class="cert-doc-status-dot"></span>Govt. of India Registered</span>
+          </div>
+
+          <div class="cert-doc-card">
+            <div class="cert-preview-frame">
+              <span class="cert-doc-badge">Verified</span>
+              <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              <div class="cert-preview-watermark">IEC</div>
+            </div>
+            <h3>Import Export Code (IEC)</h3>
+            <p class="cert-doc-org">Directorate General of Foreign Trade (DGFT), Ministry of Commerce</p>
+            <span class="cert-doc-status"><span class="cert-doc-status-dot"></span>Govt. of India Authorized</span>
+          </div>
+
+          <div class="cert-doc-card">
+            <div class="cert-preview-frame">
+              <span class="cert-doc-badge">Verified</span>
+              <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+              <div class="cert-preview-watermark">FSSAI</div>
+            </div>
+            <h3>FSSAI Food License</h3>
+            <p class="cert-doc-org">Food Safety and Standards Authority of India</p>
+            <span class="cert-doc-status"><span class="cert-doc-status-dot"></span>Food Quality Certified</span>
+          </div>
+
+          <div class="cert-doc-card">
+            <div class="cert-preview-frame">
+              <span class="cert-doc-badge">Verified</span>
+              <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+              <div class="cert-preview-watermark">MSME</div>
+            </div>
+            <h3>MSME / Udyam</h3>
+            <p class="cert-doc-org">Ministry of Micro, Small &amp; Medium Enterprises</p>
+            <span class="cert-doc-status"><span class="cert-doc-status-dot"></span>Govt. Enterprise Certified</span>
+          </div>
+
+          <div class="cert-doc-card">
+            <div class="cert-preview-frame">
+              <span class="cert-doc-badge">Verified</span>
+              <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+              <div class="cert-preview-watermark">GST</div>
+            </div>
+            <h3>GST Registration</h3>
+            <p class="cert-doc-org">Department of Revenue, Ministry of Finance, India</p>
+            <span class="cert-doc-status"><span class="cert-doc-status-dot"></span>Tax Compliant Entity</span>
+          </div>
+
+          <div class="cert-doc-card">
+            <div class="cert-preview-frame">
+              <span class="cert-doc-badge">Verified</span>
+              <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              <div class="cert-preview-watermark">U.S. FDA</div>
+            </div>
+            <h3>U.S. FDA Registered</h3>
+            <p class="cert-doc-org">U.S. Food and Drug Administration Food Facility Registration</p>
+            <span class="cert-doc-status"><span class="cert-doc-status-dot"></span>Global Compliance</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 8. Export Process (Animated Stepper - No Boxes) -->
-    <section class="section section-soft process-section" id="process" aria-labelledby="process-heading">
+    <!-- 8. Markets We Serve -->
+    <section class="markets-section" id="global" aria-labelledby="markets-heading">
+      <div class="container">
+        <div class="markets-grid reveal">
+          <div class="markets-content">
+            <span class="eyebrow">GLOBAL FOOTPRINT</span>
+            <h2 id="markets-heading">Markets we serve</h2>
+            <p class="markets-desc">We supply certified agro commodities and feed supplements across prominent trade corridors in the Middle East, Southeast Asia, Europe, Africa, and North America.</p>
+            
+            <div class="country-tags-wrap">
+              <span class="country-pill">🇦🇪 UAE</span>
+              <span class="country-pill">🇸🇦 Saudi Arabia</span>
+              <span class="country-pill">🇺🇸 USA</span>
+              <span class="country-pill">🇻🇳 Vietnam</span>
+              <span class="country-pill">🇧🇩 Bangladesh</span>
+              <span class="country-pill">🇬🇧 United Kingdom</span>
+              <span class="country-pill">🇩🇪 Germany</span>
+              <span class="country-pill">🇴🇲 Oman</span>
+              <span class="country-pill">🇸🇬 Singapore</span>
+              <span class="country-pill">🇶🇦 Qatar</span>
+              <span class="country-pill">🇰🇼 Kuwait</span>
+              <span class="country-pill">🇨🇦 Canada</span>
+            </div>
+
+            <div class="markets-stats-strip">
+              <div class="market-stat-item">
+                <strong>2017</strong>
+                <span>Established</span>
+              </div>
+              <div class="market-stat-item">
+                <strong>12+</strong>
+                <span>Countries</span>
+              </div>
+              <div class="market-stat-item">
+                <strong>160+</strong>
+                <span>Products</span>
+              </div>
+              <div class="market-stat-item">
+                <strong>100%</strong>
+                <span>Quality Monitored</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="markets-visual-card">
+            <img src="assets/images/world-map-full.png?v=11" alt="Kanha Global Exports World Trade Map" class="markets-map-img" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. A Simple, Transparent Process -->
+    <section class="process-section-clean" id="process" aria-labelledby="process-heading">
       <div class="container">
         <div class="section-header center reveal">
-          <span class="eyebrow">How We Work</span>
-          <h2 class="display-lg" id="process-heading">Seamless Export Process</h2>
-          <p class="body-lg">A structured, end-to-end journey from initial enquiry to international doorstep delivery.</p>
+          <span class="eyebrow" style="color: var(--kanha-blue); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 12px; display: inline-block;">HOW WE WORK</span>
+          <h2 class="display-lg" id="process-heading" style="color: #081d28; font-size: clamp(2rem, 3.2vw, 2.75rem); line-height: 1.2; margin-bottom: 12px; font-weight: 800;">A simple, transparent process</h2>
+          <p class="body-lg" style="max-width: 700px; margin: 0 auto; color: #64748b;">A structured, end-to-end journey from initial inquiry to international port delivery.</p>
         </div>
 
-        <div class="process-stepper-wrap reveal">
-          <!-- Animated Flow Track -->
-          <div class="process-track">
-            <div class="process-track-bg"></div>
-            <div class="process-track-fill"></div>
+        <div class="process-grid-clean reveal">
+          <div class="process-card-clean">
+            <div class="process-step-badge">1</div>
+            <h3>Enquiry &amp; Requirement</h3>
+            <p>Submit your product specifications, desired volume, and destination port to receive prompt FOB/CIF quotations.</p>
           </div>
 
-          <div class="process-steps">
-            <!-- Step 01 -->
-            <div class="process-step-item">
-              <div class="step-node-container">
-                <div class="step-icon-bubble" aria-hidden="true">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path><path d="M8 9h8"></path><path d="M8 13h6"></path></svg>
-                </div>
-                <div class="step-node">
-                  <div class="node-ring"></div>
-                  <span class="node-num">01</span>
-                </div>
-              </div>
-              <div class="step-info">
-                <span class="step-label">Phase 01</span>
-                <h3>Enquiry & Requirement</h3>
-                <p>Share product specs & quantities. We evaluate global availability and send custom export quotes instantly.</p>
-              </div>
-            </div>
+          <div class="process-card-clean">
+            <div class="process-step-badge">2</div>
+            <h3>Sourcing &amp; Quality Check</h3>
+            <p>Direct procurement from verified processors with rigorous pre-dispatch lab testing and batch traceability.</p>
+          </div>
 
-            <!-- Step 02 -->
-            <div class="process-step-item">
-              <div class="step-node-container">
-                <div class="step-icon-bubble" aria-hidden="true">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                </div>
-                <div class="step-node">
-                  <div class="node-ring"></div>
-                  <span class="node-num">02</span>
-                </div>
-              </div>
-              <div class="step-info">
-                <span class="step-label">Phase 02</span>
-                <h3>Sourcing & Quality Check</h3>
-                <p>Direct sourcing from vetted producers with lab tests, strict quality controls, and 100% batch traceability.</p>
-              </div>
-            </div>
+          <div class="process-card-clean">
+            <div class="process-step-badge">3</div>
+            <h3>Packaging &amp; Compliance</h3>
+            <p>Export-grade seaworthy packaging along with Phytosanitary, Origin Certificates, and Customs documentation.</p>
+          </div>
 
-            <!-- Step 03 -->
-            <div class="process-step-item">
-              <div class="step-node-container">
-                <div class="step-icon-bubble" aria-hidden="true">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
-                </div>
-                <div class="step-node">
-                  <div class="node-ring"></div>
-                  <span class="node-num">03</span>
-                </div>
-              </div>
-              <div class="step-info">
-                <span class="step-label">Phase 03</span>
-                <h3>Packing & Compliance</h3>
-                <p>Seaworthy export packaging along with Phytosanitary, Origin Certificates, and Customs documentation.</p>
-              </div>
-            </div>
-
-            <!-- Step 04 -->
-            <div class="process-step-item">
-              <div class="step-node-container">
-                <div class="step-icon-bubble" aria-hidden="true">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                </div>
-                <div class="step-node">
-                  <div class="node-ring"></div>
-                  <span class="node-num">04</span>
-                </div>
-              </div>
-              <div class="step-info">
-                <span class="step-label">Phase 04</span>
-                <h3>Global Freight & Delivery</h3>
-                <p>On-time ocean & air shipping with real-time tracking and dedicated post-delivery customer support.</p>
-              </div>
-            </div>
+          <div class="process-card-clean">
+            <div class="process-step-badge">4</div>
+            <h3>Global Freight &amp; Delivery</h3>
+            <p>Scheduled ocean container or air cargo shipping with real-time transit tracking and dedicated trade support.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 9. Poultry Division -->
-    <section class="section section-dark poultry-section" id="poultry" aria-labelledby="poultry-heading">
+    <!-- 10. Pre-Footer CTA Card -->
+    <section class="cta-box-section" aria-labelledby="cta-heading">
       <div class="container">
-        <div class="poultry-grid reveal">
-          
-          <!-- Left Side: Rich Content & Features -->
-          <div class="poultry-content">
-            <div class="poultry-tag">
-              <span class="pulse-dot"></span>
-              <span>Specialized Division</span>
-            </div>
-            <h2 class="display-md" id="poultry-heading">Poultry & Animal Health Business Unit</h2>
-            <p class="poultry-lead">
-              Our dedicated Animal Health Unit delivers <strong>36 specialized veterinary formulations</strong> — including Halquinol pure & premixes, poultry farm supplements, livestock feed additives, and therapeutic solutions.
-            </p>
-
-            <!-- Feature Highlights Grid -->
-            <div class="poultry-features">
-              <div class="poultry-feat-item">
-                <div class="feat-icon" aria-hidden="true">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
-                </div>
-                <div>
-                  <h4>36+ Products</h4>
-                  <p>Complete veterinary portfolio</p>
-                </div>
-              </div>
-
-              <div class="poultry-feat-item">
-                <div class="feat-icon" aria-hidden="true">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-                </div>
-                <div>
-                  <h4>GMP Certified</h4>
-                  <p>Strict quality standards</p>
-                </div>
-              </div>
-
-              <div class="poultry-feat-item">
-                <div class="feat-icon" aria-hidden="true">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path></svg>
-                </div>
-                <div>
-                  <h4>Global Export</h4>
-                  <p>Supplying worldwide markets</p>
-                </div>
-              </div>
-
-              <div class="poultry-feat-item">
-                <div class="feat-icon" aria-hidden="true">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                </div>
-                <div>
-                  <h4>Halquinol Range</h4>
-                  <p>Pure, 12% & 60% Premix</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Action Link -->
-            <div class="poultry-action">
-              <a href="poultry-farm-products.html" class="btn btn-green">
-                <span>Explore Division</span>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-              </a>
-            </div>
-          </div>
-
-          <!-- Right Side: Premium Layered Visual Showcase -->
-          <div class="poultry-visual-frame">
-            <div class="visual-main-card">
-              <img data-src="assets/images/poultryfarm1.jpg" alt="Poultry Farm Operations" width="600" height="450" loading="lazy">
-              <div class="visual-gradient-overlay"></div>
-              <div class="visual-badge-top">
-                <span class="badge-dot"></span>
-                <span>Halquinol Specialist</span>
-              </div>
-            </div>
-
-            <div class="visual-sub-card">
-              <img data-src="assets/images/cropped-shot-of-a-herd-of-cows-feeding-on-a-dairy-farm.jpg" alt="Livestock Nutrition" width="320" height="240" loading="lazy">
-            </div>
-
-            <div class="visual-floating-stat">
-              <span class="stat-number">36+</span>
-              <span class="stat-text">Veterinary & Feed Formulations</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- 10. Pre-Footer / CTA Banner -->
-    <section class="cta-section" aria-labelledby="cta-heading">
-      <div class="cta-bg">
-        <img data-src="assets/images/export-cta.jpg" alt="Global Merchant Export Operations" width="1920" height="800" loading="lazy">
-      </div>
-      <div class="cta-overlay"></div>
-      <div class="container">
-        <div class="cta-card reveal">
-          <div class="cta-tag">
-            <span class="pulse-dot"></span>
-            <span>Global Trade Partner</span>
-          </div>
-          <h2 class="display-lg" id="cta-heading">Looking for a Reliable Indian Export Partner?</h2>
-          <p class="cta-lead">Partner with Kanha Global Exports for reliable, quality-driven merchant export solutions from India to markets worldwide.</p>
-          
-          <div class="cta-metrics">
-            <div class="metric-item">
-              <span class="metric-val">30+</span>
-              <span class="metric-lbl">Global Export Destinations</span>
-            </div>
-            <div class="metric-divider"></div>
-            <div class="metric-item">
-              <span class="metric-val">100%</span>
-              <span class="metric-lbl">Quality Assured</span>
-            </div>
-            <div class="metric-divider"></div>
-            <div class="metric-item">
-              <span class="metric-val">Fast</span>
-              <span class="metric-lbl">Ocean & Air Freight</span>
-            </div>
-          </div>
-
-          <div class="cta-actions">
-            <a href="KANHA GLOBAL EXPORTS Brochure.pdf" download class="btn btn-secondary">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-              <span>Download Product Catalog</span>
-            </a>
-            <a href="contact-us.html#quote" class="btn btn-primary">
-              <span>Request a Quote</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            </a>
-            <a href="https://wa.me/919726396898" class="btn btn-outline-whatsapp" target="_blank" rel="noopener noreferrer">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.705 1.754zm6.097-4.432l.359.213c1.558.925 3.344 1.413 5.168 1.414 5.437 0 9.862-4.425 9.865-9.863.001-2.633-1.025-5.107-2.887-6.97-1.862-1.864-4.337-2.89-6.97-2.891-5.438 0-9.863 4.425-9.865 9.864-.001 1.9.52 3.75 1.508 5.352l.234.382-1.001 3.657 3.731-.979z"/></svg>
-              <span>WhatsApp Us</span>
-            </a>
+        <div class="cta-box-card reveal">
+          <h2 id="cta-heading">Ready to source or supply with Kanha Global Exports?</h2>
+          <p class="cta-box-desc">Connect with our international merchant trade desk for competitive FOB/CIF quotes, sample dispatch, or customized private-label packaging.</p>
+          <div class="cta-box-actions">
+            <a href="contact-us.html#quote" class="btn btn-primary" style="background: #ffffff; color: var(--kanha-blue); font-weight: 800;">Request a Quote <span aria-hidden="true">→</span></a>
+            <a href="https://wa.me/919726396898" class="btn btn-outline" target="_blank" rel="noopener noreferrer" style="border-color: rgba(255,255,255,0.4); color: #ffffff;">WhatsApp Trade Desk</a>
           </div>
         </div>
       </div>
