@@ -68,19 +68,53 @@
     });
   });
 
-  /* Build mega menu from categories data */
+  /* Build clean, attractive mega menu with product images */
   function buildMegaMenu() {
-    const megaGrid = document.querySelector('.mega-grid');
-    if (!megaGrid || typeof KGE_CATEGORIES === 'undefined') return;
+    const megaPanels = document.querySelectorAll('.dropdown-panel.mega-menu');
+    if (!megaPanels.length || typeof KGE_CATEGORIES === 'undefined') return;
 
-    megaGrid.innerHTML = KGE_CATEGORIES.map((cat) =>
-      `<a href="shop.html#${cat.slug}">${cat.name}</a>`
-    ).join('');
+    megaPanels.forEach(panel => {
+      panel.innerHTML = `
+        <div class="mega-clean-wrapper">
+          <!-- Top Header -->
+          <div class="mega-header-bar">
+            <div class="mega-header-title">
+              <span class="mega-live-dot"></span>
+              <strong>EXPORT COMMODITIES DIRECTORY</strong>
+              <span class="mega-header-sub">16 Core Sectors</span>
+            </div>
+            <a href="shop.html" class="mega-quick-all-link">Browse Full Catalog →</a>
+          </div>
 
-    const poultryLink = document.querySelector('.mega-poultry-link');
-    if (poultryLink && typeof KGE_POULTRY_DIVISION !== 'undefined') {
-      poultryLink.href = 'poultry-farm-products.html';
-    }
+          <!-- Categories Grid with Product Images -->
+          <div class="mega-categories-grid">
+            ${KGE_CATEGORIES.map(cat => `
+              <a href="shop.html#${cat.slug}" class="mega-cat-card">
+                <div class="mega-cat-thumb">
+                  <img src="${cat.image}" alt="${cat.name}" loading="lazy" onerror="this.onerror=null; this.src='assets/images/spices.jpg';">
+                </div>
+                <div class="mega-cat-info">
+                  <span class="mega-cat-name">${cat.name}</span>
+                  <span class="mega-cat-desc">${cat.desc || 'Export Quality'}</span>
+                </div>
+                <svg class="mega-cat-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            `).join('')}
+          </div>
+
+          <!-- Clean Footer -->
+          <div class="mega-footer-v2">
+            <div class="mega-footer-meta">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <span><strong>161+ Export Products</strong> · Mundra &amp; JNPT Port Stuffing · SGS/APEDA Inspected</span>
+            </div>
+            <div class="mega-footer-actions">
+              <a href="contact-us.html#quote" class="btn-mega-rfq">Request FOB/CIF Quote</a>
+            </div>
+          </div>
+        </div>
+      `;
+    });
   }
   buildMegaMenu();
 
