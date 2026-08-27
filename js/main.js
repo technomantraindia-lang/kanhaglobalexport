@@ -18,10 +18,10 @@
   /* Highlight current page nav link */
   function highlightActiveNav() {
     const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-    const navLinks = document.querySelectorAll('.nav-main a.nav-link, .nav-main .has-dropdown > .nav-link');
+    const navLinks = document.querySelectorAll('.nav-main a.nav-link, .nav-main .has-dropdown > a.nav-link, .nav-main .has-dropdown > .nav-link');
     navLinks.forEach((link) => {
       const href = link.getAttribute('href');
-      if (href && (href === currentPath || (currentPath === '' && href === 'index.html'))) {
+      if (href && (href === currentPath || (currentPath === '' && href === 'index.html') || (currentPath === 'about-us.html' && href.startsWith('about-us.html')))) {
         link.classList.add('active');
       } else {
         link.classList.remove('active');
@@ -40,9 +40,11 @@
 
     navMain.querySelectorAll('a').forEach((link) => {
       link.addEventListener('click', () => {
-        navMain.classList.remove('mobile-open');
-        navToggle.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
+        if (window.innerWidth <= 1024 && !link.classList.contains('dropdown-toggle')) {
+          navMain.classList.remove('mobile-open');
+          navToggle.setAttribute('aria-expanded', 'false');
+          document.body.style.overflow = '';
+        }
       });
     });
   }
@@ -51,9 +53,17 @@
   dropdownTriggers.forEach((trigger) => {
     trigger.addEventListener('click', (e) => {
       if (window.innerWidth <= 1024) {
-        e.preventDefault();
         const parent = trigger.parentElement;
-        parent.classList.toggle('open');
+        const isOpen = parent.classList.contains('open');
+        if (!isOpen) {
+          e.preventDefault();
+          parent.classList.add('open');
+          trigger.setAttribute('aria-expanded', 'true');
+        } else if (trigger.tagName.toLowerCase() === 'button') {
+          e.preventDefault();
+          parent.classList.remove('open');
+          trigger.setAttribute('aria-expanded', 'false');
+        }
       }
     });
   });

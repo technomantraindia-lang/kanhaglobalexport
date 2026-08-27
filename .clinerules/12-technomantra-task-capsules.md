@@ -21,7 +21,7 @@ The extension refreshes this file automatically. Prefer its concise state over o
 - Framework: html-static
 - Developer mode: smart
 - Model mode: paid/manual
-- Active file: none
+- Active file: index.html
 - Objective: now in the website there is so much glitches in the website
 
 firstly see the if i click on any product  view detail it goes to Turmeric detail page only so firstly fix this
@@ -35,6 +35,7 @@ firstly see the if i click on any product  view detail it goes to Turmeric detai
 - js/products-data.js
 
 ## Recent files in this workspace/window
+- index.html
 
 ## Hard rule
 If a file, goal, screenshot, terminal output, or decision is not connected to this capsule, do not use it for the current task.
