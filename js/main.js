@@ -130,6 +130,9 @@
       if (products.length < 2) return;
       const track = document.createElement('div');
       track.className = 'trade-products-track';
+      if (row.classList.contains('trade-products-reverse') || row.dataset.direction === 'reverse') {
+        track.classList.add('reverse');
+      }
       products.forEach((product) => track.appendChild(product));
       products.forEach((product) => {
         const duplicate = product.cloneNode(true);
@@ -278,4 +281,62 @@
     setCleanStep(0);
     startCleanAutoCycle();
   }
+
+  /* ==========================================================================
+     Interactive Who We Serve Sector Studio (Zero-Box Hub)
+     ========================================================================== */
+  function setupSectorHub() {
+    const streamItems = document.querySelectorAll('.sector-stream-item');
+    const stageImg = document.getElementById('stage-img');
+    const stageBadge = document.getElementById('stage-badge');
+    const stageTitle = document.getElementById('stage-title');
+    const stageDesc = document.getElementById('stage-desc');
+    const stageFeatures = document.getElementById('stage-features');
+
+    if (!streamItems.length || !stageTitle) return;
+
+    function activateSector(btn) {
+      streamItems.forEach((item) => {
+        item.classList.remove('active');
+        item.setAttribute('aria-selected', 'false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+
+      const title = btn.getAttribute('data-title');
+      const badge = btn.getAttribute('data-badge');
+      const img = btn.getAttribute('data-img');
+      const desc = btn.getAttribute('data-desc');
+      const f1 = btn.getAttribute('data-f1');
+      const f2 = btn.getAttribute('data-f2');
+      const f3 = btn.getAttribute('data-f3');
+
+      if (stageBadge) stageBadge.textContent = badge;
+      if (stageTitle) stageTitle.textContent = title;
+      if (stageDesc) stageDesc.textContent = desc;
+
+      if (stageImg && img) {
+        stageImg.style.opacity = '0.3';
+        setTimeout(() => {
+          stageImg.src = img;
+          stageImg.alt = title;
+          stageImg.style.opacity = '1';
+        }, 150);
+      }
+
+      if (stageFeatures && f1 && f2 && f3) {
+        stageFeatures.innerHTML = `
+          <li><i class="fas fa-check-circle"></i> <span>${f1}</span></li>
+          <li><i class="fas fa-check-circle"></i> <span>${f2}</span></li>
+          <li><i class="fas fa-check-circle"></i> <span>${f3}</span></li>
+        `;
+      }
+    }
+
+    streamItems.forEach((btn) => {
+      btn.addEventListener('click', () => activateSector(btn));
+      btn.addEventListener('mouseenter', () => activateSector(btn));
+    });
+  }
+  setupSectorHub();
 })();

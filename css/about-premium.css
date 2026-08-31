@@ -707,106 +707,294 @@
   letter-spacing: 0.04em;
 }
 
-/* ---------------- 6. LEADERSHIP & MANAGEMENT (#leadership) ---------------- */
+/* ==========================================================================
+   Brand New Recreated Leadership & Trade Desk System (#leadership)
+   ========================================================================== */
+.leadership-showcase-section {
+  padding: 95px 0 100px;
+  background: radial-gradient(circle at 50% 15%, #ffffff 0%, #f8fafc 100%);
+  position: relative;
+}
 
-.leadership-grid {
+/* Tier 1: Founders Suite Deck */
+.directors-deck {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
+  margin-top: 48px;
 }
 
-.leader-profile-card {
+.director-suite-card {
   background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 16px;
-  padding: 36px 32px;
-  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+  border: 1.5px solid #e2e8f0;
+  border-radius: 22px;
+  padding: 38px 34px;
+  box-shadow: 0 8px 30px -4px rgba(6, 19, 26, 0.05);
+  position: relative;
+  overflow: hidden;
   display: flex;
-  gap: 26px;
-  transition: all 0.3s ease;
-  align-items: flex-start;
+  flex-direction: column;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.leader-profile-card:hover {
-  transform: translateY(-5px);
-  border-color: #0284c7;
-  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.09);
+.director-suite-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
 }
 
-.leader-avatar-wrap {
-  flex-shrink: 0;
+.director-card-primary::before {
+  background: linear-gradient(90deg, #0284c7 0%, #38bdf8 100%);
 }
 
-.leader-avatar {
-  width: 88px;
-  height: 88px;
-  border-radius: 14px;
-  background: linear-gradient(135deg, #0284c7 0%, #0d2737 100%);
-  color: #ffffff;
+.director-card-primary:hover {
+  border-color: #38bdf8;
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px -8px rgba(2, 132, 199, 0.16);
+}
+
+.director-card-teal::before {
+  background: linear-gradient(90deg, #0d9488 0%, #2dd4bf 100%);
+}
+
+.director-card-teal:hover {
+  border-color: #2dd4bf;
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px -8px rgba(13, 148, 136, 0.16);
+}
+
+.director-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.director-symbol-badge {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.65rem;
-  font-weight: 700;
-  border: 3px solid #e0f2fe;
-  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.2);
+  flex-shrink: 0;
 }
 
-.leader-avatar.avatar-alt {
-  background: linear-gradient(135deg, #0d9488 0%, #0d2737 100%);
-  border-color: #ccfbf1;
-  box-shadow: 0 4px 14px rgba(13, 148, 136, 0.2);
-}
-
-.leader-info {
-  flex-grow: 1;
-}
-
-.leader-info h3 {
-  font-size: 1.35rem;
-  font-weight: 700;
-  color: #0f172a;
-  margin-bottom: 4px;
-}
-
-.leader-role {
-  font-size: 0.84rem;
-  font-weight: 700;
+.badge-blue {
+  background: #e0f2fe;
   color: #0284c7;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 14px;
-  display: inline-block;
+  border: 1px solid #bae6fd;
 }
 
-.leader-avatar.avatar-alt + .leader-info .leader-role {
+.badge-teal {
+  background: #ccfbf1;
   color: #0d9488;
+  border: 1px solid #99f6e4;
 }
 
-.leader-info p {
-  font-size: 0.93rem;
+.director-role-tag {
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 50px;
+  background: #f1f5f9;
+  color: #334155;
+  border: 1px solid #e2e8f0;
+}
+
+.director-card-primary .director-role-tag {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border-color: #bfdbfe;
+}
+
+.director-card-teal .director-role-tag {
+  background: #f0fdfa;
+  color: #0f766e;
+  border-color: #99f6e4;
+}
+
+.director-name {
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: #081d28;
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+}
+
+.director-bio {
+  font-size: 0.98rem;
   color: #475569;
-  line-height: 1.65;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Tier 2: Connected Operations Matrix Divider */
+.matrix-divider-wrap {
+  margin: 55px 0 35px;
+  text-align: center;
+  position: relative;
+}
+
+.matrix-divider-wrap::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #e2e8f0;
+  z-index: 1;
+}
+
+.matrix-divider-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  padding: 8px 24px;
+  border-radius: 100px;
+  border: 1.5px solid #e2e8f0;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0f172a;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+}
+
+.matrix-divider-badge svg {
+  color: var(--kanha-blue);
+}
+
+/* Tier 2: 5 Connected Department Cards in Continuous Unified Grid */
+.specialists-unified-matrix {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+.specialist-matrix-card {
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 26px 20px;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.03);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.specialist-matrix-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+
+.specialist-matrix-card:hover {
+  transform: translateY(-5px);
+  border-color: #38bdf8;
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.09);
+}
+
+.specialist-matrix-card:hover::before {
+  background: linear-gradient(90deg, #0284c7, #38bdf8);
+}
+
+.specialist-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 16px;
 }
 
-.leader-tags {
+.specialist-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
-.leader-tag {
+.icon-theme-blue { background: #eff6ff; color: #1d4ed8; border: 1px solid #dbeafe; }
+.icon-theme-teal { background: #f0fdfa; color: #0f766e; border: 1px solid #ccfbf1; }
+.icon-theme-amber { background: #fffbeb; color: #b45309; border: 1px solid #fef3c7; }
+.icon-theme-indigo { background: #eef2ff; color: #4338ca; border: 1px solid #e0e7ff; }
+.icon-theme-purple { background: #faf5ff; color: #7e22ce; border: 1px solid #f3e8ff; }
+
+.specialist-order {
   font-size: 0.78rem;
-  font-weight: 600;
-  background: #f1f5f9;
-  color: #334155;
-  padding: 4px 12px;
-  border-radius: 6px;
-  border: 1px solid #e2e8f0;
+  font-weight: 800;
+  color: #94a3b8;
+  letter-spacing: 0.05em;
+}
+
+.specialist-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #081d28;
+  margin: 0 0 4px;
+  line-height: 1.25;
+}
+
+.specialist-designation {
+  font-size: 0.74rem;
+  font-weight: 800;
+  color: var(--kanha-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.35;
+  margin-bottom: 12px;
+  display: block;
+  min-height: 28px;
+}
+
+.specialist-summary {
+  font-size: 0.86rem;
+  color: #64748b;
+  line-height: 1.55;
+  margin: 0;
+  flex-grow: 1;
+}
+
+@media (max-width: 1200px) {
+  .specialists-unified-matrix {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .directors-deck {
+    grid-template-columns: 1fr;
+  }
+  .specialists-unified-matrix {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .specialists-unified-matrix {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ---------------- 7. OUR JOURNEY & ROADMAP (#our-journey) ---------------- */
@@ -1362,3 +1550,463 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* ==========================================================================
+   Pixel-Perfect Linear Sourcing Pipeline Stepper (#sourcing-approach)
+   ========================================================================== */
+.sourcing-pipeline-section {
+  padding: 95px 0 105px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 50%, #ffffff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.sourcing-stepper-track {
+  margin-top: 56px;
+  position: relative;
+  width: 100%;
+}
+
+/* Continuous Horizontal Connecting Track Line (Perfect Alignment with Badge Center) */
+.stepper-axis-bar {
+  position: absolute;
+  top: 25px;
+  left: 6%;
+  right: 6%;
+  height: 3px;
+  background: linear-gradient(90deg, #38bdf8 0%, #1676b7 50%, #22c55e 100%);
+  z-index: 1;
+  border-radius: 2px;
+}
+
+.stepper-nodes-row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  position: relative;
+  z-index: 2;
+}
+
+.stepper-node-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Prominent Glowing Number Circle Badge (Centered on Track Line) */
+.stepper-circle-badge {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 3px solid #1676b7;
+  color: #1676b7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 1.05rem;
+  line-height: 1;
+  margin-bottom: 22px;
+  box-shadow: 0 4px 14px rgba(22, 118, 183, 0.22);
+  position: relative;
+  z-index: 3;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.stepper-node-item:hover .stepper-circle-badge {
+  background: #1676b7;
+  color: #ffffff;
+  transform: scale(1.15);
+  box-shadow: 0 8px 24px rgba(22, 118, 183, 0.4);
+}
+
+.stepper-node-item.highlight .stepper-circle-badge {
+  border-color: #22c55e;
+  color: #22c55e;
+  box-shadow: 0 4px 14px rgba(34, 197, 94, 0.3);
+}
+
+.stepper-node-item.highlight:hover .stepper-circle-badge {
+  background: #22c55e;
+  color: #ffffff;
+}
+
+/* Content Wrap Below (Zero Box, Pure Content) */
+.stepper-content-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 4px;
+}
+
+.stepper-icon-pill {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1d4ed8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  transition: all 0.3s ease;
+}
+
+.stepper-node-item:hover .stepper-icon-pill {
+  background: #1676b7;
+  color: #ffffff;
+  border-color: #1676b7;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(22, 118, 183, 0.25);
+}
+
+.stepper-node-item.highlight .stepper-icon-pill {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+  color: #15803d;
+}
+
+.stepper-node-item.highlight:hover .stepper-icon-pill {
+  background: #22c55e;
+  color: #ffffff;
+  border-color: #22c55e;
+}
+
+.stepper-step-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #081d28;
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+
+.stepper-step-desc {
+  font-size: 0.85rem;
+  color: #64748b;
+  line-height: 1.55;
+  margin: 0;
+}
+
+@media (max-width: 1100px) {
+  .stepper-nodes-row {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 36px;
+  }
+  .stepper-axis-bar {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .stepper-nodes-row {
+    grid-template-columns: 1fr;
+    row-gap: 28px;
+  }
+}
+
+/* ==========================================================================
+   Strategic Asymmetric Capabilities Hub (#strengths)
+   ========================================================================== */
+.strengths-hub-section {
+  padding: 95px 0 100px;
+  background: #f8fafc;
+  position: relative;
+}
+
+.strengths-showcase-layout {
+  display: grid;
+  grid-template-columns: 4.2fr 5.8fr;
+  gap: 32px;
+  margin-top: 48px;
+  align-items: stretch;
+}
+
+/* Left Hero Spotlight Card (Deep Navy Theme) */
+.strengths-hero-spotlight {
+  background: linear-gradient(145deg, #071e2c 0%, #0c2b3d 60%, #0d3852 100%);
+  border-radius: 24px;
+  padding: 42px 36px;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 16px 40px -8px rgba(7, 30, 44, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.strengths-hero-spotlight::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.18) 0%, rgba(56, 189, 248, 0) 70%);
+  pointer-events: none;
+}
+
+.spotlight-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 6px 14px;
+  border-radius: 100px;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #38bdf8;
+  margin-bottom: 24px;
+  width: fit-content;
+}
+
+.spotlight-tag-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #38bdf8;
+  box-shadow: 0 0 8px #38bdf8;
+}
+
+.spotlight-icon-wrap {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #38bdf8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.spotlight-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 12px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.spotlight-desc {
+  font-size: 0.94rem;
+  color: #cbd5e1;
+  line-height: 1.65;
+  margin-bottom: 24px;
+}
+
+.spotlight-points {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.spotlight-points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.88rem;
+  color: #e2e8f0;
+  line-height: 1.5;
+}
+
+.point-check-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(34, 197, 94, 0.2);
+  border: 1px solid rgba(34, 197, 94, 0.4);
+  color: #4ade80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.spotlight-footer-badge {
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.badge-label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #94a3b8;
+}
+
+.badge-sub {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+/* Right 4-Quadrant Capability Matrix */
+.strengths-matrix-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.capability-matrix-card {
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 28px 24px;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.03);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.capability-matrix-card:hover {
+  transform: translateY(-5px);
+  border-color: #38bdf8;
+  box-shadow: 0 16px 36px rgba(2, 132, 199, 0.12);
+}
+
+.cap-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.cap-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cap-icon-blue { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
+.cap-icon-teal { background: #f0fdfa; color: #0f766e; border: 1px solid #99f6e4; }
+.cap-icon-amber { background: #fffbeb; color: #b45309; border: 1px solid #fde68a; }
+.cap-icon-purple { background: #faf5ff; color: #7e22ce; border: 1px solid #e9d5ff; }
+
+.cap-order-tag {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #64748b;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: #f1f5f9;
+  padding: 4px 10px;
+  border-radius: 50px;
+}
+
+.cap-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #081d28;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.cap-desc {
+  font-size: 0.88rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+  flex-grow: 1;
+}
+
+@media (max-width: 1024px) {
+  .strengths-showcase-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .strengths-matrix-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .strengths-hero-spotlight {
+    padding: 30px 22px;
+  }
+}
+
+.promise-highlight-card {
+  background: linear-gradient(135deg, #061722 0%, #0c334c 60%, #1676B7 100%);
+  border-radius: 20px;
+  padding: 40px;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 16px 40px rgba(6, 23, 34, 0.25);
+  margin-top: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.promise-highlight-card h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #38bdf8;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.promise-highlight-card p {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  margin: 0;
+  line-height: 1.4;
+}
+
+@media (max-width: 1200px) {
+  .strengths-5-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .strengths-5-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sourcing-pipeline-wrap {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .sourcing-arrow {
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 640px) {
+  .strengths-5-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
