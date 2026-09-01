@@ -18,13 +18,35 @@
   /* Highlight current page nav link */
   function highlightActiveNav() {
     const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    const aboutPages = [
+      'about-us.html',
+      'what-we-supply.html',
+      'sourcing-approach.html',
+      'our-strengths.html',
+      'mission-vision.html',
+      'leadership.html'
+    ];
+
     const navLinks = document.querySelectorAll('.nav-main a.nav-link, .nav-main .has-dropdown > a.nav-link, .nav-main .has-dropdown > .nav-link');
     navLinks.forEach((link) => {
       const href = link.getAttribute('href');
-      if (href && (href === currentPath || (currentPath === '' && href === 'index.html') || (currentPath === 'about-us.html' && href.startsWith('about-us.html')))) {
+      if (href && (href === currentPath || (currentPath === '' && href === 'index.html'))) {
+        link.classList.add('active');
+      } else if (link.classList.contains('dropdown-toggle') && aboutPages.includes(currentPath)) {
         link.classList.add('active');
       } else {
         link.classList.remove('active');
+      }
+    });
+
+    // Also highlight active item in dropdown sub-menu
+    const subLinks = document.querySelectorAll('.nav-sub-menu a');
+    subLinks.forEach((sub) => {
+      const href = sub.getAttribute('href');
+      if (href && (href === currentPath || (currentPath === '' && href === 'about-us.html' && sub.getAttribute('href') === 'about-us.html'))) {
+        sub.classList.add('active');
+      } else {
+        sub.classList.remove('active');
       }
     });
   }

@@ -708,81 +708,126 @@
 }
 
 /* ==========================================================================
-   Brand New Recreated Leadership & Trade Desk System (#leadership)
+   Brand New Unified Leadership & Trade Desk System (#leadership)
    ========================================================================== */
 .leadership-showcase-section {
-  padding: 95px 0 100px;
-  background: radial-gradient(circle at 50% 15%, #ffffff 0%, #f8fafc 100%);
+  padding: 90px 0 110px;
+  background: radial-gradient(circle at 50% 12%, #ffffff 0%, #f8fafc 100%);
   position: relative;
 }
 
-/* Tier 1: Founders Suite Deck */
-.directors-deck {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
+.leadership-team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 26px;
   margin-top: 48px;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.director-suite-card {
+.leadership-team-card {
+  flex: 0 1 calc(25% - 20px);
+  min-width: 255px;
+  max-width: 280px;
   background: #ffffff;
   border: 1.5px solid #e2e8f0;
-  border-radius: 22px;
-  padding: 38px 34px;
-  box-shadow: 0 8px 30px -4px rgba(6, 19, 26, 0.05);
-  position: relative;
+  border-radius: 20px;
   overflow: hidden;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
   display: flex;
   flex-direction: column;
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
 }
 
-.director-suite-card::before {
+.leadership-team-card::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 5px;
+  height: 4px;
+  background: transparent;
+  transition: background 0.35s ease;
+  z-index: 2;
 }
 
-.director-card-primary::before {
+.leadership-team-card:hover {
+  transform: translateY(-7px);
+  border-color: #38bdf8;
+  box-shadow: 0 22px 42px -10px rgba(2, 132, 199, 0.16);
+}
+
+.leadership-team-card:hover::before {
   background: linear-gradient(90deg, #0284c7 0%, #38bdf8 100%);
 }
 
-.director-card-primary:hover {
-  border-color: #38bdf8;
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px -8px rgba(2, 132, 199, 0.16);
+.leadership-photo-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1.15;
+  background: #f1f5f9;
+  overflow: hidden;
 }
 
-.director-card-teal::before {
-  background: linear-gradient(90deg, #0d9488 0%, #2dd4bf 100%);
+.leadership-photo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  display: block;
 }
 
-.director-card-teal:hover {
-  border-color: #2dd4bf;
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px -8px rgba(13, 148, 136, 0.16);
+.leadership-team-card:hover .leadership-photo-wrap img {
+  transform: scale(1.05);
 }
 
-.director-top-bar {
+.leadership-photo-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 35%;
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.3) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.leadership-card-body {
+  padding: 22px 18px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 14px;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
-.director-symbol-badge {
-  width: 54px;
-  height: 54px;
-  border-radius: 16px;
-  display: flex;
+.leadership-role-badge {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
+  justify-content: flex-start;
+  font-size: 0.70rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  line-height: 1.3;
+  min-height: 32px;
+  align-self: flex-start;
+}
+
+.badge-primary {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+}
+
+.badge-teal {
+  background: #f0fdfa;
+  color: #0f766e;
+  border: 1px solid #99f6e4;
 }
 
 .badge-blue {
@@ -791,209 +836,133 @@
   border: 1px solid #bae6fd;
 }
 
-.badge-teal {
-  background: #ccfbf1;
-  color: #0d9488;
-  border: 1px solid #99f6e4;
+.badge-emerald {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
 }
 
-.director-role-tag {
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 6px 16px;
-  border-radius: 50px;
-  background: #f1f5f9;
-  color: #334155;
-  border: 1px solid #e2e8f0;
+.badge-amber {
+  background: #fffbeb;
+  color: #b45309;
+  border: 1px solid #fde68a;
 }
 
-.director-card-primary .director-role-tag {
-  background: #eff6ff;
-  color: #1d4ed8;
-  border-color: #bfdbfe;
+.badge-indigo {
+  background: #eef2ff;
+  color: #4338ca;
+  border: 1px solid #c7d2fe;
 }
 
-.director-card-teal .director-role-tag {
-  background: #f0fdfa;
-  color: #0f766e;
-  border-color: #99f6e4;
+.badge-purple {
+  background: #faf5ff;
+  color: #7e22ce;
+  border: 1px solid #e9d5ff;
 }
 
-.director-name {
-  font-size: 1.55rem;
+.leadership-name {
+  font-size: 1.20rem;
   font-weight: 800;
   color: #081d28;
-  margin-bottom: 10px;
+  margin: 0 0 8px;
   letter-spacing: -0.01em;
-}
-
-.director-bio {
-  font-size: 0.98rem;
-  color: #475569;
-  line-height: 1.7;
-  margin: 0;
-}
-
-/* Tier 2: Connected Operations Matrix Divider */
-.matrix-divider-wrap {
-  margin: 55px 0 35px;
-  text-align: center;
-  position: relative;
-}
-
-.matrix-divider-wrap::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: #e2e8f0;
-  z-index: 1;
-}
-
-.matrix-divider-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: #ffffff;
-  padding: 8px 24px;
-  border-radius: 100px;
-  border: 1.5px solid #e2e8f0;
-  font-size: 0.8rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #0f172a;
-  position: relative;
-  z-index: 2;
-  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
-}
-
-.matrix-divider-badge svg {
-  color: var(--kanha-blue);
-}
-
-/* Tier 2: 5 Connected Department Cards in Continuous Unified Grid */
-.specialists-unified-matrix {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-  align-items: stretch;
-}
-
-.specialist-matrix-card {
-  background: #ffffff;
-  border: 1.5px solid #e2e8f0;
-  border-radius: 20px;
-  padding: 26px 20px;
-  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.03);
-  display: flex;
-  flex-direction: column;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  position: relative;
-  overflow: hidden;
-}
-
-.specialist-matrix-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: transparent;
-  transition: background 0.3s ease;
-}
-
-.specialist-matrix-card:hover {
-  transform: translateY(-5px);
-  border-color: #38bdf8;
-  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.09);
-}
-
-.specialist-matrix-card:hover::before {
-  background: linear-gradient(90deg, #0284c7, #38bdf8);
-}
-
-.specialist-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 16px;
-}
-
-.specialist-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.icon-theme-blue { background: #eff6ff; color: #1d4ed8; border: 1px solid #dbeafe; }
-.icon-theme-teal { background: #f0fdfa; color: #0f766e; border: 1px solid #ccfbf1; }
-.icon-theme-amber { background: #fffbeb; color: #b45309; border: 1px solid #fef3c7; }
-.icon-theme-indigo { background: #eef2ff; color: #4338ca; border: 1px solid #e0e7ff; }
-.icon-theme-purple { background: #faf5ff; color: #7e22ce; border: 1px solid #f3e8ff; }
-
-.specialist-order {
-  font-size: 0.78rem;
-  font-weight: 800;
-  color: #94a3b8;
-  letter-spacing: 0.05em;
-}
-
-.specialist-name {
-  font-size: 1.15rem;
-  font-weight: 800;
-  color: #081d28;
-  margin: 0 0 4px;
   line-height: 1.25;
-}
-
-.specialist-designation {
-  font-size: 0.74rem;
-  font-weight: 800;
-  color: var(--kanha-blue);
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  line-height: 1.35;
-  margin-bottom: 12px;
-  display: block;
   min-height: 28px;
 }
 
-.specialist-summary {
-  font-size: 0.86rem;
-  color: #64748b;
-  line-height: 1.55;
+.leadership-bio {
+  font-size: 0.85rem;
+  color: #475569;
+  line-height: 1.6;
   margin: 0;
   flex-grow: 1;
+  min-height: 82px;
+}
+
+.leadership-contact-footer {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.leadership-badge-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.leadership-badge-location svg {
+  color: var(--kanha-blue);
+  flex-shrink: 0;
+}
+
+.leadership-card-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.leadership-social-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: #64748b;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.leadership-social-btn svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+.leadership-social-btn.btn-linkedin:hover {
+  background: #0a66c2;
+  border-color: #0a66c2;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(10, 102, 194, 0.25);
+}
+
+.leadership-social-btn.btn-whatsapp:hover {
+  background: #25d366;
+  border-color: #25d366;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(37, 211, 102, 0.25);
 }
 
 @media (max-width: 1200px) {
-  .specialists-unified-matrix {
-    grid-template-columns: repeat(3, 1fr);
+  .leadership-team-card {
+    flex: 0 1 calc(33.333% - 18px);
+    max-width: 320px;
   }
 }
 
-@media (max-width: 900px) {
-  .directors-deck {
-    grid-template-columns: 1fr;
-  }
-  .specialists-unified-matrix {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 860px) {
+  .leadership-team-card {
+    flex: 0 1 calc(50% - 14px);
+    max-width: 340px;
   }
 }
 
-@media (max-width: 600px) {
-  .specialists-unified-matrix {
-    grid-template-columns: 1fr;
+@media (max-width: 560px) {
+  .leadership-team-card {
+    flex: 0 1 100%;
+    max-width: 360px;
   }
 }
 
@@ -2010,3 +1979,214 @@
   }
 }
 
+/* ---------------- 10. BREADCRUMBS & SUBPAGE NAVIGATION ---------------- */
+
+.about-breadcrumbs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #94a3b8;
+}
+
+.about-breadcrumbs a {
+  color: #7dd3fc;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.about-breadcrumbs a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.about-breadcrumbs .bc-sep {
+  color: #64748b;
+  font-size: 0.75rem;
+}
+
+.about-breadcrumbs .bc-current {
+  color: #e2e8f0;
+  font-weight: 600;
+}
+
+/* Dropdown active item styling */
+.dropdown-panel.nav-sub-menu a.active {
+  background: #f0f7ff;
+  color: #0284c7;
+  font-weight: 600;
+  border-left: 3px solid #0284c7;
+  padding-left: 17px;
+}
+
+/* Subpage Explorer Navigation Grid */
+.about-subnav-section {
+  padding: 60px 0 80px;
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+}
+
+.about-subnav-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.about-subnav-card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 24px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.03);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-subnav-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: transparent;
+  transition: background 0.25s ease;
+}
+
+.about-subnav-card:hover {
+  transform: translateY(-4px);
+  border-color: #cbd5e1;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+}
+
+.about-subnav-card:hover::before {
+  background: linear-gradient(90deg, #0284c7 0%, #10b981 100%);
+}
+
+.about-subnav-card.current {
+  border-color: #0284c7;
+  background: #f0f9ff;
+}
+
+.about-subnav-card.current::before {
+  background: #0284c7;
+}
+
+.about-subnav-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #eff6ff;
+  color: #0284c7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  transition: transform 0.25s ease;
+}
+
+.about-subnav-card:hover .about-subnav-icon {
+  transform: scale(1.08);
+}
+
+.about-subnav-card h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.about-subnav-card p {
+  font-size: 0.85rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin-bottom: 14px;
+  flex-grow: 1;
+}
+
+.about-subnav-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #0284c7;
+  transition: gap 0.2s ease;
+}
+
+.about-subnav-card:hover .about-subnav-arrow {
+  gap: 10px;
+}
+
+/* Value Cards in Mission & Vision */
+.values-grid-v2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 36px;
+}
+
+.value-card-v2 {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 30px 24px;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+}
+
+.value-card-v2:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  border-color: #bae6fd;
+}
+
+.value-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.value-icon-blue { background: #eff6ff; color: #0284c7; }
+.value-icon-green { background: #ecfdf5; color: #10b981; }
+.value-icon-amber { background: #fffbeb; color: #f59e0b; }
+.value-icon-purple { background: #f5f3ff; color: #8b5cf6; }
+.value-icon-teal { background: #f0fdfa; color: #14b8a6; }
+
+.value-card-v2 h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.value-card-v2 p {
+  font-size: 0.92rem;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .about-subnav-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .about-subnav-grid {
+    grid-template-columns: 1fr;
+  }
+}
