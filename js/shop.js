@@ -243,26 +243,36 @@
     }
 
     function setCategory(slug) {
-      currentCategory = slug;
+      if (!slug) slug = 'all';
+      slug = slug.toLowerCase();
+      const resolvedSlug = categoryAliases[slug] || slug;
+      currentCategory = categoryList.some(c => c.slug === resolvedSlug) ? resolvedSlug : 'all';
       currentPage = 1;
+
+      // Clear search query if user specifically selected a category
+      if (searchQuery) {
+        searchQuery = '';
+        if (heroSearchInput) heroSearchInput.value = '';
+        if (heroSearchClear) heroSearchClear.style.display = 'none';
+      }
 
       // Update URL
       const params = new URLSearchParams(window.location.search);
-      if (slug === 'all') params.delete('category');
-      else params.set('category', slug);
+      if (currentCategory === 'all') params.delete('category');
+      else params.set('category', currentCategory);
 
       const newUrl = params.toString() ? `${window.location.pathname}?${params.toString()}` : window.location.pathname;
-      window.history.replaceState({ category: slug }, '', newUrl);
+      window.history.replaceState({ category: currentCategory }, '', newUrl);
 
       // Update Active Classes
       if (topCatSlider) {
         topCatSlider.querySelectorAll('.cat-pill-tab').forEach(btn => {
-          btn.classList.toggle('active', btn.getAttribute('data-cat') === slug);
+          btn.classList.toggle('active', btn.getAttribute('data-cat') === currentCategory);
         });
       }
       if (sidebarCatList) {
         sidebarCatList.querySelectorAll('.sidebar-cat-item').forEach(btn => {
-          btn.classList.toggle('active', btn.getAttribute('data-cat') === slug);
+          btn.classList.toggle('active', btn.getAttribute('data-cat') === currentCategory);
         });
       }
 
@@ -603,15 +613,80 @@
       });
     }
 
+    // Mobile Sidebar Category Card Toggle
+    const sidebarCatCard = document.getElementById('sidebarCatCard');
+    const sidebarCatToggle = document.getElementById('sidebarCatToggle');
+    if (sidebarCatCard && sidebarCatToggle) {
+      const toggleSidebar = () => {
+        const isOpen = sidebarCatCard.classList.toggle('open');
+        sidebarCatToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      };
+      sidebarCatToggle.addEventListener('click', toggleSidebar);
+      sidebarCatToggle.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggleSidebar();
+        }
+      });
+    }
+
     // Initialize View
     renderCategoryNavs();
     renderProducts();
 
-    // Support External Refresh
+    // Export Global Helpers for Navigation & Mega Menu
+    window.setShopCategory = function(slug) {
+      setCategory(slug);
+    };
+
     window.refreshShopProducts = function() {
       renderCategoryNavs();
       renderProducts();
     };
+
+    // Listen to URL Hash / History Changes
+    function syncCategoryFromUrl() {
+      const params = new URLSearchParams(window.location.search);
+      let raw = params.get('category') || (window.location.hash ? window.location.hash.replace('#', '') : '') || 'all';
+      raw = raw.toLowerCase();
+      let cat = categoryAliases[raw] || raw;
+      if (!categoryList.some(c => c.slug === cat)) cat = 'all';
+      if (cat !== currentCategory) {
+        setCategory(cat);
+      }
+    }
+
+    window.addEventListener('hashchange', () => {
+      syncCategoryFromUrl();
+      const target = document.getElementById('shopResultsArea') || document.getElementById('productGrid');
+      if (target) {
+        const headerOffset = 90;
+        const elementPosition = target.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        window.scrollTo({
+          top: Math.max(0, offsetPosition),
+          behavior: 'smooth'
+        });
+      }
+    });
+
+    window.addEventListener('popstate', syncCategoryFromUrl);
+
+    // Initial smooth scroll if deep-linked to a specific category
+    if (rawCategory && rawCategory !== 'all') {
+      setTimeout(() => {
+        const target = document.getElementById('shopResultsArea') || document.getElementById('productGrid');
+        if (target) {
+          const headerOffset = 90;
+          const elementPosition = target.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          window.scrollTo({
+            top: Math.max(0, offsetPosition),
+            behavior: 'smooth'
+          });
+        }
+      }, 150);
+    }
   }
 
   if (document.readyState === 'loading') {

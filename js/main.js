@@ -52,44 +52,6 @@
   }
   highlightActiveNav();
 
-  /* Mobile navigation */
-  if (navToggle && navMain) {
-    navToggle.addEventListener('click', () => {
-      const open = navMain.classList.toggle('mobile-open');
-      navToggle.setAttribute('aria-expanded', open);
-      document.body.style.overflow = open ? 'hidden' : '';
-    });
-
-    navMain.querySelectorAll('a').forEach((link) => {
-      link.addEventListener('click', () => {
-        if (window.innerWidth <= 1024 && !link.classList.contains('dropdown-toggle')) {
-          navMain.classList.remove('mobile-open');
-          navToggle.setAttribute('aria-expanded', 'false');
-          document.body.style.overflow = '';
-        }
-      });
-    });
-  }
-
-  /* Mobile dropdown toggle */
-  dropdownTriggers.forEach((trigger) => {
-    trigger.addEventListener('click', (e) => {
-      if (window.innerWidth <= 1024) {
-        const parent = trigger.parentElement;
-        const isOpen = parent.classList.contains('open');
-        if (!isOpen) {
-          e.preventDefault();
-          parent.classList.add('open');
-          trigger.setAttribute('aria-expanded', 'true');
-        } else if (trigger.tagName.toLowerCase() === 'button') {
-          e.preventDefault();
-          parent.classList.remove('open');
-          trigger.setAttribute('aria-expanded', 'false');
-        }
-      }
-    });
-  });
-
   /* Build clean, attractive mega menu with product images */
   function buildMegaMenu() {
     const megaPanels = document.querySelectorAll('.dropdown-panel.mega-menu');
@@ -105,13 +67,13 @@
               <strong>EXPORT COMMODITIES DIRECTORY</strong>
               <span class="mega-header-sub">16 Core Sectors</span>
             </div>
-            <a href="shop.html" class="mega-quick-all-link">Browse Full Catalog →</a>
+            <a href="shop.html" class="mega-quick-all-link" data-cat="all">Browse Full Catalog →</a>
           </div>
 
           <!-- Categories Grid with Product Images -->
           <div class="mega-categories-grid">
             ${KGE_CATEGORIES.map(cat => `
-              <a href="shop.html#${cat.slug}" class="mega-cat-card">
+              <a href="shop.html#${cat.slug}" class="mega-cat-card" data-cat="${cat.slug}">
                 <div class="mega-cat-thumb">
                   <img src="${cat.image}" alt="${cat.name}" loading="lazy" onerror="this.onerror=null; this.src='assets/images/spices.jpg';">
                 </div>
@@ -139,6 +101,115 @@
     });
   }
   buildMegaMenu();
+
+  /* Helper to close mobile menu */
+  function closeMobileNav() {
+    if (navMain) navMain.classList.remove('mobile-open');
+    if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+    document.querySelectorAll('.has-dropdown.open').forEach((other) => {
+      other.classList.remove('open');
+      const otherTrigger = other.querySelector('.nav-link');
+      if (otherTrigger) otherTrigger.setAttribute('aria-expanded', 'false');
+    });
+  }
+
+  /* Mobile navigation */
+  if (navToggle && navMain) {
+    navToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const open = navMain.classList.toggle('mobile-open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+  }
+
+  /* Event delegation for all links in navigation */
+  if (navMain) {
+    navMain.addEventListener('click', (e) => {
+      const link = e.target.closest('a');
+      if (!link) return;
+
+      // In mobile view, if this link is an accordion toggle itself (e.g. About Us dropdown toggle)
+      if (window.innerWidth <= 1024 && link.classList.contains('dropdown-toggle')) {
+        return;
+      }
+
+      // Check current page
+      const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+      const isShopPage = currentPath === 'shop.html' || currentPath === 'shop' || document.body.classList.contains('product-page-body');
+      const href = link.getAttribute('href') || '';
+      const catSlug = link.dataset.cat || (href.includes('#') ? href.split('#')[1].split('?')[0] : (href.includes('category=') ? (href.match(/category=([^&]+)/) || [])[1] : ''));
+
+      // If user is already on shop.html and clicks a category or shop link
+      if (isShopPage && (href.startsWith('shop.html') || href.startsWith('#') || link.classList.contains('mega-cat-card') || link.classList.contains('mega-quick-all-link') || link.classList.contains('mega-poultry-link'))) {
+        const targetSlug = catSlug || 'all';
+
+        // Close mobile nav immediately and unfreeze body
+        closeMobileNav();
+
+        if (typeof window.setShopCategory === 'function') {
+          e.preventDefault();
+          window.setShopCategory(targetSlug);
+
+          setTimeout(() => {
+            const target = document.getElementById('shopResultsArea') || document.getElementById('productGrid');
+            if (target) {
+              const headerOffset = 90;
+              const elementPosition = target.getBoundingClientRect().top;
+              const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+              window.scrollTo({
+                top: Math.max(0, offsetPosition),
+                behavior: 'smooth'
+              });
+            }
+          }, 80);
+        }
+        return;
+      }
+
+      // For all other normal links in mobile view, close mobile navigation and restore body scroll
+      if (window.innerWidth <= 1024) {
+        closeMobileNav();
+      }
+    });
+  }
+
+  /* Close mobile menu on outside tap */
+  document.addEventListener('click', (e) => {
+    if (window.innerWidth <= 1024 && navMain && navMain.classList.contains('mobile-open')) {
+      if (!navMain.contains(e.target) && !navToggle.contains(e.target)) {
+        closeMobileNav();
+      }
+    }
+  });
+
+  /* Mobile dropdown accordion toggle */
+  dropdownTriggers.forEach((trigger) => {
+    trigger.addEventListener('click', (e) => {
+      if (window.innerWidth <= 1024) {
+        const parent = trigger.parentElement;
+        const isOpen = parent.classList.contains('open');
+        if (!isOpen) {
+          e.preventDefault();
+          // Close other open dropdowns for clean accordion UX
+          document.querySelectorAll('.has-dropdown.open').forEach((other) => {
+            if (other !== parent) {
+              other.classList.remove('open');
+              const otherTrigger = other.querySelector('.nav-link');
+              if (otherTrigger) otherTrigger.setAttribute('aria-expanded', 'false');
+            }
+          });
+          parent.classList.add('open');
+          trigger.setAttribute('aria-expanded', 'true');
+        } else {
+          e.preventDefault();
+          parent.classList.remove('open');
+          trigger.setAttribute('aria-expanded', 'false');
+        }
+      }
+    });
+  });
 
   /* Scroll reveal */
   const revealEls = document.querySelectorAll('.reveal');

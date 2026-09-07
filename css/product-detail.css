@@ -671,10 +671,22 @@ body.product-page-body {
 
 @media (max-width: 640px) {
   .detail-showcase-card {
-    padding: 16px;
+    padding: 18px 14px;
   }
   .specs-matrix {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 10px;
+  }
+  .spec-cell {
+    padding: 8px 10px;
+  }
+  .spec-cell .cell-label {
+    font-size: 0.68rem;
+  }
+  .spec-cell .cell-value {
+    font-size: 0.82rem;
+    line-height: 1.35;
   }
   .detail-actions-cluster {
     flex-direction: column;
@@ -683,6 +695,23 @@ body.product-page-body {
   .btn-quote-main, .btn-whatsapp-detail, .btn-back-link {
     justify-content: center;
     margin-left: 0;
+  }
+  .related-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .export-advantages-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .adv-card {
+    padding: 16px 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  .specs-matrix {
+    grid-template-columns: 1fr;
   }
   .related-grid {
     grid-template-columns: 1fr;

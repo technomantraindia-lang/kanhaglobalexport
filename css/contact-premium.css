@@ -933,7 +933,7 @@
 
 @media (max-width: 640px) {
   .rfq-form-panel {
-    padding: 26px 22px;
+    padding: 24px 18px;
   }
   .rfq-form-grid {
     grid-template-columns: 1fr;
@@ -945,6 +945,35 @@
     grid-column: span 1;
   }
   .contact-hero-metrics-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-hero-v2 h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  .contact-hero-metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .hero-metric-card {
+    padding: 12px 10px;
+  }
+  .hero-metric-card strong {
+    font-size: 1.15rem;
+  }
+  .hero-metric-card span {
+    font-size: 0.68rem;
+  }
+  .cta-banner-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .btn-cta-phone, .btn-cta-wa {
+    width: 100%;
+    justify-content: center;
   }
 }
