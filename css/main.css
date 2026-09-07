@@ -823,7 +823,7 @@ ul { list-style: none; }
   position: relative;
   z-index: 2;
   padding: 0;
-  max-width: 720px;
+  max-width: 780px;
   animation: hero-content-in 0.9s var(--ease) both;
 }
 
@@ -853,7 +853,7 @@ ul { list-style: none; }
   color: #ffffff !important;
   margin-bottom: 20px;
   font-family: var(--font-display);
-  font-size: clamp(1.85rem, 2.5vw, 2.85rem) !important;
+  font-size: clamp(2.05rem, 1.8vw + 0.85rem, 2.65rem) !important;
   font-weight: 800;
   letter-spacing: -0.025em;
   line-height: 1.22;
@@ -871,7 +871,7 @@ ul { list-style: none; }
   color: #ffffff !important;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1100px) {
   .hero-title-line1 {
     white-space: normal;
   }
