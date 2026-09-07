@@ -1170,7 +1170,7 @@ ul { list-style: none; }
 .cert-strip-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 12px;
   flex-wrap: nowrap;
 }
@@ -1193,8 +1193,8 @@ ul { list-style: none; }
   flex-wrap: nowrap;
   gap: 5px;
   align-items: center;
-  justify-content: flex-start;
-  flex: 1;
+  justify-content: center;
+  flex: 0 1 auto;
   overflow-x: auto;
   scrollbar-width: none;
 }
