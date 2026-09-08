@@ -29,26 +29,30 @@
 
     if (!productGrid) return;
 
-    // Categories List (Clean names, no emojis)
+    // Categories List - 8 Canonical Core Categories (Clean names, no emojis)
     const categoryList = [
       { slug: 'all', name: 'All Products' },
       { slug: 'spices', name: 'Spices & Seasonings' },
       { slug: 'basmati-rice', name: 'Basmati Rice' },
       { slug: 'non-basmati-rice', name: 'Non-Basmati Rice' },
       { slug: 'pulses', name: 'Pulses & Lentils' },
+      { slug: 'fresh-fruits', name: 'Fresh Fruits & Vegetables' },
       { slug: 'seafood', name: 'Frozen Seafood' },
-      { slug: 'fresh-fruits', name: 'Fresh Fruits' },
-      { slug: 'fresh-vegetables', name: 'Fresh Vegetables' },
-      { slug: 'dehydrated', name: 'Dehydrated Products' },
-      { slug: 'oil-seeds', name: 'Oil Seeds' },
-      { slug: 'groundnuts-cashews', name: 'Groundnuts & Cashews' },
-      { slug: 'cereals-millets', name: 'Cereals & Millets' },
-      { slug: 'flours-grains', name: 'Flours & Grains' },
-      { slug: 'tea-coffee', name: 'Tea & Coffee' },
-      { slug: 'honey-agro', name: 'Makhana & Agro Products' },
-      { slug: 'processed-foods', name: 'Processed Foods' },
-      { slug: 'marine', name: 'Marine Products' }
+      { slug: 'oil-seeds', name: 'Oilseeds, Peanuts & Cashews' },
+      { slug: 'honey-agro', name: 'Makhana & Agro Products' }
     ];
+
+    // Category Groups for the 8 Canonical Core Categories
+    const categoryGroupMap = {
+      'spices': ['spices'],
+      'basmati-rice': ['basmati-rice'],
+      'non-basmati-rice': ['non-basmati-rice'],
+      'pulses': ['pulses'],
+      'fresh-fruits': ['fresh-fruits', 'fresh-vegetables', 'dehydrated'],
+      'seafood': ['seafood', 'marine'],
+      'oil-seeds': ['oil-seeds', 'groundnuts-cashews'],
+      'honey-agro': ['honey-agro', 'cereals-millets', 'flours-grains', 'tea-coffee', 'processed-foods']
+    };
 
     // Category Alias Map for seamless deep-linking
     const categoryAliases = {
@@ -63,17 +67,29 @@
       'grains': 'pulses',
       'lentils': 'pulses',
       'seafood-frozen': 'seafood',
+      'marine': 'seafood',
+      'marine-products': 'seafood',
       'fruits-vegetables': 'fresh-fruits',
+      'fresh-vegetables': 'fresh-fruits',
       'fruits': 'fresh-fruits',
-      'vegetables': 'fresh-vegetables',
-      'dehydrated-products': 'dehydrated',
-      'cashew': 'groundnuts-cashews',
-      'cashews': 'groundnuts-cashews',
-      'groundnuts': 'groundnuts-cashews',
+      'vegetables': 'fresh-fruits',
+      'dehydrated': 'fresh-fruits',
+      'dehydrated-products': 'fresh-fruits',
+      'cashew': 'oil-seeds',
+      'cashews': 'oil-seeds',
+      'groundnuts': 'oil-seeds',
+      'groundnuts-cashews': 'oil-seeds',
+      'oilseeds': 'oil-seeds',
       'makhana': 'honey-agro',
       'honey': 'honey-agro',
       'agro': 'honey-agro',
-      'marine-products': 'marine'
+      'cereals-millets': 'honey-agro',
+      'cereals': 'honey-agro',
+      'millets': 'honey-agro',
+      'flours-grains': 'honey-agro',
+      'flours': 'honey-agro',
+      'processed-foods': 'honey-agro',
+      'tea-coffee': 'honey-agro'
     };
 
     // State
@@ -195,7 +211,8 @@
       const counts = { all: allProducts.length };
       categoryList.forEach(cat => {
         if (cat.slug !== 'all') {
-          counts[cat.slug] = allProducts.filter(p => p.category === cat.slug).length;
+          const allowedCats = categoryGroupMap[cat.slug] || [cat.slug];
+          counts[cat.slug] = allProducts.filter(p => allowedCats.includes(p.category)).length;
         }
       });
 
@@ -285,7 +302,8 @@
 
       // Category filter
       if (currentCategory !== 'all') {
-        products = products.filter(p => p.category === currentCategory);
+        const allowedCats = categoryGroupMap[currentCategory] || [currentCategory];
+        products = products.filter(p => allowedCats.includes(p.category));
       }
 
       // Search filter

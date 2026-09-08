@@ -65,7 +65,7 @@
             <div class="mega-header-title">
               <span class="mega-live-dot"></span>
               <strong>EXPORT COMMODITIES DIRECTORY</strong>
-              <span class="mega-header-sub">16 Core Sectors</span>
+              <span class="mega-header-sub">8 Core Sectors</span>
             </div>
             <a href="shop.html" class="mega-quick-all-link" data-cat="all">Browse Full Catalog →</a>
           </div>
@@ -73,7 +73,7 @@
           <!-- Categories Grid with Product Images -->
           <div class="mega-categories-grid">
             ${KGE_CATEGORIES.map(cat => `
-              <a href="shop.html#${cat.slug}" class="mega-cat-card" data-cat="${cat.slug}">
+              <a href="shop.html?category=${cat.slug}" class="mega-cat-card" data-cat="${cat.slug}">
                 <div class="mega-cat-thumb">
                   <img src="${cat.image}" alt="${cat.name}" loading="lazy" onerror="this.onerror=null; this.src='assets/images/spices.jpg';">
                 </div>
@@ -89,11 +89,11 @@
           <!-- Clean Footer -->
           <div class="mega-footer-v2">
             <div class="mega-footer-meta">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-              <span><strong>161+ Export Products</strong> · Mundra &amp; JNPT Port Stuffing · SGS/APEDA Inspected</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>Mundra &amp; JNPT Port Stuffing · SGS/APEDA Inspected</span>
             </div>
             <div class="mega-footer-actions">
-              <a href="contact-us.html#quote" class="btn-mega-rfq">Request FOB/CIF Quote</a>
+              <a href="contact-us.html#quote" class="btn-mega-rfq">Request FOB/CIF Quote →</a>
             </div>
           </div>
         </div>
