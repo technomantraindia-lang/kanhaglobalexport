@@ -225,7 +225,37 @@
   const revealEls = document.querySelectorAll('.reveal');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* Product showcase in hero is handled via resilient pure CSS grid (.trade-products) */
+  /* Hero Product Marquee Slider - Seamless infinite loop ticker */
+  function setupProductMarquees() {
+    if (reducedMotion) return;
+    document.querySelectorAll('[data-rotate-products]').forEach((row) => {
+      if (row.querySelector('.trade-products-track')) return;
+
+      const products = Array.from(row.children);
+      if (products.length < 2) return;
+
+      const track = document.createElement('div');
+      track.className = 'trade-products-track';
+      if (row.classList.contains('trade-products-reverse') || row.dataset.direction === 'reverse') {
+        track.classList.add('reverse');
+      }
+
+      // Move existing children into track
+      products.forEach((product) => track.appendChild(product));
+
+      // Clone children for infinite seamless looping
+      products.forEach((product) => {
+        const duplicate = product.cloneNode(true);
+        duplicate.setAttribute('aria-hidden', 'true');
+        if (duplicate.matches('a')) duplicate.setAttribute('tabindex', '-1');
+        duplicate.querySelectorAll('a').forEach((link) => link.setAttribute('tabindex', '-1'));
+        track.appendChild(duplicate);
+      });
+
+      row.appendChild(track);
+    });
+  }
+  setupProductMarquees();
 
   function revealElement(el) {
     el.classList.add('visible');
