@@ -216,18 +216,18 @@
     };
 
     const categoryFallbacks = {
-      'rice': 'assets/images/rice-1121-steam-hd.jpg',
-      'basmati-rice': 'assets/images/1121-steam-rice-500x500.jpg',
-      'non-basmati-rice': 'assets/images/1121-steam-rice-500x500.jpg',
-      'spices': 'assets/images/spices.jpg',
-      'pulses': 'assets/images/toor-dal.jpg',
-      'dehydrated': 'assets/images/onion-flakes.jpg',
-      'fresh-fruits': 'assets/images/fresh-fruits.jpg',
-      'fresh-vegetables': 'assets/images/fresh-vegetables.jpg',
-      'seafood': 'assets/images/seafood-export.jpg',
-      'herbs': 'assets/images/products/tulsi-holy-basil.jpg',
-      'more-products': 'assets/images/makhana-fox-nuts.jpg',
-      'honey-agro': 'assets/images/makhana-fox-nuts.jpg',
+      'rice': 'assets/images/categories/rice.jpg',
+      'basmati-rice': 'assets/images/categories/rice.jpg',
+      'non-basmati-rice': 'assets/images/categories/rice.jpg',
+      'spices': 'assets/images/categories/spices.jpg',
+      'pulses': 'assets/images/categories/pulses.jpg',
+      'dehydrated': 'assets/images/categories/dehydrated.jpg',
+      'fresh-fruits': 'assets/images/categories/fresh-fruits.jpg',
+      'fresh-vegetables': 'assets/images/categories/fresh-fruits.jpg',
+      'seafood': 'assets/images/categories/seafood.jpg',
+      'herbs': 'assets/images/categories/herbs.jpg',
+      'more-products': 'assets/images/categories/nuts-specialty.jpg',
+      'honey-agro': 'assets/images/categories/nuts-specialty.jpg',
       'oil-seeds': 'assets/images/white-sesame.jpg'
     };
 
