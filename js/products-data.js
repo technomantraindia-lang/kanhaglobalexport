@@ -1,15 +1,164 @@
 // Global Trade Products Database for Kanha Global Exports
+// Structured according to the 8 Canonical Export Categories approved by client
 (function() {
   const products = [
   // ==========================================
-  // 1. SPICES & SEASONINGS (spices)
+  // 1. BASMATI & NON-BASMATI RICE (rice)
   // ==========================================
+  {
+    "id": "rice-1121-basmati",
+    "slug": "1121-basmati-rice-steam-sella",
+    "name": "1121 Basmati Rice (Raw, Steam, Sella & Golden Sella)",
+    "category": "rice",
+    "categoryName": "Basmati & Non-Basmati Rice",
+    "image": "assets/images/products/1121-basmati-rice.png",
+    "origin": "Punjab / Haryana, India",
+    "packaging": "1kg / 5kg / 10kg / 25kg / 50kg Non-Woven & BOPP Bags",
+    "specs": "Grain Length: 8.35mm - 8.40mm, Elongation: 2.5x, Moisture < 12.5%, Sortex 100%",
+    "description": "World-renowned extra long grain 1121 Basmati rice with exquisite aroma and non-sticky fluffy texture upon cooking."
+  },
+  {
+    "id": "rice-1718-basmati",
+    "slug": "1718-basmati-rice-steam-sella",
+    "name": "1718 Basmati Rice (Raw, Steam & Sella)",
+    "category": "rice",
+    "categoryName": "Basmati & Non-Basmati Rice",
+    "image": "assets/images/rice-1121-steam-hd.jpg",
+    "origin": "Punjab / Haryana / Uttar Pradesh, India",
+    "packaging": "10kg / 25kg / 50kg PP / Jute Bags",
+    "specs": "Average Grain Length: 8.35mm+, Elongation: 2.4x, Moisture < 12.5%, Broken < 1%",
+    "description": "Premium evolutionary variety derived from 1121 with enhanced resistance, superior cooked grain integrity, and deep aromatic profile."
+  },
+  {
+    "id": "rice-1509-basmati",
+    "slug": "1509-basmati-rice",
+    "name": "1509 Basmati Rice (Raw, Steam & Sella)",
+    "category": "rice",
+    "categoryName": "Basmati & Non-Basmati Rice",
+    "image": "assets/images/rice-1121-sella.webp",
+    "origin": "Punjab / Haryana / UP, India",
+    "packaging": "5kg / 25kg / 50kg Export Bags",
+    "specs": "Grain Length: 8.30mm+, Moisture < 12.5%, Sortex Clean 100%, Broken < 1%",
+    "description": "Economical yet ultra-long grain basmati offering outstanding cooking elongation, fast cooking time, and subtle sweet taste."
+  },
+  {
+    "id": "rice-1401-basmati",
+    "slug": "1401-basmati-rice",
+    "name": "1401 Basmati Rice (Steam & Sella)",
+    "category": "rice",
+    "categoryName": "Basmati & Non-Basmati Rice",
+    "image": "assets/images/rice-1121-golden.webp",
+    "origin": "Haryana / Punjab, India",
+    "packaging": "25kg / 50kg PP / Jute Bags",
+    "specs": "Average Grain Length: 7.70mm+, Moisture < 12.5%, Broken < 1%, High Swelling Index",
+    "description": "Hybrid variety noted for exceptional cooking volume, delightful aroma, and excellent grain integrity preferred across Middle East & Europe."
+  },
+  {
+    "id": "rice-traditional-basmati",
+    "slug": "traditional-authentic-basmati-rice",
+    "name": "Traditional Authentic Basmati Rice (Aged Himalayan)",
+    "category": "rice",
+    "categoryName": "Basmati & Non-Basmati Rice",
+    "image": "assets/images/rice-1121-steam.webp",
+    "origin": "Himalayan Foothills, India",
+    "packaging": "5kg / 10kg / 25kg Master Bags",
+    "specs": "Aged 1-2 Years, Grain Length 7.3mm, Unmatched Natural Fragrance, Sortex 100%",
+    "description": "Naturally aged classic authentic Basmati rice harvested from the Himalayan foothills, the pinnacle of royal gourmet dining."
+  },
+  {
+    "id": "rice-ir64-non-basmati",
+    "slug": "ir-64-parboiled-raw-rice",
+    "name": "IR-64 Long Grain Rice (Parboiled & Raw 5% - 25% Broken)",
+    "category": "rice",
+    "categoryName": "Basmati & Non-Basmati Rice",
+    "image": "assets/images/products/ir64-long-grain-rice.png",
+    "origin": "Andhra Pradesh / Maharashtra / Gujarat, India",
+    "packaging": "25kg / 50kg PP Bags / Bulk Containers",
+    "specs": "Grain Length: 6.0mm+, Broken: 5% / 25% / 100%, Moisture < 14%, Double Polished",
+    "description": "India's most exported staple non-basmati rice variety, ideal for global food security tenders, institutional catering, and retail."
+  },
+  {
+    "id": "rice-sona-masoori",
+    "slug": "sona-masoori-raw-steam-rice",
+    "name": "Sona Masoori Rice (Raw & Steam Table Rice)",
+    "category": "rice",
+    "categoryName": "Basmati & Non-Basmati Rice",
+    "image": "assets/images/products/sona-masoori-rice.png",
+    "origin": "Karnataka / Andhra Pradesh, India",
+    "packaging": "5kg / 10kg / 20kg / 25kg Poly Woven Bags",
+    "specs": "Medium Grain, Lightweight, Low Starch, Aged Quality, Moisture < 13%",
+    "description": "Delicate medium-grain aromatic table rice, highly valued across international diaspora communities for its light texture and easy digestibility."
+  },
+  {
+    "id": "rice-pr11-pr14",
+    "slug": "pr-11-pr-14-non-basmati-rice",
+    "name": "PR-11 / PR-14 Long Grain Non-Basmati Rice",
+    "category": "rice",
+    "categoryName": "Basmati & Non-Basmati Rice",
+    "image": "assets/images/products/ir64-long-grain-rice.png",
+    "origin": "Punjab / Haryana, India",
+    "packaging": "25kg / 50kg Bags",
+    "specs": "Grain Length: 6.8mm+, Raw / Steam / Sella, Moisture < 13%, Broken < 5%",
+    "description": "Hard milled long grain non-basmati rice with firm grain texture, bright sheen, and high swelling index."
+  },
+  {
+    "id": "rice-swarna",
+    "slug": "swarna-rice-parboiled",
+    "name": "Swarna Rice (Parboiled & Raw Medium Grain)",
+    "category": "rice",
+    "categoryName": "Basmati & Non-Basmati Rice",
+    "image": "assets/images/products/swarna-rice.png",
+    "origin": "West Bengal / Odisha / Andhra, India",
+    "packaging": "50kg PP Bags",
+    "specs": "Short-Medium Grain, Sortex Cleaned, Broken < 5%, Moisture < 14%",
+    "description": "Economical high-energy short grain parboiled rice widely exported to African, Asian, and Middle Eastern bulk markets."
+  },
+
+  // ==========================================
+  // 2. WHOLE & GROUND SPICES (spices)
+  // ==========================================
+  {
+    "id": "spices-cumin-seeds",
+    "slug": "cumin-seeds-jeera",
+    "name": "Cumin Seeds (Jeera Whole & Ground Powder)",
+    "category": "spices",
+    "categoryName": "Whole & Ground Spices",
+    "image": "https://shivaspice.com/wp-content/uploads/2021/01/shivaspice_cumin_powder.jpg",
+    "origin": "Unjha, Gujarat / Rajasthan, India",
+    "packaging": "25kg / 50kg PP / Paper Bags",
+    "specs": "Purity 99% / 99.5% Sortex Clean, Singapore/Europe Quality, Volatile Oil > 2.5%",
+    "description": "Aromatic Gujarat cumin seeds, machine and sortex cleaned with intense flavor profile for culinary, seasoning, and extraction use."
+  },
+  {
+    "id": "spices-coriander-seeds",
+    "slug": "coriander-seeds-dhaniya",
+    "name": "Coriander Seeds (Dhaniya Whole & Ground Powder)",
+    "category": "spices",
+    "categoryName": "Whole & Ground Spices",
+    "image": "https://shivaspice.com/wp-content/uploads/2021/01/shivaspice_coriander_powder.jpg",
+    "origin": "Rajasthan / Madhya Pradesh / Gujarat, India",
+    "packaging": "25kg / 40kg Jute / PP Bags",
+    "specs": "Eagle / Single Parrot / Double Parrot Quality, Greenish Whole, Moisture < 9%",
+    "description": "Selected whole green coriander seeds and aromatic fine ground powder with distinctive citrusy fragrance and rich essential oil content."
+  },
+  {
+    "id": "spices-fennel",
+    "slug": "fennel-seeds-saunf",
+    "name": "Fennel Seeds (Lucknowi Green & Bold Saunf)",
+    "category": "spices",
+    "categoryName": "Whole & Ground Spices",
+    "image": "assets/images/products/fennel-seeds.jpg",
+    "origin": "Gujarat / Rajasthan, India",
+    "packaging": "25kg / 50kg PP Bags",
+    "specs": "Purity 99% / 99.5% Sortex, Green Bold & Small Lucknowi, Moisture < 9%",
+    "description": "Sweet, licorice-scented green fennel seeds meticulously cleaned for seasonings, tea blends, mouth fresheners, and confectionery."
+  },
   {
     "id": "spices-turmeric",
     "slug": "turmeric-finger-powder",
-    "name": "Turmeric (Finger & Powder)",
+    "name": "Turmeric (Finger & Ground Powder / Haldi)",
     "category": "spices",
-    "categoryName": "Spices & Seasonings",
+    "categoryName": "Whole & Ground Spices",
     "image": "https://shivaspice.com/wp-content/uploads/2021/01/turmeric_finger.jpg",
     "origin": "Salem / Nizamabad / Sangli, India",
     "packaging": "25kg / 50kg PP / Jute Bags",
@@ -17,95 +166,47 @@
     "description": "Golden yellow export-grade Indian turmeric fingers and ultra-fine ground powder with high natural curcumin content."
   },
   {
-    "id": "spices-red-chilli",
-    "slug": "red-chilli-sannam-teja",
-    "name": "Red Chilli (S4 / S17 / Teja / Stemless & Powder)",
-    "category": "spices",
-    "categoryName": "Spices & Seasonings",
-    "image": "https://shivaspice.com/wp-content/uploads/2021/01/shivaspice_chilli_powder.jpg",
-    "origin": "Guntur / Byadgi, India",
-    "packaging": "10kg / 25kg / 50kg Jute / PP Bags",
-    "specs": "SHU 20,000 - 75,000, ASTA Color 40-120, Moisture < 11%",
-    "description": "Pungent, vibrant red Indian dry chillies sourced directly from Guntur and Byadgi, available whole stemless or ground powder."
-  },
-  {
-    "id": "spices-cumin-seeds",
-    "slug": "cumin-seeds-jeera",
-    "name": "Cumin Seeds (Jeera Whole & Powder)",
-    "category": "spices",
-    "categoryName": "Spices & Seasonings",
-    "image": "https://shivaspice.com/wp-content/uploads/2021/01/shivaspice_cumin_powder.jpg",
-    "origin": "Unjha, Gujarat / Rajasthan, India",
-    "packaging": "25kg / 50kg PP / Paper Bags",
-    "specs": "Purity 99% / 99.5% Sortex Clean, Singapore/Europe Quality, Volatile Oil > 2.5%",
-    "description": "Aromatic Gujarat cumin seeds, machine and sortex cleaned with intense flavor profile for culinary and extraction use."
-  },
-  {
-    "id": "spices-coriander-seeds",
-    "slug": "coriander-seeds-dhaniya",
-    "name": "Coriander Seeds (Dhaniya Whole & Powder)",
-    "category": "spices",
-    "categoryName": "Spices & Seasonings",
-    "image": "https://shivaspice.com/wp-content/uploads/2021/01/shivaspice_coriander_powder.jpg",
-    "origin": "Rajasthan / Madhya Pradesh, India",
-    "packaging": "25kg / 40kg Jute / PP Bags",
-    "specs": "Eagle / Single Parrot / Double Parrot Quality, Greenish Whole, Moisture < 9%",
-    "description": "Selected whole green coriander seeds with distinctive citrusy fragrance and rich essential oil content."
-  },
-  {
     "id": "spices-black-pepper",
     "slug": "black-pepper-garbled",
-    "name": "Black Pepper (500GL - 570GL Whole & Cracked)",
+    "name": "Black Pepper (500GL - 570GL Malabar Garbled Whole & Cracked)",
     "category": "spices",
-    "categoryName": "Spices & Seasonings",
+    "categoryName": "Whole & Ground Spices",
     "image": "https://shivaspice.com/wp-content/uploads/2021/01/Buy_Black_Pepper_Shivaspice.jpg",
     "origin": "Malabar / Idukki, Kerala, India",
     "packaging": "25kg / 50kg Paper / Jute Bags",
     "specs": "Garbled / Ungarbled, Density 500-570 g/l, Piperine > 4%, Moisture < 12%",
-    "description": "The King of Spices: authentic Malabar black peppercorns offering robust heat, sharp bite, and strong pungency."
+    "description": "The King of Spices: authentic Malabar black peppercorns offering robust heat, sharp bite, and strong essential oil pungency."
   },
   {
     "id": "spices-cardamom",
     "slug": "green-cardamom-elaichi",
-    "name": "Green Cardamom (6mm - 8.5mm+ Bold Elaichi)",
+    "name": "Cardamom (6mm - 8.5mm+ Bold Green Elaichi)",
     "category": "spices",
-    "categoryName": "Spices & Seasonings",
+    "categoryName": "Whole & Ground Spices",
     "image": "https://shivaspice.com/wp-content/uploads/2021/01/Buy_Green_Cardamom_Shivaspice.jpg",
     "origin": "Idukki, Kerala, India",
     "packaging": "5kg / 10kg Master Cartons with vacuum liner",
     "specs": "Sizes: 6mm, 7mm, 8mm, 8.5mm Bold Green, Moisture < 10%",
-    "description": "Premium grade large green cardamom pods with high volatile oil aroma and intact aromatic black seeds."
+    "description": "Premium grade large green cardamom pods with high volatile oil aroma and intact aromatic black seeds for gourmet applications."
   },
   {
     "id": "spices-cloves",
     "slug": "cloves-whole-laung",
     "name": "Cloves (Whole Hand-Picked Laung)",
     "category": "spices",
-    "categoryName": "Spices & Seasonings",
+    "categoryName": "Whole & Ground Spices",
     "image": "https://shivaspice.com/wp-content/uploads/2021/01/Buy_Cloves_Shivaspice.jpg",
     "origin": "Tamil Nadu / Kerala, India",
     "packaging": "10kg / 25kg PP & Jute Bags",
-    "specs": "Hand-picked Whole, Head intact > 90%, Eugenol > 15%",
-    "description": "Intensely fragrant whole cloves, naturally sun-dried with rich spicy warmth and essential eugenol."
-  },
-  {
-    "id": "spices-fennel",
-    "slug": "fennel-seeds-saunf",
-    "name": "Fennel Seeds (Lucknowi Green & Bold Saunf)",
-    "category": "spices",
-    "categoryName": "Spices & Seasonings",
-    "image": "assets/images/products/fennel-seeds.jpg",
-    "origin": "Gujarat / Rajasthan, India",
-    "packaging": "25kg / 50kg PP Bags",
-    "specs": "Purity 99% / 99.5% Sortex, Green Bold & Small Lucknowi, Moisture < 9%",
-    "description": "Sweet, licorice-scented green fennel seeds meticulously cleaned for seasonings, tea blends, and confectionery."
+    "specs": "Hand-picked Whole, Head intact > 90%, Eugenol > 15%, Moisture < 12%",
+    "description": "Intensely fragrant whole cloves, naturally sun-dried with rich spicy warmth and concentrated therapeutic eugenol."
   },
   {
     "id": "spices-cinnamon-cassia",
     "slug": "cinnamon-sticks-cassia",
-    "name": "Cinnamon & Cassia (Round Cut & Flat Dalchini)",
+    "name": "Cinnamon & Cassia (Dalchini Round Cut Sticks & Powder)",
     "category": "spices",
-    "categoryName": "Spices & Seasonings",
+    "categoryName": "Whole & Ground Spices",
     "image": "assets/images/products/cinnamon-cassia.jpg",
     "origin": "Kerala / South India",
     "packaging": "10kg / 25kg Master Cartons",
@@ -113,152 +214,68 @@
     "description": "Sweet, woody aromatic cinnamon sticks and cassia bark widely utilized in baking, confectionery, and spice blends."
   },
   {
-    "id": "spices-star-anise",
-    "slug": "star-anise-chakra-phool",
-    "name": "Star Anise (Autumn Crop Whole Chakra Phool)",
-    "category": "spices",
-    "categoryName": "Spices & Seasonings",
-    "image": "assets/images/products/star-anise.jpg",
-    "origin": "India",
-    "packaging": "10kg Master Cartons",
-    "specs": "Whole Star > 85%, Diameter 2.5cm+, Moisture < 13.5%",
-    "description": "Star-shaped eight-pointed spice offering a deep sweet anise flavor for gourmet broths, marinades, and extracts."
-  },
-  {
     "id": "spices-nutmeg-mace",
     "slug": "nutmeg-and-mace-whole",
     "name": "Nutmeg & Mace (Jaiphal & Javitri Whole)",
     "category": "spices",
-    "categoryName": "Spices & Seasonings",
+    "categoryName": "Whole & Ground Spices",
     "image": "assets/images/products/nutmeg-mace.jpg",
     "origin": "Kerala / Karnataka, India",
     "packaging": "10kg / 25kg Cartons & Jute Bags",
     "specs": "With Shell / Without Shell Nutmeg, Golden Orange Mace Blades, Moisture < 10%",
-    "description": "Intensely warm nutmeg kernels and lace-like mace arils with complex sweet floral notes for high-end culinary use."
+    "description": "Intensely warm nutmeg kernels and lace-like mace arils with complex sweet floral notes for high-end culinary flavoring."
   },
   {
-    "id": "spices-dry-ginger",
-    "slug": "dry-ginger-sonth-whole-powder",
-    "name": "Dry Ginger (Sun-Dried Whole & Powder / Sonth)",
+    "id": "spices-black-cardamom",
+    "slug": "black-cardamom-badi-elaichi",
+    "name": "Black Cardamom (Badi Elaichi / Bold Smoky Pods)",
     "category": "spices",
-    "categoryName": "Spices & Seasonings",
-    "image": "assets/images/products/dry-ginger.jpg",
-    "origin": "Kerala / Assam / Karnataka, India",
-    "packaging": "25kg / 50kg PP / Jute Bags",
-    "specs": "Bleached / Unbleached Whole Rhizomes, Gingerol > 1.8%, Moisture < 11%",
-    "description": "Pungent sun-dried Indian whole ginger and fine powder with high gingerol content for food preparation and pharma."
+    "categoryName": "Whole & Ground Spices",
+    "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80",
+    "origin": "Sikkim / North-East / West Bengal, India",
+    "packaging": "10kg / 25kg PP & Jute Bags",
+    "specs": "Size: 20mm - 25mm+ Bold, Camphoraceous & Smoky, Moisture < 11%",
+    "description": "Large dark brown pods with deep smoky and camphor aroma, an essential pillar of Indian garam masala and hearty savory dishes."
   },
   {
-    "id": "spices-ajwain",
-    "slug": "carom-seeds-ajwain",
-    "name": "Carom Seeds (Ajwain / Bishop's Weed)",
+    "id": "spices-red-chilli",
+    "slug": "red-chilli-sannam-teja",
+    "name": "Chilli & Chilli Products (Whole Stemless, Crushed & Powder)",
     "category": "spices",
-    "categoryName": "Spices & Seasonings",
-    "image": "assets/images/products/carom-seeds-ajwain.jpg",
-    "origin": "Gujarat / Rajasthan, India",
-    "packaging": "25kg / 50kg Bags",
-    "specs": "Purity 99% Sortex Clean, High Thymol Content, Moisture < 9%",
-    "description": "Distinctly pungent thyme-flavored carom seeds packed with essential thymol oil for savory doughs and digestion."
+    "categoryName": "Whole & Ground Spices",
+    "image": "https://shivaspice.com/wp-content/uploads/2021/01/shivaspice_chilli_powder.jpg",
+    "origin": "Guntur, Andhra Pradesh / Byadgi, Karnataka, India",
+    "packaging": "10kg / 25kg / 50kg Jute / PP Bags",
+    "specs": "SHU 20,000 - 75,000 (Teja/S4), ASTA Color 40-120 (Byadgi), Moisture < 11%",
+    "description": "Pungent, vibrant red Indian dry chillies sourced directly from Guntur and Byadgi, available whole with stem, stemless, crushed flakes, or ground powder."
   },
   {
     "id": "spices-garam-masala",
     "slug": "garam-masala-blended-curry-powder",
-    "name": "Indian Garam Masala & Blended Curry Powders",
+    "name": "Spice Powders & Blended Spices (Garam Masala & Curry Powders)",
     "category": "spices",
-    "categoryName": "Spices & Seasonings",
+    "categoryName": "Whole & Ground Spices",
     "image": "assets/images/products/garam-masala.jpg",
     "origin": "Gujarat / India",
     "packaging": "1kg / 5kg / 25kg Vacuum Foil & Master Cartons",
     "specs": "Custom formulations, 100% pure whole-ground, zero artificial fillers or MSG",
-    "description": "Masterfully roasted and blended authentic Indian spice powders tailored for international retail and foodservice packaging."
+    "description": "Masterfully roasted and blended authentic Indian spice powders (Garam Masala, Curry Powder, Meat Masala, Sambar Masala) for retail and foodservice."
   },
 
   // ==========================================
-  // 2. PULSES & LENTILS (pulses)
+  // 3. PULSES & LENTILS (pulses)
   // ==========================================
-  {
-    "id": "pulses-chickpeas",
-    "slug": "chickpeas-kabuli-chana",
-    "name": "Kabuli Chickpeas / Garbanzo (40-42 to 75-80 count)",
-    "category": "pulses",
-    "categoryName": "Pulses & Lentils",
-    "image": "assets/images/kabuli-chana.jpg",
-    "origin": "Madhya Pradesh / Maharashtra, India",
-    "packaging": "25kg / 50kg PP Bags",
-    "specs": "Counts: 42-44, 44-46, 58-60, 75-80; Machine Cleaned / Sortex 99.5%",
-    "description": "Large, plump, cream-colored Kabuli chickpeas sorted for uniform count, ideal for canning and culinary dishes."
-  },
-  {
-    "id": "pulses-desi-chana",
-    "slug": "desi-chana-brown-chickpeas",
-    "name": "Desi Brown Chickpeas / Kala Chana (Whole & Split)",
-    "category": "pulses",
-    "categoryName": "Pulses & Lentils",
-    "image": "assets/images/kala-chana.jpg",
-    "origin": "Rajasthan / Madhya Pradesh, India",
-    "packaging": "25kg / 50kg PP Bags",
-    "specs": "Machine Cleaned / Sortex 99%, Moisture < 11%, High Protein > 20%",
-    "description": "Dark brown traditional Indian desi chickpeas known for robust nutty flavor, low glycemic index, and firm cooking texture."
-  },
   {
     "id": "pulses-toor-dal",
     "slug": "toor-dal-pigeon-peas",
-    "name": "Toor Dal / Pigeon Peas (Yellow Split & Whole)",
+    "name": "Toor Dal / Pigeon Peas (Yellow Split Dehusked, Oiled & Non-Oiled)",
     "category": "pulses",
     "categoryName": "Pulses & Lentils",
     "image": "assets/images/toor-dal.jpg",
     "origin": "Gujarat / Maharashtra / Karnataka, India",
     "packaging": "25kg / 50kg Bags",
-    "specs": "Sortex Cleaned, Oiled / Non-Oiled, Fatak / Desi Grade, Moisture < 12%",
-    "description": "Dehulled and split yellow pigeon peas, the premier staple pulse across Indian and South Asian cuisine."
-  },
-  {
-    "id": "pulses-red-lentils",
-    "slug": "red-lentils-masoor-dal",
-    "name": "Red Lentils / Masoor Dal (Whole Football & Split Orange)",
-    "category": "pulses",
-    "categoryName": "Pulses & Lentils",
-    "image": "assets/images/red-lentils.jpg",
-    "origin": "Madhya Pradesh / Uttar Pradesh, India",
-    "packaging": "25kg / 50kg Export Bags",
-    "specs": "Purity 99.5%, Sortex Cleaned, Polished / Unpolished, Moisture < 11%",
-    "description": "Bright orange-red split and whole football lentils with high vegetable protein and rapid cooking properties."
-  },
-  {
-    "id": "pulses-moong-beans",
-    "slug": "green-moong-beans-split",
-    "name": "Green Mung Beans (Whole Green Mung & Sprouting Grade)",
-    "category": "pulses",
-    "categoryName": "Pulses & Lentils",
-    "image": "assets/images/moong-beans.jpg",
-    "origin": "Rajasthan / Gujarat / MP, India",
-    "packaging": "25kg / 50kg PP Bags",
-    "specs": "Size: 3.5mm - 4.0mm+, Machine Cleaned, Germination > 90% (Sprouting Grade)",
-    "description": "Nutrient-rich shiny green mung beans suitable for direct cooking, dal making, and fresh sprouting."
-  },
-  {
-    "id": "pulses-moong-dal",
-    "slug": "yellow-moong-dal-split-dehusked",
-    "name": "Moong Dal (Yellow Split Dehusked / Mogar)",
-    "category": "pulses",
-    "categoryName": "Pulses & Lentils",
-    "image": "assets/images/toor-dal.jpg",
-    "origin": "Gujarat / Rajasthan, India",
-    "packaging": "25kg / 50kg PP Bags",
-    "specs": "Dehusked Yellow Split, 100% Sortex Cleaned, Moisture < 11%",
-    "description": "Easy-to-digest dehusked yellow split moong lentils widely consumed in wellness diets, soups, and traditional sweets."
-  },
-  {
-    "id": "pulses-urad-dal",
-    "slug": "black-matpe-urad-dal",
-    "name": "Black Matpe / Urad Dal (Whole Black & White Gota/Split)",
-    "category": "pulses",
-    "categoryName": "Pulses & Lentils",
-    "image": "assets/images/urad-dal.jpg",
-    "origin": "Andhra Pradesh / Maharashtra, India",
-    "packaging": "25kg / 50kg PP Bags",
-    "specs": "Machine Cleaned / Sortex 99.5%, Moisture < 12%, Whole & Split",
-    "description": "High-protein black and white dehulled urad lentils used in papads, batters, and traditional savory dishes."
+    "specs": "Sortex Cleaned 99.5%, Oiled / Non-Oiled, Fatak / Desi Grade, Moisture < 12%",
+    "description": "Dehulled and split yellow pigeon peas, the premier staple pulse across Indian and South Asian cuisine, packed with plant protein."
   },
   {
     "id": "pulses-chana-dal",
@@ -266,991 +283,463 @@
     "name": "Chana Dal (Split Bengal Gram Polished / Unpolished)",
     "category": "pulses",
     "categoryName": "Pulses & Lentils",
-    "image": "assets/images/kabuli-chana.jpg",
+    "image": "assets/images/chana-dal.jpg",
     "origin": "Madhya Pradesh / Rajasthan, India",
     "packaging": "25kg / 50kg Bags",
     "specs": "Purity 99.5% Sortex Clean, Bold Grain, Moisture < 11%",
     "description": "Sweet and nutty golden split chickpeas without husk, essential for savory snacks, curries, and flour milling."
   },
   {
+    "id": "pulses-moong-dal",
+    "slug": "yellow-moong-dal-split-dehusked",
+    "name": "Moong Dal (Yellow Split Dehusked Mogar & Whole Green Mung)",
+    "category": "pulses",
+    "categoryName": "Pulses & Lentils",
+    "image": "assets/images/moong-beans.jpg",
+    "origin": "Gujarat / Rajasthan / MP, India",
+    "packaging": "25kg / 50kg PP Bags",
+    "specs": "Dehusked Yellow Split & Whole Green 3.5mm-4.0mm, Sortex 99.5%, Moisture < 11%",
+    "description": "Nutrient-rich, easy-to-digest yellow split moong and whole green mung beans suitable for culinary cooking, soups, and fresh sprouting."
+  },
+  {
+    "id": "pulses-red-lentils",
+    "slug": "red-lentils-masoor-dal",
+    "name": "Masoor Dal / Red Lentils (Whole Football & Split Orange)",
+    "category": "pulses",
+    "categoryName": "Pulses & Lentils",
+    "image": "assets/images/red-lentils.jpg",
+    "origin": "Madhya Pradesh / Uttar Pradesh, India",
+    "packaging": "25kg / 50kg Export Bags",
+    "specs": "Purity 99.5%, Sortex Cleaned, Polished / Unpolished, Moisture < 11%",
+    "description": "Bright orange-red split and whole football lentils with high vegetable protein and rapid cooking properties for soups and stews."
+  },
+  {
+    "id": "pulses-urad-dal",
+    "slug": "black-matpe-urad-dal",
+    "name": "Urad Dal / Black Matpe (Whole Black, Split & White Gota)",
+    "category": "pulses",
+    "categoryName": "Pulses & Lentils",
+    "image": "assets/images/urad-dal.jpg",
+    "origin": "Andhra Pradesh / Maharashtra / Gujarat, India",
+    "packaging": "25kg / 50kg PP Bags",
+    "specs": "Machine Cleaned / Sortex 99.5%, Moisture < 12%, Whole, Split & Skinned Gota",
+    "description": "High-protein black and white dehulled urad lentils used worldwide in papads, fermented batters, and traditional savory delicacies."
+  },
+  {
+    "id": "pulses-chickpeas",
+    "slug": "chickpeas-kabuli-chana",
+    "name": "Chickpeas / Kabuli Chana (Garbanzo 42-44 to 75-80 Count)",
+    "category": "pulses",
+    "categoryName": "Pulses & Lentils",
+    "image": "assets/images/kabuli-chana.jpg",
+    "origin": "Madhya Pradesh / Maharashtra, India",
+    "packaging": "25kg / 50kg PP Bags",
+    "specs": "Counts: 42-44, 44-46, 58-60, 75-80; Machine Cleaned / Sortex 99.5%",
+    "description": "Large, plump, cream-colored Kabuli chickpeas sorted for uniform count, ideal for canning, hummus, and culinary dishes."
+  },
+  {
     "id": "pulses-kidney-beans",
     "slug": "rajma-red-kidney-beans-chitra",
-    "name": "Red Kidney Beans / Rajma (Chitra & Dark Red)",
+    "name": "Kidney Beans / Rajma (Speckled Chitra & Dark Red)",
     "category": "pulses",
     "categoryName": "Pulses & Lentils",
     "image": "assets/images/rajma-beans.jpg",
     "origin": "Jammu / Maharashtra / MP, India",
     "packaging": "25kg / 50kg PP Bags",
-    "specs": "Sortex Clean 99%, Moisture < 12%, Uniform Grain Size",
-    "description": "Creamy-textured speckled Chitra and dark red kidney beans rich in dietary fiber and plant protein."
+    "specs": "Sortex Clean 99%, Moisture < 12%, Uniform Grain Size, High Protein",
+    "description": "Creamy-textured speckled Chitra and deep red kidney beans rich in dietary fiber and plant protein, prized in international recipes."
   },
   {
     "id": "pulses-cowpeas",
     "slug": "cowpeas-black-eyed-peas-lobia",
-    "name": "Black Eyed Peas / Cowpeas (Lobia / White Chawli)",
+    "name": "Black-Eyed Peas / Cowpeas (Lobia / White Chawli)",
     "category": "pulses",
     "categoryName": "Pulses & Lentils",
     "image": "assets/images/black-eyed-peas.jpg",
     "origin": "Maharashtra / Gujarat, India",
     "packaging": "25kg / 50kg PP Bags",
-    "specs": "Machine Cleaned / Sortex 99.5%, Bold White Kernel with Black Eye",
-    "description": "Mild, earthy flavored white cowpeas with distinct black eyes, popular across European, American, and Asian menus."
+    "specs": "Machine Cleaned / Sortex 99.5%, Bold White Kernel with Black Eye, Moisture < 11%",
+    "description": "Mild, earthy flavored white cowpeas with distinct black eyes, popular across American, European, and African menus."
   },
   {
-    "id": "pulses-green-peas",
-    "slug": "dry-green-peas-yellow-vatana",
-    "name": "Dry Green Peas & Yellow Peas (Whole Vatana)",
+    "id": "pulses-other-varieties",
+    "slug": "desi-chana-brown-chickpeas",
+    "name": "Other Indian Pulses (Desi Kala Chana, Dry Vatana Peas & Moth Beans)",
     "category": "pulses",
     "categoryName": "Pulses & Lentils",
-    "image": "assets/images/beauty-of-bengal-gram.jpg",
-    "origin": "Madhya Pradesh / Gujarat, India",
+    "image": "assets/images/kala-chana.jpg",
+    "origin": "Rajasthan / Gujarat / MP, India",
     "packaging": "25kg / 50kg PP Bags",
-    "specs": "Uniform Round Size 5.5mm-7.0mm, Machine Sorted, Moisture < 13%",
-    "description": "Whole dried green and yellow field peas ideal for street food formulations, canning, and snacking."
-  },
-  {
-    "id": "pulses-moth-beans",
-    "slug": "moth-beans-turkish-gram-matki",
-    "name": "Moth Beans (Turkish Gram / Matki Whole)",
-    "category": "pulses",
-    "categoryName": "Pulses & Lentils",
-    "image": "assets/images/moth-beans.jpg",
-    "origin": "Rajasthan / Gujarat, India",
-    "packaging": "25kg / 50kg Bags",
-    "specs": "Purity 99% Sortex, Small Brown Bold Grains, Moisture < 11%",
-    "description": "Drought-hardy small brown legume packed with concentrated protein, calcium, and minerals for sprouting and fried snacks."
+    "specs": "Sortex Clean 99%, Whole Dry Grains, High Fiber & Minerals",
+    "description": "Traditional Indian nutrient-dense pulses including brown Desi chickpeas (Kala Chana), whole green/yellow field peas, and small drought-hardy Moth beans."
   },
 
   // ==========================================
-  // 3. BASMATI RICE (basmati-rice)
+  // 4. DEHYDRATED PRODUCTS (dehydrated)
   // ==========================================
   {
-    "id": "basmati-1121",
-    "slug": "1121-basmati-rice-steam-sella",
-    "name": "1121 Basmati Rice (Raw, Steam, Sella & Golden Sella)",
-    "category": "basmati-rice",
-    "categoryName": "Basmati Rice",
-    "image": "assets/images/products/1121-basmati-rice.png",
-    "origin": "Punjab / Haryana, India",
-    "packaging": "1kg / 5kg / 10kg / 25kg / 50kg Non-Woven & BOPP Bags",
-    "specs": "Grain Length: 8.35mm - 8.40mm, Elongation: 2.5x, Moisture < 12.5%",
-    "description": "World renowned extra long grain 1121 Basmati rice with exquisite aroma and non-sticky fluffy texture upon cooking."
+    "id": "dehydrated-onion-flakes",
+    "slug": "dehydrated-onion-flakes-minced-powder",
+    "name": "Dehydrated Onion (Mahuva White, Red & Pink - Flakes, Minced & Chopped)",
+    "category": "dehydrated",
+    "categoryName": "Dehydrated Products",
+    "image": "assets/images/onion-flakes.jpg",
+    "origin": "Mahuva, Gujarat, India (Global Dehydration Hub)",
+    "packaging": "14kg / 20kg / 25kg Poly-lined Cartons & Paper Sacks",
+    "specs": "White / Red / Pink Onion, Moisture < 5%, SO2 < 50ppm / Nil, Micro-tested",
+    "description": "World capital of dehydrated onions Mahuva provides premium flakes, chopped, and toasted kibbled onion for seasonings, dressings, and soups."
   },
   {
-    "id": "basmati-1509",
-    "slug": "1509-basmati-rice",
-    "name": "1509 Basmati Rice (Raw, Steam & Sella)",
-    "category": "basmati-rice",
-    "categoryName": "Basmati Rice",
-    "image": "assets/images/rice-1121-sella.webp",
-    "origin": "Punjab / Haryana / UP, India",
-    "packaging": "5kg / 25kg / 50kg Export Bags",
-    "specs": "Grain Length: 8.30mm+, Moisture < 12.5%, Sortex Clean 100%",
-    "description": "Economical yet ultra-long grain basmati offering outstanding cooking elongation and subtle sweet taste."
+    "id": "dehydrated-garlic",
+    "slug": "dehydrated-garlic-flakes-powder-granules",
+    "name": "Dehydrated Garlic (Flakes, Minced, Granules & Pure Powder)",
+    "category": "dehydrated",
+    "categoryName": "Dehydrated Products",
+    "image": "assets/images/garlic-flakes.jpg",
+    "origin": "Gujarat / Madhya Pradesh, India",
+    "packaging": "20kg / 25kg Poly-lined Master Cartons",
+    "specs": "Alliin > 0.45%, Moisture < 6%, Mesh: 40-60, 80-100, Flakes, Export Grade",
+    "description": "Pure dehydrated Indian garlic free from adulterants, maintaining the pungent aroma, sharp flavor, and culinary versatility of fresh garlic."
   },
   {
-    "id": "basmati-1401",
-    "slug": "1401-basmati-rice",
-    "name": "1401 Basmati Rice (Steam & Sella)",
-    "category": "basmati-rice",
-    "categoryName": "Basmati Rice",
-    "image": "assets/images/rice-1121-golden.webp",
-    "origin": "Haryana / Punjab, India",
-    "packaging": "25kg / 50kg PP / Jute Bags",
-    "specs": "Average Grain Length: 7.70mm+, Moisture < 12.5%, Broken < 1%",
-    "description": "Hybrid variety noted for exceptional cooking volume, delightful aroma, and excellent grain integrity."
+    "id": "dehydrated-ginger",
+    "slug": "dry-ginger-sonth-whole-powder",
+    "name": "Dehydrated Ginger (Flakes, Bits & Fine Ginger Powder / Sonth)",
+    "category": "dehydrated",
+    "categoryName": "Dehydrated Products",
+    "image": "assets/images/products/dry-ginger.jpg",
+    "origin": "Kerala / Assam / Gujarat, India",
+    "packaging": "20kg / 25kg Poly-lined Cartons",
+    "specs": "Gingerol > 1.8%, Moisture < 6%, Sortex Clean, Spray/Air Dried",
+    "description": "Intensely pungent dehydrated ginger flakes and ultra-fine powder used widely in bakery, seasoning sachets, herbal teas, and pharma."
   },
   {
-    "id": "basmati-traditional",
-    "slug": "traditional-authentic-basmati-rice",
-    "name": "Traditional Authentic Basmati Rice (Aged Himalayan)",
-    "category": "basmati-rice",
-    "categoryName": "Basmati Rice",
-    "image": "assets/images/rice-1121-steam.webp",
-    "origin": "Himalayan Foothills, India",
-    "packaging": "5kg / 10kg / 25kg Master Bags",
-    "specs": "Aged 1-2 Years, Grain Length 7.3mm, Unmatched Natural Fragrance",
-    "description": "Naturally aged classic authentic Basmati rice harvested from the Himalayan foothills, the pinnacle of gourmet dining."
+    "id": "dehydrated-vegetables",
+    "slug": "dehydrated-ginger-green-chilli-tomato-powder",
+    "name": "Dehydrated Vegetables (Green Chilli, Tomato Powder & Mixed Veg Flakes)",
+    "category": "dehydrated",
+    "categoryName": "Dehydrated Products",
+    "image": "assets/images/dehydrated-ginger-chilli-tomato.jpg",
+    "origin": "Gujarat, India",
+    "packaging": "10kg / 20kg Corrugated Boxes with LDPE Liner",
+    "specs": "100% Pure Spray-Dried / Air-Dried, Instant Soluble / Rehydratable, Moisture < 5%",
+    "description": "Versatile dried vegetable powders and flakes used in instant soups, noodle seasonings, sauces, snack seasonings, and ready meals."
   },
   {
-    "id": "basmati-sugandha",
-    "slug": "sugandha-basmati-rice",
-    "name": "Sugandha Basmati Rice (Steam & Sella)",
-    "category": "basmati-rice",
-    "categoryName": "Basmati Rice",
-    "image": "assets/images/rice-1121-sella.webp",
-    "origin": "North India",
-    "packaging": "25kg / 50kg Bags",
-    "specs": "Grain Length: 7.80mm+, 100% Sortex Clean, Moisture < 13%",
-    "description": "Fragrant and slender medium-long grain rice widely preferred across catering and Middle Eastern cuisines."
-  },
-  {
-    "id": "basmati-pusa",
-    "slug": "pusa-basmati-rice",
-    "name": "Pusa Basmati Rice (Raw & Steam)",
-    "category": "basmati-rice",
-    "categoryName": "Basmati Rice",
-    "image": "assets/images/rice-pusa-steam.webp",
-    "origin": "Punjab, India",
-    "packaging": "25kg / 50kg Bags",
-    "specs": "Grain Length: 7.40mm+, Silky Raw / Steam, Moisture < 12.5%",
-    "description": "Classic hybrid offering rich aromatic compounds and elegant slender shape after preparation."
-  },
-  {
-    "id": "basmati-sharbati",
-    "slug": "sharbati-rice",
-    "name": "Sharbati Basmati Rice (Steam & Sella)",
-    "category": "basmati-rice",
-    "categoryName": "Basmati Rice",
-    "image": "assets/images/rice-1121-golden.webp",
-    "origin": "Uttar Pradesh / Punjab, India",
-    "packaging": "25kg / 50kg PP Bags",
-    "specs": "Grain Length: 7.10mm, Broken < 1%, Moisture < 13%",
-    "description": "Highly cost-effective aromatic long grain rice suitable for large-scale institutional and restaurant supply."
+    "id": "dehydrated-other-products",
+    "slug": "dehydrated-kasuri-methi-leaves",
+    "name": "Other Dehydrated Products (Dehydrated Mint, Coriander & Lemon Powder)",
+    "category": "dehydrated",
+    "categoryName": "Dehydrated Products",
+    "image": "assets/images/onion-flakes.jpg",
+    "origin": "Gujarat / Rajasthan, India",
+    "packaging": "10kg / 20kg Bags & Cartons",
+    "specs": "Moisture < 6%, Natural Green / Yellow, Microbiologically Clean",
+    "description": "Hygienically air-dried herbal and citrus powders processed to preserve essential flavors, aromas, and natural nutrients."
   },
 
   // ==========================================
-  // 4. NON-BASMATI RICE (non-basmati-rice)
-  // ==========================================
-  {
-    "id": "non-basmati-ir64",
-    "slug": "ir-64-parboiled-raw-rice",
-    "name": "IR-64 Long Grain Rice (Parboiled / Raw 5% - 25% Broken)",
-    "category": "non-basmati-rice",
-    "categoryName": "Non-Basmati Rice",
-    "image": "assets/images/products/ir64-long-grain-rice.png",
-    "origin": "Andhra Pradesh / Maharashtra, India",
-    "packaging": "25kg / 50kg PP Bags / Bulk Containers",
-    "specs": "Grain Length: 6.0mm+, Broken: 5% / 25% / 100%, Moisture < 14%",
-    "description": "India’s most exported staple non-basmati rice variety, ideal for global food security tenders and retail."
-  },
-  {
-    "id": "non-basmati-sona-masoori",
-    "slug": "sona-masoori-raw-steam-rice",
-    "name": "Sona Masoori Rice (Raw & Steam Table Rice)",
-    "category": "non-basmati-rice",
-    "categoryName": "Non-Basmati Rice",
-    "image": "assets/images/products/sona-masoori-rice.png",
-    "origin": "Karnataka / Andhra Pradesh, India",
-    "packaging": "5kg / 10kg / 20kg / 25kg Poly Woven Bags",
-    "specs": "Medium Grain, Lightweight, Low Starch, Aged Quality, Moisture < 13%",
-    "description": "Delicate medium-grain aromatic table rice, highly valued for its light texture and easy digestibility."
-  },
-  {
-    "id": "non-basmati-swarna",
-    "slug": "swarna-rice-parboiled",
-    "name": "Swarna Rice (Parboiled & Raw Medium Grain)",
-    "category": "non-basmati-rice",
-    "categoryName": "Non-Basmati Rice",
-    "image": "assets/images/products/swarna-rice.png",
-    "origin": "West Bengal / Odisha, India",
-    "packaging": "50kg PP Bags",
-    "specs": "Short-Medium Grain, Sortex Cleaned, Broken < 5%, Moisture < 14%",
-    "description": "Economical high-energy short grain parboiled rice widely exported to African and Asian markets."
-  },
-  {
-    "id": "non-basmati-pr11",
-    "slug": "pr-11-pr-14-non-basmati-rice",
-    "name": "PR-11 / PR-14 Long Grain Non-Basmati Rice",
-    "category": "non-basmati-rice",
-    "categoryName": "Non-Basmati Rice",
-    "image": "assets/images/products/ir64-long-grain-rice.png",
-    "origin": "Punjab / Haryana, India",
-    "packaging": "25kg / 50kg Bags",
-    "specs": "Grain Length: 6.8mm+, Raw / Steam / Sella, Moisture < 13%",
-    "description": "Hard milled long grain non-basmati rice with firm grain texture and good swelling index."
-  },
-  {
-    "id": "non-basmati-jeera-samba",
-    "slug": "jeerakasala-seeraga-samba-rice",
-    "name": "Jeerakasala / Seeraga Samba Biryani Rice",
-    "category": "non-basmati-rice",
-    "categoryName": "Non-Basmati Rice",
-    "image": "assets/images/non-basmati-seeraga-samba.jpg",
-    "origin": "Tamil Nadu / Kerala, India",
-    "packaging": "10kg / 25kg Bags",
-    "specs": "Tiny Oval Grain, Intensely Fragrant, Moisture < 12%",
-    "description": "South India’s prized biryani rice variety with signature small oval grains and rich distinct scent."
-  },
-  {
-    "id": "non-basmati-broken",
-    "slug": "100-percent-broken-raw-parboiled-rice",
-    "name": "100% Broken Rice (Raw / Parboiled Sortex)",
-    "category": "non-basmati-rice",
-    "categoryName": "Non-Basmati Rice",
-    "image": "assets/images/non-basmati-broken-rice.jpg",
-    "origin": "India",
-    "packaging": "50kg PP Bags / Jumbo Bags",
-    "specs": "Broken 100%, Double Polished, Cleaned, Moisture < 14%",
-    "description": "Ideal for brewing, flour milling, noodles, and commercial food processing formulations."
-  },
-
-  // ==========================================
-  // 5. FRESH FRUITS (fresh-fruits)
+  // 5. FRESH FRUITS & VEGETABLES (fresh-fruits)
   // ==========================================
   {
     "id": "fruits-alphonso-mango",
     "slug": "fresh-alphonso-kesar-mangoes",
     "name": "Fresh Mangoes (Alphonso, Kesar & Banganapalli)",
     "category": "fresh-fruits",
-    "categoryName": "Fresh Fruits",
+    "categoryName": "Fresh Fruits & Vegetables",
     "image": "assets/images/fresh-alphonso-kesar-mangoes.jpg",
-    "origin": "Ratnagiri / Gir Gujarat, India",
+    "origin": "Ratnagiri / Gir Gujarat / Andhra, India",
     "packaging": "3kg / 4.5kg Corrugated Export Boxes (Hot Water / Irradiation Treated)",
     "specs": "Export Grade, Size 200g-320g, Brix 18-22%, APEDA Approved Packhouses",
-    "description": "World-famous king of mangoes known for its heavenly scent, rich saffron pulp, and velvety sweetness."
+    "description": "World-famous King of Mangoes known for its heavenly scent, rich saffron pulp, and velvety sweetness shipped via certified air-cargo routes."
   },
-  {
-    "id": "fruits-pomegranate",
-    "slug": "fresh-bhagwa-pomegranate",
-    "name": "Fresh Bhagwa Pomegranate (Deep Red Arils)",
-    "category": "fresh-fruits",
-    "categoryName": "Fresh Fruits",
-    "image": "assets/images/fresh-bhagwa-pomegranate.jpg",
-    "origin": "Maharashtra / Gujarat, India",
-    "packaging": "3.5kg / 4.0kg / 5.0kg Export Cartons",
-    "specs": "Counts: 9, 10, 12, 14, 15 (200g to 400g+ per piece), Deep Red Arils, Sweet",
-    "description": "Glossy red Bhagwa pomegranates with ruby-red soft seeds, rich in antioxidants and shipped via Reefer air/sea cargo."
-  },
-  {
-    "id": "fruits-grapes",
-    "slug": "fresh-indian-grapes-thompson-black",
-    "name": "Fresh Table Grapes (Thompson Seedless / Sonaka / Sharad / Crimson)",
-    "category": "fresh-fruits",
-    "categoryName": "Fresh Fruits",
-    "image": "assets/images/fresh-indian-grapes-thompson-black.jpg",
-    "origin": "Nashik / Sangli, Maharashtra, India",
-    "packaging": "4.5kg / 5.0kg / 9.0kg Punnets & Pouch Master Boxes",
-    "specs": "Berry Size 16mm-20mm+, Brix > 16%, GlobalGAP Certified",
-    "description": "Crisp, sweet, and uniform Indian table grapes exported globally with complete residue monitoring (GrapeNet)."
-  },
-  {
-    "id": "fruits-banana",
-    "slug": "fresh-cavendish-banana-g9",
-    "name": "Fresh Cavendish Bananas (Grand Naine - G9)",
-    "category": "fresh-fruits",
-    "categoryName": "Fresh Fruits",
-    "image": "assets/images/fresh-cavendish-banana-g9.jpg",
-    "origin": "Gujarat / Maharashtra / Tamil Nadu, India",
-    "packaging": "7kg / 13kg / 18.14kg Vacuum Packed Export Cartons",
-    "specs": "Length 18cm-22cm+, Caliber 39-47mm, Fresh Green Harvest",
-    "description": "Firm green Cavendish bananas carefully packed in modified atmosphere bags for optimal ripening upon destination arrival."
-  },
-  {
-    "id": "fruits-guava-papaya",
-    "slug": "fresh-taiwan-pink-guava-red-lady-papaya",
-    "name": "Fresh Guava (Taiwan Pink) & Papaya (Red Lady)",
-    "category": "fresh-fruits",
-    "categoryName": "Fresh Fruits",
-    "image": "assets/images/fresh-taiwan-pink-guava-red-lady-papaya.jpg",
-    "origin": "Gujarat / Andhra Pradesh, India",
-    "packaging": "5kg / 6kg / 10kg CFB Boxes with foam netting",
-    "specs": "Uniform weight, Crisp Flesh, Free from blemishes",
-    "description": "Tropical fresh Indian pink guavas and sweet Red Lady papayas packed with vitamin C and vital nutrients."
-  },
-  {
-    "id": "fruits-citrus",
-    "slug": "fresh-indian-kinnow-sweet-oranges",
-    "name": "Fresh Indian Kinnow & Sweet Oranges (Mosambi)",
-    "category": "fresh-fruits",
-    "categoryName": "Fresh Fruits",
-    "image": "assets/images/fresh-fruits.jpg",
-    "origin": "Punjab / Maharashtra, India",
-    "packaging": "10kg / 20kg Corrugated Boxes",
-    "specs": "Juicy, Caliber 60mm-85mm, Naturally Waxed & Graded",
-    "description": "Juicy, sweet and tangy Indian mandarins and sweet limes sorted for international supermarkets and juice bars."
-  },
-
-  // ==========================================
-  // 6. FRESH VEGETABLES (fresh-vegetables)
-  // ==========================================
   {
     "id": "veg-red-onion",
     "slug": "fresh-red-onions-nashik-gujarat",
     "name": "Fresh Red Onions (Nashik / Mahuva 45-55mm+)",
-    "category": "fresh-vegetables",
-    "categoryName": "Fresh Vegetables",
+    "category": "fresh-fruits",
+    "categoryName": "Fresh Fruits & Vegetables",
     "image": "assets/images/products/fresh-red-onions.jpg",
     "origin": "Nashik / Gujarat, India",
     "packaging": "5kg / 10kg / 25kg / 50kg Red Mesh / Leno Bags",
-    "specs": "Sizes: 25-35mm (Gulf), 45-55mm, 55mm+ (Europe/Asia), Well Cured",
-    "description": "Pungent, globe-shaped red onions with tight skins, cured naturally for superior shelf-life during ocean transit."
+    "specs": "Sizes: 25-35mm (Gulf), 45-55mm, 55mm+ (Europe/Asia), Well Cured, Deep Red",
+    "description": "Pungent, globe-shaped red onions with tight skins, cured naturally for superior shelf-life during ocean transit in ventilated containers."
   },
   {
-    "id": "veg-fresh-ginger",
-    "slug": "fresh-green-ginger",
-    "name": "Fresh Green Ginger (Cleaned / Unwashed)",
-    "category": "fresh-vegetables",
-    "categoryName": "Fresh Vegetables",
-    "image": "assets/images/products/fresh-green-ginger.jpg",
-    "origin": "Assam / Kerala / Karnataka, India",
-    "packaging": "10kg / 20kg Mesh Bags / Plastic Crates",
-    "specs": "Fat fingers 100g-250g+, Cleaned, Low Fiber, High Aroma",
-    "description": "Spicy, plump fresh ginger rhizomes harvested from prime growing belts with high essential gingerol content."
-  },
-  {
-    "id": "veg-fresh-garlic",
-    "slug": "fresh-garlic-bulbs-desi-ooty",
-    "name": "Fresh Garlic Bulbs (White / Desi / Ooty)",
-    "category": "fresh-vegetables",
-    "categoryName": "Fresh Vegetables",
-    "image": "assets/images/products/fresh-garlic-bulbs.jpg",
-    "origin": "Madhya Pradesh / Gujarat, India",
-    "packaging": "10kg / 20kg / 25kg Mesh Bags & Cartons",
-    "specs": "Sizes: 30mm, 40mm, 50mm+, Pure White / Purple Streaked, Strong Pungency",
-    "description": "Aromatic garlic bulbs with firm cloves, long-lasting pungency, and medicinal organosulfur qualities."
-  },
-  {
-    "id": "veg-green-chilli",
-    "slug": "fresh-green-chillies-g4-jwalan",
-    "name": "Fresh Green Chillies (G4 / Jwala / Bullet)",
-    "category": "fresh-vegetables",
-    "categoryName": "Fresh Vegetables",
-    "image": "assets/images/products/fresh-green-chillies.jpg",
-    "origin": "Gujarat / Maharashtra, India",
-    "packaging": "3.5kg / 4kg / 5kg Air-vented Cartons via Air Cargo",
-    "specs": "Length: 7-12cm, Fresh Dark Green, Crisp Stem Intact",
-    "description": "Air-freighted hot green chillies harvested and graded same-day to maintain maximum freshness and heat."
-  },
-  {
-    "id": "veg-potatoes-lemon",
+    "id": "veg-potatoes",
     "slug": "fresh-potatoes-and-seedless-lemons",
-    "name": "Fresh Processing Potatoes (Chipsona) & Seedless Lemons",
-    "category": "fresh-vegetables",
-    "categoryName": "Fresh Vegetables",
+    "name": "Fresh Potatoes (Table Grade & Chipsona Processing Variety)",
+    "category": "fresh-fruits",
+    "categoryName": "Fresh Fruits & Vegetables",
     "image": "assets/images/products/potatoes-and-lemons.jpg",
     "origin": "Gujarat / Punjab, India",
-    "packaging": "10kg / 25kg / 50kg Bags & Cartons",
-    "specs": "High dry matter for processing / table use, sorted & graded",
-    "description": "Standardized table and processing potatoes plus juicy yellow Indian lemons packed for global delivery."
+    "packaging": "10kg / 25kg / 50kg Leno Bags & Jute Bags",
+    "specs": "High dry matter > 21% for processing, Low sugar, Sorted 45mm+, 55mm+",
+    "description": "Standardized table and crisping potatoes (Chipsona / Lady Rosetta / LR) stored in temperature-controlled facilities for international shipments."
   },
   {
-    "id": "veg-okra-drumstick",
-    "slug": "fresh-okra-bhindi-and-drumsticks",
-    "name": "Fresh Okra (Bhindi) & Drumsticks (Moringa Pods)",
-    "category": "fresh-vegetables",
-    "categoryName": "Fresh Vegetables",
-    "image": "assets/images/products/okra-and-drumsticks.jpg",
-    "origin": "Gujarat / Maharashtra, India",
-    "packaging": "4kg / 5kg Air Cargo Cartons",
-    "specs": "Tender Green Pods, Fiber-Free, Harvested Early Morning",
-    "description": "Export-grade tender lady fingers and fresh moringa drumsticks air-freighted for international diaspora markets."
+    "id": "veg-seasonal-produce",
+    "slug": "fresh-green-ginger",
+    "name": "Other Seasonal Indian Produce (Fresh Ginger, Garlic Bulbs, Green Chillies & Pomegranates)",
+    "category": "fresh-fruits",
+    "categoryName": "Fresh Fruits & Vegetables",
+    "image": "assets/images/fresh-fruits.jpg",
+    "origin": "Gujarat / Maharashtra / Karnataka, India",
+    "packaging": "Air-Vented Cartons & Cold-Chain Reefer Packaging",
+    "specs": "GlobalGAP Certified, Hot water treated, APEDA Packhouse Inspected",
+    "description": "Full assortment of seasonal Indian fresh produce including plump fresh ginger, white garlic bulbs, spicy G4 green chillies, and Bhagwa pomegranates."
   },
 
   // ==========================================
-  // 7. DEHYDRATED PRODUCTS (dehydrated)
-  // ==========================================
-  {
-    "id": "dehydrated-onion-flakes",
-    "slug": "dehydrated-onion-flakes-minced-powder",
-    "name": "Dehydrated Onion Flakes (Mahuva White, Red & Pink)",
-    "category": "dehydrated",
-    "categoryName": "Dehydrated Products",
-    "image": "assets/images/onion-flakes.jpg",
-    "origin": "Mahuva, Gujarat, India",
-    "packaging": "14kg / 20kg / 25kg Poly-lined Cartons & Paper Sacks",
-    "specs": "White / Red / Pink Onion, Moisture < 5%, SO2 < 50ppm / Nil, Micro-tested",
-    "description": "World capital of dehydrated onions Mahuva provides premium flakes and toasted kibbled onion for seasonings."
-  },
-  {
-    "id": "dehydrated-onion-powder",
-    "slug": "dehydrated-onion-powder-chopped-minced",
-    "name": "Dehydrated Onion Powder, Minced & Chopped",
-    "category": "dehydrated",
-    "categoryName": "Dehydrated Products",
-    "image": "assets/images/onion-flakes.jpg",
-    "origin": "Mahuva, Gujarat, India",
-    "packaging": "20kg / 25kg Poly-lined Cartons",
-    "specs": "Mesh: 80-100 (Powder), Minced (1-3mm), Chopped (3-5mm), Moisture < 5%",
-    "description": "Free-flowing dehydrated onion powder and granules, indispensable in ready-to-eat seasoning sachets and soups."
-  },
-  {
-    "id": "dehydrated-garlic",
-    "slug": "dehydrated-garlic-flakes-powder-granules",
-    "name": "Dehydrated Garlic (Flakes, Granules & Powder)",
-    "category": "dehydrated",
-    "categoryName": "Dehydrated Products",
-    "image": "assets/images/garlic-flakes.jpg",
-    "origin": "Gujarat, India",
-    "packaging": "20kg / 25kg Poly-lined Master Cartons",
-    "specs": "Alliin > 0.45%, Moisture < 6%, Mesh: 40-60, 80-100, Flakes, Export Grade",
-    "description": "Pure dehydrated Indian garlic free from adulterants, maintaining the authentic taste and sharp aroma of fresh garlic."
-  },
-  {
-    "id": "dehydrated-vegetables",
-    "slug": "dehydrated-ginger-green-chilli-tomato-powder",
-    "name": "Dehydrated Ginger, Green Chilli & Tomato Powder",
-    "category": "dehydrated",
-    "categoryName": "Dehydrated Products",
-    "image": "assets/images/dehydrated-ginger-chilli-tomato.jpg",
-    "origin": "Gujarat, India",
-    "packaging": "10kg / 20kg Corrugated Boxes with LDPE Liner",
-    "specs": "100% Pure Spray-Dried / Air-Dried, Instant Soluble / Rehydratable",
-    "description": "Versatile dried vegetable powders and flakes used in instant soups, marinades, snack seasonings, and ready meals."
-  },
-  {
-    "id": "dehydrated-kasuri-methi",
-    "slug": "dehydrated-kasuri-methi-leaves",
-    "name": "Dehydrated Kasuri Methi (Fenugreek Leaves)",
-    "category": "dehydrated",
-    "categoryName": "Dehydrated Products",
-    "image": "assets/images/products/fenugreek-seeds.png",
-    "origin": "Nagaur, Rajasthan, India",
-    "packaging": "1kg / 5kg / 10kg Master Cartons with Foil Liner",
-    "specs": "Deep Green Leaves, Moisture < 7%, Intensely Aromatic, Sortex Cleaned",
-    "description": "Fragrant shade-dried Kasuri Methi leaves from Nagaur, providing the signature aroma in butter curries and breads."
-  },
-
-  // ==========================================
-  // 8. OIL SEEDS (oil-seeds)
-  // ==========================================
-  {
-    "id": "oilseeds-sesame-natural",
-    "slug": "natural-white-sesame-seeds",
-    "name": "Natural White Sesame Seeds (99/1 / 99.9% Sortex)",
-    "category": "oil-seeds",
-    "categoryName": "Oil Seeds",
-    "image": "assets/images/white-sesame.jpg",
-    "origin": "Gujarat, India",
-    "packaging": "25kg / 50kg PP / Paper Bags / Big Bags",
-    "specs": "Purity: 99%, 99.9%, 99.95%, Oil Content > 48%, Moisture < 5%",
-    "description": "Cleaned Gujarat natural sesame seeds with high oil content and nutty aroma, perfect for oil crushing and bakery."
-  },
-  {
-    "id": "oilseeds-sesame-hulled",
-    "slug": "hulled-sesame-seeds-auto-dry",
-    "name": "Hulled Sesame Seeds (Auto-Dried / Sun-Dried 99.99%)",
-    "category": "oil-seeds",
-    "categoryName": "Oil Seeds",
-    "image": "assets/images/white-sesame.jpg",
-    "origin": "Gujarat, India",
-    "packaging": "25kg / 50kg Multiwall Paper Bags with PE Liner",
-    "specs": "Purity: 99.95% / 99.99% Mechanically Hulled & Auto Dried, Pure White",
-    "description": "Pristine white hulled sesame seeds processed mechanically without chemicals for premium confectioneries and tahini."
-  },
-  {
-    "id": "oilseeds-black-sesame",
-    "slug": "black-sesame-seeds",
-    "name": "Black Sesame Seeds (Natural / Sortex Cleaned)",
-    "category": "oil-seeds",
-    "categoryName": "Oil Seeds",
-    "image": "assets/images/black-sesame.jpg",
-    "origin": "Gujarat / Rajasthan, India",
-    "packaging": "25kg / 50kg Bags",
-    "specs": "Purity 99% / 99.5%, Oil > 45%, Deep Jet Black",
-    "description": "Rich dark black sesame seeds prized in gourmet culinary toppings, sushi, and health oil extracts."
-  },
-  {
-    "id": "oilseeds-mustard",
-    "slug": "mustard-seeds-rai-sarson",
-    "name": "Mustard Seeds (Small Black & Bold Yellow Rai / Sarson)",
-    "category": "oil-seeds",
-    "categoryName": "Oil Seeds",
-    "image": "assets/images/products/mustard-seeds.png",
-    "origin": "Gujarat / Rajasthan, India",
-    "packaging": "25kg / 50kg PP Bags",
-    "specs": "Purity 99.5%, Oil Content 38-42%, Moisture < 8%",
-    "description": "High-oil content black and yellow mustard seeds, triple cleaned for oil extraction, spice blends, and condiments."
-  },
-  {
-    "id": "oilseeds-flaxseeds",
-    "slug": "brown-flax-seeds-linseed",
-    "name": "Flax Seeds / Linseed (Brown / Golden Omega-3)",
-    "category": "oil-seeds",
-    "categoryName": "Oil Seeds",
-    "image": "assets/images/flax-seeds.jpg",
-    "origin": "Madhya Pradesh, India",
-    "packaging": "25kg / 50kg PP Bags",
-    "specs": "Sortex Clean 99.9%, Omega-3 Rich, Moisture < 7%",
-    "description": "Superfood linseed rich in ALA Omega-3 fatty acids and dietary lignans, sortex cleaned for health food blends."
-  },
-  {
-    "id": "oilseeds-sunflower-safflower",
-    "slug": "sunflower-safflower-seeds-kardi",
-    "name": "Sunflower Seeds & Safflower Seeds (Kardi)",
-    "category": "oil-seeds",
-    "categoryName": "Oil Seeds",
-    "image": "assets/images/white-sesame.jpg",
-    "origin": "Maharashtra / Karnataka, India",
-    "packaging": "25kg / 50kg Bags",
-    "specs": "Purity 99%, High Linoleic / Oleic, Moisture < 8%",
-    "description": "Cleaned whole oil seeds harvested from central India for culinary edible oils, birdfeed, and bakery."
-  },
-  {
-    "id": "oilseeds-castor-seeds",
-    "slug": "castor-seeds-and-castor-oil",
-    "name": "Castor Seeds & Industrial Castor Oil (FSG / Commercial)",
-    "category": "oil-seeds",
-    "categoryName": "Oil Seeds",
-    "image": "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=800&auto=format&fit=crop&q=80",
-    "origin": "Gujarat, India (Global Castor Hub)",
-    "packaging": "Flexibags / 200kg Steel Drums / IBC Totes",
-    "specs": "First Special Grade (FSG), Pale Yellow, Ricinoleic Acid > 85%",
-    "description": "High grade Indian castor seeds and derivatives exported globally for pharmaceuticals, lubricants, and polymers."
-  },
-
-  // ==========================================
-  // 9. GROUNDNUTS & CASHEWS (groundnuts-cashews)
-  // ==========================================
-  {
-    "id": "nuts-peanuts-bold",
-    "slug": "raw-peanuts-bold-variety",
-    "name": "Raw Groundnuts / Peanuts (Bold Type 38/42 to 70/80)",
-    "category": "groundnuts-cashews",
-    "categoryName": "Groundnuts & Cashews",
-    "image": "assets/images/raw-peanuts.jpg",
-    "origin": "Saurashtra, Gujarat, India",
-    "packaging": "25kg / 50kg Jute / Vacuum Bags",
-    "specs": "Counts: 38/42, 40/50, 50/60, 60/70; Moisture < 7%, Aflatoxin < 4ppb / 10ppb",
-    "description": "Saurashtra bold peanuts, machine sorted and tested with strict European Aflatoxin compliance."
-  },
-  {
-    "id": "nuts-peanuts-java",
-    "slug": "raw-peanuts-java-type",
-    "name": "Raw Groundnuts (Java Type 50/60 to 80/90)",
-    "category": "groundnuts-cashews",
-    "categoryName": "Groundnuts & Cashews",
-    "image": "assets/images/java-peanuts.jpg",
-    "origin": "Gujarat, India",
-    "packaging": "25kg / 50kg Jute & PP Bags",
-    "specs": "Round pink kernel, High sweet oil taste, Moisture < 7%",
-    "description": "Sweet round Java peanut kernels widely utilized for peanut butter manufacturing and confectionery snacking."
-  },
-  {
-    "id": "nuts-blanched-peanuts",
-    "slug": "blanched-peanut-kernels",
-    "name": "Blanched Peanut Kernels (Whole & Splits)",
-    "category": "groundnuts-cashews",
-    "categoryName": "Groundnuts & Cashews",
-    "image": "assets/images/blanched-peanuts.jpg",
-    "origin": "Gujarat, India",
-    "packaging": "10kg / 25kg Vacuum Packs with Carton",
-    "specs": "Blanched Whole 40/50, 50/60 & Splits, Skin Retained < 1%",
-    "description": "Skinless creamy blanched peanut kernels roasted or ready-to-use for gourmet baking and candy bars."
-  },
-  {
-    "id": "nuts-cashews",
-    "slug": "cashew-nuts-w180-w240-w320",
-    "name": "Indian Cashew Kernels (W180, W210, W240, W320, Splits)",
-    "category": "groundnuts-cashews",
-    "categoryName": "Groundnuts & Cashews",
-    "image": "assets/images/cashew-kernels.jpg",
-    "origin": "Goa / Kerala / Maharashtra, India",
-    "packaging": "10kg / 11.34kg (25 lbs) / 22.68kg (50 lbs) Tins & Vacuum Packs",
-    "specs": "White Wholes (W180 King Size, W240 Jumbo, W320 Standard), Moisture < 5%",
-    "description": "Buttery, crunchy Indian cashew nuts carefully graded and vacuum-sealed under inert gas for maximum freshness."
-  },
-  {
-    "id": "nuts-roasted-salted",
-    "slug": "roasted-salted-peanuts-cashews",
-    "name": "Roasted & Salted Export Peanuts & Cashews",
-    "category": "groundnuts-cashews",
-    "categoryName": "Groundnuts & Cashews",
-    "image": "assets/images/roasted-peanuts-cashews.jpg",
-    "origin": "Gujarat, India",
-    "packaging": "100g - 1kg Retail Nitrogen Flushed Pouches / 10kg Bulk",
-    "specs": "Dry Roasted / Oil Roasted, Sea Salt, Hygienically Sealed",
-    "description": "Premium snack-grade roasted cashews and peanuts packed in customized barrier pouches with extended shelf life."
-  },
-
-  // ==========================================
-  // 10. CEREALS & MILLETS (cereals-millets)
-  // ==========================================
-  {
-    "id": "cereals-wheat",
-    "slug": "milling-wheat-sharbati-durum",
-    "name": "Milling Wheat (Milling Quality / Sharbati / Durum Wheat)",
-    "category": "cereals-millets",
-    "categoryName": "Cereals & Millets",
-    "image": "assets/images/products/milling-wheat.png",
-    "origin": "Madhya Pradesh / Gujarat, India",
-    "packaging": "50kg PP Bags / Bulk In Container",
-    "specs": "Protein 11.5% - 13.5%+, Gluten > 26%, Moisture < 12%, Foreign Matter < 1%",
-    "description": "Hard and semi-hard Indian milling wheat and golden Durum with high falling number and baking strength."
-  },
-  {
-    "id": "cereals-yellow-maize",
-    "slug": "yellow-corn-maize-export-grade",
-    "name": "Yellow Corn / Maize (Food & Commercial Grade)",
-    "category": "cereals-millets",
-    "categoryName": "Cereals & Millets",
-    "image": "assets/images/products/yellow-corn-maize.png",
-    "origin": "Bihar / Maharashtra / Andhra, India",
-    "packaging": "50kg PP Bags / Bulk Breakbulk",
-    "specs": "Moisture < 14%, Protein > 8.5%, Aflatoxin < 20ppb, Machine Cleaned",
-    "description": "High-energy golden yellow corn kernels suitable for starch extraction, flour milling, and food processing."
-  },
-  {
-    "id": "cereals-millet-bajra",
-    "slug": "pearl-millet-green-bajra",
-    "name": "Pearl Millet (Green Bajra Sortex Clean)",
-    "category": "cereals-millets",
-    "categoryName": "Cereals & Millets",
-    "image": "assets/images/products/pearl-millet-bajra.png",
-    "origin": "Rajasthan / Gujarat, India",
-    "packaging": "25kg / 50kg PP Bags",
-    "specs": "Purity 99% Sortex, Greenish Bold Grains, Machine Cleaned",
-    "description": "Climate-resilient green pearl millet rich in iron, zinc, and dietary fiber for culinary and health foods."
-  },
-  {
-    "id": "cereals-sorghum-jowar",
-    "slug": "sorghum-white-jowar",
-    "name": "Sorghum (White Jowar / Yellow Sorghum)",
-    "category": "cereals-millets",
-    "categoryName": "Cereals & Millets",
-    "image": "assets/images/products/sorghum-jowar.png",
-    "origin": "Maharashtra / Karnataka, India",
-    "packaging": "50kg Bags",
-    "specs": "Gluten-Free, Machine Cleaned, Moisture < 12%",
-    "description": "Nutritious gluten-free ancient grain sorghum widely used for health flour blends and cereal products."
-  },
-  {
-    "id": "cereals-barley",
-    "slug": "barley-grain-malting-food",
-    "name": "Barley Grain (Malting & Food Grade)",
-    "category": "cereals-millets",
-    "categoryName": "Cereals & Millets",
-    "image": "assets/images/products/barley-grain.png",
-    "origin": "Rajasthan / Haryana, India",
-    "packaging": "50kg Bags",
-    "specs": "Test Weight > 62 kg/hl, Moisture < 12%, Sortex Clean",
-    "description": "Wholesome whole barley grains for malt houses, food processing, and health cereal formulations."
-  },
-  {
-    "id": "cereals-ragi-foxtail",
-    "slug": "finger-millet-ragi-foxtail",
-    "name": "Finger Millet (Ragi) & Foxtail Millet",
-    "category": "cereals-millets",
-    "categoryName": "Cereals & Millets",
-    "image": "assets/images/products/finger-millet-ragi.png",
-    "origin": "Karnataka / Andhra Pradesh, India",
-    "packaging": "25kg / 50kg Bags",
-    "specs": "100% Sortex Cleaned, Calcium Rich, Gluten-Free",
-    "description": "Super-nutritious ancient Indian millets loaded with calcium, dietary fiber, and essential micronutrients."
-  },
-
-  // ==========================================
-  // 11. FLOURS & GRAINS (flours-grains)
-  // ==========================================
-  {
-    "id": "flour-wheat-atta",
-    "slug": "whole-wheat-flour-chakki-atta",
-    "name": "Whole Wheat Flour (Chakki Fresh Atta & Maida)",
-    "category": "flours-grains",
-    "categoryName": "Flours & Grains",
-    "image": "assets/images/products/whole-wheat-flour.png",
-    "origin": "India",
-    "packaging": "5kg / 10kg / 25kg / 50kg Bags",
-    "specs": "100% Whole Wheat, No Additives, Gluten > 9.5%, Moisture < 12%",
-    "description": "Traditional stone-ground fresh wheat atta retaining natural bran and germ for soft rotis and breads."
-  },
-  {
-    "id": "flour-besan",
-    "slug": "gram-flour-besan",
-    "name": "Gram Flour (Besan / Fine Chickpea Flour)",
-    "category": "flours-grains",
-    "categoryName": "Flours & Grains",
-    "image": "assets/images/products/gram-flour-besan.png",
-    "origin": "India",
-    "packaging": "1kg / 5kg / 25kg Bags",
-    "specs": "100% Pure Chana Dal Ground, Ultra-Fine, Gluten-Free",
-    "description": "Pure yellow chickpea flour essential for snacks, confectioneries, batters, and vegan baking."
-  },
-  {
-    "id": "flour-rice-flour",
-    "slug": "pure-rice-flour-sooji-semolina",
-    "name": "Pure Rice Flour & Semolina (Rava / Sooji)",
-    "category": "flours-grains",
-    "categoryName": "Flours & Grains",
-    "image": "assets/images/products/rice-flour-semolina.png",
-    "origin": "India",
-    "packaging": "25kg / 50kg Poly Bags",
-    "specs": "Silky White, Moisture < 11%, Free from lumps",
-    "description": "High-purity milled rice flour and durum semolina suited for pasta, extrusion foods, and bakery items."
-  },
-  {
-    "id": "flour-corn-millet",
-    "slug": "maize-corn-starch-millet-flour",
-    "name": "Maize Flour (Corn Starch) & Millet Flours (Bajra/Jowar)",
-    "category": "flours-grains",
-    "categoryName": "Flours & Grains",
-    "image": "assets/images/products/whole-wheat-flour.png",
-    "origin": "India",
-    "packaging": "25kg / 50kg Bags",
-    "specs": "Fine Mesh 80-100, Pure Starch & Gluten-Free Multi-Millet Flours",
-    "description": "Versatile gluten-free grain flours and industrial food-grade corn starch for thickened sauces and health bakery."
-  },
-
-  // ==========================================
-  // 12. FROZEN SEAFOOD (seafood)
+  // 6. FROZEN SEAFOOD (seafood)
   // ==========================================
   {
     "id": "seafood-vannamei-shrimp",
     "slug": "frozen-vannamei-white-shrimp",
-    "name": "Frozen Vannamei White Shrimp (HOSO / HLSO / PD / PUD)",
+    "name": "Frozen Shrimp / Prawns (Vannamei White Shrimp - HOSO, HLSO, PD, PUD)",
     "category": "seafood",
     "categoryName": "Frozen Seafood",
-    "image": "assets/images/raw-frozen-seafood.jpg",
-    "origin": "Coastal Andhra / Gujarat, India",
+    "image": "assets/images/products/vannamei-white-shrimp.jpg",
+    "origin": "Coastal Andhra Pradesh / Gujarat, India",
     "packaging": "Block Frozen (6x1.8kg / 6x2kg) & IQF (10x1kg bags)",
-    "specs": "Counts: 16/20, 21/25, 26/30, 31/40, 41/50, EU & USFDA Approved Plants",
-    "description": "Farm-fresh premium white leg shrimp processed under rigorous HACCP and BRC certified freezing facilities."
+    "specs": "Counts: 16/20, 21/25, 26/30, 31/40, 41/50; EU & USFDA Approved Plants",
+    "description": "Farm-fresh premium white leg shrimp processed under rigorous HACCP and BRC certified freezing facilities for USA, Europe, and Asia."
   },
   {
     "id": "seafood-black-tiger",
     "slug": "frozen-black-tiger-shrimp",
-    "name": "Frozen Black Tiger Shrimp (Jumbo IQF & Block)",
+    "name": "Frozen Black Tiger Shrimp (Jumbo IQF & Block Frozen)",
     "category": "seafood",
     "categoryName": "Frozen Seafood",
-    "image": "assets/images/seafood-export.jpg",
+    "image": "assets/images/products/black-tiger-shrimp.jpg",
     "origin": "West Bengal / Odisha, India",
-    "packaging": "IQF / Block Frozen in master cartons",
-    "specs": "Counts: 8/12, 13/15, 16/20, 21/25, Chemical Free / Treated",
-    "description": "Jumbo succulent black tiger shrimp with firm texture and distinct sweet ocean flavor."
+    "packaging": "IQF / Block Frozen in master export cartons",
+    "specs": "Counts: 8/12, 13/15, 16/20, 21/25; Chemical Free / Treated, USFDA Compliant",
+    "description": "Jumbo succulent black tiger shrimp with firm texture and distinct sweet ocean flavor, harvested from pristine coastal brackish waters."
   },
   {
-    "id": "seafood-ribbon-fish",
+    "id": "seafood-marine-fish",
     "slug": "frozen-ribbon-fish-whole",
-    "name": "Frozen Ribbon Fish (Trichiurus lepturus Whole Round)",
+    "name": "Frozen Marine Fish (Ribbon Fish, Indian Mackerel, Yellowfin Tuna & Silver Croaker)",
     "category": "seafood",
     "categoryName": "Frozen Seafood",
-    "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=800&auto=format&fit=crop&q=80",
-    "origin": "Gujarat / Maharashtra Coast, India",
-    "packaging": "10kg / 20kg Master Carton (Block Frozen)",
-    "specs": "Sizes: 100/200g, 200/300g, 300/400g, 400/700g, 700g+",
-    "description": "Whole round sea-frozen ribbon fish with shimmering silver skin, heavily exported to East Asia."
+    "image": "assets/images/products/frozen-marine-fish.jpg",
+    "origin": "Gujarat / Kerala / Maharashtra Coast, India",
+    "packaging": "10kg / 20kg Master Cartons (Block & Blast Frozen)",
+    "specs": "Whole Round / Steaks / Fillets, Fresh Sea Frozen, Histamine < 30ppm",
+    "description": "Premium ocean-caught commercial and table fish blast-frozen immediately after landing, inspected and certified for global export."
   },
   {
     "id": "seafood-cuttlefish-squid",
     "slug": "frozen-squid-and-cuttlefish",
-    "name": "Frozen Squid & Cuttlefish (Whole / Rings / Tubes)",
+    "name": "Other Seafood Products (Squid & Cuttlefish Whole, Rings & Tubes)",
     "category": "seafood",
     "categoryName": "Frozen Seafood",
-    "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&auto=format&fit=crop&q=80",
-    "origin": "Veraval / Kochi, India",
+    "image": "assets/images/products/squid-cuttlefish.jpg",
+    "origin": "Veraval / Kochi Coast, India",
     "packaging": "IQF / Block 10kg Master Cartons",
-    "specs": "Whole Cleaned, Rings, Tubes, U5, U10, 10/20, 20/40 count",
-    "description": "Tender ocean-caught squid and cuttlefish processed with pristine hygiene standards."
-  },
-  {
-    "id": "seafood-yellowfin-tuna",
-    "slug": "frozen-yellowfin-tuna",
-    "name": "Frozen Yellowfin Tuna (Loins / Steaks / Whole)",
-    "category": "seafood",
-    "categoryName": "Frozen Seafood",
-    "image": "https://images.unsplash.com/photo-1501595091296-3aa970afb3ff?w=800&auto=format&fit=crop&q=80",
-    "origin": "Indian Ocean / Arabian Sea",
-    "packaging": "Vacuum Packed IQF Loins / SASHIMI & CO-Treated",
-    "specs": "Grade A / AA, Deep Red Meat, Histamine < 30ppm",
-    "description": "Super-frozen yellowfin tuna loins and steaks suited for premium dining and foodservice distributors."
-  },
-  {
-    "id": "seafood-mackerel-croaker",
-    "slug": "frozen-indian-mackerel-silver-croaker",
-    "name": "Frozen Indian Mackerel & Silver Croaker Fish",
-    "category": "seafood",
-    "categoryName": "Frozen Seafood",
-    "image": "assets/images/seafood-export.jpg",
-    "origin": "West Coast India",
-    "packaging": "10kg Block Frozen Cartons",
-    "specs": "Sizes: 4/6, 6/8, 8/10 pcs/kg, Fresh Sea Frozen",
-    "description": "Fatty, flavorful whole Indian mackerel and silver croakers blast-frozen immediately after landing."
+    "specs": "Whole Cleaned, Rings, Tubes, U5, U10, 10/20, 20/40 count, EU/USFDA Certified",
+    "description": "Tender ocean-caught squid and cuttlefish processed with pristine hygiene standards tailored to specific importer compliance requirements."
   },
 
   // ==========================================
-  // 13. TEA & COFFEE (tea-coffee)
+  // 7. HERBS & MEDICINAL PLANTS (herbs)
   // ==========================================
   {
-    "id": "tea-assam-ctc",
-    "slug": "assam-ctc-black-tea-bop-bp-of",
-    "name": "Assam CTC Black Tea (BOP, BP, OF, Dust Grades)",
-    "category": "tea-coffee",
-    "categoryName": "Tea & Coffee",
-    "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=800&auto=format&fit=crop&q=80",
-    "origin": "Assam, India",
-    "packaging": "25kg / 35kg Paper Sacks with Aluminum Foil Liner",
-    "specs": "Grades: BP, BOP, OF, PD, Dust; Strong Liquor, Rich Malty Flavor",
-    "description": "Robust, full-bodied Assam black tea granules giving rich red liquor and distinct malt notes."
+    "id": "herbs-moringa",
+    "slug": "moringa-leaf-powder-organic",
+    "name": "Moringa (Moringa Oleifera Dried Leaves & Leaf Powder)",
+    "category": "herbs",
+    "categoryName": "Herbs & Medicinal Plants",
+    "image": "assets/images/products/moringa-leaves.jpg",
+    "origin": "Tamil Nadu / Gujarat, India",
+    "packaging": "20kg / 25kg Paper Bags with PE Liner / Vacuum Packs",
+    "specs": "100% Organic, Green Leaf Mesh 80-100, Moisture < 7%, Protein > 25%",
+    "description": "Superfood powerhouse moringa leaves shade-dried and pulverized under controlled temperatures, loaded with antioxidants, iron, and amino acids."
   },
   {
-    "id": "tea-darjeeling-orthodox",
-    "slug": "darjeeling-orthodox-leaf-tea",
-    "name": "Darjeeling Orthodox Whole Leaf Tea (First & Second Flush)",
-    "category": "tea-coffee",
-    "categoryName": "Tea & Coffee",
-    "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=800&auto=format&fit=crop&q=80",
-    "origin": "Darjeeling, West Bengal, India",
-    "packaging": "10kg / 20kg Master Chests & Vacuum Foils",
-    "specs": "FTGFOP1, TGFOP Grades, Champagne of Teas, Muscatel Notes",
-    "description": "Prestigious Darjeeling orthodox whole leaf tea celebrated worldwide for delicate floral and muscatel bouquet."
+    "id": "herbs-tulsi",
+    "slug": "tulsi-holy-basil-leaves-powder",
+    "name": "Tulsi (Holy Basil / Ocimum Sanctum Dried Leaves & Powder)",
+    "category": "herbs",
+    "categoryName": "Herbs & Medicinal Plants",
+    "image": "assets/images/products/tulsi-holy-basil.jpg",
+    "origin": "Uttar Pradesh / Gujarat, India",
+    "packaging": "10kg / 20kg Master Cartons with inner poly lining",
+    "specs": "Rama & Krishna Tulsi, Eugenol Rich, Moisture < 8%, Microbiologically Tested",
+    "description": "Sacred Indian Holy Basil prized worldwide for its adaptogenic, immunity-boosting properties and refreshing herbal tea aroma."
   },
   {
-    "id": "coffee-robusta-arabica",
-    "slug": "indian-green-coffee-beans-plantation-a-robusta-cherry",
-    "name": "Green Coffee Beans (Arabica Plantation A & Robusta Cherry AB)",
-    "category": "tea-coffee",
-    "categoryName": "Tea & Coffee",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&auto=format&fit=crop&q=80",
-    "origin": "Chikmagalur / Coorg, Karnataka, India",
-    "packaging": "60kg Jute Bags with GrainPro Liner",
-    "specs": "Arabica Plantation A (Screen 17), Robusta Cherry AB (Screen 15+), Moisture < 12%",
-    "description": "Shade-grown Indian specialty coffee green beans with balanced acidity, mild body, and spicy sweet undertones."
+    "id": "herbs-ashwagandha",
+    "slug": "ashwagandha-root-extract-powder",
+    "name": "Ashwagandha (Indian Ginseng Root & Fine Extract Powder)",
+    "category": "herbs",
+    "categoryName": "Herbs & Medicinal Plants",
+    "image": "assets/images/products/ashwagandha-root.jpg",
+    "origin": "Madhya Pradesh / Rajasthan, India",
+    "packaging": "25kg Fiber Drums / Paper Sacks",
+    "specs": "Withanolides 2.5% - 5.0% HPLC, Nagori A-Grade Roots, Moisture < 8%",
+    "description": "Premier Ayurvedic adaptogen root and fine powder clinically known to relieve stress, enhance vitality, and strengthen immune health."
   },
   {
-    "id": "coffee-instant-green-tea",
-    "slug": "instant-spray-dried-coffee-and-green-tea",
-    "name": "Instant Spray-Dried Coffee Powder & Green Tea",
-    "category": "tea-coffee",
-    "categoryName": "Tea & Coffee",
-    "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=800&auto=format&fit=crop&q=80",
-    "origin": "South India",
-    "packaging": "25kg Bag-in-Box / Bulk Tins",
-    "specs": "100% Pure Agglomerated / Spray Dried, High Solubility, Full Aroma",
-    "description": "Premium instant coffee powder and whole green tea leaves crafted for rapid reconstitution and beverage manufacturing."
+    "id": "herbs-neem",
+    "slug": "neem-leaves-botanical-powder",
+    "name": "Neem (Dried Neem Leaves & Organic Botanical Powder)",
+    "category": "herbs",
+    "categoryName": "Herbs & Medicinal Plants",
+    "image": "assets/images/products/neem-leaves.jpg",
+    "origin": "Gujarat / Rajasthan, India",
+    "packaging": "20kg / 25kg Bags & Drums",
+    "specs": "Azadirachtin verified, Shade-Dried Green Leaves, Mesh 80-100, Moisture < 7%",
+    "description": "Versatile antibacterial herbal leaves and powder utilized globally in dietary supplements, organic cosmetics, and natural skincare."
+  },
+  {
+    "id": "herbs-amla",
+    "slug": "amla-indian-gooseberry-dried-powder",
+    "name": "Amla (Indian Gooseberry Dried Segments & Powder)",
+    "category": "herbs",
+    "categoryName": "Herbs & Medicinal Plants",
+    "image": "assets/images/products/amla-gooseberry.jpg",
+    "origin": "Gujarat / Uttar Pradesh, India",
+    "packaging": "25kg Poly-lined Paper Sacks",
+    "specs": "Natural Vitamin C > 2000mg/100g, Seedless Dried Segments, Mesh 80, Moisture < 8%",
+    "description": "Potent Indian gooseberry rich in natural Vitamin C, bioflavonoids, and polyphenols for nutraceutical and wellness formulations."
+  },
+  {
+    "id": "herbs-curry-leaves",
+    "slug": "curry-leaves-fresh-dried",
+    "name": "Curry Leaves (Sweet Neem Leaves - Fresh & Sun-Dried)",
+    "category": "herbs",
+    "categoryName": "Herbs & Medicinal Plants",
+    "image": "assets/images/products/curry-leaves.jpg",
+    "origin": "Tamil Nadu / Andhra Pradesh / Gujarat, India",
+    "packaging": "5kg Air-vented Cartons (Fresh) / 10kg Vacuum Bags (Dried)",
+    "specs": "Deep Green, High Volatile Aroma, Moisture < 7% (Dried), Zero Pesticide Residue",
+    "description": "Distinctly fragrant curry leaves packed with essential aromatic oils, air-freighted fresh or shade-dried for authentic seasonings and tea infusions."
+  },
+  {
+    "id": "herbs-kasuri-methi",
+    "slug": "fenugreek-leaves-kasuri-methi",
+    "name": "Fenugreek Leaves (Kasuri Methi Shade-Dried Leaves)",
+    "category": "herbs",
+    "categoryName": "Herbs & Medicinal Plants",
+    "image": "assets/images/products/kasuri-methi.jpg",
+    "origin": "Nagaur, Rajasthan, India",
+    "packaging": "1kg / 5kg / 10kg Master Cartons with Foil Liner",
+    "specs": "Deep Green Leaves, Moisture < 7%, Intensely Aromatic, Sortex Cleaned",
+    "description": "Fragrant shade-dried Kasuri Methi leaves from Nagaur, providing the signature aroma and bitter-sweet touch in high-end culinary curries and breads."
+  },
+  {
+    "id": "herbs-brahmi",
+    "slug": "brahmi-bacopa-monnieri-powder",
+    "name": "Brahmi (Bacopa Monnieri Whole Leaves & Memory Powder)",
+    "category": "herbs",
+    "categoryName": "Herbs & Medicinal Plants",
+    "image": "assets/images/products/brahmi-herb.jpg",
+    "origin": "India",
+    "packaging": "20kg / 25kg Fiber Drums",
+    "specs": "Bacosides > 20% by HPLC, 100% Pure Bacopa Monnieri, Moisture < 8%",
+    "description": "Renowned Ayurvedic nootropic herb celebrated for cognitive enhancement, neuro-protection, and nervous system nourishment."
   },
 
   // ==========================================
-  // 14. MAKHANA & AGRO PRODUCTS (honey-agro)
+  // 8. NUTS, DRIED FRUITS & SPECIALTY (more-products)
   // ==========================================
   {
-    "id": "agro-phool-makhana",
+    "id": "more-phool-makhana",
     "slug": "phool-makhana-fox-nuts-gorgon",
     "name": "Phool Makhana / Fox Nuts (Gorgon Nut 4+, 5+, 6+ Suta Handpicked)",
-    "category": "honey-agro",
-    "categoryName": "Makhana & Agro Products",
+    "category": "more-products",
+    "categoryName": "Nuts, Dried Fruits & Specialty",
     "image": "assets/images/makhana-fox-nuts.jpg",
     "origin": "Mithila, Bihar, India",
     "packaging": "8kg - 10kg Poly Bags / Custom Nitrogen Flushed Pouches",
     "specs": "Grades: 4 Suta, 5 Suta, 6 Suta Jumbo Bold, Moisture < 9%, Crisp & Clean",
-    "description": "GI-tagged organic Indian fox nuts (puffed lotus/gorgon seeds), high in plant protein, magnesium, and low in calories."
+    "description": "GI-tagged organic Indian fox nuts (puffed gorgon seeds), high in plant protein, calcium, magnesium, and low in glycemic index."
   },
   {
-    "id": "honey-pure-natural",
-    "slug": "pure-natural-raw-honey-multiflora-mustard",
-    "name": "100% Pure Natural Raw Honey (Multiflora / Mustard / Eucalyptus / Wild Forest)",
-    "category": "honey-agro",
-    "categoryName": "Makhana & Agro Products",
-    "image": "assets/images/products/pure-natural-honey.png",
-    "origin": "Punjab / Himachal / Gujarat, India",
-    "packaging": "300kg Epoxy Lined Steel Drums / 25kg Buckets",
-    "specs": "NMR Tested, C3/C4 Sugar Negative, Moisture < 18%, F/G Ratio > 1.0",
-    "description": "Pure raw and filtered Indian honey harvested by trained beekeepers, certified free from antibiotics and adulterants."
+    "id": "more-almonds",
+    "slug": "california-indian-badam-almonds",
+    "name": "Almonds (Badam / બદામ - Extra Bold & Mamra Quality)",
+    "category": "more-products",
+    "categoryName": "Nuts, Dried Fruits & Specialty",
+    "image": "assets/images/products/almonds-badam.jpg",
+    "origin": "Kashmir, India / California Grade",
+    "packaging": "10kg / 25kg Vacuum Packs & Master Cartons",
+    "specs": "Count 20/22, 23/25, 27/30, Moisture < 6%, Oil Content > 50%",
+    "description": "Premium crunchy whole almond kernels, sorted for uniform bold caliber and loaded with natural Vitamin E, healthy fats, and antioxidants."
   },
   {
-    "id": "agro-psyllium-husk",
-    "slug": "psyllium-husk-isabgol-powder",
-    "name": "Psyllium Husk & Powder (Isabgol 85% to 99% USP/EP Purity)",
-    "category": "honey-agro",
-    "categoryName": "Makhana & Agro Products",
-    "image": "assets/images/products/psyllium-husk-powder.png",
-    "origin": "Sidhpur, Gujarat, India",
-    "packaging": "25kg Paper Bags / Fiber Drums",
-    "specs": "Purity: 85%, 95%, 98%, 99% USP/EP Grade, Swell Volume > 40-50 ml/g",
-    "description": "Soluble dietary fiber psyllium husk from Gujarat, global pharmaceutical gold standard for digestive health."
+    "id": "more-cashews",
+    "slug": "cashew-nuts-w180-w240-w320",
+    "name": "Cashews (Kaju / કાજુ - W180 King, W240 Jumbo, W320 & Splits)",
+    "category": "more-products",
+    "categoryName": "Nuts, Dried Fruits & Specialty",
+    "image": "assets/images/cashew-nuts.jpg",
+    "origin": "Goa / Kerala / Maharashtra, India",
+    "packaging": "10kg / 11.34kg (25 lbs) / 22.68kg (50 lbs) Tins & Vacuum Packs",
+    "specs": "White Wholes (W180 King Size, W240 Jumbo, W320 Standard), Moisture < 5%",
+    "description": "Buttery, crunchy Indian cashew nuts carefully graded and vacuum-sealed under inert gas for maximum international freshness."
   },
   {
-    "id": "agro-guar-gum",
-    "slug": "guar-gum-powder-food-industrial-grade",
-    "name": "Guar Gum Powder (Food, Pharma & Industrial Grade E412)",
-    "category": "honey-agro",
-    "categoryName": "Makhana & Agro Products",
-    "image": "assets/images/products/guar-gum-powder.png",
-    "origin": "Gujarat / Rajasthan, India",
-    "packaging": "25kg Paper Bags with PE Liner / 1 MT Jumbo Bags",
-    "specs": "Viscosity 3000 - 8000 cps, Mesh 100/200, Food Grade E412",
-    "description": "Natural high-viscosity hydrocolloid stabilizer used in bakery, sauces, ice creams, and oilfield drilling."
-  },
-
-  // ==========================================
-  // 15. PROCESSED FOODS (processed-foods)
-  // ==========================================
-  {
-    "id": "processed-mango-pulp",
-    "slug": "totapuri-alphonso-mango-pulp-aseptic",
-    "name": "Aseptic Mango Pulp (Alphonso & Totapuri Pulp/Puree)",
-    "category": "processed-foods",
-    "categoryName": "Processed Foods",
-    "image": "assets/images/products/aseptic-mango-pulp.png",
-    "origin": "Andhra Pradesh / Maharashtra, India",
-    "packaging": "215kg Aseptic Bag-in-Drum / 3.1kg OTS Cans (6/carton)",
-    "specs": "Totapuri Brix 14° min, Alphonso Brix 16° min, Acidity 0.45-0.75%, Commercial Sterile",
-    "description": "Rich, smooth tropical mango puree processed under aseptic technology for juice, beverage, and dairy manufacturing."
+    "id": "more-walnuts",
+    "slug": "walnuts-akhrot-inshell-kernels",
+    "name": "Walnuts (Akhrot / અખરોટ - Inshell & Extra Light Halves Kernels)",
+    "category": "more-products",
+    "categoryName": "Nuts, Dried Fruits & Specialty",
+    "image": "assets/images/products/walnuts-akhrot.jpg",
+    "origin": "Kashmir, India",
+    "packaging": "10kg Master Cartons with Vacuum Nitrogen Liner",
+    "specs": "Halves > 80%, Extra Light / Light Amber, Moisture < 5%, Rich in Omega-3",
+    "description": "Heart-healthy Kashmiri walnuts known for golden amber kernels, delicate buttery crunch, and exceptional ALA Omega-3 concentration."
   },
   {
-    "id": "processed-guava-papaya-puree",
-    "slug": "aseptic-white-pink-guava-pulp-tomato-paste",
-    "name": "Guava Pulp, Papaya Puree & Concentrated Tomato Paste",
-    "category": "processed-foods",
-    "categoryName": "Processed Foods",
-    "image": "assets/images/products/guava-papaya-tomato-paste.png",
-    "origin": "India",
-    "packaging": "215kg Aseptic Drums / 5kg Bag in Box",
-    "specs": "Brix 8-10° (Guava), Tomato Paste 28-30% / 36-38% Hot Break & Cold Break",
-    "description": "Concentrated fruit and vegetable purees manufactured without preservatives for international food industries."
+    "id": "more-pistachios",
+    "slug": "pistachios-pista-roasted-salted-green",
+    "name": "Pistachios (Pista / પિસ્તા - Roasted Salted & Raw Green Kernels)",
+    "category": "more-products",
+    "categoryName": "Nuts, Dried Fruits & Specialty",
+    "image": "assets/images/products/pistachios-pista.jpg",
+    "origin": "India / Global Sourcing",
+    "packaging": "10kg / 25kg Vacuum Cartons",
+    "specs": "Inshell Naturally Opened, Size 18/20, 21/25, Moisture < 5%",
+    "description": "Delightfully vibrant green pistachios, available lightly roasted with sea salt or raw de-shelled for bakery and confectioneries."
   },
   {
-    "id": "processed-papads-pickles",
-    "slug": "indian-pickles-chutneys-crispy-papads",
-    "name": "Indian Traditional Pickles, Chutneys & Spiced Lentil Papads",
-    "category": "processed-foods",
-    "categoryName": "Processed Foods",
-    "image": "assets/images/products/pickles-chutneys-papads.png",
-    "origin": "Gujarat / India",
-    "packaging": "Glass Jars 300g-1kg / Foodservice Buckets 5kg-20kg",
-    "specs": "Mango, Lime, Mixed Pickles, Handcrafted Moong/Urad Papads, USFDA Registered",
-    "description": "Authentic Indian condiments, savory spicy pickles, and sun-dried papads crafted using heritage recipes."
+    "id": "more-raisins",
+    "slug": "raisins-sultanas-kismis-golden-green",
+    "name": "Raisins / Sultanas (Kismis / સૂકી દ્રાક્ષ - Golden, Green & Malayar)",
+    "category": "more-products",
+    "categoryName": "Nuts, Dried Fruits & Specialty",
+    "image": "assets/images/products/raisins-kismis.jpg",
+    "origin": "Sangli / Nashik, Maharashtra, India",
+    "packaging": "10kg / 15kg Corrugated Master Cartons",
+    "specs": "Golden Long, Green Bold, Brown Malayar, Moisture 14-16%, Seedless",
+    "description": "Sun-dried plump Indian seedless raisins bursting with natural fructose sweetness, sorted for uniform berry size and color."
   },
   {
-    "id": "processed-ready-meals",
-    "slug": "canned-vegetables-ready-to-eat-curries",
-    "name": "Canned Processed Vegetables & Ready-to-Eat Curries",
-    "category": "processed-foods",
-    "categoryName": "Processed Foods",
-    "image": "assets/images/products/pickles-chutneys-papads.png",
-    "origin": "India",
-    "packaging": "Retort Pouches 300g / 850g Cans",
-    "specs": "Commercial Sterility, Ambient Storage (18 Months Shelf Life), No Artificial Preservatives",
-    "description": "Shelf-stable authentic Indian ready meals (Dal Makhani, Chana Masala) and canned chickpeas in brine."
-  },
-
-  // ==========================================
-  // 16. MARINE PRODUCTS (marine)
-  // ==========================================
-  {
-    "id": "marine-fish-meal",
-    "slug": "marine-steam-sterilized-fish-meal",
-    "name": "Steam Sterilized Fish Meal (60% - 68% Protein)",
-    "category": "marine",
-    "categoryName": "Marine Products",
-    "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=800&auto=format&fit=crop&q=80",
-    "origin": "Gujarat / Kerala Coast, India",
-    "packaging": "50kg PP Bags / 1 MT Jumbo Bags",
-    "specs": "Crude Protein: 60% - 65% - 68%, Fat < 10%, Moisture < 10%, Sand/Silica < 2%",
-    "description": "Premium steam-dried marine fish meal with optimal protein and balanced amino acid profile."
+    "id": "more-dates",
+    "slug": "premium-dates-khajur-medjool-kimia",
+    "name": "Dates (Khajur / ખજૂર - Premium Medjool, Kimia & Wet/Dry Dates)",
+    "category": "more-products",
+    "categoryName": "Nuts, Dried Fruits & Specialty",
+    "image": "assets/images/products/dates-khajur.jpg",
+    "origin": "Gujarat / International Direct Import",
+    "packaging": "500g / 1kg / 5kg / 10kg Master Cartons",
+    "specs": "Soft, Semi-Dry & Dry, Natural Brix > 65%, Grade A, Moisture 18-22%",
+    "description": "Succulent, caramel-rich whole dates naturally cured and hygienically packed for retail gifting, energy snacks, and confectionery."
   },
   {
-    "id": "marine-fish-oil",
-    "slug": "crude-and-refined-fish-oil",
-    "name": "Crude & Refined Marine Fish Oil (Industrial & Processing Grade)",
-    "category": "marine",
-    "categoryName": "Marine Products",
-    "image": "assets/images/products/marine-fish-oil.png",
-    "origin": "West Coast India",
-    "packaging": "200kg Steel / HDPE Drums & Flexibags",
-    "specs": "EPA + DHA > 15-20%, FFA < 5%, Moisture < 1%",
-    "description": "Natural marine oil extracted from fresh pelagic catch, rich in essential Omega-3 fatty acids."
-  },
-  {
-    "id": "marine-crustacean-meal",
-    "slug": "crustacean-shell-meal-squilla-powder",
-    "name": "Crustacean Shell Meal & Squilla Powder (High Chitin)",
-    "category": "marine",
-    "categoryName": "Marine Products",
-    "image": "assets/images/seafood-export.jpg",
-    "origin": "West Coast India",
-    "packaging": "50kg PP Bags",
-    "specs": "Chitin > 15%, Protein > 30%, Moisture < 10%",
-    "description": "Natural marine by-product rich in chitin, protein, and organic minerals for industrial and agricultural enrichment."
+    "id": "more-figs",
+    "slug": "dried-figs-anjeer-garland-round",
+    "name": "Dried Figs (Anjeer / અંજીર - Premium Round & Garland Quality)",
+    "category": "more-products",
+    "categoryName": "Nuts, Dried Fruits & Specialty",
+    "image": "assets/images/products/dried-figs-anjeer.jpg",
+    "origin": "Maharashtra / International Direct Sourcing",
+    "packaging": "1kg / 5kg / 10kg Garland String & Ring Master Boxes",
+    "specs": "Size: 40mm - 55mm+ Jumbo, Moisture < 20%, Tender Chewy Flesh",
+    "description": "Naturally flattened round dried figs threaded in traditional garlands, packed with crunchy edible seeds, dietary fiber, and minerals."
   }
 ];
 
