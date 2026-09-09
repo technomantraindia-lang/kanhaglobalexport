@@ -184,31 +184,41 @@
     }
   });
 
-  /* Mobile dropdown accordion toggle */
+  /* Dropdown toggle for both mobile accordion & desktop click */
   dropdownTriggers.forEach((trigger) => {
     trigger.addEventListener('click', (e) => {
-      if (window.innerWidth <= 1024) {
-        const parent = trigger.parentElement;
-        const isOpen = parent.classList.contains('open');
-        if (!isOpen) {
-          e.preventDefault();
-          // Close other open dropdowns for clean accordion UX
-          document.querySelectorAll('.has-dropdown.open').forEach((other) => {
-            if (other !== parent) {
-              other.classList.remove('open');
-              const otherTrigger = other.querySelector('.nav-link');
-              if (otherTrigger) otherTrigger.setAttribute('aria-expanded', 'false');
-            }
-          });
-          parent.classList.add('open');
-          trigger.setAttribute('aria-expanded', 'true');
-        } else {
-          e.preventDefault();
-          parent.classList.remove('open');
-          trigger.setAttribute('aria-expanded', 'false');
+      const parent = trigger.parentElement;
+      const isOpen = parent.classList.contains('open');
+      e.preventDefault();
+
+      // Close other open dropdowns for clean UX
+      document.querySelectorAll('.has-dropdown.open').forEach((other) => {
+        if (other !== parent) {
+          other.classList.remove('open');
+          const otherTrigger = other.querySelector('.nav-link');
+          if (otherTrigger) otherTrigger.setAttribute('aria-expanded', 'false');
         }
+      });
+
+      if (!isOpen) {
+        parent.classList.add('open');
+        trigger.setAttribute('aria-expanded', 'true');
+      } else {
+        parent.classList.remove('open');
+        trigger.setAttribute('aria-expanded', 'false');
       }
     });
+  });
+
+  /* Close dropdowns when clicking outside */
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.has-dropdown')) {
+      document.querySelectorAll('.has-dropdown.open').forEach((dropdown) => {
+        dropdown.classList.remove('open');
+        const trigger = dropdown.querySelector('.nav-link');
+        if (trigger) trigger.setAttribute('aria-expanded', 'false');
+      });
+    }
   });
 
   /* Scroll reveal */
