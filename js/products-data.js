@@ -3,14 +3,14 @@
 (function() {
   const products = [
   // ==========================================
-  // 1. BASMATI & NON-BASMATI RICE (rice)
+  // 1. RICE & GRAINS (rice)
   // ==========================================
   {
     "id": "rice-1121-basmati",
     "slug": "1121-basmati-rice-steam-sella",
     "name": "1121 Basmati Rice (Raw, Steam, Sella & Golden Sella)",
     "category": "rice",
-    "categoryName": "Basmati & Non-Basmati Rice",
+    "categoryName": "Rice & Grains",
     "image": "assets/images/products/1121-basmati-rice.png",
     "origin": "Punjab / Haryana, India",
     "packaging": "1kg / 5kg / 10kg / 25kg / 50kg Non-Woven & BOPP Bags",
@@ -22,7 +22,7 @@
     "slug": "1718-basmati-rice-steam-sella",
     "name": "1718 Basmati Rice (Raw, Steam & Sella)",
     "category": "rice",
-    "categoryName": "Basmati & Non-Basmati Rice",
+    "categoryName": "Rice & Grains",
     "image": "assets/images/rice-1121-steam-hd.jpg",
     "origin": "Punjab / Haryana / Uttar Pradesh, India",
     "packaging": "10kg / 25kg / 50kg PP / Jute Bags",
@@ -34,7 +34,7 @@
     "slug": "1509-basmati-rice",
     "name": "1509 Basmati Rice (Raw, Steam & Sella)",
     "category": "rice",
-    "categoryName": "Basmati & Non-Basmati Rice",
+    "categoryName": "Rice & Grains",
     "image": "assets/images/rice-1121-sella.webp",
     "origin": "Punjab / Haryana / UP, India",
     "packaging": "5kg / 25kg / 50kg Export Bags",
@@ -46,7 +46,7 @@
     "slug": "1401-basmati-rice",
     "name": "1401 Basmati Rice (Steam & Sella)",
     "category": "rice",
-    "categoryName": "Basmati & Non-Basmati Rice",
+    "categoryName": "Rice & Grains",
     "image": "assets/images/rice-1121-golden.webp",
     "origin": "Haryana / Punjab, India",
     "packaging": "25kg / 50kg PP / Jute Bags",
@@ -58,7 +58,7 @@
     "slug": "traditional-authentic-basmati-rice",
     "name": "Traditional Authentic Basmati Rice (Aged Himalayan)",
     "category": "rice",
-    "categoryName": "Basmati & Non-Basmati Rice",
+    "categoryName": "Rice & Grains",
     "image": "assets/images/rice-1121-steam.webp",
     "origin": "Himalayan Foothills, India",
     "packaging": "5kg / 10kg / 25kg Master Bags",
@@ -70,7 +70,7 @@
     "slug": "ir-64-parboiled-raw-rice",
     "name": "IR-64 Long Grain Rice (Parboiled & Raw 5% - 25% Broken)",
     "category": "rice",
-    "categoryName": "Basmati & Non-Basmati Rice",
+    "categoryName": "Rice & Grains",
     "image": "assets/images/products/ir64-long-grain-rice.png",
     "origin": "Andhra Pradesh / Maharashtra / Gujarat, India",
     "packaging": "25kg / 50kg PP Bags / Bulk Containers",
@@ -82,7 +82,7 @@
     "slug": "sona-masoori-raw-steam-rice",
     "name": "Sona Masoori Rice (Raw & Steam Table Rice)",
     "category": "rice",
-    "categoryName": "Basmati & Non-Basmati Rice",
+    "categoryName": "Rice & Grains",
     "image": "assets/images/products/sona-masoori-rice.png",
     "origin": "Karnataka / Andhra Pradesh, India",
     "packaging": "5kg / 10kg / 20kg / 25kg Poly Woven Bags",
@@ -94,7 +94,7 @@
     "slug": "pr-11-pr-14-non-basmati-rice",
     "name": "PR-11 / PR-14 Long Grain Non-Basmati Rice",
     "category": "rice",
-    "categoryName": "Basmati & Non-Basmati Rice",
+    "categoryName": "Rice & Grains",
     "image": "assets/images/products/ir64-long-grain-rice.png",
     "origin": "Punjab / Haryana, India",
     "packaging": "25kg / 50kg Bags",
@@ -106,7 +106,7 @@
     "slug": "swarna-rice-parboiled",
     "name": "Swarna Rice (Parboiled & Raw Medium Grain)",
     "category": "rice",
-    "categoryName": "Basmati & Non-Basmati Rice",
+    "categoryName": "Rice & Grains",
     "image": "assets/images/products/swarna-rice.png",
     "origin": "West Bengal / Odisha / Andhra, India",
     "packaging": "50kg PP Bags",
@@ -115,26 +115,118 @@
   },
 
   // ==========================================
-  // 2. WHOLE & GROUND SPICES (spices)
+  // 2. SPICES & SEASONINGS (spices)
   // ==========================================
   {
     "id": "spices-cumin-seeds",
     "slug": "cumin-seeds-jeera",
-    "name": "Cumin Seeds (Jeera Whole & Ground Powder)",
+    "name": "Cumin Seeds & Cumin Powder (Jeera)",
     "category": "spices",
-    "categoryName": "Whole & Ground Spices",
+    "categoryName": "Spices & Seasonings",
     "image": "https://shivaspice.com/wp-content/uploads/2021/01/shivaspice_cumin_powder.jpg",
-    "origin": "Unjha, Gujarat / Rajasthan, India",
-    "packaging": "25kg / 50kg PP / Paper Bags",
-    "specs": "Purity 99% / 99.5% Sortex Clean, Singapore/Europe Quality, Volatile Oil > 2.5%",
-    "description": "Aromatic Gujarat cumin seeds, machine and sortex cleaned with intense flavor profile for culinary, seasoning, and extraction use."
+    "origin": "India",
+    "packaging": "10 / 20 / 25 / 50 kg; customized retail packs",
+    "specs": "Purity Min. 99%, Moisture Max. 10%, Foreign Matter Max. 1%, Absent Infestation",
+    "description": "Authentic Indian Cumin Seeds (Whole) and Cumin Powder (Fine Powder), processed under rigorous export quality standards with minimum 99% purity and characteristic natural aroma.",
+    "specTabs": [
+      {
+        "tabName": "1) Cumin Seeds",
+        "id": "cumin-seeds",
+        "parameters": [
+          { "param": "Origin", "spec": "India" },
+          { "param": "Product", "spec": "Whole Cumin Seeds" },
+          { "param": "Purity", "spec": "Min. 99%" },
+          { "param": "Moisture", "spec": "Max. 10%" },
+          { "param": "Foreign Matter", "spec": "Max. 1%" },
+          { "param": "Admixture", "spec": "Max. 1%" },
+          { "param": "Damaged Seeds", "spec": "Max. 2%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "Natural greenish-brown" },
+          { "param": "Aroma", "spec": "Characteristic cumin aroma" },
+          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg" },
+          { "param": "Form", "spec": "Whole / Powder" }
+        ]
+      },
+      {
+        "tabName": "Cumin Powder",
+        "id": "cumin-powder",
+        "parameters": [
+          { "param": "Origin", "spec": "India" },
+          { "param": "Product", "spec": "Cumin Powder" },
+          { "param": "Purity", "spec": "Min. 99%" },
+          { "param": "Moisture", "spec": "Max. 10%" },
+          { "param": "Foreign Matter", "spec": "Max. 0.5%" },
+          { "param": "Admixture", "spec": "Max. 0.5%" },
+          { "param": "Particle Size", "spec": "60–100 Mesh" },
+          { "param": "Colour", "spec": "Natural greenish-brown to brown" },
+          { "param": "Aroma", "spec": "Characteristic cumin aroma" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Added Colour", "spec": "None" },
+          { "param": "Added Preservatives", "spec": "None" },
+          { "param": "Packing", "spec": "10 / 20 / 25 kg bulk; customized retail packs" },
+          { "param": "Form", "spec": "Fine Powder" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "spices-cumin-powder",
+    "slug": "cumin-powder",
+    "name": "Cumin Powder (Ground Jeera Powder)",
+    "category": "spices",
+    "categoryName": "Spices & Seasonings",
+    "image": "https://shivaspice.com/wp-content/uploads/2021/01/shivaspice_cumin_powder.jpg",
+    "origin": "India",
+    "packaging": "10 / 20 / 25 kg bulk; customized retail packs",
+    "specs": "Purity Min. 99%, Moisture Max. 10%, 60–100 Mesh, Zero Added Colour",
+    "description": "Export-grade freshly pulverized Indian cumin powder (60–100 Mesh) with natural greenish-brown to brown hue and distinctive robust aroma. 100% pure without preservatives or added colours.",
+    "specTabs": [
+      {
+        "tabName": "Cumin Powder",
+        "id": "cumin-powder",
+        "parameters": [
+          { "param": "Origin", "spec": "India" },
+          { "param": "Product", "spec": "Cumin Powder" },
+          { "param": "Purity", "spec": "Min. 99%" },
+          { "param": "Moisture", "spec": "Max. 10%" },
+          { "param": "Foreign Matter", "spec": "Max. 0.5%" },
+          { "param": "Admixture", "spec": "Max. 0.5%" },
+          { "param": "Particle Size", "spec": "60–100 Mesh" },
+          { "param": "Colour", "spec": "Natural greenish-brown to brown" },
+          { "param": "Aroma", "spec": "Characteristic cumin aroma" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Added Colour", "spec": "None" },
+          { "param": "Added Preservatives", "spec": "None" },
+          { "param": "Packing", "spec": "10 / 20 / 25 kg bulk; customized retail packs" },
+          { "param": "Form", "spec": "Fine Powder" }
+        ]
+      },
+      {
+        "tabName": "1) Cumin Seeds",
+        "id": "cumin-seeds",
+        "parameters": [
+          { "param": "Origin", "spec": "India" },
+          { "param": "Product", "spec": "Whole Cumin Seeds" },
+          { "param": "Purity", "spec": "Min. 99%" },
+          { "param": "Moisture", "spec": "Max. 10%" },
+          { "param": "Foreign Matter", "spec": "Max. 1%" },
+          { "param": "Admixture", "spec": "Max. 1%" },
+          { "param": "Damaged Seeds", "spec": "Max. 2%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "Natural greenish-brown" },
+          { "param": "Aroma", "spec": "Characteristic cumin aroma" },
+          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg" },
+          { "param": "Form", "spec": "Whole / Powder" }
+        ]
+      }
+    ]
   },
   {
     "id": "spices-coriander-seeds",
     "slug": "coriander-seeds-dhaniya",
     "name": "Coriander Seeds (Dhaniya Whole & Ground Powder)",
     "category": "spices",
-    "categoryName": "Whole & Ground Spices",
+    "categoryName": "Spices & Seasonings",
     "image": "https://shivaspice.com/wp-content/uploads/2021/01/shivaspice_coriander_powder.jpg",
     "origin": "Rajasthan / Madhya Pradesh / Gujarat, India",
     "packaging": "25kg / 40kg Jute / PP Bags",
@@ -146,7 +238,7 @@
     "slug": "fennel-seeds-saunf",
     "name": "Fennel Seeds (Lucknowi Green & Bold Saunf)",
     "category": "spices",
-    "categoryName": "Whole & Ground Spices",
+    "categoryName": "Spices & Seasonings",
     "image": "assets/images/products/fennel-seeds.jpg",
     "origin": "Gujarat / Rajasthan, India",
     "packaging": "25kg / 50kg PP Bags",
@@ -158,7 +250,7 @@
     "slug": "turmeric-finger-powder",
     "name": "Turmeric (Finger & Ground Powder / Haldi)",
     "category": "spices",
-    "categoryName": "Whole & Ground Spices",
+    "categoryName": "Spices & Seasonings",
     "image": "https://shivaspice.com/wp-content/uploads/2021/01/turmeric_finger.jpg",
     "origin": "Salem / Nizamabad / Sangli, India",
     "packaging": "25kg / 50kg PP / Jute Bags",
@@ -170,7 +262,7 @@
     "slug": "black-pepper-garbled",
     "name": "Black Pepper (500GL - 570GL Malabar Garbled Whole & Cracked)",
     "category": "spices",
-    "categoryName": "Whole & Ground Spices",
+    "categoryName": "Spices & Seasonings",
     "image": "https://shivaspice.com/wp-content/uploads/2021/01/Buy_Black_Pepper_Shivaspice.jpg",
     "origin": "Malabar / Idukki, Kerala, India",
     "packaging": "25kg / 50kg Paper / Jute Bags",
@@ -182,7 +274,7 @@
     "slug": "green-cardamom-elaichi",
     "name": "Cardamom (6mm - 8.5mm+ Bold Green Elaichi)",
     "category": "spices",
-    "categoryName": "Whole & Ground Spices",
+    "categoryName": "Spices & Seasonings",
     "image": "https://shivaspice.com/wp-content/uploads/2021/01/Buy_Green_Cardamom_Shivaspice.jpg",
     "origin": "Idukki, Kerala, India",
     "packaging": "5kg / 10kg Master Cartons with vacuum liner",
@@ -194,7 +286,7 @@
     "slug": "cloves-whole-laung",
     "name": "Cloves (Whole Hand-Picked Laung)",
     "category": "spices",
-    "categoryName": "Whole & Ground Spices",
+    "categoryName": "Spices & Seasonings",
     "image": "https://shivaspice.com/wp-content/uploads/2021/01/Buy_Cloves_Shivaspice.jpg",
     "origin": "Tamil Nadu / Kerala, India",
     "packaging": "10kg / 25kg PP & Jute Bags",
@@ -206,7 +298,7 @@
     "slug": "cinnamon-sticks-cassia",
     "name": "Cinnamon & Cassia (Dalchini Round Cut Sticks & Powder)",
     "category": "spices",
-    "categoryName": "Whole & Ground Spices",
+    "categoryName": "Spices & Seasonings",
     "image": "assets/images/products/cinnamon-cassia.jpg",
     "origin": "Kerala / South India",
     "packaging": "10kg / 25kg Master Cartons",
@@ -218,7 +310,7 @@
     "slug": "nutmeg-and-mace-whole",
     "name": "Nutmeg & Mace (Jaiphal & Javitri Whole)",
     "category": "spices",
-    "categoryName": "Whole & Ground Spices",
+    "categoryName": "Spices & Seasonings",
     "image": "assets/images/products/nutmeg-mace.jpg",
     "origin": "Kerala / Karnataka, India",
     "packaging": "10kg / 25kg Cartons & Jute Bags",
@@ -230,7 +322,7 @@
     "slug": "black-cardamom-badi-elaichi",
     "name": "Black Cardamom (Badi Elaichi / Bold Smoky Pods)",
     "category": "spices",
-    "categoryName": "Whole & Ground Spices",
+    "categoryName": "Spices & Seasonings",
     "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80",
     "origin": "Sikkim / North-East / West Bengal, India",
     "packaging": "10kg / 25kg PP & Jute Bags",
@@ -242,7 +334,7 @@
     "slug": "red-chilli-sannam-teja",
     "name": "Chilli & Chilli Products (Whole Stemless, Crushed & Powder)",
     "category": "spices",
-    "categoryName": "Whole & Ground Spices",
+    "categoryName": "Spices & Seasonings",
     "image": "https://shivaspice.com/wp-content/uploads/2021/01/shivaspice_chilli_powder.jpg",
     "origin": "Guntur, Andhra Pradesh / Byadgi, Karnataka, India",
     "packaging": "10kg / 25kg / 50kg Jute / PP Bags",
@@ -254,7 +346,7 @@
     "slug": "garam-masala-blended-curry-powder",
     "name": "Spice Powders & Blended Spices (Garam Masala & Curry Powders)",
     "category": "spices",
-    "categoryName": "Whole & Ground Spices",
+    "categoryName": "Spices & Seasonings",
     "image": "assets/images/products/garam-masala.jpg",
     "origin": "Gujarat / India",
     "packaging": "1kg / 5kg / 25kg Vacuum Foil & Master Cartons",
@@ -375,14 +467,14 @@
   },
 
   // ==========================================
-  // 4. DEHYDRATED PRODUCTS (dehydrated)
+  // 4. DEHYDRATED FOODS (dehydrated)
   // ==========================================
   {
     "id": "dehydrated-onion-flakes",
     "slug": "dehydrated-onion-flakes-minced-powder",
     "name": "Dehydrated Onion (Mahuva White, Red & Pink - Flakes, Minced & Chopped)",
     "category": "dehydrated",
-    "categoryName": "Dehydrated Products",
+    "categoryName": "Dehydrated Foods",
     "image": "assets/images/onion-flakes.jpg",
     "origin": "Mahuva, Gujarat, India (Global Dehydration Hub)",
     "packaging": "14kg / 20kg / 25kg Poly-lined Cartons & Paper Sacks",
@@ -394,7 +486,7 @@
     "slug": "dehydrated-garlic-flakes-powder-granules",
     "name": "Dehydrated Garlic (Flakes, Minced, Granules & Pure Powder)",
     "category": "dehydrated",
-    "categoryName": "Dehydrated Products",
+    "categoryName": "Dehydrated Foods",
     "image": "assets/images/garlic-flakes.jpg",
     "origin": "Gujarat / Madhya Pradesh, India",
     "packaging": "20kg / 25kg Poly-lined Master Cartons",
@@ -406,7 +498,7 @@
     "slug": "dry-ginger-sonth-whole-powder",
     "name": "Dehydrated Ginger (Flakes, Bits & Fine Ginger Powder / Sonth)",
     "category": "dehydrated",
-    "categoryName": "Dehydrated Products",
+    "categoryName": "Dehydrated Foods",
     "image": "assets/images/products/dry-ginger.jpg",
     "origin": "Kerala / Assam / Gujarat, India",
     "packaging": "20kg / 25kg Poly-lined Cartons",
@@ -418,7 +510,7 @@
     "slug": "dehydrated-ginger-green-chilli-tomato-powder",
     "name": "Dehydrated Vegetables (Green Chilli, Tomato Powder & Mixed Veg Flakes)",
     "category": "dehydrated",
-    "categoryName": "Dehydrated Products",
+    "categoryName": "Dehydrated Foods",
     "image": "assets/images/dehydrated-ginger-chilli-tomato.jpg",
     "origin": "Gujarat, India",
     "packaging": "10kg / 20kg Corrugated Boxes with LDPE Liner",
@@ -430,7 +522,7 @@
     "slug": "dehydrated-kasuri-methi-leaves",
     "name": "Other Dehydrated Products (Dehydrated Mint, Coriander & Lemon Powder)",
     "category": "dehydrated",
-    "categoryName": "Dehydrated Products",
+    "categoryName": "Dehydrated Foods",
     "image": "assets/images/onion-flakes.jpg",
     "origin": "Gujarat / Rajasthan, India",
     "packaging": "10kg / 20kg Bags & Cartons",
@@ -439,14 +531,14 @@
   },
 
   // ==========================================
-  // 5. FRESH FRUITS & VEGETABLES (fresh-fruits)
+  // 5. FRESH PRODUCE (fresh-fruits)
   // ==========================================
   {
     "id": "fruits-alphonso-mango",
     "slug": "fresh-alphonso-kesar-mangoes",
     "name": "Fresh Mangoes (Alphonso, Kesar & Banganapalli)",
     "category": "fresh-fruits",
-    "categoryName": "Fresh Fruits & Vegetables",
+    "categoryName": "Fresh Produce",
     "image": "assets/images/fresh-alphonso-kesar-mangoes.jpg",
     "origin": "Ratnagiri / Gir Gujarat / Andhra, India",
     "packaging": "3kg / 4.5kg Corrugated Export Boxes (Hot Water / Irradiation Treated)",
@@ -458,7 +550,7 @@
     "slug": "fresh-red-onions-nashik-gujarat",
     "name": "Fresh Red Onions (Nashik / Mahuva 45-55mm+)",
     "category": "fresh-fruits",
-    "categoryName": "Fresh Fruits & Vegetables",
+    "categoryName": "Fresh Produce",
     "image": "assets/images/products/fresh-red-onions.jpg",
     "origin": "Nashik / Gujarat, India",
     "packaging": "5kg / 10kg / 25kg / 50kg Red Mesh / Leno Bags",
@@ -470,7 +562,7 @@
     "slug": "fresh-potatoes-and-seedless-lemons",
     "name": "Fresh Potatoes (Table Grade & Chipsona Processing Variety)",
     "category": "fresh-fruits",
-    "categoryName": "Fresh Fruits & Vegetables",
+    "categoryName": "Fresh Produce",
     "image": "assets/images/products/potatoes-and-lemons.jpg",
     "origin": "Gujarat / Punjab, India",
     "packaging": "10kg / 25kg / 50kg Leno Bags & Jute Bags",
@@ -482,7 +574,7 @@
     "slug": "fresh-green-ginger",
     "name": "Other Seasonal Indian Produce (Fresh Ginger, Garlic Bulbs, Green Chillies & Pomegranates)",
     "category": "fresh-fruits",
-    "categoryName": "Fresh Fruits & Vegetables",
+    "categoryName": "Fresh Produce",
     "image": "assets/images/fresh-fruits.jpg",
     "origin": "Gujarat / Maharashtra / Karnataka, India",
     "packaging": "Air-Vented Cartons & Cold-Chain Reefer Packaging",
@@ -491,14 +583,14 @@
   },
 
   // ==========================================
-  // 6. FROZEN SEAFOOD (seafood)
+  // 6. FROZEN SEA FOOD (seafood)
   // ==========================================
   {
     "id": "seafood-vannamei-shrimp",
     "slug": "frozen-vannamei-white-shrimp",
     "name": "Frozen Shrimp / Prawns (Vannamei White Shrimp - HOSO, HLSO, PD, PUD)",
     "category": "seafood",
-    "categoryName": "Frozen Seafood",
+    "categoryName": "Frozen Sea food",
     "image": "assets/images/products/vannamei-white-shrimp.jpg",
     "origin": "Coastal Andhra Pradesh / Gujarat, India",
     "packaging": "Block Frozen (6x1.8kg / 6x2kg) & IQF (10x1kg bags)",
@@ -510,7 +602,7 @@
     "slug": "frozen-black-tiger-shrimp",
     "name": "Frozen Black Tiger Shrimp (Jumbo IQF & Block Frozen)",
     "category": "seafood",
-    "categoryName": "Frozen Seafood",
+    "categoryName": "Frozen Sea food",
     "image": "assets/images/products/black-tiger-shrimp.jpg",
     "origin": "West Bengal / Odisha, India",
     "packaging": "IQF / Block Frozen in master export cartons",
@@ -522,7 +614,7 @@
     "slug": "frozen-ribbon-fish-whole",
     "name": "Frozen Marine Fish (Ribbon Fish, Indian Mackerel, Yellowfin Tuna & Silver Croaker)",
     "category": "seafood",
-    "categoryName": "Frozen Seafood",
+    "categoryName": "Frozen Sea food",
     "image": "assets/images/products/frozen-marine-fish.jpg",
     "origin": "Gujarat / Kerala / Maharashtra Coast, India",
     "packaging": "10kg / 20kg Master Cartons (Block & Blast Frozen)",
@@ -534,7 +626,7 @@
     "slug": "frozen-squid-and-cuttlefish",
     "name": "Other Seafood Products (Squid & Cuttlefish Whole, Rings & Tubes)",
     "category": "seafood",
-    "categoryName": "Frozen Seafood",
+    "categoryName": "Frozen Sea food",
     "image": "assets/images/products/squid-cuttlefish.jpg",
     "origin": "Veraval / Kochi Coast, India",
     "packaging": "IQF / Block 10kg Master Cartons",
@@ -543,14 +635,14 @@
   },
 
   // ==========================================
-  // 7. HERBS & MEDICINAL PLANTS (herbs)
+  // 7. HERBS & BOTANICAL (herbs)
   // ==========================================
   {
     "id": "herbs-moringa",
     "slug": "moringa-leaf-powder-organic",
     "name": "Moringa (Moringa Oleifera Dried Leaves & Leaf Powder)",
     "category": "herbs",
-    "categoryName": "Herbs & Medicinal Plants",
+    "categoryName": "Herbs & Botanical",
     "image": "assets/images/products/moringa-leaves.jpg",
     "origin": "Tamil Nadu / Gujarat, India",
     "packaging": "20kg / 25kg Paper Bags with PE Liner / Vacuum Packs",
@@ -562,7 +654,7 @@
     "slug": "tulsi-holy-basil-leaves-powder",
     "name": "Tulsi (Holy Basil / Ocimum Sanctum Dried Leaves & Powder)",
     "category": "herbs",
-    "categoryName": "Herbs & Medicinal Plants",
+    "categoryName": "Herbs & Botanical",
     "image": "assets/images/products/tulsi-holy-basil.jpg",
     "origin": "Uttar Pradesh / Gujarat, India",
     "packaging": "10kg / 20kg Master Cartons with inner poly lining",
@@ -574,7 +666,7 @@
     "slug": "ashwagandha-root-extract-powder",
     "name": "Ashwagandha (Indian Ginseng Root & Fine Extract Powder)",
     "category": "herbs",
-    "categoryName": "Herbs & Medicinal Plants",
+    "categoryName": "Herbs & Botanical",
     "image": "assets/images/products/ashwagandha-root.jpg",
     "origin": "Madhya Pradesh / Rajasthan, India",
     "packaging": "25kg Fiber Drums / Paper Sacks",
@@ -586,7 +678,7 @@
     "slug": "neem-leaves-botanical-powder",
     "name": "Neem (Dried Neem Leaves & Organic Botanical Powder)",
     "category": "herbs",
-    "categoryName": "Herbs & Medicinal Plants",
+    "categoryName": "Herbs & Botanical",
     "image": "assets/images/products/neem-leaves.jpg",
     "origin": "Gujarat / Rajasthan, India",
     "packaging": "20kg / 25kg Bags & Drums",
@@ -598,7 +690,7 @@
     "slug": "amla-indian-gooseberry-dried-powder",
     "name": "Amla (Indian Gooseberry Dried Segments & Powder)",
     "category": "herbs",
-    "categoryName": "Herbs & Medicinal Plants",
+    "categoryName": "Herbs & Botanical",
     "image": "assets/images/products/amla-gooseberry.jpg",
     "origin": "Gujarat / Uttar Pradesh, India",
     "packaging": "25kg Poly-lined Paper Sacks",
@@ -610,7 +702,7 @@
     "slug": "curry-leaves-fresh-dried",
     "name": "Curry Leaves (Sweet Neem Leaves - Fresh & Sun-Dried)",
     "category": "herbs",
-    "categoryName": "Herbs & Medicinal Plants",
+    "categoryName": "Herbs & Botanical",
     "image": "assets/images/products/curry-leaves.jpg",
     "origin": "Tamil Nadu / Andhra Pradesh / Gujarat, India",
     "packaging": "5kg Air-vented Cartons (Fresh) / 10kg Vacuum Bags (Dried)",
@@ -622,7 +714,7 @@
     "slug": "fenugreek-leaves-kasuri-methi",
     "name": "Fenugreek Leaves (Kasuri Methi Shade-Dried Leaves)",
     "category": "herbs",
-    "categoryName": "Herbs & Medicinal Plants",
+    "categoryName": "Herbs & Botanical",
     "image": "assets/images/products/kasuri-methi.jpg",
     "origin": "Nagaur, Rajasthan, India",
     "packaging": "1kg / 5kg / 10kg Master Cartons with Foil Liner",
@@ -634,7 +726,7 @@
     "slug": "brahmi-bacopa-monnieri-powder",
     "name": "Brahmi (Bacopa Monnieri Whole Leaves & Memory Powder)",
     "category": "herbs",
-    "categoryName": "Herbs & Medicinal Plants",
+    "categoryName": "Herbs & Botanical",
     "image": "assets/images/products/brahmi-herb.jpg",
     "origin": "India",
     "packaging": "20kg / 25kg Fiber Drums",
@@ -643,14 +735,14 @@
   },
 
   // ==========================================
-  // 8. NUTS, DRIED FRUITS & SPECIALTY (more-products)
+  // 8. NUTS & DRY FRUITS (more-products)
   // ==========================================
   {
     "id": "more-phool-makhana",
     "slug": "phool-makhana-fox-nuts-gorgon",
     "name": "Phool Makhana / Fox Nuts (Gorgon Nut 4+, 5+, 6+ Suta Handpicked)",
     "category": "more-products",
-    "categoryName": "Nuts, Dried Fruits & Specialty",
+    "categoryName": "Nuts & Dry Fruits",
     "image": "assets/images/makhana-fox-nuts.jpg",
     "origin": "Mithila, Bihar, India",
     "packaging": "8kg - 10kg Poly Bags / Custom Nitrogen Flushed Pouches",
@@ -662,7 +754,7 @@
     "slug": "california-indian-badam-almonds",
     "name": "Almonds (Badam / બદામ - Extra Bold & Mamra Quality)",
     "category": "more-products",
-    "categoryName": "Nuts, Dried Fruits & Specialty",
+    "categoryName": "Nuts & Dry Fruits",
     "image": "assets/images/products/almonds-badam.jpg",
     "origin": "Kashmir, India / California Grade",
     "packaging": "10kg / 25kg Vacuum Packs & Master Cartons",
@@ -674,7 +766,7 @@
     "slug": "cashew-nuts-w180-w240-w320",
     "name": "Cashews (Kaju / કાજુ - W180 King, W240 Jumbo, W320 & Splits)",
     "category": "more-products",
-    "categoryName": "Nuts, Dried Fruits & Specialty",
+    "categoryName": "Nuts & Dry Fruits",
     "image": "assets/images/cashew-nuts.jpg",
     "origin": "Goa / Kerala / Maharashtra, India",
     "packaging": "10kg / 11.34kg (25 lbs) / 22.68kg (50 lbs) Tins & Vacuum Packs",
@@ -686,7 +778,7 @@
     "slug": "walnuts-akhrot-inshell-kernels",
     "name": "Walnuts (Akhrot / અખરોટ - Inshell & Extra Light Halves Kernels)",
     "category": "more-products",
-    "categoryName": "Nuts, Dried Fruits & Specialty",
+    "categoryName": "Nuts & Dry Fruits",
     "image": "assets/images/products/walnuts-akhrot.jpg",
     "origin": "Kashmir, India",
     "packaging": "10kg Master Cartons with Vacuum Nitrogen Liner",
@@ -698,7 +790,7 @@
     "slug": "pistachios-pista-roasted-salted-green",
     "name": "Pistachios (Pista / પિસ્તા - Roasted Salted & Raw Green Kernels)",
     "category": "more-products",
-    "categoryName": "Nuts, Dried Fruits & Specialty",
+    "categoryName": "Nuts & Dry Fruits",
     "image": "assets/images/products/pistachios-pista.jpg",
     "origin": "India / Global Sourcing",
     "packaging": "10kg / 25kg Vacuum Cartons",
@@ -710,7 +802,7 @@
     "slug": "raisins-sultanas-kismis-golden-green",
     "name": "Raisins / Sultanas (Kismis / સૂકી દ્રાક્ષ - Golden, Green & Malayar)",
     "category": "more-products",
-    "categoryName": "Nuts, Dried Fruits & Specialty",
+    "categoryName": "Nuts & Dry Fruits",
     "image": "assets/images/products/raisins-kismis.jpg",
     "origin": "Sangli / Nashik, Maharashtra, India",
     "packaging": "10kg / 15kg Corrugated Master Cartons",
@@ -722,7 +814,7 @@
     "slug": "premium-dates-khajur-medjool-kimia",
     "name": "Dates (Khajur / ખજૂર - Premium Medjool, Kimia & Wet/Dry Dates)",
     "category": "more-products",
-    "categoryName": "Nuts, Dried Fruits & Specialty",
+    "categoryName": "Nuts & Dry Fruits",
     "image": "assets/images/products/dates-khajur.jpg",
     "origin": "Gujarat / International Direct Import",
     "packaging": "500g / 1kg / 5kg / 10kg Master Cartons",
@@ -734,12 +826,27 @@
     "slug": "dried-figs-anjeer-garland-round",
     "name": "Dried Figs (Anjeer / અંજીર - Premium Round & Garland Quality)",
     "category": "more-products",
-    "categoryName": "Nuts, Dried Fruits & Specialty",
+    "categoryName": "Nuts & Dry Fruits",
     "image": "assets/images/products/dried-figs-anjeer.jpg",
     "origin": "Maharashtra / International Direct Sourcing",
     "packaging": "1kg / 5kg / 10kg Garland String & Ring Master Boxes",
     "specs": "Size: 40mm - 55mm+ Jumbo, Moisture < 20%, Tender Chewy Flesh",
     "description": "Naturally flattened round dried figs threaded in traditional garlands, packed with crunchy edible seeds, dietary fiber, and minerals."
+  },
+  // ==========================================
+  // 9. OTHER CATEGORY & CUSTOM SOURCING (other)
+  // ==========================================
+  {
+    "id": "other-custom-merchant-sourcing",
+    "slug": "custom-merchant-sourcing-specialty",
+    "name": "Custom Merchant Sourcing (Any Indian Agro & Food Commodity On Demand)",
+    "category": "other",
+    "categoryName": "Other Category",
+    "image": "assets/images/export-documentation-desk.jpg",
+    "origin": "Pan-India Mandis & Dedicated Processing Hubs",
+    "packaging": "Buyer Customized Bags / Consumer Pouches / Bulk Containers / Private Label OEM",
+    "specs": "Export Grade 100%, SGS / APEDA / Spices Board Inspected per Specifications",
+    "description": "Looking for commodities not listed in our standard catalogue? We procure bespoke Indian agricultural, grain, spice, seed, and food items with end-to-end FOB/CIF export logistics and quality certifications."
   }
 ];
 

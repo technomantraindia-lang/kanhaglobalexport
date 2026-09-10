@@ -29,20 +29,21 @@
 
     if (!productGrid) return;
 
-    // Categories List - 8 Canonical Core Categories approved by client
+    // Categories List - Core Categories + Other Category
     const categoryList = [
       { slug: 'all', name: 'All Products' },
-      { slug: 'rice', name: 'Basmati & Non-Basmati Rice' },
-      { slug: 'spices', name: 'Whole & Ground Spices' },
+      { slug: 'rice', name: 'Rice & Grains' },
+      { slug: 'spices', name: 'Spices & Seasonings' },
       { slug: 'pulses', name: 'Pulses & Lentils' },
-      { slug: 'dehydrated', name: 'Dehydrated Products' },
-      { slug: 'fresh-fruits', name: 'Fresh Fruits & Vegetables' },
-      { slug: 'seafood', name: 'Frozen Seafood' },
-      { slug: 'herbs', name: 'Herbs & Medicinal Plants' },
-      { slug: 'more-products', name: 'Nuts, Dried Fruits & Specialty' }
+      { slug: 'dehydrated', name: 'Dehydrated Foods' },
+      { slug: 'herbs', name: 'Herbs & Botanical' },
+      { slug: 'more-products', name: 'Nuts & Dry Fruits' },
+      { slug: 'fresh-fruits', name: 'Fresh Produce' },
+      { slug: 'seafood', name: 'Frozen Sea food' },
+      { slug: 'other', name: 'Other Category' }
     ];
 
-    // Category Groups for the 8 Canonical Core Categories
+    // Category Groups
     const categoryGroupMap = {
       'rice': ['rice', 'basmati-rice', 'non-basmati-rice'],
       'spices': ['spices'],
@@ -51,12 +52,16 @@
       'fresh-fruits': ['fresh-fruits', 'fresh-vegetables'],
       'seafood': ['seafood', 'marine'],
       'herbs': ['herbs'],
-      'more-products': ['more-products', 'honey-agro', 'oil-seeds', 'groundnuts-cashews']
+      'more-products': ['more-products', 'honey-agro', 'oil-seeds', 'groundnuts-cashews'],
+      'other': ['other', 'custom', 'specialty']
     };
 
     // Category Alias Map for seamless deep-linking
     const categoryAliases = {
       'rice': 'rice',
+      'rice-grains': 'rice',
+      'rice-and-grains': 'rice',
+      'grains': 'rice',
       'basmati': 'rice',
       'basmati-rice': 'rice',
       'non-basmati': 'rice',
@@ -64,14 +69,16 @@
       'basmati-non-basmati-rice': 'rice',
       'spices': 'spices',
       'spices-seasonings': 'spices',
+      'spices-and-seasonings': 'spices',
       'whole-ground-spices': 'spices',
       'spices-herbs': 'spices',
       'spice': 'spices',
       'pulses': 'pulses',
       'pulses-lentils': 'pulses',
-      'grains': 'pulses',
+      'pulses-and-lentils': 'pulses',
       'lentils': 'pulses',
       'dehydrated': 'dehydrated',
+      'dehydrated-foods': 'dehydrated',
       'dehydrated-products': 'dehydrated',
       'onion-flakes': 'dehydrated',
       'garlic-powder': 'dehydrated',
@@ -81,14 +88,23 @@
       'fruits': 'fresh-fruits',
       'vegetables': 'fresh-fruits',
       'fresh-produce': 'fresh-fruits',
+      'produce': 'fresh-fruits',
       'seafood': 'seafood',
       'frozen-seafood': 'seafood',
+      'frozen-sea-food': 'seafood',
+      'sea-food': 'seafood',
       'marine': 'seafood',
       'marine-products': 'seafood',
       'shrimp': 'seafood',
       'prawns': 'seafood',
       'fish': 'seafood',
       'herbs': 'herbs',
+      'herbs-botanical': 'herbs',
+      'herbs-botanicals': 'herbs',
+      'herbs-and-botanical': 'herbs',
+      'herbs-and-botanicals': 'herbs',
+      'botanical': 'herbs',
+      'botanicals': 'herbs',
       'herbs-product': 'herbs',
       'herbs-products': 'herbs',
       'herbs-medicinal-plants': 'herbs',
@@ -104,12 +120,14 @@
       'brahmi': 'herbs',
       'more-products': 'more-products',
       'more': 'more-products',
+      'nuts-dry-fruits': 'more-products',
+      'nuts-and-dry-fruits': 'more-products',
+      'dry-fruits': 'more-products',
       'nuts-dried-fruits-specialty': 'more-products',
       'nuts-dried-fruits': 'more-products',
       'specialty': 'more-products',
       'makhana': 'more-products',
       'nuts': 'more-products',
-      'dry-fruits': 'more-products',
       'dried-fruits': 'more-products',
       'cashews': 'more-products',
       'almonds': 'more-products',
@@ -120,7 +138,13 @@
       'figs': 'more-products',
       'oil-seeds': 'more-products',
       'honey-agro': 'more-products',
-      'groundnuts-cashews': 'more-products'
+      'groundnuts-cashews': 'more-products',
+      'other': 'other',
+      'other-category': 'other',
+      'others': 'other',
+      'custom-merchant-sourcing': 'other',
+      'custom-sourcing': 'other',
+      'custom': 'other'
     };
 
     // State
@@ -167,6 +191,8 @@
       'turmeric-finger-powder': 'https://shivaspice.com/wp-content/uploads/2021/01/turmeric_finger.jpg',
       'red-chilli-sannam-teja': 'https://shivaspice.com/wp-content/uploads/2021/01/shivaspice_chilli_powder.jpg',
       'cumin-seeds-jeera': 'https://shivaspice.com/wp-content/uploads/2021/01/shivaspice_cumin_powder.jpg',
+      'cumin-seeds': 'https://shivaspice.com/wp-content/uploads/2021/01/shivaspice_cumin_powder.jpg',
+      'cumin-powder': 'https://shivaspice.com/wp-content/uploads/2021/01/shivaspice_cumin_powder.jpg',
       'coriander-seeds-dhaniya': 'https://shivaspice.com/wp-content/uploads/2021/01/shivaspice_coriander_powder.jpg',
       'black-pepper-garbled': 'https://shivaspice.com/wp-content/uploads/2021/01/Buy_Black_Pepper_Shivaspice.jpg',
       'green-cardamom-elaichi': 'https://shivaspice.com/wp-content/uploads/2021/01/Buy_Green_Cardamom_Shivaspice.jpg',
@@ -212,7 +238,8 @@
       'pistachios-pista-roasted-salted-green': 'assets/images/products/pistachios-pista.jpg',
       'raisins-sultanas-kismis-golden-green': 'assets/images/products/raisins-kismis.jpg',
       'premium-dates-khajur-medjool-kimia': 'assets/images/products/dates-khajur.jpg',
-      'dried-figs-anjeer-garland-round': 'assets/images/products/dried-figs-anjeer.jpg'
+      'dried-figs-anjeer-garland-round': 'assets/images/products/dried-figs-anjeer.jpg',
+      'custom-merchant-sourcing-specialty': 'assets/images/export-documentation-desk.jpg'
     };
 
     const categoryFallbacks = {
@@ -228,7 +255,8 @@
       'herbs': 'assets/images/categories/herbs.jpg',
       'more-products': 'assets/images/categories/nuts-specialty.jpg',
       'honey-agro': 'assets/images/categories/nuts-specialty.jpg',
-      'oil-seeds': 'assets/images/white-sesame.jpg'
+      'oil-seeds': 'assets/images/white-sesame.jpg',
+      'other': 'assets/images/export-documentation-desk.jpg'
     };
 
     function getProductImage(item) {

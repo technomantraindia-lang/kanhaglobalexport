@@ -64,6 +64,7 @@
             <a href="our-strengths.html">Our Strengths</a>
             <a href="mission-vision.html">Mission &amp; Vision</a>
             <a href="leadership.html">Our Leadership</a>
+            <a href="careers.html">Careers</a>
           </div>
         </div>
         <div class="has-dropdown">
@@ -81,6 +82,7 @@
           </div>
         </div>
         <a href="quality-compliance.html" class="nav-link">Quality &amp; Compliance</a>
+        <a href="careers.html" class="nav-link">Careers</a>
         <a href="contact-us.html" class="nav-link">Contact</a>
       </nav>
       <div class="header-actions">
@@ -200,13 +202,22 @@
         
         <!-- COMPREHENSIVE SPECIFICATION PANEL -->
         <div class="detail-card-panel">
-          <h3 class="panel-header-title">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-            Export Specifications &amp; Parameters
-          </h3>
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;">
+            <h3 class="panel-header-title" style="margin-bottom: 0;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              Export Specifications &amp; Parameters
+            </h3>
+            <div id="specTabsHeader" class="spec-tabs-header" style="display: none; margin-bottom: 0; padding-bottom: 0; border-bottom: none;"></div>
+          </div>
 
-          <table class="specs-table">
-            <tbody>
+          <table class="specs-table" id="specsTable">
+            <thead>
+              <tr>
+                <th style="padding: 10px 12px; text-align: left; font-size: 0.82rem; font-weight: 700; color: #475569; background: #f8fafc; border-bottom: 2px solid #e2e8f0; text-transform: uppercase; letter-spacing: 0.05em; width: 38%;">Parameter</th>
+                <th style="padding: 10px 12px; text-align: left; font-size: 0.82rem; font-weight: 700; color: #475569; background: #f8fafc; border-bottom: 2px solid #e2e8f0; text-transform: uppercase; letter-spacing: 0.05em;">Standard Specification</th>
+              </tr>
+            </thead>
+            <tbody id="specsTableBody">
               <tr>
                 <td>Product Name</td>
                 <td id="tableProdName">Product</td>
@@ -420,6 +431,7 @@
           <div class="footer-badges">
             <span class="footer-badge">US FDA Registered</span>
             <span class="footer-badge">APEDA Certified</span>
+            <span class="footer-badge">Spices Board Registered</span>
             <span class="footer-badge">FSSAI Approved</span>
           </div>
           <div class="footer-socials">
@@ -445,14 +457,15 @@
         <div class="footer-col">
           <h4>Products</h4>
           <ul>
-            <li><a href="shop.html?category=basmati-rice">Rice</a></li>
-            <li><a href="shop.html?category=spices">Spices</a></li>
-            <li><a href="shop.html?category=pulses">Pulses</a></li>
-            <li><a href="shop.html?category=fresh-fruits">Fruits</a></li>
-            <li><a href="shop.html?category=fresh-vegetables">Vegetables</a></li>
-            <li><a href="shop.html?category=groundnuts-cashews">Nuts</a></li>
+            <li><a href="shop.html?category=rice">Rice &amp; Grains</a></li>
+            <li><a href="shop.html?category=spices">Spices &amp; Seasonings</a></li>
+            <li><a href="shop.html?category=pulses">Pulses &amp; Lentils</a></li>
             <li><a href="shop.html?category=dehydrated">Dehydrated Foods</a></li>
-            <li><a href="shop.html?category=seafood">Frozen Seafood</a></li>
+            <li><a href="shop.html?category=herbs">Herbs &amp; Botanical</a></li>
+            <li><a href="shop.html?category=more-products">Nuts &amp; Dry Fruits</a></li>
+            <li><a href="shop.html?category=fresh-fruits">Fresh Produce</a></li>
+            <li><a href="shop.html?category=seafood">Frozen Sea food</a></li>
+            <li><a href="shop.html?category=other">Other Category</a></li>
           </ul>
         </div>
 
@@ -464,6 +477,7 @@
             <li><a href="quality-compliance.html">Quality</a></li>
             <li><a href="quality-compliance.html#certifications">Compliance</a></li>
             <li><a href="index.html#export-process">Export Process</a></li>
+            <li><a href="careers.html">Careers</a></li>
             <li><a href="contact-us.html">Contact</a></li>
           </ul>
         </div>
@@ -599,7 +613,12 @@
 
       function loadProductDetail() {
         const params = new URLSearchParams(window.location.search);
-        const slug = params.get('slug') || params.get('id') || 'cumin-seeds-jeera';
+        let slug = params.get('slug') || params.get('id') || 'cumin-seeds-jeera';
+
+        // Friendly aliases
+        if (slug === 'cumin' || slug === 'jeera' || slug === 'cumin-seeds') {
+          slug = 'cumin-seeds-jeera';
+        }
 
         const allProducts = (window.TRADE_PRODUCTS || (window.KGE_PRODUCTS && window.KGE_PRODUCTS.trade) || []);
         
@@ -671,21 +690,81 @@
         const specQuality = document.getElementById('specQuality');
         if (specQuality) specQuality.textContent = product.specs ? `Grade: ${product.specs.split(',')[0]}` : '100% Export Grade / Lab Tested';
 
-        // Table Elements
-        const tableProdName = document.getElementById('tableProdName');
-        if (tableProdName) tableProdName.textContent = product.name;
+        // Table Elements & Dynamic specTabs
+        const specTabsHeader = document.getElementById('specTabsHeader');
+        const specsTableBody = document.getElementById('specsTableBody');
 
-        const tableCategory = document.getElementById('tableCategory');
-        if (tableCategory) tableCategory.textContent = catName;
+        function renderSpecsTab(tabIndex) {
+          if (!product.specTabs || !product.specTabs[tabIndex]) return;
+          const tabData = product.specTabs[tabIndex];
 
-        const tableOrigin = document.getElementById('tableOrigin');
-        if (tableOrigin) tableOrigin.textContent = originVal;
+          if (specTabsHeader) {
+            const pills = specTabsHeader.querySelectorAll('.spec-tab-pill');
+            pills.forEach((p, idx) => {
+              p.classList.toggle('active', idx === tabIndex);
+            });
+          }
 
-        const tablePackaging = document.getElementById('tablePackaging');
-        if (tablePackaging) tablePackaging.textContent = packVal;
+          if (specsTableBody) {
+            let html = '';
+            tabData.parameters.forEach(item => {
+              html += `<tr>
+                <td>${item.param}</td>
+                <td><strong>${item.spec}</strong></td>
+              </tr>`;
+            });
+            html += `<tr>
+              <td>Loading Ports</td>
+              <td>Mundra, Pipavav, Nhava Sheva (JNPT) &amp; Hazira Ports</td>
+            </tr>
+            <tr>
+              <td>Certifications Available</td>
+              <td>Phytosanitary, Certificate of Origin, Health / FSSAI, SGS Inspection</td>
+            </tr>
+            <tr>
+              <td>Delivery / IncoTerms</td>
+              <td>FOB, CIF, CFR, Ex-Factory as per buyer requirement</td>
+            </tr>`;
+            specsTableBody.innerHTML = html;
+          }
 
-        const tableQuality = document.getElementById('tableQuality');
-        if (tableQuality) tableQuality.textContent = product.specs || 'Export Grade, Machine Cleaned & Sortex 99.5% Purity';
+          const packingItem = tabData.parameters.find(p => p.param.toLowerCase().includes('pack'));
+          if (packingItem && specPackaging) {
+            specPackaging.textContent = packingItem.spec;
+          }
+          const formItem = tabData.parameters.find(p => p.param.toLowerCase() === 'form');
+          if (formItem && specQuality) {
+            specQuality.textContent = `Purity Min. 99% · ${formItem.spec}`;
+          }
+        }
+
+        window.switchProductSpecTab = renderSpecsTab;
+
+        if (product.specTabs && product.specTabs.length > 0) {
+          if (specTabsHeader) {
+            specTabsHeader.style.display = 'flex';
+            specTabsHeader.innerHTML = product.specTabs.map((tab, idx) => `
+              <button type="button" class="spec-tab-pill ${idx === 0 ? 'active' : ''}" onclick="window.switchProductSpecTab(${idx})">
+                ${tab.tabName}
+              </button>
+            `).join('');
+          }
+          renderSpecsTab(0);
+        } else {
+          if (specTabsHeader) specTabsHeader.style.display = 'none';
+          if (specsTableBody) {
+            specsTableBody.innerHTML = `
+              <tr><td>Product Name</td><td>${product.name}</td></tr>
+              <tr><td>Category Division</td><td>${catName}</td></tr>
+              <tr><td>Country of Origin</td><td>${originVal}</td></tr>
+              <tr><td>Quality &amp; Purity Grade</td><td>${product.specs || 'Machine Cleaned / Sortex / Premium Grade'}</td></tr>
+              <tr><td>Packaging Options</td><td>${packVal}</td></tr>
+              <tr><td>Loading Ports</td><td>Mundra, Pipavav, Nhava Sheva (JNPT) &amp; Hazira Ports</td></tr>
+              <tr><td>Certifications Available</td><td>Phytosanitary, Certificate of Origin, Health/FSSAI, SGS Inspection</td></tr>
+              <tr><td>Delivery / IncoTerms</td><td>FOB, CIF, CFR, Ex-Factory as per buyer requirement</td></tr>
+            `;
+          }
+        }
 
         // Image Handling
         const categoryFallbacks = {
