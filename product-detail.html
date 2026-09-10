@@ -540,9 +540,9 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="js/categories-data.js?v=2.7"></script>
-  <script src="js/products-data.js?v=2.7"></script>
-  <script src="js/main.js?v=2.7"></script>
+  <script src="js/categories-data.js?v=3.8"></script>
+  <script src="js/products-data.js?v=3.8"></script>
+  <script src="js/main.js?v=3.8"></script>
   <script>
     (function() {
       let currentProduct = null;
@@ -618,6 +618,27 @@
         // Friendly aliases
         if (slug === 'cumin' || slug === 'jeera' || slug === 'cumin-seeds') {
           slug = 'cumin-seeds-jeera';
+        }
+        if (slug === 'turmeric' || slug === 'haldi' || slug === 'turmeric-finger') {
+          slug = 'turmeric-finger-powder';
+        }
+        if (slug === 'chilli' || slug === 'red-chilli') {
+          slug = 'red-chilli-sannam-teja';
+        }
+        if (slug === 'cinnamon' || slug === 'dalchini') {
+          slug = 'cinnamon-sticks-cassia';
+        }
+        if (slug === 'nutmeg' || slug === 'jaiphal') {
+          slug = 'nutmeg-and-mace-whole';
+        }
+        if (slug === 'pepper' || slug === 'black-pepper') {
+          slug = 'black-pepper-garbled';
+        }
+        if (slug === 'cardamom' || slug === 'elaichi' || slug === 'green-cardamom') {
+          slug = 'green-cardamom-elaichi';
+        }
+        if (slug === 'coriander' || slug === 'dhaniya') {
+          slug = 'coriander-seeds-dhaniya';
         }
 
         const allProducts = (window.TRADE_PRODUCTS || (window.KGE_PRODUCTS && window.KGE_PRODUCTS.trade) || []);
@@ -768,9 +789,9 @@
 
         // Image Handling
         const categoryFallbacks = {
-          'rice': 'assets/images/rice-1121-steam-hd.jpg',
-          'basmati-rice': 'assets/images/1121-steam-rice-500x500.jpg',
-          'non-basmati-rice': 'assets/images/1121-steam-rice-500x500.jpg',
+          'rice': 'assets/images/products/1121-basmati-rice.jpg',
+          'basmati-rice': 'assets/images/products/1121-basmati-rice.jpg',
+          'non-basmati-rice': 'assets/images/products/1121-basmati-rice.jpg',
           'spices': 'assets/images/spices.jpg',
           'pulses': 'assets/images/toor-dal.jpg',
           'dehydrated': 'assets/images/onion-flakes.jpg',

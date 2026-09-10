@@ -11,7 +11,7 @@
     "name": "1121 Basmati Rice (Raw, Steam, Sella & Golden Sella)",
     "category": "rice",
     "categoryName": "Rice & Grains",
-    "image": "assets/images/products/1121-basmati-rice.png",
+    "image": "assets/images/products/1121-basmati-rice.jpg",
     "origin": "Punjab / Haryana, India",
     "packaging": "1kg / 5kg / 10kg / 25kg / 50kg Non-Woven & BOPP Bags",
     "specs": "Grain Length: 8.35mm - 8.40mm, Elongation: 2.5x, Moisture < 12.5%, Sortex 100%",
@@ -23,7 +23,7 @@
     "name": "1718 Basmati Rice (Raw, Steam & Sella)",
     "category": "rice",
     "categoryName": "Rice & Grains",
-    "image": "assets/images/rice-1121-steam-hd.jpg",
+    "image": "assets/images/products/1718-basmati-rice.jpg",
     "origin": "Punjab / Haryana / Uttar Pradesh, India",
     "packaging": "10kg / 25kg / 50kg PP / Jute Bags",
     "specs": "Average Grain Length: 8.35mm+, Elongation: 2.4x, Moisture < 12.5%, Broken < 1%",
@@ -35,7 +35,7 @@
     "name": "1509 Basmati Rice (Raw, Steam & Sella)",
     "category": "rice",
     "categoryName": "Rice & Grains",
-    "image": "assets/images/rice-1121-sella.webp",
+    "image": "assets/images/products/1509-basmati-rice.jpg",
     "origin": "Punjab / Haryana / UP, India",
     "packaging": "5kg / 25kg / 50kg Export Bags",
     "specs": "Grain Length: 8.30mm+, Moisture < 12.5%, Sortex Clean 100%, Broken < 1%",
@@ -47,7 +47,7 @@
     "name": "1401 Basmati Rice (Steam & Sella)",
     "category": "rice",
     "categoryName": "Rice & Grains",
-    "image": "assets/images/rice-1121-golden.webp",
+    "image": "assets/images/products/1401-basmati-rice.jpg",
     "origin": "Haryana / Punjab, India",
     "packaging": "25kg / 50kg PP / Jute Bags",
     "specs": "Average Grain Length: 7.70mm+, Moisture < 12.5%, Broken < 1%, High Swelling Index",
@@ -120,14 +120,14 @@
   {
     "id": "spices-cumin-seeds",
     "slug": "cumin-seeds-jeera",
-    "name": "Cumin Seeds & Cumin Powder (Jeera)",
+    "name": "Cumin Seeds (Jeera Whole)",
     "category": "spices",
     "categoryName": "Spices & Seasonings",
-    "image": "https://shivaspice.com/wp-content/uploads/2021/01/shivaspice_cumin_powder.jpg",
-    "origin": "India",
+    "image": "assets/images/products/cumin-seeds.jpg",
+    "origin": "Gujarat / Rajasthan, India",
     "packaging": "10 / 20 / 25 / 50 kg; customized retail packs",
     "specs": "Purity Min. 99%, Moisture Max. 10%, Foreign Matter Max. 1%, Absent Infestation",
-    "description": "Authentic Indian Cumin Seeds (Whole) and Cumin Powder (Fine Powder), processed under rigorous export quality standards with minimum 99% purity and characteristic natural aroma.",
+    "description": "Authentic Indian Cumin Seeds (Whole Jeera), machine cleaned and Sortex sorted under rigorous export quality standards with minimum 99% purity and characteristic natural aroma.",
     "specTabs": [
       {
         "tabName": "1) Cumin Seeds",
@@ -144,7 +144,7 @@
           { "param": "Colour", "spec": "Natural greenish-brown" },
           { "param": "Aroma", "spec": "Characteristic cumin aroma" },
           { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg" },
-          { "param": "Form", "spec": "Whole / Powder" }
+          { "param": "Form", "spec": "Whole Seeds" }
         ]
       },
       {
@@ -175,7 +175,7 @@
     "name": "Cumin Powder (Ground Jeera Powder)",
     "category": "spices",
     "categoryName": "Spices & Seasonings",
-    "image": "https://shivaspice.com/wp-content/uploads/2021/01/shivaspice_cumin_powder.jpg",
+    "image": "assets/images/products/cumin-powder.jpg",
     "origin": "India",
     "packaging": "10 / 20 / 25 kg bulk; customized retail packs",
     "specs": "Purity Min. 99%, Moisture Max. 10%, 60–100 Mesh, Zero Added Colour",
@@ -224,13 +224,13 @@
   {
     "id": "spices-coriander-seeds",
     "slug": "coriander-seeds-dhaniya",
-    "name": "Coriander Seeds (Dhaniya Whole & Ground Powder)",
+    "name": "Coriander Seeds & Ground Powder (Dhaniya)",
     "category": "spices",
     "categoryName": "Spices & Seasonings",
-    "image": "https://shivaspice.com/wp-content/uploads/2021/01/shivaspice_coriander_powder.jpg",
+    "image": "assets/images/products/coriander-powder.jpg",
     "origin": "Rajasthan / Madhya Pradesh / Gujarat, India",
     "packaging": "25kg / 40kg Jute / PP Bags",
-    "specs": "Eagle / Single Parrot / Double Parrot Quality, Greenish Whole, Moisture < 9%",
+    "specs": "Eagle / Single Parrot / Double Parrot Quality, Greenish Whole & Fine Ground Powder",
     "description": "Selected whole green coriander seeds and aromatic fine ground powder with distinctive citrusy fragrance and rich essential oil content."
   },
   {
@@ -248,14 +248,26 @@
   {
     "id": "spices-turmeric",
     "slug": "turmeric-finger-powder",
-    "name": "Turmeric (Finger & Ground Powder / Haldi)",
+    "name": "Turmeric Finger (Salem & Nizamabad Polished Haldi)",
     "category": "spices",
     "categoryName": "Spices & Seasonings",
-    "image": "https://shivaspice.com/wp-content/uploads/2021/01/turmeric_finger.jpg",
+    "image": "assets/images/products/turmeric-finger.jpg",
     "origin": "Salem / Nizamabad / Sangli, India",
     "packaging": "25kg / 50kg PP / Jute Bags",
     "specs": "Curcumin 2.5% to 5.0%, Moisture < 10%, Machine Cleaned & Polished",
-    "description": "Golden yellow export-grade Indian turmeric fingers and ultra-fine ground powder with high natural curcumin content."
+    "description": "Golden yellow export-grade Indian turmeric fingers with high natural curcumin content, meticulously dried, machine cleaned, and polished."
+  },
+  {
+    "id": "spices-turmeric-powder",
+    "slug": "turmeric-powder",
+    "name": "Turmeric Powder (Pure Golden Haldi Powder)",
+    "category": "spices",
+    "categoryName": "Spices & Seasonings",
+    "image": "assets/images/products/turmeric-powder.jpg",
+    "origin": "Salem / Nizamabad / Sangli, India",
+    "packaging": "1kg / 5kg / 25kg / 50kg Food-Grade Foil & Bags",
+    "specs": "Curcumin 3.0% to 5.0%, 80-100 Mesh, Moisture < 9%, Zero Added Color",
+    "description": "Finely pulverized 100% pure Indian turmeric powder with rich golden-yellow hue, intense aroma, and high active curcumin for culinary and wellness formulations."
   },
   {
     "id": "spices-black-pepper",
@@ -263,7 +275,7 @@
     "name": "Black Pepper (500GL - 570GL Malabar Garbled Whole & Cracked)",
     "category": "spices",
     "categoryName": "Spices & Seasonings",
-    "image": "https://shivaspice.com/wp-content/uploads/2021/01/Buy_Black_Pepper_Shivaspice.jpg",
+    "image": "assets/images/products/black-pepper.jpg",
     "origin": "Malabar / Idukki, Kerala, India",
     "packaging": "25kg / 50kg Paper / Jute Bags",
     "specs": "Garbled / Ungarbled, Density 500-570 g/l, Piperine > 4%, Moisture < 12%",
@@ -275,7 +287,7 @@
     "name": "Cardamom (6mm - 8.5mm+ Bold Green Elaichi)",
     "category": "spices",
     "categoryName": "Spices & Seasonings",
-    "image": "https://shivaspice.com/wp-content/uploads/2021/01/Buy_Green_Cardamom_Shivaspice.jpg",
+    "image": "assets/images/products/green-cardamom.jpg",
     "origin": "Idukki, Kerala, India",
     "packaging": "5kg / 10kg Master Cartons with vacuum liner",
     "specs": "Sizes: 6mm, 7mm, 8mm, 8.5mm Bold Green, Moisture < 10%",
@@ -287,7 +299,7 @@
     "name": "Cloves (Whole Hand-Picked Laung)",
     "category": "spices",
     "categoryName": "Spices & Seasonings",
-    "image": "https://shivaspice.com/wp-content/uploads/2021/01/Buy_Cloves_Shivaspice.jpg",
+    "image": "assets/images/products/cloves.jpg",
     "origin": "Tamil Nadu / Kerala, India",
     "packaging": "10kg / 25kg PP & Jute Bags",
     "specs": "Hand-picked Whole, Head intact > 90%, Eugenol > 15%, Moisture < 12%",
@@ -296,26 +308,38 @@
   {
     "id": "spices-cinnamon-cassia",
     "slug": "cinnamon-sticks-cassia",
-    "name": "Cinnamon & Cassia (Dalchini Round Cut Sticks & Powder)",
+    "name": "Cinnamon Sticks & Cassia (Dalchini Round Cut Sticks & Quills)",
     "category": "spices",
     "categoryName": "Spices & Seasonings",
-    "image": "assets/images/products/cinnamon-cassia.jpg",
+    "image": "assets/images/products/cinnamon-sticks.jpg",
     "origin": "Kerala / South India",
     "packaging": "10kg / 25kg Master Cartons",
     "specs": "Clean Cut Sticks & Split Quills, Volatile Oil > 1.5%, Moisture < 12%",
     "description": "Sweet, woody aromatic cinnamon sticks and cassia bark widely utilized in baking, confectionery, and spice blends."
   },
   {
-    "id": "spices-nutmeg-mace",
-    "slug": "nutmeg-and-mace-whole",
-    "name": "Nutmeg & Mace (Jaiphal & Javitri Whole)",
+    "id": "spices-cinnamon-powder",
+    "slug": "cinnamon-powder",
+    "name": "Cinnamon Powder (Pure Ground Dalchini Powder)",
     "category": "spices",
     "categoryName": "Spices & Seasonings",
-    "image": "assets/images/products/nutmeg-mace.jpg",
+    "image": "assets/images/products/cinnamon-powder.jpg",
+    "origin": "Kerala / South India",
+    "packaging": "10kg / 25kg Food-Grade Cartons & Pouches",
+    "specs": "Fine Ground 80-100 Mesh, Pure Dalchini / Cassia, Moisture < 10%",
+    "description": "Finely milled pure aromatic cinnamon powder with rich fragrance and sweet spicy warmth for bakeries, seasonings, and beverages."
+  },
+  {
+    "id": "spices-nutmeg-mace",
+    "slug": "nutmeg-and-mace-whole",
+    "name": "Nutmeg & Mace (Jaiphal Whole Kernels & Powder)",
+    "category": "spices",
+    "categoryName": "Spices & Seasonings",
+    "image": "assets/images/products/nutmeg.jpg",
     "origin": "Kerala / Karnataka, India",
     "packaging": "10kg / 25kg Cartons & Jute Bags",
-    "specs": "With Shell / Without Shell Nutmeg, Golden Orange Mace Blades, Moisture < 10%",
-    "description": "Intensely warm nutmeg kernels and lace-like mace arils with complex sweet floral notes for high-end culinary flavoring."
+    "specs": "With Shell / Without Shell Nutmeg & Freshly Grated Kernel Powder, Moisture < 10%",
+    "description": "Intensely warm nutmeg kernels and fine jaiphal powder with complex sweet floral notes for high-end culinary flavoring."
   },
   {
     "id": "spices-black-cardamom",
@@ -332,14 +356,26 @@
   {
     "id": "spices-red-chilli",
     "slug": "red-chilli-sannam-teja",
-    "name": "Chilli & Chilli Products (Whole Stemless, Crushed & Powder)",
+    "name": "Chilli Powder (Export-Grade Red Chilli / Lal Mirch Powder)",
     "category": "spices",
     "categoryName": "Spices & Seasonings",
-    "image": "https://shivaspice.com/wp-content/uploads/2021/01/shivaspice_chilli_powder.jpg",
+    "image": "assets/images/products/chilli-powder.jpg",
     "origin": "Guntur, Andhra Pradesh / Byadgi, Karnataka, India",
     "packaging": "10kg / 25kg / 50kg Jute / PP Bags",
     "specs": "SHU 20,000 - 75,000 (Teja/S4), ASTA Color 40-120 (Byadgi), Moisture < 11%",
-    "description": "Pungent, vibrant red Indian dry chillies sourced directly from Guntur and Byadgi, available whole with stem, stemless, crushed flakes, or ground powder."
+    "description": "Pungent, vibrant red Indian dry chilli powder sourced directly from Guntur and Byadgi, perfectly ground for intense color and balanced heat."
+  },
+  {
+    "id": "spices-chilli-seeds",
+    "slug": "chilli-seeds-whole",
+    "name": "Dried Red Chilli & Chilli Seeds (Teja / S4 Whole & Pure Seeds)",
+    "category": "spices",
+    "categoryName": "Spices & Seasonings",
+    "image": "assets/images/products/chilli-seeds.jpg",
+    "origin": "Guntur, Andhra Pradesh / Byadgi, Karnataka, India",
+    "packaging": "10kg / 25kg / 50kg Bags",
+    "specs": "Whole Stemless Dried Chillies & High-Purity Separated Seeds, Moisture < 10%",
+    "description": "Premium export-grade whole dried red chillies and pure separated hot chilli seeds sourced from Guntur, ideal for direct grinding, spice processing, and oleoresin extraction."
   },
   {
     "id": "spices-garam-masala",
