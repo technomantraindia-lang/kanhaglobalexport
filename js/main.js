@@ -243,14 +243,17 @@
       // Move existing children into track
       products.forEach((product) => track.appendChild(product));
 
-      // Clone children for infinite seamless looping
-      products.forEach((product) => {
-        const duplicate = product.cloneNode(true);
-        duplicate.setAttribute('aria-hidden', 'true');
-        if (duplicate.matches('a')) duplicate.setAttribute('tabindex', '-1');
-        duplicate.querySelectorAll('a').forEach((link) => link.setAttribute('tabindex', '-1'));
-        track.appendChild(duplicate);
-      });
+      // Ensure at least 8 items per half so infinite marquee loop has zero gaps on all screen sizes
+      const repeatCount = products.length <= 4 ? 3 : 1;
+      for (let r = 0; r < repeatCount; r++) {
+        products.forEach((product) => {
+          const duplicate = product.cloneNode(true);
+          duplicate.setAttribute('aria-hidden', 'true');
+          if (duplicate.matches('a')) duplicate.setAttribute('tabindex', '-1');
+          duplicate.querySelectorAll('a').forEach((link) => link.setAttribute('tabindex', '-1'));
+          track.appendChild(duplicate);
+        });
+      }
 
       row.appendChild(track);
     });

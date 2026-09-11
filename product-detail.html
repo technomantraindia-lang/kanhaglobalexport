@@ -253,7 +253,7 @@
             </tbody>
           </table>
 
-          <div style="margin-top: 24px; padding-top: 20px; border-top: 1px solid #f1f5f9;">
+          <div id="qaComplianceWrapper" style="margin-top: 24px; padding-top: 20px; border-top: 1px solid #f1f5f9;">
             <h4 style="font-size: 0.98rem; font-weight: 600; color: #0f172a; margin-bottom: 12px;">Quality Assurance &amp; Export Compliances</h4>
             <ul class="qa-checklist">
               <li>
@@ -540,9 +540,9 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="js/categories-data.js?v=3.8"></script>
-  <script src="js/products-data.js?v=3.8"></script>
-  <script src="js/main.js?v=3.8"></script>
+  <script src="js/categories-data.js?v=4.9"></script>
+  <script src="js/products-data.js?v=4.9"></script>
+  <script src="js/main.js?v=4.9"></script>
   <script>
     (function() {
       let currentProduct = null;
@@ -639,6 +639,67 @@
         }
         if (slug === 'coriander' || slug === 'dhaniya') {
           slug = 'coriander-seeds-dhaniya';
+        }
+
+        const slugAliases = {
+          'dehydrated-onion': 'dehydrated-onion-white-red-pink',
+          'white-onion': 'dehydrated-onion-white-red-pink',
+          'red-onion': 'dehydrated-onion-white-red-pink',
+          'pink-onion': 'dehydrated-onion-white-red-pink',
+          'dehydrated-garlic': 'dehydrated-garlic-flakes-powder-granules',
+          'garlic-powder': 'dehydrated-garlic-flakes-powder-granules',
+          'dehydrated-ginger': 'dry-ginger-sonth-whole-powder',
+          'dehydrated-vegetables': 'dehydrated-ginger-green-chilli-tomato-powder',
+          'green-chilli': 'dehydrated-ginger-green-chilli-tomato-powder',
+          'tomato-powder': 'dehydrated-ginger-green-chilli-tomato-powder',
+          'dehydrated-mint': 'dehydrated-mint-leaves-powder',
+          'mint': 'dehydrated-mint-leaves-powder',
+          'dehydrated-coriander': 'dehydrated-coriander-leaves-powder',
+          'other-dehydrated-herbs': 'other-dehydrated-herbs-and-vegetables',
+          'toor-dal': 'toor-dal-pigeon-peas',
+          'pigeon-peas': 'toor-dal-pigeon-peas',
+          'arhar-dal': 'toor-dal-pigeon-peas',
+          'red-gram': 'toor-dal-pigeon-peas',
+          'chana-dal': 'chana-dal-split-bengal-gram',
+          'split-bengal-gram': 'chana-dal-split-bengal-gram',
+          'bengal-gram-dal': 'chana-dal-split-bengal-gram',
+          'desi-chana-dal': 'chana-dal-split-bengal-gram',
+          'moong-dal': 'yellow-moong-dal-split-dehusked',
+          'green-gram': 'yellow-moong-dal-split-dehusked',
+          'mung-bean': 'yellow-moong-dal-split-dehusked',
+          'whole-green-mung': 'yellow-moong-dal-split-dehusked',
+          'yellow-moong-dal': 'yellow-moong-dal-split-dehusked',
+          'masoor-dal': 'red-lentils-masoor-dal',
+          'red-lentils': 'red-lentils-masoor-dal',
+          'split-red-lentils': 'red-lentils-masoor-dal',
+          'orange-lentils': 'red-lentils-masoor-dal',
+          'football-lentils': 'red-lentils-masoor-dal',
+          'urad-dal': 'black-matpe-urad-dal',
+          'black-matpe': 'black-matpe-urad-dal',
+          'black-gram': 'black-matpe-urad-dal',
+          'white-gota': 'black-matpe-urad-dal',
+          'urad-gota': 'black-matpe-urad-dal',
+          'chickpeas': 'chickpeas-kabuli-chana',
+          'kabuli-chana': 'chickpeas-kabuli-chana',
+          'garbanzo': 'chickpeas-kabuli-chana',
+          'garbanzo-beans': 'chickpeas-kabuli-chana',
+          'ceci': 'chickpeas-kabuli-chana',
+          'kabuli-chickpeas': 'chickpeas-kabuli-chana',
+          'rajma': 'rajma-red-kidney-beans-chitra',
+          'kidney-beans': 'rajma-red-kidney-beans-chitra',
+          'red-kidney-beans': 'rajma-red-kidney-beans-chitra',
+          'chitra-rajma': 'rajma-red-kidney-beans-chitra',
+          'speckled-chitra': 'rajma-red-kidney-beans-chitra',
+          'dark-red-kidney-beans': 'rajma-red-kidney-beans-chitra',
+          'lobia': 'cowpeas-black-eyed-peas-lobia',
+          'cowpeas': 'cowpeas-black-eyed-peas-lobia',
+          'black-eyed-peas': 'cowpeas-black-eyed-peas-lobia',
+          'chawli': 'cowpeas-black-eyed-peas-lobia',
+          'white-chawli': 'cowpeas-black-eyed-peas-lobia',
+          'black-eyed-beans': 'cowpeas-black-eyed-peas-lobia'
+        };
+        if (slugAliases[slug]) {
+          slug = slugAliases[slug];
         }
 
         const allProducts = (window.TRADE_PRODUCTS || (window.KGE_PRODUCTS && window.KGE_PRODUCTS.trade) || []);
@@ -785,20 +846,244 @@
               <tr><td>Delivery / IncoTerms</td><td>FOB, CIF, CFR, Ex-Factory as per buyer requirement</td></tr>
             `;
           }
+        // Quality & Compliance Statement
+        const qaComplianceWrapper = document.getElementById('qaComplianceWrapper');
+        if (qaComplianceWrapper) {
+          if (product.category === 'herbs') {
+            const regNoteHtml = product.regulatoryNote ? `
+              <div style="background: #fffbeb; border: 1px solid #fef3c7; border-left: 3px solid #d97706; padding: 11px 14px; border-radius: 6px; font-size: 0.82rem; color: #92400e; line-height: 1.5; margin-top: 12px;">
+                <strong>Important Website &amp; Regulatory Note:</strong> ${product.regulatoryNote}
+              </div>
+            ` : '';
+
+            qaComplianceWrapper.innerHTML = `
+              <h4 style="font-size: 0.98rem; font-weight: 700; color: #0f172a; margin-bottom: 8px;">Quality &amp; Compliance</h4>
+              <p style="font-size: 0.86rem; color: #475569; line-height: 1.6; margin-bottom: 16px;">
+                Kanha Global Exports supplies carefully selected herbs and botanical ingredients from India for international B2B markets. Products are processed and packed under controlled hygienic conditions and can be supplied according to buyer-specific specifications.
+              </p>
+
+              <h5 style="font-size: 0.82rem; font-weight: 700; color: #1e293b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px;">Typical documentation available upon request:</h5>
+              <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 8px; margin-bottom: 16px;">
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Certificate of Analysis (COA)</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Product Specification Sheet</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Microbiological Analysis</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Heavy Metal Analysis</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Pesticide Residue Analysis</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Aflatoxin / Mycotoxin Analysis</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Certificate of Origin</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Phytosanitary Certificate</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Commercial Invoice &amp; Packing List</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Batch / Lot Traceability Documentation</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Organic Certification (where applicable)</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Other buyer-specific compliance documents</span>
+                </div>
+              </div>
+
+              <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 3px solid #0284c7; padding: 12px 14px; border-radius: 6px; font-size: 0.82rem; color: #334155; line-height: 1.55;">
+                <strong>Regulatory Compliance:</strong> For US imports, the US importer may have FSVP responsibilities, and FDA food-facility registration/food import requirements can apply depending on the product and operation. For EU-bound plant-origin foods, pesticide residues must comply with the applicable EU MRL framework, including Regulation (EC) No. 396/2005.
+              </div>
+              ${regNoteHtml}
+            `;
+          } else if (product.category === 'dehydrated') {
+            qaComplianceWrapper.innerHTML = `
+              <h4 style="font-size: 0.98rem; font-weight: 700; color: #0f172a; margin-bottom: 8px;">Quality &amp; Export Compliance</h4>
+              <div style="font-size: 0.88rem; font-weight: 600; color: #0284c7; margin-bottom: 6px;">Kanha Global Exports — Dehydrated Food Ingredients</div>
+              <p style="font-size: 0.86rem; color: #475569; line-height: 1.6; margin-bottom: 16px;">
+                Our dehydrated vegetables, herbs and culinary ingredients are sourced and processed for international B2B requirements, with product specifications tailored to the destination market and buyer application.
+              </p>
+
+              <h5 style="font-size: 0.82rem; font-weight: 700; color: #1e293b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px;">Documentation available subject to product and shipment:</h5>
+              <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 8px; margin-bottom: 16px;">
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Product Specification Sheet</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Batch-wise Certificate of Analysis (COA)</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Microbiological Analysis</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Pesticide Residue Analysis</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Heavy Metal Analysis</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Mycotoxin / Aflatoxin Analysis, where applicable</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Certificate of Origin</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Phytosanitary Certificate, where applicable</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Packing List</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Commercial Invoice</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Batch / Lot Traceability</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Organic Certification, where applicable</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Buyer-Specific Laboratory Testing</span>
+                </div>
+              </div>
+
+              <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 3px solid #0284c7; padding: 12px 14px; border-radius: 6px; font-size: 0.82rem; color: #334155; line-height: 1.55;">
+                <strong>Disclaimer:</strong> Products are intended for B2B industrial, food processing, seasoning, and culinary applications. Specific chemical, physical, and microbiological parameters, along with customized packaging and private labelling, are verified and supplied in accordance with contract specifications and destination market regulatory frameworks.
+              </div>
+            `;
+          } else if (product.category === 'pulses') {
+            qaComplianceWrapper.innerHTML = `
+              <h4 style="font-size: 0.98rem; font-weight: 700; color: #0f172a; margin-bottom: 8px;">Food Safety &amp; Quality Compliance</h4>
+              <div style="font-size: 0.88rem; font-weight: 600; color: #0284c7; margin-bottom: 6px;">Kanha Global Exports — Pulses &amp; Lentils</div>
+              <p style="font-size: 0.86rem; color: #475569; line-height: 1.6; margin-bottom: 16px;">
+                Our export-grade pulses and lentils are sourced from verified agricultural centers, thoroughly machine cleaned, destoned, dehulled, and optical sortex graded under stringent quality assurance protocols.
+              </p>
+
+              <h5 style="font-size: 0.82rem; font-weight: 700; color: #1e293b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px;">Food Safety, Testing &amp; Inspection Parameters:</h5>
+              <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 8px; margin-bottom: 16px;">
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Batch-wise Certificate of Analysis (COA)</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Pesticide Residues: Compliant with destination MRLs</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Heavy Metals: Tested as applicable</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Mycotoxins / Aflatoxins: Tested where applicable</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Salmonella: Meets microbiological standard (Absent)</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>E. coli: Meets microbiological specification</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>No unauthorized additives or contaminants</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Phytosanitary &amp; Certificate of Origin</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Customized Packaging (25kg / 50kg Food-Grade)</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #334155;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Pre-Shipment SGS / Third-Party Inspection Support</span>
+                </div>
+              </div>
+
+              <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 3px solid #0284c7; padding: 12px 14px; border-radius: 6px; font-size: 0.82rem; color: #334155; line-height: 1.55; margin-bottom: 10px;">
+                <strong>Processing Line:</strong> Cleaning &rarr; Destoning &rarr; Grading &rarr; Dehusking &rarr; Splitting &rarr; Sorting &rarr; Polishing (for oil-polished grade) &rarr; Optical Sorting &rarr; Final Quality Inspection &rarr; Hygienic Packing.
+              </div>
+
+              <div style="background: #fffbeb; border: 1px solid #fef3c7; border-left: 3px solid #d97706; padding: 11px 14px; border-radius: 6px; font-size: 0.82rem; color: #92400e; line-height: 1.5; margin-bottom: 10px;">
+                <strong>Oil-Polished Grade Specification:</strong> Oil polishing is utilized to provide a smooth, uniform, bright appearance. The exact type and quantity of food-grade polishing material is agreed with the buyer and complies with destination country food safety standards.
+              </div>
+
+              <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 3px solid #0284c7; padding: 12px 14px; border-radius: 6px; font-size: 0.82rem; color: #334155; line-height: 1.55;">
+                <strong>Regulatory &amp; MRL Compliance:</strong> APEDA identifies Bengal gram / desi chana under dried chickpeas and lists Pigeon Peas and Gram Dal separately within India's pulse classifications. For international shipments, pesticide compliance is verified against destination-specific Maximum Residue Limits (MRLs) applicable to the specific commodity and active ingredient in the destination market (such as US FDA/EPA and EU Regulation EC No. 396/2005).
+              </div>
+            `;
+          } else {
+            qaComplianceWrapper.innerHTML = `
+              <h4 style="font-size: 0.98rem; font-weight: 600; color: #0f172a; margin-bottom: 12px;">Quality Assurance &amp; Export Compliances</h4>
+              <ul class="qa-checklist">
+                <li>
+                  <div class="qa-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                  <span><strong>Direct Farm &amp; Processor Sourcing:</strong> Procured directly from verified agricultural centers with complete batch traceability.</span>
+                </li>
+                <li>
+                  <div class="qa-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                  <span><strong>Sortex &amp; Optical Grading:</strong> Graded using modern optical sorters to eliminate impurities, foreign matter, and broken grains.</span>
+                </li>
+                <li>
+                  <div class="qa-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                  <span><strong>Export-Grade Seaworthy Packaging:</strong> Multi-layer barrier bags, fumigation treatment, and container moisture protection.</span>
+                </li>
+              </ul>
+            `;
+          }
         }
 
         // Image Handling
         const categoryFallbacks = {
-          'rice': 'assets/images/products/1121-basmati-rice.jpg',
-          'basmati-rice': 'assets/images/products/1121-basmati-rice.jpg',
-          'non-basmati-rice': 'assets/images/products/1121-basmati-rice.jpg',
+          'rice': 'assets/images/products/1121-basmati-rice.jpeg',
+          'basmati-rice': 'assets/images/products/1121-basmati-rice.jpeg',
+          'non-basmati-rice': 'assets/images/products/1121-basmati-rice.jpeg',
           'spices': 'assets/images/spices.jpg',
-          'pulses': 'assets/images/toor-dal.jpg',
-          'dehydrated': 'assets/images/onion-flakes.jpg',
+          'pulses': 'assets/images/products/toor-dal.jpeg',
+          'dehydrated': 'assets/images/products/dehydrated-onion-flakes.jpeg',
           'fresh-fruits': 'assets/images/fresh-fruits.jpg',
           'fresh-vegetables': 'assets/images/fresh-vegetables.jpg',
-          'seafood': 'assets/images/seafood-export.jpg',
-          'herbs': 'assets/images/products/tulsi-holy-basil.jpg',
+          'seafood': 'assets/images/products/vannamei-white-shrimp.jpeg',
+          'herbs': 'assets/images/products/tulsi-holy-basil.jpeg',
           'more-products': 'assets/images/makhana-fox-nuts.jpg',
           'honey-agro': 'assets/images/makhana-fox-nuts.jpg',
           'oil-seeds': 'assets/images/white-sesame.jpg'
