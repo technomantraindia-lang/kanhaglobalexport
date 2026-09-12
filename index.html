@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/main.css?v=3.6">
-  <link rel="stylesheet" href="css/global-presence.css?v=2.0">
+  <link rel="stylesheet" href="css/global-presence.css?v=3.0">
 </head>
 
 <body>
@@ -1464,8 +1464,25 @@
             <input type="text" id="marketPort" name="port" placeholder="e.g. New York, Felixstowe, Jebel Ali" class="form-input">
           </div>
         </div>
+        <div class="form-group">
+          <label for="marketBuyerName">Company &amp; Importer Name</label>
+          <input type="text" id="marketBuyerName" name="buyer_name" required placeholder="e.g. Global Foods Trading Ltd" class="form-input">
+        </div>
+        <div class="rfq-actions">
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+            Send Official Quotation Inquiry
+          </button>
+        </div>
+        <div style="margin-top:10px; text-align:center;">
+          <button type="button" id="btnMarketWhatsApp" class="btn" style="width:100%; justify-content:center; background:#25D366; color:#ffffff; font-weight:700; border:none; padding:11px 16px; border-radius:6px; cursor:pointer;">
+            Inquire via WhatsApp Desk
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
 
-<script>
+  <script>
     const modal = document.getElementById('marketRfqModal');
     const regionInput = document.getElementById('marketTargetRegion');
     const regionBadge = document.getElementById('modalRegionBadge');

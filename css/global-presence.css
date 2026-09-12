@@ -563,3 +563,156 @@
     align-items: flex-start;
   }
 }
+
+/* ==========================================================================
+   Interactive RFQ Modal for Target Markets
+   ========================================================================== */
+.rfq-modal {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 999999 !important;
+  display: none !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 16px !important;
+}
+
+.rfq-modal.open {
+  display: flex !important;
+}
+
+.rfq-backdrop {
+  position: absolute !important;
+  inset: 0 !important;
+  background: rgba(15, 23, 42, 0.68) !important;
+  backdrop-filter: blur(6px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
+  cursor: pointer !important;
+}
+
+.rfq-dialog {
+  position: relative !important;
+  background: #ffffff !important;
+  border-radius: 16px !important;
+  max-width: 520px !important;
+  width: 100% !important;
+  padding: 32px 28px !important;
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25) !important;
+  z-index: 2 !important;
+  animation: modalScaleIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  max-height: 90vh !important;
+  overflow-y: auto !important;
+  box-sizing: border-box !important;
+  text-align: left !important;
+}
+
+@keyframes modalScaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.94) translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.rfq-close {
+  position: absolute !important;
+  top: 16px !important;
+  right: 16px !important;
+  background: #f1f5f9 !important;
+  border: none !important;
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #64748b !important;
+  cursor: pointer !important;
+  font-size: 1.3rem !important;
+  line-height: 1 !important;
+  transition: all 0.2s ease !important;
+}
+
+.rfq-close:hover {
+  background: #e2e8f0 !important;
+  color: #0f172a !important;
+}
+
+.rfq-header {
+  margin-bottom: 20px !important;
+}
+
+.rfq-badge {
+  display: inline-block !important;
+  background: #dcfce7 !important;
+  color: #15803d !important;
+  font-size: 0.72rem !important;
+  font-weight: 800 !important;
+  padding: 4px 10px !important;
+  border-radius: 9999px !important;
+  letter-spacing: 0.06em !important;
+  margin-bottom: 10px !important;
+}
+
+.rfq-header h3 {
+  font-size: 1.35rem !important;
+  font-weight: 700 !important;
+  color: #0f172a !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.25 !important;
+}
+
+.rfq-header p {
+  font-size: 0.85rem !important;
+  color: #64748b !important;
+  margin: 0 !important;
+}
+
+.rfq-form .form-group {
+  margin-bottom: 14px !important;
+}
+
+.rfq-form .form-row {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 12px !important;
+}
+
+@media (max-width: 540px) {
+  .rfq-form .form-row {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.rfq-form label {
+  display: block !important;
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
+  color: #334155 !important;
+  margin-bottom: 6px !important;
+}
+
+.rfq-form .form-input {
+  width: 100% !important;
+  padding: 10px 14px !important;
+  border: 1.5px solid #cbd5e1 !important;
+  border-radius: 8px !important;
+  font-size: 0.88rem !important;
+  color: #0f172a !important;
+  background: #ffffff !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+  box-sizing: border-box !important;
+}
+
+.rfq-form .form-input:focus {
+  outline: none !important;
+  border-color: #0284c7 !important;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15) !important;
+}
+
+.rfq-actions {
+  margin-top: 20px !important;
+}
