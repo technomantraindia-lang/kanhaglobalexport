@@ -13207,3 +13207,172 @@ ul { list-style: none; }
   }
 }
 
+/* ==========================================================================
+   Global Floating Action Buttons (Bottom-Left Call & Bottom-Right WhatsApp)
+   ========================================================================== */
+.kge-floating-actions {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.kge-floating-btn {
+  position: fixed;
+  pointer-events: auto;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+/* Bottom Left: Call Button */
+.kge-floating-call {
+  bottom: 24px;
+  left: 24px;
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  color: #ffffff !important;
+  box-shadow: 0 8px 24px rgba(2, 132, 199, 0.45), 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.kge-floating-call:hover,
+.kge-floating-call:focus-visible {
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: 0 12px 28px rgba(2, 132, 199, 0.55), 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #ffffff !important;
+}
+
+/* Bottom Right: WhatsApp Button */
+.kge-floating-whatsapp {
+  bottom: 24px;
+  right: 24px;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: #ffffff !important;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45), 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.kge-floating-whatsapp:hover,
+.kge-floating-whatsapp:focus-visible {
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: 0 12px 28px rgba(37, 211, 102, 0.55), 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #ffffff !important;
+}
+
+/* Subtle Animated Radar Pulse Rings */
+.kge-float-pulse {
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.kge-floating-call .kge-float-pulse {
+  border: 2px solid #0284c7;
+  animation: kgeFloatPulse 2.8s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+.kge-floating-whatsapp .kge-float-pulse {
+  border: 2px solid #25D366;
+  animation: kgeFloatPulse 2.8s cubic-bezier(0.215, 0.61, 0.355, 1) infinite 0.8s;
+}
+
+@keyframes kgeFloatPulse {
+  0% {
+    transform: scale(0.92);
+    opacity: 0.85;
+  }
+  60% {
+    transform: scale(1.36);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.36);
+    opacity: 0;
+  }
+}
+
+.kge-float-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.kge-floating-btn:hover .kge-float-icon {
+  transform: scale(1.06);
+}
+
+/* Hover Tooltip Labels */
+.kge-float-tooltip {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) scale(0.9);
+  background: #0f172a;
+  color: #ffffff;
+  padding: 7px 14px;
+  border-radius: 9999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-family: var(--font-body, system-ui, -apple-system, sans-serif);
+}
+
+/* Call Tooltip: expands to the right */
+.kge-floating-call .kge-float-tooltip {
+  left: 100%;
+  margin-left: 12px;
+  transform-origin: left center;
+}
+
+.kge-floating-call:hover .kge-float-tooltip {
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
+}
+
+/* WhatsApp Tooltip: expands to the left */
+.kge-floating-whatsapp .kge-float-tooltip {
+  right: 100%;
+  margin-right: 12px;
+  transform-origin: right center;
+}
+
+.kge-floating-whatsapp:hover .kge-float-tooltip {
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
+}
+
+/* Mobile Touch Screen Adaptations */
+@media (max-width: 640px) {
+  .kge-floating-btn {
+    width: 50px;
+    height: 50px;
+  }
+  .kge-floating-call {
+    bottom: max(16px, env(safe-area-inset-bottom, 16px));
+    left: 16px;
+  }
+  .kge-floating-whatsapp {
+    bottom: max(16px, env(safe-area-inset-bottom, 16px));
+    right: 16px;
+  }
+  .kge-float-tooltip {
+    display: none !important;
+  }
+}
+
