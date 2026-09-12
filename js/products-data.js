@@ -59,7 +59,7 @@
     "name": "Traditional Authentic Basmati Rice (Aged Himalayan)",
     "category": "rice",
     "categoryName": "Rice & Grains",
-    "image": "assets/images/rice-1121-steam.webp",
+    "image": "assets/images/products/traditional-authentic-basmati.jpg",
     "origin": "Himalayan Foothills, India",
     "packaging": "5kg / 10kg / 25kg Master Bags",
     "specs": "Aged 1-2 Years, Grain Length 7.3mm, Unmatched Natural Fragrance, Sortex 100%",
@@ -95,7 +95,7 @@
     "name": "PR-11 / PR-14 Long Grain Non-Basmati Rice",
     "category": "rice",
     "categoryName": "Rice & Grains",
-    "image": "assets/images/products/ir64-long-grain-rice.png",
+    "image": "assets/images/products/pr-11-non-basmati-rice.jpg",
     "origin": "Punjab / Haryana, India",
     "packaging": "25kg / 50kg Bags",
     "specs": "Grain Length: 6.8mm+, Raw / Steam / Sella, Moisture < 13%, Broken < 5%",
@@ -107,7 +107,7 @@
     "name": "Swarna Rice (Parboiled & Raw Medium Grain)",
     "category": "rice",
     "categoryName": "Rice & Grains",
-    "image": "assets/images/products/swarna-rice.png",
+    "image": "assets/images/products/swarna-rice.jpg",
     "origin": "West Bengal / Odisha / Andhra, India",
     "packaging": "50kg PP Bags",
     "specs": "Short-Medium Grain, Sortex Cleaned, Broken < 5%, Moisture < 14%",
@@ -130,11 +130,11 @@
     "description": "Authentic Indian Cumin Seeds (Whole Jeera), machine cleaned and Sortex sorted under rigorous export quality standards with minimum 99% purity and characteristic natural aroma.",
     "specTabs": [
       {
-        "tabName": "1) Cumin Seeds",
+        "tabName": "Cumin Seeds (Jeera Whole)",
         "id": "cumin-seeds",
         "parameters": [
           { "param": "Origin", "spec": "India" },
-          { "param": "Product", "spec": "Whole Cumin Seeds" },
+          { "param": "Product", "spec": "Whole Cumin Seeds (Jeera)" },
           { "param": "Purity", "spec": "Min. 99%" },
           { "param": "Moisture", "spec": "Max. 10%" },
           { "param": "Foreign Matter", "spec": "Max. 1%" },
@@ -145,26 +145,6 @@
           { "param": "Aroma", "spec": "Characteristic cumin aroma" },
           { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg" },
           { "param": "Form", "spec": "Whole Seeds" }
-        ]
-      },
-      {
-        "tabName": "Cumin Powder",
-        "id": "cumin-powder",
-        "parameters": [
-          { "param": "Origin", "spec": "India" },
-          { "param": "Product", "spec": "Cumin Powder" },
-          { "param": "Purity", "spec": "Min. 99%" },
-          { "param": "Moisture", "spec": "Max. 10%" },
-          { "param": "Foreign Matter", "spec": "Max. 0.5%" },
-          { "param": "Admixture", "spec": "Max. 0.5%" },
-          { "param": "Particle Size", "spec": "60–100 Mesh" },
-          { "param": "Colour", "spec": "Natural greenish-brown to brown" },
-          { "param": "Aroma", "spec": "Characteristic cumin aroma" },
-          { "param": "Insect Infestation", "spec": "Absent" },
-          { "param": "Added Colour", "spec": "None" },
-          { "param": "Added Preservatives", "spec": "None" },
-          { "param": "Packing", "spec": "10 / 20 / 25 kg bulk; customized retail packs" },
-          { "param": "Form", "spec": "Fine Powder" }
         ]
       }
     ]
@@ -182,7 +162,7 @@
     "description": "Export-grade freshly pulverized Indian cumin powder (60–100 Mesh) with natural greenish-brown to brown hue and distinctive robust aroma. 100% pure without preservatives or added colours.",
     "specTabs": [
       {
-        "tabName": "Cumin Powder",
+        "tabName": "Cumin Powder (Ground Jeera)",
         "id": "cumin-powder",
         "parameters": [
           { "param": "Origin", "spec": "India" },
@@ -199,24 +179,6 @@
           { "param": "Added Preservatives", "spec": "None" },
           { "param": "Packing", "spec": "10 / 20 / 25 kg bulk; customized retail packs" },
           { "param": "Form", "spec": "Fine Powder" }
-        ]
-      },
-      {
-        "tabName": "1) Cumin Seeds",
-        "id": "cumin-seeds",
-        "parameters": [
-          { "param": "Origin", "spec": "India" },
-          { "param": "Product", "spec": "Whole Cumin Seeds" },
-          { "param": "Purity", "spec": "Min. 99%" },
-          { "param": "Moisture", "spec": "Max. 10%" },
-          { "param": "Foreign Matter", "spec": "Max. 1%" },
-          { "param": "Admixture", "spec": "Max. 1%" },
-          { "param": "Damaged Seeds", "spec": "Max. 2%" },
-          { "param": "Insect Infestation", "spec": "Absent" },
-          { "param": "Colour", "spec": "Natural greenish-brown" },
-          { "param": "Aroma", "spec": "Characteristic cumin aroma" },
-          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg" },
-          { "param": "Form", "spec": "Whole / Powder" }
         ]
       }
     ]
@@ -345,13 +307,85 @@
     "id": "spices-black-cardamom",
     "slug": "black-cardamom-badi-elaichi",
     "name": "Black Cardamom (Badi Elaichi / Bold Smoky Pods)",
+    "websiteTitle": "Black Cardamom (Badi Elaichi / Bold Smoky Pods) | Indian Origin",
     "category": "spices",
     "categoryName": "Spices & Seasonings",
-    "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80",
-    "origin": "Sikkim / North-East / West Bengal, India",
-    "packaging": "10kg / 25kg PP & Jute Bags",
-    "specs": "Size: 20mm - 25mm+ Bold, Camphoraceous & Smoky, Moisture < 11%",
-    "description": "Large dark brown pods with deep smoky and camphor aroma, an essential pillar of Indian garam masala and hearty savory dishes."
+    "image": "assets/images/products/black-cardamom.jpg",
+    "origin": "India (Primary Sourcing: Sikkim / Himalayan region)",
+    "packaging": "5 kg / 10 kg / 25 kg food-grade bags, cartons, vacuum or customized private-label packaging",
+    "specs": "Grade: Bold / Premium Bold, Pod Size 20–30 mm, Moisture Max. 12%, Volatile Oil Min. 2.0 ml/100g",
+    "description": "Premium Indian Black Cardamom (Amomum subulatum), naturally smoke-dried and carefully cleaned, sorted and graded for bold pod size, dark colour, strong smoky aroma and characteristic warm flavour. Suitable for USA and EU food-service, spice blending, retail and private-label applications. Black cardamom is a distinct species from green cardamom.",
+    "specTabs": [
+      {
+        "tabName": "Export Specifications",
+        "parameters": [
+          { "param": "Product", "spec": "Black Cardamom / Badi Elaichi" },
+          { "param": "Botanical Name", "spec": "Amomum subulatum" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Primary Sourcing", "spec": "Sikkim / Himalayan region" },
+          { "param": "Form", "spec": "Whole Pods" },
+          { "param": "Grade", "spec": "Bold / Premium Bold" },
+          { "param": "Pod Size", "spec": "Approx. 20–30 mm, according to agreed grade" },
+          { "param": "Colour", "spec": "Natural dark brown to black" },
+          { "param": "Appearance", "spec": "Whole, mature, well-dried, naturally wrinkled and ribbed pods" },
+          { "param": "Aroma", "spec": "Strong, smoky, earthy and characteristic" },
+          { "param": "Flavour", "spec": "Warm, pungent, smoky and slightly camphoraceous" },
+          { "param": "Moisture", "spec": "Max. 12% recommended commercial specification" },
+          { "param": "Volatile Oil", "spec": "Min. 2.0 ml/100 g" },
+          { "param": "Foreign / Extraneous Matter", "spec": "Max. 1%" },
+          { "param": "Empty / Malformed Pods", "spec": "Controlled according to agreed specification" },
+          { "param": "Immature / Shriveled Pods", "spec": "Controlled according to agreed specification" },
+          { "param": "Insect Damage", "spec": "Free from live infestation; controlled as per agreed specification" },
+          { "param": "Mould", "spec": "Free from visible mould" },
+          { "param": "Microbiological Quality", "spec": "Tested according to buyer and destination-market requirements" },
+          { "param": "Salmonella", "spec": "Absent in 25 g, where specified" },
+          { "param": "Pesticide Residues", "spec": "Compliant with applicable destination-market MRLs" },
+          { "param": "Heavy Metals", "spec": "Compliant with applicable destination requirements" },
+          { "param": "Ethylene Oxide", "spec": "Tested according to buyer/destination requirements" },
+          { "param": "GMO Status", "spec": "Non-GMO, subject to supplier declaration" },
+          { "param": "Processing", "spec": "Cleaning → Sorting → Grading → Quality Inspection → Export Packing" },
+          { "param": "Packaging", "spec": "5 kg / 10 kg / 25 kg food-grade bags, cartons, vacuum or customized private-label packaging" },
+          { "param": "Shelf Life", "spec": "Typically 18–24 months under recommended storage conditions" },
+          { "param": "Storage", "spec": "Store in a cool, dry, clean and well-ventilated area away from moisture, heat and strong odours" },
+          { "param": "Certifications", "spec": "FSSAI / HACCP / ISO / Halal / Kosher / Organic, where applicable and supported by valid certification" },
+          { "param": "Documents", "spec": "COA, Certificate of Origin, Phytosanitary Certificate and other export documents as applicable" }
+        ]
+      }
+    ],
+    "qaHtml": `<div class="qa-block" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; margin-top:20px;">
+      <h4 style="font-size:0.98rem; font-weight:700; color:#0f172a; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:8px; height:8px; background:#16a34a; border-radius:50%;"></span>
+        Export Applications
+      </h4>
+      <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px;">
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Biryani</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Pulao</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Garam Masala</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Curry Blends</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Lentils &amp; Dals</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Meat Preparations</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Spice Blends</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Food Manufacturing</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Retail Packs</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Private Label</span>
+      </div>
+
+      <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:14px 16px; margin-bottom:12px;">
+        <h5 style="font-size:0.88rem; font-weight:700; color:#0f172a; margin:0 0 8px 0; display:flex; align-items:center; gap:6px;">
+          <span style="color:#0284c7;">🛡</span> USA &amp; EU Regulatory Compliance
+        </h5>
+        <p style="font-size:0.82rem; color:#334155; line-height:1.5; margin:0 0 6px 0;">
+          <strong>USA:</strong> Supply can be prepared according to applicable U.S. food-safety, import, labeling and buyer requirements.
+        </p>
+        <p style="font-size:0.82rem; color:#334155; line-height:1.5; margin:0;">
+          <strong>EU:</strong> Pesticide residues should comply with applicable EU MRLs. EU regulations specifically classify cardamoms under dried spices for pesticide-residue controls, so lot-specific residue testing is recommended for EU shipments.
+        </p>
+      </div>
+
+      <div style="background:#fffbeb; border:1px solid #fef3c7; border-left:4px solid #d97706; padding:10px 14px; border-radius:6px; font-size:0.81rem; color:#92400e; line-height:1.45;">
+        <strong>Commercial Note:</strong> The moisture, volatile-oil and physical parameters above are consistent with commercial export specifications published for Indian black cardamom; the exact values should be confirmed on the lot-specific COA and buyer contract.
+      </div>
+    </div>`
   },
   {
     "id": "spices-red-chilli",
@@ -380,14 +414,189 @@
   {
     "id": "spices-garam-masala",
     "slug": "garam-masala-blended-curry-powder",
-    "name": "Spice Powders & Blended Spices (Garam Masala & Curry Powders)",
+    "name": "Spice Powders & Blended Spices — Mix Summary",
+    "websiteTitle": "Spice Powders & Blended Spices — Mix Summary | Indian Origin",
     "category": "spices",
     "categoryName": "Spices & Seasonings",
     "image": "assets/images/products/garam-masala.jpg",
-    "origin": "Gujarat / India",
-    "packaging": "1kg / 5kg / 25kg Vacuum Foil & Master Cartons",
-    "specs": "Custom formulations, 100% pure whole-ground, zero artificial fillers or MSG",
-    "description": "Masterfully roasted and blended authentic Indian spice powders (Garam Masala, Curry Powder, Meat Masala, Sambar Masala) for retail and foodservice."
+    "origin": "India (Direct Sourcing from Major Spice Growing Belts)",
+    "packaging": "Single & blended retail packs, bulk industrial packs or private label (100g to 25kg)",
+    "specs": "Single spices, Blended spices, Custom formulations, Retail & bulk industrial packs",
+    "description": "A premium range of Indian spice powders and blended masalas, prepared from carefully selected whole spices, cleaned, ground and blended to deliver consistent colour, aroma, flavour and particle size. Suitable for USA & EU retail, food-service, industrial and private-label markets.",
+    "specTabs": [
+      {
+        "tabName": "Export Specifications",
+        "parameters": [
+          { "param": "Product Category", "spec": "Spice Powders & Blended Spices — Mix Summary" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Product Range", "spec": "Garam Masala, Curry Powder, Turmeric Powder, Coriander Powder, Cumin Powder, Red Chilli Powder, Tandoori Masala, Custom Spice Blends" },
+          { "param": "Available Formats", "spec": "Single spices • Blended spices • Custom formulations • Retail packs • Bulk industrial packs • Private label" },
+          { "param": "Raw Material Selection", "spec": "Carefully selected premium whole spices, thoroughly cleaned, destoned and foreign-matter free" },
+          { "param": "Processing & Grinding", "spec": "Cleaned, controlled-temperature ground and blended to deliver consistent colour, aroma, flavour and particle size" },
+          { "param": "Particle Size", "spec": "Uniform mesh calibrated to buyer and industrial requirements (fine powder to coarse spice grinds)" },
+          { "param": "Sensory Profile", "spec": "Consistent natural colour, fresh authentic aroma, and balanced characteristic flavour" },
+          { "param": "Quality Focus", "spec": "Clean raw materials • Controlled grinding • Consistent blending • Food-grade packaging • Batch traceability • Destination-market testing and documentation" },
+          { "param": "Purity & Fillers", "spec": "100% pure authentic spices, zero artificial colors, zero synthetic flavors, zero fillers" },
+          { "param": "Moisture Content", "spec": "Commercially controlled (typically Max. 8% - 10% depending on blend)" },
+          { "param": "Microbiological Quality", "spec": "Tested according to buyer and destination requirements (Salmonella absent in 25g, E. Coli negative)" },
+          { "param": "Pesticide Residues & MRLs", "spec": "Fully compliant with applicable destination-market MRLs (USA FDA & European Union EU compliant)" },
+          { "param": "Heavy Metals & Contaminants", "spec": "Strict compliance with destination limits (Lead, Cadmium, Aflatoxins within official limits)" },
+          { "param": "Packaging Options", "spec": "Retail packs (stand-up zip pouches, cartons, PET jars, tins), 5 kg / 10 kg / 20 kg / 25 kg food-grade poly-lined bags, bulk industrial packs, and complete private label" },
+          { "param": "Shelf Life", "spec": "Typically 12–24 months under recommended storage conditions in sealed original packaging" },
+          { "param": "Storage Conditions", "spec": "Store in a cool, dry, clean and well-ventilated area away from direct sunlight, moisture and strong odours" },
+          { "param": "Export Markets", "spec": "USA • EU • UK • Middle East • GCC • Africa • Australia" },
+          { "param": "Applications", "spec": "Retail • Restaurants • Food manufacturers • Ready-to-eat foods • Snacks • Sauces • Marinades • Bakery • Private Label" },
+          { "param": "Certifications Available", "spec": "FSSAI, Spices Board of India, US FDA Registered, HACCP, ISO 22000, Halal, Kosher, GMP" },
+          { "param": "Accompanying Documents", "spec": "Certificate of Analysis (COA), Certificate of Origin, Phytosanitary Certificate, Microbiological Analysis, Batch Traceability Report" }
+        ]
+      }
+    ],
+    "qaHtml": `<div class="qa-block" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; margin-top:20px;">
+      <!-- Product Range Grid -->
+      <h4 style="font-size:0.98rem; font-weight:700; color:#0f172a; margin-bottom:12px; display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:8px; height:8px; background:#e11d48; border-radius:50%;"></span>
+        Product Range
+      </h4>
+      <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(180px, 1fr)); gap:10px; margin-bottom:18px;">
+        <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:6px; padding:10px 12px; display:flex; align-items:center; gap:8px;">
+          <span style="color:#d97706; font-size:1rem;">✦</span>
+          <div>
+            <strong style="font-size:0.86rem; color:#0f172a; display:block;">Garam Masala</strong>
+            <span style="font-size:0.75rem; color:#64748b;">Aromatic all-purpose blend</span>
+          </div>
+        </div>
+        <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:6px; padding:10px 12px; display:flex; align-items:center; gap:8px;">
+          <span style="color:#d97706; font-size:1rem;">✦</span>
+          <div>
+            <strong style="font-size:0.86rem; color:#0f172a; display:block;">Curry Powder</strong>
+            <span style="font-size:0.75rem; color:#64748b;">Mild, Madras &amp; hot blends</span>
+          </div>
+        </div>
+        <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:6px; padding:10px 12px; display:flex; align-items:center; gap:8px;">
+          <span style="color:#d97706; font-size:1rem;">✦</span>
+          <div>
+            <strong style="font-size:0.86rem; color:#0f172a; display:block;">Turmeric Powder</strong>
+            <span style="font-size:0.75rem; color:#64748b;">High curcumin, vibrant gold</span>
+          </div>
+        </div>
+        <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:6px; padding:10px 12px; display:flex; align-items:center; gap:8px;">
+          <span style="color:#d97706; font-size:1rem;">✦</span>
+          <div>
+            <strong style="font-size:0.86rem; color:#0f172a; display:block;">Coriander Powder</strong>
+            <span style="font-size:0.75rem; color:#64748b;">Freshly milled green aroma</span>
+          </div>
+        </div>
+        <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:6px; padding:10px 12px; display:flex; align-items:center; gap:8px;">
+          <span style="color:#d97706; font-size:1rem;">✦</span>
+          <div>
+            <strong style="font-size:0.86rem; color:#0f172a; display:block;">Cumin Powder</strong>
+            <span style="font-size:0.75rem; color:#64748b;">Earthy, roasted &amp; raw jeera</span>
+          </div>
+        </div>
+        <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:6px; padding:10px 12px; display:flex; align-items:center; gap:8px;">
+          <span style="color:#d97706; font-size:1rem;">✦</span>
+          <div>
+            <strong style="font-size:0.86rem; color:#0f172a; display:block;">Red Chilli Powder</strong>
+            <span style="font-size:0.75rem; color:#64748b;">Mild to extra pungent (SHU graded)</span>
+          </div>
+        </div>
+        <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:6px; padding:10px 12px; display:flex; align-items:center; gap:8px;">
+          <span style="color:#d97706; font-size:1rem;">✦</span>
+          <div>
+            <strong style="font-size:0.86rem; color:#0f172a; display:block;">Tandoori Masala</strong>
+            <span style="font-size:0.75rem; color:#64748b;">Authentic barbecue barbecue rub</span>
+          </div>
+        </div>
+        <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:6px; padding:10px 12px; display:flex; align-items:center; gap:8px;">
+          <span style="color:#d97706; font-size:1rem;">✦</span>
+          <div>
+            <strong style="font-size:0.86rem; color:#0f172a; display:block;">Custom Spice Blends</strong>
+            <span style="font-size:0.75rem; color:#64748b;">Tailored recipe formulation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Available Formats -->
+      <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:14px 16px; margin-bottom:14px;">
+        <h5 style="font-size:0.88rem; font-weight:700; color:#0f172a; margin:0 0 8px 0; display:flex; align-items:center; gap:6px;">
+          <span style="color:#0284c7;">📦</span> Available Formats
+        </h5>
+        <div style="display:flex; flex-wrap:wrap; gap:8px;">
+          <span style="background:#f1f5f9; border:1px solid #cbd5e1; padding:4px 11px; border-radius:16px; font-size:0.81rem; color:#334155; font-weight:600;">Single Spices</span>
+          <span style="background:#f1f5f9; border:1px solid #cbd5e1; padding:4px 11px; border-radius:16px; font-size:0.81rem; color:#334155; font-weight:600;">Blended Spices</span>
+          <span style="background:#f1f5f9; border:1px solid #cbd5e1; padding:4px 11px; border-radius:16px; font-size:0.81rem; color:#334155; font-weight:600;">Custom Formulations</span>
+          <span style="background:#f1f5f9; border:1px solid #cbd5e1; padding:4px 11px; border-radius:16px; font-size:0.81rem; color:#334155; font-weight:600;">Retail Packs</span>
+          <span style="background:#f1f5f9; border:1px solid #cbd5e1; padding:4px 11px; border-radius:16px; font-size:0.81rem; color:#334155; font-weight:600;">Bulk Industrial Packs</span>
+          <span style="background:#f1f5f9; border:1px solid #cbd5e1; padding:4px 11px; border-radius:16px; font-size:0.81rem; color:#334155; font-weight:600;">Private Label</span>
+        </div>
+      </div>
+
+      <!-- Quality Focus Highlights -->
+      <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:14px 16px; margin-bottom:14px;">
+        <h5 style="font-size:0.88rem; font-weight:700; color:#0f172a; margin:0 0 10px 0; display:flex; align-items:center; gap:6px;">
+          <span style="color:#16a34a;">🛡</span> Quality Focus
+        </h5>
+        <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:8px;">
+          <div style="display:flex; align-items:center; gap:6px; font-size:0.82rem; color:#334155;">
+            <span style="color:#16a34a; font-weight:700;">✓</span> Clean raw materials
+          </div>
+          <div style="display:flex; align-items:center; gap:6px; font-size:0.82rem; color:#334155;">
+            <span style="color:#16a34a; font-weight:700;">✓</span> Controlled grinding
+          </div>
+          <div style="display:flex; align-items:center; gap:6px; font-size:0.82rem; color:#334155;">
+            <span style="color:#16a34a; font-weight:700;">✓</span> Consistent blending
+          </div>
+          <div style="display:flex; align-items:center; gap:6px; font-size:0.82rem; color:#334155;">
+            <span style="color:#16a34a; font-weight:700;">✓</span> Food-grade packaging
+          </div>
+          <div style="display:flex; align-items:center; gap:6px; font-size:0.82rem; color:#334155;">
+            <span style="color:#16a34a; font-weight:700;">✓</span> Batch traceability
+          </div>
+          <div style="display:flex; align-items:center; gap:6px; font-size:0.82rem; color:#334155;">
+            <span style="color:#16a34a; font-weight:700;">✓</span> Destination-market testing &amp; documentation
+          </div>
+        </div>
+      </div>
+
+      <!-- Export Markets & Applications -->
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:12px; margin-bottom:12px;">
+        <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:14px 16px;">
+          <h5 style="font-size:0.88rem; font-weight:700; color:#0f172a; margin:0 0 8px 0; display:flex; align-items:center; gap:6px;">
+            <span style="color:#d97706;">🌍</span> Export Markets
+          </h5>
+          <div style="display:flex; flex-wrap:wrap; gap:6px;">
+            <span style="background:#eff6ff; color:#1d4ed8; font-weight:600; font-size:0.8rem; padding:3px 8px; border-radius:4px;">USA</span>
+            <span style="background:#eff6ff; color:#1d4ed8; font-weight:600; font-size:0.8rem; padding:3px 8px; border-radius:4px;">EU</span>
+            <span style="background:#eff6ff; color:#1d4ed8; font-weight:600; font-size:0.8rem; padding:3px 8px; border-radius:4px;">UK</span>
+            <span style="background:#eff6ff; color:#1d4ed8; font-weight:600; font-size:0.8rem; padding:3px 8px; border-radius:4px;">Middle East</span>
+            <span style="background:#eff6ff; color:#1d4ed8; font-weight:600; font-size:0.8rem; padding:3px 8px; border-radius:4px;">GCC</span>
+            <span style="background:#eff6ff; color:#1d4ed8; font-weight:600; font-size:0.8rem; padding:3px 8px; border-radius:4px;">Africa</span>
+            <span style="background:#eff6ff; color:#1d4ed8; font-weight:600; font-size:0.8rem; padding:3px 8px; border-radius:4px;">Australia</span>
+          </div>
+        </div>
+
+        <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:14px 16px;">
+          <h5 style="font-size:0.88rem; font-weight:700; color:#0f172a; margin:0 0 8px 0; display:flex; align-items:center; gap:6px;">
+            <span style="color:#059669;">🍽</span> Applications
+          </h5>
+          <div style="display:flex; flex-wrap:wrap; gap:6px;">
+            <span style="background:#ecfdf5; color:#047857; font-size:0.8rem; padding:3px 8px; border-radius:4px;">Retail</span>
+            <span style="background:#ecfdf5; color:#047857; font-size:0.8rem; padding:3px 8px; border-radius:4px;">Restaurants</span>
+            <span style="background:#ecfdf5; color:#047857; font-size:0.8rem; padding:3px 8px; border-radius:4px;">Food manufacturers</span>
+            <span style="background:#ecfdf5; color:#047857; font-size:0.8rem; padding:3px 8px; border-radius:4px;">Ready-to-eat foods</span>
+            <span style="background:#ecfdf5; color:#047857; font-size:0.8rem; padding:3px 8px; border-radius:4px;">Snacks</span>
+            <span style="background:#ecfdf5; color:#047857; font-size:0.8rem; padding:3px 8px; border-radius:4px;">Sauces</span>
+            <span style="background:#ecfdf5; color:#047857; font-size:0.8rem; padding:3px 8px; border-radius:4px;">Marinades</span>
+            <span style="background:#ecfdf5; color:#047857; font-size:0.8rem; padding:3px 8px; border-radius:4px;">Bakery</span>
+            <span style="background:#ecfdf5; color:#047857; font-size:0.8rem; padding:3px 8px; border-radius:4px; font-weight:600;">Private Label</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="background:#fffbeb; border:1px solid #fef3c7; border-left:4px solid #d97706; padding:10px 14px; border-radius:6px; font-size:0.81rem; color:#92400e; line-height:1.45;">
+        <strong>Custom Formulation &amp; Private Label Note:</strong> Custom spice blends and private-label formulations are prepared according to buyer recipe, mesh size, heat level (SHU), color value (ASTA), packaging dimensions and destination-market labeling regulations. Destination-specific testing and COA provided with each export consignment.
+      </div>
+    </div>`
   },
 
   // ==========================================
@@ -1285,49 +1494,294 @@
     "id": "fruits-alphonso-mango",
     "slug": "fresh-alphonso-kesar-mangoes",
     "name": "Fresh Mangoes (Alphonso, Kesar & Banganapalli)",
+    "websiteTitle": "Fresh Mangoes – Alphonso, Kesar & Banganapalli | Indian Origin",
     "category": "fresh-fruits",
     "categoryName": "Fresh Produce",
-    "image": "assets/images/fresh-alphonso-kesar-mangoes.jpg",
-    "origin": "Ratnagiri / Gir Gujarat / Andhra, India",
-    "packaging": "3kg / 4.5kg Corrugated Export Boxes (Hot Water / Irradiation Treated)",
-    "specs": "Export Grade, Size 200g-320g, Brix 18-22%, APEDA Approved Packhouses",
-    "description": "World-famous King of Mangoes known for its heavenly scent, rich saffron pulp, and velvety sweetness shipped via certified air-cargo routes."
+    "image": "assets/images/products/fresh-alphonso-kesar-mangoes.jpg",
+    "origin": "India – Maharashtra / Gujarat / Andhra Pradesh, depending on variety and season",
+    "packaging": "2 kg / 3 kg / 4 kg / 5 kg cartons or buyer-specific",
+    "specs": "Export Specification: Graded by fruit count/weight, MRL compliant, ventilated cartons",
+    "description": "Commercially mature, hand-selected fresh Indian mangoes including Alphonso, Kesar, and Banganapalli varieties. Export-grade fruit conditioned with proper temperature-controlled handling and phytosanitary protocols.",
+    "specTabs": [
+      {
+        "tabName": "Export Specifications",
+        "parameters": [
+          { "param": "Varieties", "spec": "Alphonso, Kesar, Banganapalli" },
+          { "param": "Fruit Condition", "spec": "Fresh, clean, sound and commercially mature" },
+          { "param": "Appearance", "spec": "Characteristic shape and colour of respective variety" },
+          { "param": "Skin", "spec": "Clean, firm and substantially free from cuts, bruises and decay" },
+          { "param": "Flesh", "spec": "Firm, juicy and characteristic of variety" },
+          { "param": "Maturity", "spec": "Export-mature, suitable for intended transport and ripening" },
+          { "param": "Size", "spec": "Graded by fruit count/weight according to buyer requirement" },
+          { "param": "Uniformity", "spec": "Uniform variety, size and maturity within each pack" },
+          { "param": "Defects", "spec": "Free from serious defects affecting appearance, eating quality or shelf life" },
+          { "param": "Rot / Decay", "spec": "Not permitted" },
+          { "param": "Foreign Matter", "spec": "Free from visible foreign matter" },
+          { "param": "Pest Damage", "spec": "Controlled according to agreed export specification" },
+          { "param": "Pesticide Residues", "spec": "Compliant with destination-country MRLs" },
+          { "param": "Packaging", "spec": "2 kg / 3 kg / 4 kg / 5 kg cartons or buyer-specific" },
+          { "param": "Packing", "spec": "Ventilated export carton with protective separators/paper where required" },
+          { "param": "Cold Chain", "spec": "Temperature-controlled handling as required" },
+          { "param": "Shelf Life", "spec": "Typically 2–4 weeks depending on variety, maturity and cold-chain conditions" }
+        ]
+      }
+    ],
+    "qaHtml": `<div class="qa-block" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; margin-top:20px;">
+      <h4 style="font-size:0.98rem; font-weight:700; color:#0f172a; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:8px; height:8px; background:#16a34a; border-radius:50%;"></span>
+        Export Quality Assurance
+      </h4>
+      <ul style="list-style:none; padding:0; margin:0 0 14px 0; display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:8px; font-size:0.86rem; color:#334155;">
+        <li style="display:flex; align-items:center; gap:6px;">✓ Hand-selected and graded</li>
+        <li style="display:flex; align-items:center; gap:6px;">✓ Size and maturity grading</li>
+        <li style="display:flex; align-items:center; gap:6px;">✓ Food-safe handling</li>
+        <li style="display:flex; align-items:center; gap:6px;">✓ Export-grade ventilated cartons</li>
+        <li style="display:flex; align-items:center; gap:6px;">✓ Pre-cooling / cold-chain management</li>
+        <li style="display:flex; align-items:center; gap:6px;">✓ Traceability available</li>
+        <li style="display:flex; align-items:center; gap:6px;">✓ Phytosanitary documentation as applicable</li>
+      </ul>
+      <div style="background:#ffffff; border:1px solid #e2e8f0; border-left:4px solid #0284c7; padding:10px 14px; border-radius:6px; font-size:0.83rem; color:#1e293b;">
+        <strong>Commercial Applications:</strong> Retail supermarkets, ethnic stores, wholesalers, foodservice, fruit distributors and private-label programs.
+      </div>
+    </div>`
   },
   {
     "id": "veg-red-onion",
     "slug": "fresh-red-onions-nashik-gujarat",
-    "name": "Fresh Red Onions (Nashik / Mahuva 45-55mm+)",
+    "name": "Fresh Red Onions (Nashik / Mahuva 45–55 mm+)",
+    "websiteTitle": "Fresh Red Onions – Nashik / Mahuva | 45–55 mm+ Export Grade",
     "category": "fresh-fruits",
     "categoryName": "Fresh Produce",
     "image": "assets/images/products/fresh-red-onions.jpg",
-    "origin": "Nashik / Gujarat, India",
-    "packaging": "5kg / 10kg / 25kg / 50kg Red Mesh / Leno Bags",
-    "specs": "Sizes: 25-35mm (Gulf), 45-55mm, 55mm+ (Europe/Asia), Well Cured, Deep Red",
-    "description": "Pungent, globe-shaped red onions with tight skins, cured naturally for superior shelf-life during ocean transit in ventilated containers."
+    "origin": "Nashik / Mahuva, India",
+    "packaging": "5 kg / 10 kg / 20 kg / 25 kg / 50 kg mesh bags, net bags or ventilated cartons",
+    "specs": "Grade 45–55 mm+, HS Category: Fresh onions, Red to deep reddish-purple, Properly cured",
+    "description": "Premium export-grade fresh red onions sourced directly from Nashik and Mahuva agricultural hubs. Calibrated by size, fully cured, firm bulbs with dry outer skins, strictly compliant with destination MRLs.",
+    "specTabs": [
+      {
+        "tabName": "Export Specifications",
+        "parameters": [
+          { "param": "Product", "spec": "Fresh Red Onion" },
+          { "param": "Origin", "spec": "Nashik / Mahuva, India" },
+          { "param": "Size", "spec": "45–55 mm+" },
+          { "param": "Shape", "spec": "Globe / round to slightly oval" },
+          { "param": "Skin Colour", "spec": "Red to deep reddish-purple" },
+          { "param": "Bulb", "spec": "Firm, mature and well developed" },
+          { "param": "Skin", "spec": "Dry, tight and reasonably well attached" },
+          { "param": "Flesh", "spec": "Firm, crisp and characteristic" },
+          { "param": "Sprouting", "spec": "Free from visible sprouting" },
+          { "param": "Roots", "spec": "Trimmed, dry and clean" },
+          { "param": "Neck", "spec": "Properly dried and trimmed" },
+          { "param": "Rot / Decay", "spec": "Free from rot and decay" },
+          { "param": "Mechanical Damage", "spec": "Minimal / within agreed tolerance" },
+          { "param": "Dirt / Soil", "spec": "Clean and substantially free from adhering soil" },
+          { "param": "Foreign Matter", "spec": "Free from visible foreign matter" },
+          { "param": "Pest Damage", "spec": "Within buyer-agreed tolerance" },
+          { "param": "Maturity", "spec": "Properly mature and cured" },
+          { "param": "Pesticide Residues", "spec": "Compliant with destination-country MRLs" },
+          { "param": "Packaging", "spec": "5 kg / 10 kg / 20 kg / 25 kg / 50 kg or buyer-specific" },
+          { "param": "Packing", "spec": "Mesh bags, net bags or ventilated cartons" },
+          { "param": "Storage", "spec": "Cool, dry and well-ventilated" },
+          { "param": "Shelf Life", "spec": "Typically several weeks to months depending on curing, variety and storage conditions" }
+        ]
+      }
+    ],
+    "qaHtml": `<div class="qa-block" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; margin-top:20px;">
+      <h4 style="font-size:0.98rem; font-weight:700; color:#0f172a; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:8px; height:8px; background:#16a34a; border-radius:50%;"></span>
+        Export Quality Benchmarks
+      </h4>
+      <ul style="list-style:none; padding:0; margin:0; display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:8px; font-size:0.86rem; color:#334155;">
+        <li style="display:flex; align-items:center; gap:6px;">✓ Calibrated by size (45–55 mm+)</li>
+        <li style="display:flex; align-items:center; gap:6px;">✓ Properly cured &amp; dried neck</li>
+        <li style="display:flex; align-items:center; gap:6px;">✓ Firm, solid bulbs</li>
+        <li style="display:flex; align-items:center; gap:6px;">✓ Dry outer skin</li>
+        <li style="display:flex; align-items:center; gap:6px;">✓ No active sprouting</li>
+        <li style="display:flex; align-items:center; gap:6px;">✓ No visible mould / decay</li>
+        <li style="display:flex; align-items:center; gap:6px;">✓ Export-grade packing</li>
+        <li style="display:flex; align-items:center; gap:6px;">✓ Batch traceability available</li>
+      </ul>
+    </div>`
   },
   {
     "id": "veg-potatoes",
-    "slug": "fresh-potatoes-and-seedless-lemons",
+    "slug": "fresh-potatoes-table-chipsona",
     "name": "Fresh Potatoes (Table Grade & Chipsona Processing Variety)",
+    "websiteTitle": "Fresh Potatoes – Table Grade & Chipsona Processing Variety | Indian Origin",
     "category": "fresh-fruits",
     "categoryName": "Fresh Produce",
-    "image": "assets/images/products/potatoes-and-lemons.jpg",
-    "origin": "Gujarat / Punjab, India",
-    "packaging": "10kg / 25kg / 50kg Leno Bags & Jute Bags",
-    "specs": "High dry matter > 21% for processing, Low sugar, Sorted 45mm+, 55mm+",
-    "description": "Standardized table and crisping potatoes (Chipsona / Lady Rosetta / LR) stored in temperature-controlled facilities for international shipments."
+    "image": "assets/images/products/fresh-potatoes.jpg",
+    "origin": "India – Gujarat / Punjab / Uttar Pradesh and other sourcing regions depending on season",
+    "packaging": "5 / 10 / 20 / 25 kg (Table) | 10 / 25 / 50 kg or bulk (Chipsona)",
+    "specs": "Table Grade & Chipsona Processing, High dry matter, Low reducing sugars, Destination MRL compliant",
+    "description": "Export-grade Indian fresh potatoes available in dual categories: Fresh Table Grade for culinary retail markets and Chipsona Processing Variety tailored for potato chips and French fries manufacturers.",
+    "specTabs": [
+      {
+        "tabName": "Table Grade",
+        "parameters": [
+          { "param": "Product", "spec": "Fresh Table Potatoes" },
+          { "param": "Appearance", "spec": "Clean, sound, firm" },
+          { "param": "Skin", "spec": "Smooth / characteristic of variety" },
+          { "param": "Colour", "spec": "Cream to light brown / yellow" },
+          { "param": "Shape", "spec": "Oval / round / oblong according to grade" },
+          { "param": "Size", "spec": "Buyer-specified" },
+          { "param": "Flesh", "spec": "Firm, healthy and characteristic" },
+          { "param": "Sprouting", "spec": "Free from significant sprouting" },
+          { "param": "Green Potatoes", "spec": "Not acceptable beyond agreed tolerance" },
+          { "param": "Cuts / Bruising", "spec": "Minimal" },
+          { "param": "Rot / Decay", "spec": "Not permitted" },
+          { "param": "Soil / Foreign Matter", "spec": "Clean and substantially free" },
+          { "param": "Pest Damage", "spec": "Within agreed tolerance" },
+          { "param": "Dry Matter", "spec": "Buyer / processor specification" },
+          { "param": "Specific Gravity", "spec": "Buyer / processor specification" },
+          { "param": "Reducing Sugars", "spec": "Not generally specified for table grade" },
+          { "param": "Pesticide Residues", "spec": "Destination MRL compliant" },
+          { "param": "Packaging", "spec": "5 / 10 / 20 / 25 kg" },
+          { "param": "Storage", "spec": "Cool, dry, ventilated" }
+        ]
+      },
+      {
+        "tabName": "Chipsona Processing Variety",
+        "parameters": [
+          { "param": "Product", "spec": "Chipsona Processing Potatoes" },
+          { "param": "Appearance", "spec": "Clean, sound, firm" },
+          { "param": "Skin", "spec": "Suitable for processing" },
+          { "param": "Colour", "spec": "Cream to light brown" },
+          { "param": "Shape", "spec": "Generally uniform elongated / oval" },
+          { "param": "Size", "spec": "Buyer / processor-specified" },
+          { "param": "Flesh", "spec": "Suitable for chips / fries processing" },
+          { "param": "Sprouting", "spec": "Controlled as per processor specification" },
+          { "param": "Green Potatoes", "spec": "Not acceptable beyond agreed tolerance" },
+          { "param": "Cuts / Bruising", "spec": "Minimal" },
+          { "param": "Rot / Decay", "spec": "Not permitted" },
+          { "param": "Soil / Foreign Matter", "spec": "Clean and substantially free" },
+          { "param": "Pest Damage", "spec": "Within agreed tolerance" },
+          { "param": "Dry Matter", "spec": "Typically specified by processor (High DM)" },
+          { "param": "Specific Gravity", "spec": "Typically specified by processor" },
+          { "param": "Reducing Sugars", "spec": "Processor-specific requirement (Low sugar for fry colour)" },
+          { "param": "Pesticide Residues", "spec": "Destination MRL compliant" },
+          { "param": "Packaging", "spec": "10 / 25 / 50 kg or bulk" },
+          { "param": "Storage", "spec": "Temperature / humidity controlled as required" }
+        ]
+      }
+    ],
+    "qaHtml": `<div class="qa-block" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; margin-top:20px;">
+      <h4 style="font-size:0.98rem; font-weight:700; color:#0f172a; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:8px; height:8px; background:#eab308; border-radius:50%;"></span>
+        Chipsona Processing Specification Protocol
+      </h4>
+      <p style="font-size:0.84rem; color:#475569; margin:0 0 10px 0; line-height:1.5;">
+        For commercial processing buyers, final acceptance parameters are customized and agreed on contract:
+      </p>
+      <ul style="list-style:none; padding:0; margin:0 0 12px 0; display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:6px; font-size:0.83rem; color:#334155;">
+        <li>• Dry matter</li>
+        <li>• Specific gravity</li>
+        <li>• Reducing sugar level</li>
+        <li>• Fry colour</li>
+        <li>• Tuber size</li>
+        <li>• Defect percentage</li>
+        <li>• Internal defects &amp; hollow heart</li>
+        <li>• Bruising &amp; sprouting limits</li>
+        <li>• Disease / rot prevention</li>
+      </ul>
+      <div style="background:#fffbeb; border:1px solid #fef3c7; border-left:4px solid #d97706; padding:9px 13px; border-radius:6px; font-size:0.82rem; color:#92400e; line-height:1.45;">
+        <strong>Processor Alignment Note:</strong> These parameters should be buyer/processor agreed based on target line specifications rather than presenting one universal number on your website.
+      </div>
+    </div>`
   },
   {
     "id": "veg-seasonal-produce",
-    "slug": "fresh-green-ginger",
-    "name": "Other Seasonal Indian Produce (Fresh Ginger, Garlic Bulbs, Green Chillies & Pomegranates)",
+    "slug": "other-seasonal-indian-produce",
+    "name": "Other Seasonal Indian Produce",
+    "websiteTitle": "Other Seasonal Indian Produce | Fresh Ginger, Garlic Bulbs, Green Chillies & Pomegranates",
     "category": "fresh-fruits",
     "categoryName": "Fresh Produce",
-    "image": "assets/images/fresh-fruits.jpg",
-    "origin": "Gujarat / Maharashtra / Karnataka, India",
-    "packaging": "Air-Vented Cartons & Cold-Chain Reefer Packaging",
-    "specs": "GlobalGAP Certified, Hot water treated, APEDA Packhouse Inspected",
-    "description": "Full assortment of seasonal Indian fresh produce including plump fresh ginger, white garlic bulbs, spicy G4 green chillies, and Bhagwa pomegranates."
+    "image": "assets/images/products/other-seasonal-indian-produce.jpg",
+    "origin": "India – Key Horticultural Clusters",
+    "packaging": "Cartons / Mesh bags / Crates as per commodity requirement",
+    "specs": "Export Grade: Fresh Ginger, Garlic Bulbs, Green Chillies, Pomegranates",
+    "description": "Curated seasonal fresh produce sourced directly from accredited Indian farms. Products include Fresh Ginger, Fresh Garlic Bulbs, Fresh Green Chillies, and Fresh Pomegranates, available subject to crop calendar and market availability.",
+    "specTabs": [
+      {
+        "tabName": "A. Fresh Ginger",
+        "parameters": [
+          { "param": "Appearance", "spec": "Fresh, firm, clean rhizomes" },
+          { "param": "Colour", "spec": "Natural beige to light brown" },
+          { "param": "Texture", "spec": "Firm and crisp" },
+          { "param": "Size", "spec": "Buyer-specific grading" },
+          { "param": "Skin", "spec": "Clean and reasonably intact" },
+          { "param": "Rot / Decay", "spec": "Free from decay" },
+          { "param": "Sprouting", "spec": "Controlled according to specification" },
+          { "param": "Foreign Matter", "spec": "Free from visible foreign matter" },
+          { "param": "Pesticide Residues", "spec": "Destination MRL compliant" },
+          { "param": "Packaging", "spec": "5 / 10 / 20 kg cartons or buyer requirement" }
+        ]
+      },
+      {
+        "tabName": "B. Fresh Garlic Bulbs",
+        "parameters": [
+          { "param": "Appearance", "spec": "Clean, mature, firm bulbs" },
+          { "param": "Colour", "spec": "White to off-white" },
+          { "param": "Bulb", "spec": "Compact and well developed" },
+          { "param": "Cloves", "spec": "Firm and properly developed" },
+          { "param": "Skin", "spec": "Dry and intact" },
+          { "param": "Sprouting", "spec": "Minimal / buyer specification" },
+          { "param": "Rot / Decay", "spec": "Free from decay" },
+          { "param": "Foreign Matter", "spec": "Substantially free" },
+          { "param": "Size", "spec": "Buyer-specific calibre" },
+          { "param": "Pesticide Residues", "spec": "Destination MRL compliant" },
+          { "param": "Packaging", "spec": "Mesh bags / cartons / buyer-specific" }
+        ]
+      },
+      {
+        "tabName": "C. Fresh Green Chillies",
+        "parameters": [
+          { "param": "Appearance", "spec": "Fresh, firm, glossy green chillies" },
+          { "param": "Colour", "spec": "Uniform natural green" },
+          { "param": "Texture", "spec": "Firm and crisp" },
+          { "param": "Size", "spec": "Buyer-specific" },
+          { "param": "Maturity", "spec": "Commercially mature" },
+          { "param": "Stem", "spec": "Fresh and reasonably intact" },
+          { "param": "Damage", "spec": "Minimal" },
+          { "param": "Rot / Decay", "spec": "Free from decay" },
+          { "param": "Foreign Matter", "spec": "Free from visible contamination" },
+          { "param": "Pesticide Residues", "spec": "Destination MRL compliant" },
+          { "param": "Packaging", "spec": "Ventilated cartons / crates / buyer-specific" },
+          { "param": "Cold Chain", "spec": "Recommended for longer-distance export" }
+        ]
+      },
+      {
+        "tabName": "D. Fresh Pomegranates",
+        "parameters": [
+          { "param": "Appearance", "spec": "Fresh, clean, firm and sound" },
+          { "param": "Skin Colour", "spec": "Red to deep red / pink according to variety" },
+          { "param": "Fruit Shape", "spec": "Uniform, well developed" },
+          { "param": "Arils", "spec": "Firm, juicy and characteristic" },
+          { "param": "Size", "spec": "Calibrated according to count / weight" },
+          { "param": "Maturity", "spec": "Commercially mature" },
+          { "param": "Cracks", "spec": "Free from significant cracking" },
+          { "param": "Rot / Decay", "spec": "Not permitted" },
+          { "param": "Bruising", "spec": "Minimal" },
+          { "param": "Pest Damage", "spec": "Within agreed tolerance" },
+          { "param": "Foreign Matter", "spec": "Free from visible foreign matter" },
+          { "param": "Pesticide Residues", "spec": "Destination MRL compliant" },
+          { "param": "Packaging", "spec": "3 / 5 / 10 kg cartons or buyer-specific" },
+          { "param": "Cold Chain", "spec": "Temperature-controlled handling where required" }
+        ]
+      }
+    ],
+    "qaHtml": `<div class="qa-block" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; margin-top:20px;">
+      <h4 style="font-size:0.98rem; font-weight:700; color:#0f172a; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:8px; height:8px; background:#10b981; border-radius:50%;"></span>
+        Crop Calendar &amp; Seasonal Availability
+      </h4>
+      <p style="font-size:0.84rem; color:#475569; margin:0 0 10px 0; line-height:1.5;">
+        Available products: <strong>Fresh Ginger, Garlic Bulbs, Green Chillies &amp; Pomegranates</strong>. Supply and air/sea dispatch schedules are subject to crop arrival seasons and prevailing market availability.
+      </p>
+      <div style="background:#f0fdf4; border:1px solid #dcfce7; border-left:4px solid #16a34a; padding:9px 13px; border-radius:6px; font-size:0.82rem; color:#166534; line-height:1.45;">
+        All seasonal shipments are packed in export-grade ventilated cartons/mesh packaging with pre-cooling, cold-chain monitoring, and official Phytosanitary certifications.
+      </div>
+    </div>`
   },
 
   // ==========================================
@@ -1743,98 +2197,444 @@
   {
     "id": "more-phool-makhana",
     "slug": "phool-makhana-fox-nuts-gorgon",
-    "name": "Phool Makhana / Fox Nuts (Gorgon Nut 4+, 5+, 6+ Suta Handpicked)",
+    "name": "Phool Makhana / Fox Nuts (Gorgon Nut – 4+ Suta, 5+ Suta & 6+ Suta Handpicked)",
+    "websiteTitle": "Phool Makhana / Fox Nuts – 4+, 5+, 6+ Suta Handpicked | Indian Origin",
     "category": "more-products",
     "categoryName": "Nuts & Dry Fruits",
-    "image": "assets/images/makhana-fox-nuts.jpg",
-    "origin": "Mithila, Bihar, India",
-    "packaging": "8kg - 10kg Poly Bags / Custom Nitrogen Flushed Pouches",
-    "specs": "Grades: 4 Suta, 5 Suta, 6 Suta Jumbo Bold, Moisture < 9%, Crisp & Clean",
-    "description": "GI-tagged organic Indian fox nuts (puffed gorgon seeds), high in plant protein, calcium, magnesium, and low in glycemic index."
+    "image": "assets/images/products/phool-makhana.jpg",
+    "origin": "India",
+    "packaging": "5 kg / 10 kg / 20 kg food-grade bags or buyer-specific private label",
+    "specs": "4+ Suta / 5+ Suta / 6+ Suta, Handpicked / Machine Cleaned & Graded, Natural White",
+    "description": "Premium Indian Phool Makhana (Fox Nuts/Gorgon Nuts), carefully cleaned, graded and hand-selected for uniform size, whiteness, crispness and natural taste. Suitable for retail, snacking, food manufacturing and private-label applications.",
+    "specTabs": [
+      {
+        "tabName": "Export Specifications",
+        "parameters": [
+          { "param": "Product", "spec": "Phool Makhana / Fox Nuts" },
+          { "param": "Botanical Name", "spec": "Euryale ferox" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Grades", "spec": "4+ Suta / 5+ Suta / 6+ Suta" },
+          { "param": "Type", "spec": "Handpicked / Machine Cleaned & Graded" },
+          { "param": "Colour", "spec": "Natural white to creamy white" },
+          { "param": "Appearance", "spec": "Clean, puffed, round, well-expanded" },
+          { "param": "Taste & Aroma", "spec": "Mild, natural, characteristic" },
+          { "param": "Moisture", "spec": "Commercially controlled" },
+          { "param": "Foreign Matter", "spec": "Nil / within agreed specification" },
+          { "param": "Broken Pieces", "spec": "Controlled as per grade" },
+          { "param": "Infestation", "spec": "Free from live infestation" },
+          { "param": "Processing", "spec": "Cleaning, grading and sorting" },
+          { "param": "Packaging", "spec": "5 kg / 10 kg / 20 kg food-grade bags or buyer-specific private label" },
+          { "param": "Shelf Life", "spec": "Typically 9–12 months under recommended storage" },
+          { "param": "Storage", "spec": "Cool, dry and hygienic conditions; protect from moisture" },
+          { "param": "Certifications", "spec": "Organic / Halal / Kosher / other certifications available where applicable" }
+        ]
+      }
+    ],
+    "qaHtml": `<div class="qa-block" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; margin-top:20px;">
+      <h4 style="font-size:0.98rem; font-weight:700; color:#0f172a; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:8px; height:8px; background:#16a34a; border-radius:50%;"></span>
+        Export Quality &amp; Commercial Applications
+      </h4>
+      <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px;">
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Retail Packs</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Healthy Snacks</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Roasting</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Flavoured Snacks</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Private Label</span>
+      </div>
+      <p style="font-size:0.82rem; color:#64748b; line-height:1.5; margin:0;">
+        Selected for uniform whiteness, full puffing, crisp crunch, and zero live infestation. Packed in high-barrier export cartons or poly bags with moisture-protective liners.
+      </p>
+    </div>`
   },
   {
     "id": "more-almonds",
     "slug": "california-indian-badam-almonds",
-    "name": "Almonds (Badam / બદામ - Extra Bold & Mamra Quality)",
+    "name": "Almonds (Badam) – Extra Bold & Mamra Quality",
+    "websiteTitle": "Almonds (Badam) – Extra Bold & Mamra Quality | Export Grade",
     "category": "more-products",
     "categoryName": "Nuts & Dry Fruits",
     "image": "assets/images/products/almonds-badam.jpg",
-    "origin": "Kashmir, India / California Grade",
-    "packaging": "10kg / 25kg Vacuum Packs & Master Cartons",
-    "specs": "Count 20/22, 23/25, 27/30, Moisture < 6%, Oil Content > 50%",
-    "description": "Premium crunchy whole almond kernels, sorted for uniform bold caliber and loaded with natural Vitamin E, healthy fats, and antioxidants."
+    "origin": "India / other approved origin as contracted",
+    "packaging": "5 kg / 10 kg / 25 kg cartons, vacuum packs or buyer-specific packaging",
+    "specs": "Extra Bold / Mamra, Light brown skin, Aflatoxin & MRL tested, Whole Clean Kernels",
+    "description": "Premium-quality almonds selected for size, appearance, flavour and kernel integrity. Available in Extra Bold and Mamra varieties for premium retail and food-service markets.",
+    "specTabs": [
+      {
+        "tabName": "Export Specifications",
+        "parameters": [
+          { "param": "Product", "spec": "Almond Kernels" },
+          { "param": "Varieties", "spec": "Extra Bold / Mamra" },
+          { "param": "Origin", "spec": "India / other approved origin as contracted" },
+          { "param": "Type", "spec": "Natural / Raw" },
+          { "param": "Colour", "spec": "Light brown outer skin with cream-coloured kernel" },
+          { "param": "Size", "spec": "Extra Bold / size-calibrated as per buyer requirement" },
+          { "param": "Appearance", "spec": "Whole, clean, well-developed kernels" },
+          { "param": "Taste & Aroma", "spec": "Natural, characteristic almond flavour" },
+          { "param": "Moisture", "spec": "Controlled to commercial specification" },
+          { "param": "Broken Kernels", "spec": "As per agreed grade" },
+          { "param": "Foreign Matter", "spec": "Nil / within agreed specification" },
+          { "param": "Insect Damage", "spec": "Free from live infestation and commercially unacceptable damage" },
+          { "param": "Aflatoxin", "spec": "Tested and controlled to destination-market requirements" },
+          { "param": "Pesticide Residues", "spec": "Compliant with applicable destination MRL requirements" },
+          { "param": "Packaging", "spec": "5 kg / 10 kg / 25 kg cartons, vacuum packs or buyer-specific packaging" },
+          { "param": "Shelf Life", "spec": "Typically 9–12 months under suitable storage" },
+          { "param": "Storage", "spec": "Cool, dry, clean and pest-controlled environment" },
+          { "param": "Certifications", "spec": "Organic / Halal / Kosher / HACCP / other certifications where applicable" }
+        ]
+      }
+    ],
+    "qaHtml": `<div class="qa-block" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; margin-top:20px;">
+      <h4 style="font-size:0.98rem; font-weight:700; color:#0f172a; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:8px; height:8px; background:#16a34a; border-radius:50%;"></span>
+        Export Quality &amp; Commercial Applications
+      </h4>
+      <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px;">
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Retail</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Bakery</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Confectionery</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Almond Milk</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Food Manufacturing</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Private Label</span>
+      </div>
+      <p style="font-size:0.82rem; color:#64748b; line-height:1.5; margin:0;">
+        Stringent quality control on aflatoxins, moisture and kernel calibration. Vacuum packing available to ensure optimal freshness during ocean transport.
+      </p>
+    </div>`
   },
   {
     "id": "more-cashews",
     "slug": "cashew-nuts-w180-w240-w320",
-    "name": "Cashews (Kaju / કાજુ - W180 King, W240 Jumbo, W320 & Splits)",
+    "name": "Cashews (Kaju) – W180 King, W240 Jumbo, W320 & Splits",
+    "websiteTitle": "Cashews (Kaju) – W180 King, W240 Jumbo, W320 & Splits | Indian Export Grade",
     "category": "more-products",
     "categoryName": "Nuts & Dry Fruits",
-    "image": "assets/images/cashew-nuts.jpg",
-    "origin": "Goa / Kerala / Maharashtra, India",
-    "packaging": "10kg / 11.34kg (25 lbs) / 22.68kg (50 lbs) Tins & Vacuum Packs",
-    "specs": "White Wholes (W180 King Size, W240 Jumbo, W320 Standard), Moisture < 5%",
-    "description": "Buttery, crunchy Indian cashew nuts carefully graded and vacuum-sealed under inert gas for maximum international freshness."
+    "image": "assets/images/products/cashew-nuts.jpg",
+    "origin": "India / approved sourcing origin",
+    "packaging": "10 kg vacuum-packed cartons / 22.68 kg cartons / buyer-specific packing",
+    "specs": "Grades: W180 / W240 / W320 / Splits, White to pale ivory, Aflatoxin & MRL tested",
+    "description": "Premium Indian-origin cashew kernels, carefully processed and graded for size, colour, taste and kernel integrity. Multiple commercial grades available for retail, food-service and industrial applications.",
+    "specTabs": [
+      {
+        "tabName": "Export Specifications",
+        "parameters": [
+          { "param": "Product", "spec": "Cashew Kernels" },
+          { "param": "Grades", "spec": "W180 / W240 / W320 / Splits" },
+          { "param": "Type", "spec": "Whole / Broken" },
+          { "param": "Origin", "spec": "India / approved sourcing origin" },
+          { "param": "Colour", "spec": "White to pale ivory" },
+          { "param": "Appearance", "spec": "Clean, smooth, well-dried kernels" },
+          { "param": "Taste & Aroma", "spec": "Natural, mild and characteristic" },
+          { "param": "Moisture", "spec": "Controlled to agreed commercial specification" },
+          { "param": "Broken / Defective Kernels", "spec": "According to agreed grade" },
+          { "param": "Foreign Matter", "spec": "Nil / within agreed specification" },
+          { "param": "Live Infestation", "spec": "Absent" },
+          { "param": "Aflatoxin", "spec": "Tested according to destination requirements" },
+          { "param": "Pesticide Residues", "spec": "Controlled according to applicable destination MRLs" },
+          { "param": "Microbiological Quality", "spec": "Controlled according to buyer/destination requirements" },
+          { "param": "Packaging", "spec": "10 kg vacuum-packed cartons / 22.68 kg cartons / buyer-specific packing" },
+          { "param": "Shelf Life", "spec": "Typically 9–12 months under suitable storage" },
+          { "param": "Storage", "spec": "Cool, dry and hygienic conditions" },
+          { "param": "Certifications", "spec": "Organic / Halal / Kosher / HACCP / other certifications where applicable" }
+        ]
+      }
+    ],
+    "qaHtml": `<div class="qa-block" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; margin-top:20px;">
+      <h4 style="font-size:0.98rem; font-weight:700; color:#0f172a; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:8px; height:8px; background:#16a34a; border-radius:50%;"></span>
+        Export Quality &amp; Commercial Applications
+      </h4>
+      <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px;">
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Snack Foods</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Confectionery</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Bakery</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Cashew Butter</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Food Manufacturing</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Private Label</span>
+      </div>
+      <p style="font-size:0.82rem; color:#64748b; line-height:1.5; margin:0;">
+        Infestation-free white wholes and splits packed in nitrogen-flushed tins or vacuum pouches to maintain kernel crunch and ivory color.
+      </p>
+    </div>`
   },
   {
     "id": "more-walnuts",
     "slug": "walnuts-akhrot-inshell-kernels",
-    "name": "Walnuts (Akhrot / અખરોટ - Inshell & Extra Light Halves Kernels)",
+    "name": "Walnuts (Akhrot) – Inshell & Extra Light Halves Kernels",
+    "websiteTitle": "Walnuts (Akhrot) – Inshell & Extra Light Halves Kernels | Export Grade",
     "category": "more-products",
     "categoryName": "Nuts & Dry Fruits",
     "image": "assets/images/products/walnuts-akhrot.jpg",
-    "origin": "Kashmir, India",
-    "packaging": "10kg Master Cartons with Vacuum Nitrogen Liner",
-    "specs": "Halves > 80%, Extra Light / Light Amber, Moisture < 5%, Rich in Omega-3",
-    "description": "Heart-healthy Kashmiri walnuts known for golden amber kernels, delicate buttery crunch, and exceptional ALA Omega-3 concentration."
+    "origin": "India / approved sourcing origin",
+    "packaging": "Vacuum-packed cartons / bags / buyer-specific packaging",
+    "specs": "Inshell / Extra Light Halves Kernels, Clean Sound Shell, Aflatoxin & MRL Tested",
+    "description": "Premium walnuts sourced and selected for clean appearance, natural flavour, kernel integrity and consistent grading. Available as inshell walnuts and Extra Light Halves kernels.",
+    "specTabs": [
+      {
+        "tabName": "Export Specifications",
+        "parameters": [
+          { "param": "Product", "spec": "Walnuts" },
+          { "param": "Forms", "spec": "Inshell / Kernel" },
+          { "param": "Kernel Grade", "spec": "Extra Light Halves" },
+          { "param": "Origin", "spec": "India / approved sourcing origin" },
+          { "param": "Colour", "spec": "Light golden to natural walnut brown" },
+          { "param": "Kernel", "spec": "Whole halves with good colour and appearance" },
+          { "param": "Taste & Aroma", "spec": "Fresh, mild and characteristic" },
+          { "param": "Moisture", "spec": "Controlled to commercial specification" },
+          { "param": "Shell", "spec": "Clean, sound and properly dried for inshell grade" },
+          { "param": "Broken Kernels", "spec": "As per agreed specification" },
+          { "param": "Foreign Matter", "spec": "Nil / within agreed specification" },
+          { "param": "Insect Damage", "spec": "Free from live infestation" },
+          { "param": "Aflatoxin", "spec": "Tested and controlled to destination requirements" },
+          { "param": "Pesticide Residues", "spec": "Compliant with applicable destination MRLs" },
+          { "param": "Packaging", "spec": "Vacuum-packed cartons / bags / buyer-specific packaging" },
+          { "param": "Shelf Life", "spec": "Typically 9–12 months, subject to storage conditions" },
+          { "param": "Storage", "spec": "Cool, dry and preferably temperature-controlled for long-term storage" },
+          { "param": "Certifications", "spec": "Organic / Halal / Kosher / HACCP / other certifications where applicable" }
+        ]
+      }
+    ],
+    "qaHtml": `<div class="qa-block" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; margin-top:20px;">
+      <h4 style="font-size:0.98rem; font-weight:700; color:#0f172a; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:8px; height:8px; background:#16a34a; border-radius:50%;"></span>
+        Export Quality &amp; Commercial Applications
+      </h4>
+      <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px;">
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Retail Snacks</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Bakery</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Cereals</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Confectionery</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Nut Mixes</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Food Manufacturing</span>
+      </div>
+      <p style="font-size:0.82rem; color:#64748b; line-height:1.5; margin:0;">
+        Selected for intact halves, high kernel integrity, and mild buttery flavor. Controlled temperature storage recommended to maintain freshness.
+      </p>
+    </div>`
   },
   {
     "id": "more-pistachios",
     "slug": "pistachios-pista-roasted-salted-green",
-    "name": "Pistachios (Pista / પિસ્તા - Roasted Salted & Raw Green Kernels)",
+    "name": "Pistachios (Pista) – Roasted, Salted & Raw Green Kernels",
+    "websiteTitle": "Pistachios (Pista) – Roasted, Salted & Raw Green Kernels | Export Grade",
     "category": "more-products",
     "categoryName": "Nuts & Dry Fruits",
     "image": "assets/images/products/pistachios-pista.jpg",
-    "origin": "India / Global Sourcing",
-    "packaging": "10kg / 25kg Vacuum Cartons",
-    "specs": "Inshell Naturally Opened, Size 18/20, 21/25, Moisture < 5%",
-    "description": "Delightfully vibrant green pistachios, available lightly roasted with sea salt or raw de-shelled for bakery and confectioneries."
+    "origin": "India / approved sourcing origin",
+    "packaging": "5 kg / 10 kg / 20 kg food-grade packs or private label",
+    "specs": "Raw / Roasted / Salted / Green Kernels, Inshell & Shelled, Aflatoxin & MRL Tested",
+    "description": "Premium pistachios selected for attractive colour, flavour, kernel quality and uniformity. Available in raw, roasted and salted formats for retail, food-service and industrial applications.",
+    "specTabs": [
+      {
+        "tabName": "Export Specifications",
+        "parameters": [
+          { "param": "Product", "spec": "Pistachios" },
+          { "param": "Forms", "spec": "Raw / Roasted / Salted / Green Kernels" },
+          { "param": "Type", "spec": "Inshell / Shelled Kernels" },
+          { "param": "Origin", "spec": "India / approved sourcing origin" },
+          { "param": "Colour", "spec": "Natural green kernel with characteristic shell colour where applicable" },
+          { "param": "Appearance", "spec": "Clean, well-developed kernels" },
+          { "param": "Taste & Aroma", "spec": "Fresh, characteristic pistachio flavour" },
+          { "param": "Moisture", "spec": "Controlled to agreed commercial specification" },
+          { "param": "Salt", "spec": "As per buyer requirement for salted grade" },
+          { "param": "Roasting", "spec": "Controlled roasting profile according to customer specification" },
+          { "param": "Foreign Matter", "spec": "Nil / within agreed specification" },
+          { "param": "Insect Damage", "spec": "Free from live infestation" },
+          { "param": "Aflatoxin", "spec": "Tested according to destination-market requirements" },
+          { "param": "Pesticide Residues", "spec": "Controlled to applicable destination MRLs" },
+          { "param": "Packaging", "spec": "5 kg / 10 kg / 20 kg food-grade packs or private label" },
+          { "param": "Shelf Life", "spec": "Typically 9–12 months under recommended storage" },
+          { "param": "Storage", "spec": "Cool, dry and protected from heat, moisture and strong odours" },
+          { "param": "Certifications", "spec": "Organic / Halal / Kosher / HACCP / other certifications where applicable" }
+        ]
+      }
+    ],
+    "qaHtml": `<div class="qa-block" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; margin-top:20px;">
+      <h4 style="font-size:0.98rem; font-weight:700; color:#0f172a; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:8px; height:8px; background:#16a34a; border-radius:50%;"></span>
+        Export Quality &amp; Commercial Applications
+      </h4>
+      <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px;">
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Snacking</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Bakery</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Ice Cream</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Confectionery</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Desserts</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Nut Mixes</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Private Label</span>
+      </div>
+      <p style="font-size:0.82rem; color:#64748b; line-height:1.5; margin:0;">
+        Strictly calibrated for size, roasting profile, salt content and natural vibrant green hue. Free from live infestation and chemical contaminants.
+      </p>
+    </div>`
   },
   {
     "id": "more-raisins",
     "slug": "raisins-sultanas-kismis-golden-green",
-    "name": "Raisins / Sultanas (Kismis / સૂકી દ્રાક્ષ - Golden, Green & Malayar)",
+    "name": "Raisins / Sultanas (Kismis) – Golden, Green & Malayar",
+    "websiteTitle": "Raisins / Sultanas (Kismis) – Golden, Green & Malayar | Indian Origin",
     "category": "more-products",
     "categoryName": "Nuts & Dry Fruits",
     "image": "assets/images/products/raisins-kismis.jpg",
-    "origin": "Sangli / Nashik, Maharashtra, India",
-    "packaging": "10kg / 15kg Corrugated Master Cartons",
-    "specs": "Golden Long, Green Bold, Brown Malayar, Moisture 14-16%, Seedless",
-    "description": "Sun-dried plump Indian seedless raisins bursting with natural fructose sweetness, sorted for uniform berry size and color."
+    "origin": "India",
+    "packaging": "5 kg / 10 kg / 25 kg food-grade bags or cartons",
+    "specs": "Golden, Green & Malayar, Seedless, Moisture 15–18%, Clean Plump Naturally Wrinkled",
+    "description": "Premium Indian raisins and sultanas produced from carefully selected grapes and processed for consistent colour, size, sweetness and texture. Available in Golden, Green and Malayar varieties.",
+    "specTabs": [
+      {
+        "tabName": "Export Specifications",
+        "parameters": [
+          { "param": "Product", "spec": "Raisins / Sultanas" },
+          { "param": "Types", "spec": "Golden / Green / Malayar" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Form", "spec": "Seedless / as per buyer requirement" },
+          { "param": "Colour", "spec": "Golden yellow / green / dark natural brown" },
+          { "param": "Size", "spec": "Size-graded according to buyer specification" },
+          { "param": "Appearance", "spec": "Clean, plump and naturally wrinkled" },
+          { "param": "Taste", "spec": "Naturally sweet and characteristic" },
+          { "param": "Moisture", "spec": "Typically controlled around 15–18% or according to agreed grade" },
+          { "param": "Foreign Matter", "spec": "Nil / within agreed specification" },
+          { "param": "Stem / Capstems", "spec": "Controlled according to grade" },
+          { "param": "Insect Damage", "spec": "Free from live infestation" },
+          { "param": "Sulphur Treatment", "spec": "Available / non-treated according to product and buyer requirement" },
+          { "param": "Pesticide Residues", "spec": "Compliant with applicable destination MRLs" },
+          { "param": "Aflatoxin / Mycotoxins", "spec": "Tested where required by destination/customer specification" },
+          { "param": "Packaging", "spec": "5 kg / 10 kg / 25 kg food-grade bags or cartons" },
+          { "param": "Shelf Life", "spec": "Typically 12 months under suitable storage" },
+          { "param": "Storage", "spec": "Cool, dry and hygienic conditions" },
+          { "param": "Certifications", "spec": "Organic / Halal / Kosher / other certifications where applicable" }
+        ]
+      }
+    ],
+    "qaHtml": `<div class="qa-block" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; margin-top:20px;">
+      <h4 style="font-size:0.98rem; font-weight:700; color:#0f172a; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:8px; height:8px; background:#16a34a; border-radius:50%;"></span>
+        Export Quality &amp; Commercial Applications
+      </h4>
+      <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px;">
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Cereals</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Bakery</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Trail Mixes</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Confectionery</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Snacks</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Food Processing</span>
+      </div>
+      <p style="font-size:0.82rem; color:#64748b; line-height:1.5; margin:0;">
+        Plump, seedless berries with controlled moisture and minimal capstems. Available in natural untreated or sulphur-treated golden finishes.
+      </p>
+    </div>`
   },
   {
     "id": "more-dates",
     "slug": "premium-dates-khajur-medjool-kimia",
-    "name": "Dates (Khajur / ખજૂર - Premium Medjool, Kimia & Wet/Dry Dates)",
+    "name": "Dates (Khajur) – Premium Medjool, Kimia & Wet/Dry Dates",
+    "websiteTitle": "Dates (Khajur) – Premium Medjool, Kimia & Wet/Dry Dates | Export Grade",
     "category": "more-products",
     "categoryName": "Nuts & Dry Fruits",
     "image": "assets/images/products/dates-khajur.jpg",
-    "origin": "Gujarat / International Direct Import",
-    "packaging": "500g / 1kg / 5kg / 10kg Master Cartons",
-    "specs": "Soft, Semi-Dry & Dry, Natural Brix > 65%, Grade A, Moisture 18-22%",
-    "description": "Succulent, caramel-rich whole dates naturally cured and hygienically packed for retail gifting, energy snacks, and confectionery."
+    "origin": "India / Middle East / approved sourcing origin",
+    "packaging": "500 g / 1 kg / 5 kg / 10 kg / bulk cartons or private label",
+    "specs": "Medjool / Kimia / Wet / Dry, Whole & Pitted, Golden Brown to Dark Brown, Caramel Sweet",
+    "description": "Premium-quality dates selected for natural sweetness, attractive appearance, soft texture and consistent size. Available in Medjool, Kimia and wet/dry formats for retail and food-service markets.",
+    "specTabs": [
+      {
+        "tabName": "Export Specifications",
+        "parameters": [
+          { "param": "Product", "spec": "Dates / Date Fruit" },
+          { "param": "Varieties", "spec": "Medjool / Kimia / Wet Dates / Dry Dates" },
+          { "param": "Origin", "spec": "India / Middle East / approved sourcing origin" },
+          { "param": "Form", "spec": "Whole / Pitted / as required" },
+          { "param": "Colour", "spec": "Golden brown to dark brown" },
+          { "param": "Texture", "spec": "Soft / semi-dry / dry according to variety" },
+          { "param": "Taste", "spec": "Naturally sweet, rich and caramel-like" },
+          { "param": "Appearance", "spec": "Clean, intact and well-developed" },
+          { "param": "Pits", "spec": "Present / removed according to specification" },
+          { "param": "Moisture", "spec": "Variety-dependent and controlled according to agreed specification" },
+          { "param": "Foreign Matter", "spec": "Nil / within agreed specification" },
+          { "param": "Fermentation", "spec": "Free from undesirable fermentation" },
+          { "param": "Insect Damage", "spec": "Free from live infestation" },
+          { "param": "Pesticide Residues", "spec": "Controlled according to destination-market requirements" },
+          { "param": "Packaging", "spec": "500 g / 1 kg / 5 kg / 10 kg / bulk cartons or private label" },
+          { "param": "Shelf Life", "spec": "Typically 6–12 months depending on variety and storage" },
+          { "param": "Storage", "spec": "Cool, dry conditions; temperature-controlled storage recommended for selected wet varieties" },
+          { "param": "Certifications", "spec": "Organic / Halal / Kosher / other certifications where applicable" }
+        ]
+      }
+    ],
+    "qaHtml": `<div class="qa-block" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; margin-top:20px;">
+      <h4 style="font-size:0.98rem; font-weight:700; color:#0f172a; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:8px; height:8px; background:#16a34a; border-radius:50%;"></span>
+        Export Quality &amp; Commercial Applications
+      </h4>
+      <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px;">
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Retail</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Ramadan Markets</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Healthy Snacks</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Bakery</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Desserts</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Date Paste</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Food Manufacturing</span>
+      </div>
+      <p style="font-size:0.82rem; color:#64748b; line-height:1.5; margin:0;">
+        Free from fermentation and live infestation. Available in premium consumer gift packaging, bulk master cartons, and industrial date paste formats.
+      </p>
+    </div>`
   },
   {
     "id": "more-figs",
     "slug": "dried-figs-anjeer-garland-round",
-    "name": "Dried Figs (Anjeer / અંજીર - Premium Round & Garland Quality)",
+    "name": "Dried Figs (Anjeer) – Premium Round & Garland-Style",
+    "websiteTitle": "Dried Figs (Anjeer) – Premium Round & Garland-Style | Export Grade",
     "category": "more-products",
     "categoryName": "Nuts & Dry Fruits",
     "image": "assets/images/products/dried-figs-anjeer.jpg",
-    "origin": "Maharashtra / International Direct Sourcing",
-    "packaging": "1kg / 5kg / 10kg Garland String & Ring Master Boxes",
-    "specs": "Size: 40mm - 55mm+ Jumbo, Moisture < 20%, Tender Chewy Flesh",
-    "description": "Naturally flattened round dried figs threaded in traditional garlands, packed with crunchy edible seeds, dietary fiber, and minerals."
+    "origin": "India / approved sourcing origin",
+    "packaging": "500 g / 1 kg / 5 kg / 10 kg cartons or buyer-specific private label",
+    "specs": "Premium Round & Garland Style, Light golden brown to brown, Seed-filled interior",
+    "description": "Premium dried figs selected for natural sweetness, attractive appearance, soft-to-chewy texture and excellent seed-filled interior. Available in premium round and traditional garland-style presentations.",
+    "specTabs": [
+      {
+        "tabName": "Export Specifications",
+        "parameters": [
+          { "param": "Product", "spec": "Dried Figs / Anjeer" },
+          { "param": "Forms", "spec": "Premium Round / Garland Style" },
+          { "param": "Origin", "spec": "India / approved sourcing origin" },
+          { "param": "Colour", "spec": "Light golden brown to brown" },
+          { "param": "Appearance", "spec": "Clean, naturally dried, plump and well-formed" },
+          { "param": "Texture", "spec": "Soft to moderately chewy" },
+          { "param": "Taste", "spec": "Naturally sweet and characteristic" },
+          { "param": "Interior", "spec": "Naturally seed-filled" },
+          { "param": "Moisture", "spec": "Controlled according to variety and buyer specification" },
+          { "param": "Foreign Matter", "spec": "Nil / within agreed specification" },
+          { "param": "Insect Damage", "spec": "Free from live infestation" },
+          { "param": "Mould", "spec": "Free from visible mould" },
+          { "param": "Aflatoxin", "spec": "Tested and controlled according to destination requirements" },
+          { "param": "Pesticide Residues", "spec": "Compliant with applicable destination MRLs" },
+          { "param": "Packaging", "spec": "500 g / 1 kg / 5 kg / 10 kg cartons or buyer-specific private label" },
+          { "param": "Shelf Life", "spec": "Typically 6–12 months under suitable storage" },
+          { "param": "Storage", "spec": "Cool, dry and hygienic conditions" },
+          { "param": "Certifications", "spec": "Organic / Halal / Kosher / other certifications where applicable" }
+        ]
+      }
+    ],
+    "qaHtml": `<div class="qa-block" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; margin-top:20px;">
+      <h4 style="font-size:0.98rem; font-weight:700; color:#0f172a; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:8px; height:8px; background:#16a34a; border-radius:50%;"></span>
+        Export Quality &amp; Commercial Applications
+      </h4>
+      <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px;">
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Healthy Snacks</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Bakery</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Confectionery</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Cereals</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Trail Mixes</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Retail</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Private Label</span>
+      </div>
+      <p style="font-size:0.82rem; color:#64748b; line-height:1.5; margin:0;">
+        Plump, naturally dried figs with crunchy interior seeds and tender chewy flesh. Checked for absence of visible mould, aflatoxins and live insects.
+      </p>
+    </div>`
   },
   // ==========================================
   // 9. OTHER CATEGORY & CUSTOM SOURCING (other)
@@ -1843,13 +2643,149 @@
     "id": "other-custom-merchant-sourcing",
     "slug": "custom-merchant-sourcing-specialty",
     "name": "Custom Merchant Sourcing (Any Indian Agro & Food Commodity On Demand)",
+    "cardTitle": "Custom Merchant Sourcing – Any Indian Agro & Food Commodity On Demand",
+    "websiteTitle": "Custom Merchant Sourcing | Any Indian Agro & Food Commodity On Demand",
+    "badge": "CUSTOM SOURCING",
+    "ctaText": "Request Custom Sourcing",
     "category": "other",
     "categoryName": "Other Category",
-    "image": "assets/images/export-documentation-desk.jpg",
-    "origin": "Pan-India Mandis & Dedicated Processing Hubs",
-    "packaging": "Buyer Customized Bags / Consumer Pouches / Bulk Containers / Private Label OEM",
-    "specs": "Export Grade 100%, SGS / APEDA / Spices Board Inspected per Specifications",
-    "description": "Looking for commodities not listed in our standard catalogue? We procure bespoke Indian agricultural, grain, spice, seed, and food items with end-to-end FOB/CIF export logistics and quality certifications."
+    "image": "assets/images/products/custom-merchant-sourcing.jpg",
+    "origin": "India – Pan-India Sourcing Network / Specific Origin Requested",
+    "packaging": "Bulk / Retail / Private Label / Customized",
+    "specs": "Buyer-Specified Grade, Pan-India Sourcing Network, COA & Lab Tested, FOB / CFR / CIF",
+    "shortDescription": "Need a specific Indian agro or food commodity? Kanha Global Exports provides customized merchant sourcing from verified Indian suppliers, processors and origin markets—according to your required product, grade, quantity, packaging and destination-market specifications.",
+    "description": "Our Custom Merchant Sourcing Service helps international importers, distributors, wholesalers, retailers and food manufacturers source Indian agro and food commodities that may not be listed in our standard catalogue. We coordinate sourcing, supplier selection, quality requirements, packaging, documentation and export logistics to deliver a sourcing solution tailored to your business requirements.",
+    "specTabs": [
+      {
+        "tabName": "Customized Sourcing Specifications",
+        "parameters": [
+          { "param": "Product", "spec": "Buyer specified" },
+          { "param": "Origin", "spec": "India / specific Indian origin requested" },
+          { "param": "Variety / Grade", "spec": "Buyer specification" },
+          { "param": "Quantity", "spec": "Trial quantity to full-container volume" },
+          { "param": "Quality", "spec": "Buyer-approved specification" },
+          { "param": "Processing", "spec": "Raw / cleaned / graded / Sortex / processed as applicable" },
+          { "param": "Packaging", "spec": "Bulk / retail / private label / customized" },
+          { "param": "Labeling", "spec": "Buyer artwork and destination-market requirements" },
+          { "param": "Testing", "spec": "COA / laboratory testing as applicable" },
+          { "param": "Compliance", "spec": "Destination-country requirements" },
+          { "param": "Shipment", "spec": "LCL / FCL / reefer / air freight where applicable" },
+          { "param": "Trade Terms", "spec": "FOB / CFR / CIF / other mutually agreed Incoterms" },
+          { "param": "Documentation", "spec": "Commercial Invoice, Packing List, Certificate of Origin, COA and applicable phytosanitary/fumigation or other export documents" }
+        ]
+      }
+    ],
+    "qaHtml": `<div class="custom-sourcing-panel" style="display:flex; flex-direction:column; gap:20px; margin-top:20px;">
+      
+      <!-- What We Can Source -->
+      <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:22px; box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+        <h4 style="font-size:1rem; font-weight:700; color:#0f172a; margin-bottom:6px; display:flex; align-items:center; gap:8px;">
+          <span style="display:inline-block; width:8px; height:8px; background:#0284c7; border-radius:50%;"></span>
+          What We Can Source
+        </h4>
+        <p style="font-size:0.85rem; color:#64748b; margin:0 0 16px 0; line-height:1.5;">
+          Direct procurement and merchant export capabilities across key Indian agricultural and food commodity categories:
+        </p>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(210px, 1fr)); gap:10px;">
+          <div style="display:flex; align-items:center; gap:8px; font-size:0.84rem; color:#1e293b; background:#f8fafc; padding:8px 12px; border-radius:6px; border:1px solid #edf2f7;"><span style="color:#0284c7; font-weight:bold;">✔</span> Rice &amp; Grains</div>
+          <div style="display:flex; align-items:center; gap:8px; font-size:0.84rem; color:#1e293b; background:#f8fafc; padding:8px 12px; border-radius:6px; border:1px solid #edf2f7;"><span style="color:#0284c7; font-weight:bold;">✔</span> Pulses &amp; Lentils</div>
+          <div style="display:flex; align-items:center; gap:8px; font-size:0.84rem; color:#1e293b; background:#f8fafc; padding:8px 12px; border-radius:6px; border:1px solid #edf2f7;"><span style="color:#0284c7; font-weight:bold;">✔</span> Whole Spices &amp; Powders</div>
+          <div style="display:flex; align-items:center; gap:8px; font-size:0.84rem; color:#1e293b; background:#f8fafc; padding:8px 12px; border-radius:6px; border:1px solid #edf2f7;"><span style="color:#0284c7; font-weight:bold;">✔</span> Dehydrated Foods</div>
+          <div style="display:flex; align-items:center; gap:8px; font-size:0.84rem; color:#1e293b; background:#f8fafc; padding:8px 12px; border-radius:6px; border:1px solid #edf2f7;"><span style="color:#0284c7; font-weight:bold;">✔</span> Herbs &amp; Botanicals</div>
+          <div style="display:flex; align-items:center; gap:8px; font-size:0.84rem; color:#1e293b; background:#f8fafc; padding:8px 12px; border-radius:6px; border:1px solid #edf2f7;"><span style="color:#0284c7; font-weight:bold;">✔</span> Fresh Fruits &amp; Vegetables</div>
+          <div style="display:flex; align-items:center; gap:8px; font-size:0.84rem; color:#1e293b; background:#f8fafc; padding:8px 12px; border-radius:6px; border:1px solid #edf2f7;"><span style="color:#0284c7; font-weight:bold;">✔</span> Nuts &amp; Dry Fruits</div>
+          <div style="display:flex; align-items:center; gap:8px; font-size:0.84rem; color:#1e293b; background:#f8fafc; padding:8px 12px; border-radius:6px; border:1px solid #edf2f7;"><span style="color:#0284c7; font-weight:bold;">✔</span> Oilseeds</div>
+          <div style="display:flex; align-items:center; gap:8px; font-size:0.84rem; color:#1e293b; background:#f8fafc; padding:8px 12px; border-radius:6px; border:1px solid #edf2f7;"><span style="color:#0284c7; font-weight:bold;">✔</span> Seeds &amp; Agro Commodities</div>
+          <div style="display:flex; align-items:center; gap:8px; font-size:0.84rem; color:#1e293b; background:#f8fafc; padding:8px 12px; border-radius:6px; border:1px solid #edf2f7;"><span style="color:#0284c7; font-weight:bold;">✔</span> Sugar &amp; Sweeteners</div>
+          <div style="display:flex; align-items:center; gap:8px; font-size:0.84rem; color:#1e293b; background:#f8fafc; padding:8px 12px; border-radius:6px; border:1px solid #edf2f7;"><span style="color:#0284c7; font-weight:bold;">✔</span> Processed Food Products</div>
+          <div style="display:flex; align-items:center; gap:8px; font-size:0.84rem; color:#1e293b; background:#f8fafc; padding:8px 12px; border-radius:6px; border:1px solid #edf2f7;"><span style="color:#0284c7; font-weight:bold;">✔</span> Frozen &amp; Processed Seafood</div>
+          <div style="display:flex; align-items:center; gap:8px; font-size:0.84rem; color:#1e293b; background:#f8fafc; padding:8px 12px; border-radius:6px; border:1px solid #edf2f7;"><span style="color:#0284c7; font-weight:bold;">✔</span> Animal Feed &amp; Agro Ingredients</div>
+          <div style="display:flex; align-items:center; gap:8px; font-size:0.84rem; color:#1e293b; background:#f8fafc; padding:8px 12px; border-radius:6px; border:1px solid #edf2f7;"><span style="color:#0284c7; font-weight:bold;">✔</span> Private-Label &amp; Custom Food Products</div>
+          <div style="display:flex; align-items:center; gap:8px; font-size:0.84rem; color:#1e293b; background:#f8fafc; padding:8px 12px; border-radius:6px; border:1px solid #edf2f7;"><span style="color:#0284c7; font-weight:bold;">✔</span> Other Indian Agro &amp; Food Commodities on Request</div>
+        </div>
+      </div>
+
+      <!-- How It Works (01 to 06) -->
+      <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:22px;">
+        <h4 style="font-size:1rem; font-weight:700; color:#0f172a; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
+          <span style="display:inline-block; width:8px; height:8px; background:#16a34a; border-radius:50%;"></span>
+          How It Works — Step-by-Step Sourcing Workflow
+        </h4>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
+          <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:14px;">
+            <div style="font-size:0.75rem; font-weight:800; color:#0284c7; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:4px;">01 — Submit Your Requirement</div>
+            <p style="font-size:0.83rem; color:#475569; margin:0; line-height:1.45;">Share the product, grade, quantity, packaging, destination country and target port.</p>
+          </div>
+          <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:14px;">
+            <div style="font-size:0.75rem; font-weight:800; color:#0284c7; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:4px;">02 — Supplier &amp; Market Sourcing</div>
+            <p style="font-size:0.83rem; color:#475569; margin:0; line-height:1.45;">We identify suitable Indian suppliers, processors or origin markets according to your requirements.</p>
+          </div>
+          <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:14px;">
+            <div style="font-size:0.75rem; font-weight:800; color:#0284c7; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:4px;">03 — Quality &amp; Specification Verification</div>
+            <p style="font-size:0.83rem; color:#475569; margin:0; line-height:1.45;">Product specifications, samples and testing requirements are reviewed before commercial confirmation.</p>
+          </div>
+          <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:14px;">
+            <div style="font-size:0.75rem; font-weight:800; color:#0284c7; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:4px;">04 — Quotation &amp; Sample</div>
+            <p style="font-size:0.83rem; color:#475569; margin:0; line-height:1.45;">We provide availability and a commercial quotation based on the agreed specification and shipment terms.</p>
+          </div>
+          <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:14px;">
+            <div style="font-size:0.75rem; font-weight:800; color:#0284c7; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:4px;">05 — Packing &amp; Documentation</div>
+            <p style="font-size:0.83rem; color:#475569; margin:0; line-height:1.45;">We coordinate export-grade packing, labeling, inspection and required documentation.</p>
+          </div>
+          <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:14px;">
+            <div style="font-size:0.75rem; font-weight:800; color:#0284c7; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:4px;">06 — Shipment &amp; Delivery Coordination</div>
+            <p style="font-size:0.83rem; color:#475569; margin:0; line-height:1.45;">The confirmed cargo is dispatched through the agreed logistics route and trade terms.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Why Choose Custom Merchant Sourcing? -->
+      <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:22px;">
+        <h4 style="font-size:1rem; font-weight:700; color:#0f172a; margin-bottom:12px; display:flex; align-items:center; gap:8px;">
+          <span style="display:inline-block; width:8px; height:8px; background:#d97706; border-radius:50%;"></span>
+          Why Choose Custom Merchant Sourcing?
+        </h4>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:10px; margin-bottom:14px;">
+          <div style="display:flex; align-items:center; gap:8px; font-size:0.84rem; color:#334155;"><span style="color:#16a34a; font-weight:bold;">✔</span> Pan-India sourcing network</div>
+          <div style="display:flex; align-items:center; gap:8px; font-size:0.84rem; color:#334155;"><span style="color:#16a34a; font-weight:bold;">✔</span> Multiple product categories</div>
+          <div style="display:flex; align-items:center; gap:8px; font-size:0.84rem; color:#334155;"><span style="color:#16a34a; font-weight:bold;">✔</span> Buyer-specific specifications</div>
+          <div style="display:flex; align-items:center; gap:8px; font-size:0.84rem; color:#334155;"><span style="color:#16a34a; font-weight:bold;">✔</span> Supplier and quality coordination</div>
+          <div style="display:flex; align-items:center; gap:8px; font-size:0.84rem; color:#334155;"><span style="color:#16a34a; font-weight:bold;">✔</span> Bulk &amp; container sourcing</div>
+          <div style="display:flex; align-items:center; gap:8px; font-size:0.84rem; color:#334155;"><span style="color:#16a34a; font-weight:bold;">✔</span> Custom packaging &amp; private label</div>
+          <div style="display:flex; align-items:center; gap:8px; font-size:0.84rem; color:#334155;"><span style="color:#16a34a; font-weight:bold;">✔</span> Export documentation support</div>
+          <div style="display:flex; align-items:center; gap:8px; font-size:0.84rem; color:#334155;"><span style="color:#16a34a; font-weight:bold;">✔</span> FOB/CFR/CIF quotations</div>
+          <div style="display:flex; align-items:center; gap:8px; font-size:0.84rem; color:#334155;"><span style="color:#16a34a; font-weight:bold;">✔</span> International shipment coordination</div>
+          <div style="display:flex; align-items:center; gap:8px; font-size:0.84rem; color:#334155;"><span style="color:#16a34a; font-weight:bold;">✔</span> Long-term sourcing partnerships</div>
+        </div>
+        <p style="font-size:0.81rem; color:#64748b; font-style:italic; margin:0; line-height:1.5;">
+          This type of sourcing workflow is also commonly positioned by merchant exporters around supplier verification, quality assessment, customized packaging, documentation and global logistics.
+        </p>
+      </div>
+
+      <!-- Website CTA Box -->
+      <div style="background:linear-gradient(135deg, #0284c7 0%, #0369a1 100%); border-radius:10px; padding:22px 24px; color:#ffffff; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px;">
+        <div style="max-width:540px;">
+          <h4 style="font-size:1.05rem; font-weight:700; color:#ffffff; margin:0 0 6px 0;">Have a Product in Mind That Isn't Listed?</h4>
+          <p style="font-size:0.88rem; color:#e0f2fe; margin:0; line-height:1.45;">
+            Tell us what you need. We will source it from India.
+          </p>
+        </div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <button type="button" onclick="document.getElementById('rfqBtn').click()" style="background:#ffffff; color:#0369a1; border:none; padding:10px 18px; border-radius:6px; font-weight:700; font-size:0.84rem; cursor:pointer;">
+            Request Custom Sourcing
+          </button>
+          <a href="https://wa.me/919726396898?text=Hello%20Kanha%20Global%20Exports,%20I%20have%20a%20custom%20Indian%20agro/food%20commodity%20sourcing%20requirement" target="_blank" rel="noopener noreferrer" style="background:#22c55e; color:#ffffff; text-decoration:none; padding:10px 18px; border-radius:6px; font-weight:700; font-size:0.84rem; display:inline-flex; align-items:center; gap:6px;">
+            WhatsApp Trade Desk
+          </a>
+        </div>
+      </div>
+
+      <!-- Important Website Disclaimer -->
+      <div style="background:#fffbeb; border:1px solid #fef3c7; border-left:4px solid #d97706; padding:12px 16px; border-radius:6px; font-size:0.82rem; color:#92400e; line-height:1.5;">
+        <strong>Important Website Disclaimer:</strong> Sourcing is subject to product availability, seasonality, supplier capacity, applicable regulations and buyer-approved specifications. Final commercial specifications, quality parameters, pricing and delivery terms will be confirmed before order placement.
+      </div>
+
+    </div>`
   }
 ];
 

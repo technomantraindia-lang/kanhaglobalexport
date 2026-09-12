@@ -183,11 +183,11 @@
       '1718-basmati-rice-steam-sella': 'assets/images/products/1718-basmati-rice.jpeg',
       '1509-basmati-rice': 'assets/images/products/1509-basmati-rice.jpeg',
       '1401-basmati-rice': 'assets/images/products/1401-basmati-rice.jpeg',
-      'traditional-authentic-basmati-rice': 'assets/images/rice-1121-steam.webp',
+      'traditional-authentic-basmati-rice': 'assets/images/products/traditional-authentic-basmati.jpg',
       'ir-64-parboiled-raw-rice': 'assets/images/products/ir64-long-grain-rice.png',
       'sona-masoori-raw-steam-rice': 'assets/images/products/sona-masoori-rice.jpeg',
-      'pr-11-pr-14-non-basmati-rice': 'assets/images/products/ir64-long-grain-rice.png',
-      'swarna-rice-parboiled': 'assets/images/products/swarna-rice.png',
+      'pr-11-pr-14-non-basmati-rice': 'assets/images/products/pr-11-non-basmati-rice.jpg',
+      'swarna-rice-parboiled': 'assets/images/products/swarna-rice.jpg',
       'turmeric-finger-powder': 'assets/images/products/turmeric-finger.jpg',
       'turmeric-finger': 'assets/images/products/turmeric-finger.jpg',
       'turmeric-powder': 'assets/images/products/turmeric-powder.jpg',
@@ -205,7 +205,7 @@
       'cinnamon-sticks-cassia': 'assets/images/products/cinnamon-sticks.jpg',
       'cinnamon-powder': 'assets/images/products/cinnamon-powder.jpg',
       'nutmeg-and-mace-whole': 'assets/images/products/nutmeg.jpg',
-      'black-cardamom-badi-elaichi': 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80',
+      'black-cardamom-badi-elaichi': 'assets/images/products/black-cardamom.jpg',
       'garam-masala-blended-curry-powder': 'assets/images/products/garam-masala.jpg',
       'toor-dal-pigeon-peas': 'assets/images/products/toor-dal.jpeg',
       'chana-dal-split-bengal-gram': 'assets/images/products/chana-dal.jpeg',
@@ -225,10 +225,12 @@
       'dehydrated-coriander-leaves-powder': 'assets/images/products/dehydrated-coriander.jpeg',
       'other-dehydrated-herbs-and-vegetables': 'assets/images/products/other-dehydrated-herbs-vegetables.jpeg',
       'dehydrated-kasuri-methi-leaves': 'assets/images/products/other-dehydrated-herbs-vegetables.jpeg',
-      'fresh-alphonso-kesar-mangoes': 'assets/images/fresh-alphonso-kesar-mangoes.jpg',
+      'fresh-alphonso-kesar-mangoes': 'assets/images/products/fresh-alphonso-kesar-mangoes.jpg',
       'fresh-red-onions-nashik-gujarat': 'assets/images/products/fresh-red-onions.jpg',
-      'fresh-potatoes-and-seedless-lemons': 'assets/images/products/potatoes-and-lemons.jpg',
-      'fresh-green-ginger': 'assets/images/fresh-fruits.jpg',
+      'fresh-potatoes-table-chipsona': 'assets/images/products/fresh-potatoes.jpg',
+      'fresh-potatoes-and-seedless-lemons': 'assets/images/products/fresh-potatoes.jpg',
+      'other-seasonal-indian-produce': 'assets/images/products/other-seasonal-indian-produce.jpg',
+      'fresh-green-ginger': 'assets/images/products/other-seasonal-indian-produce.jpg',
       'frozen-vannamei-white-shrimp': 'assets/images/products/vannamei-white-shrimp.jpeg',
       'frozen-black-tiger-shrimp': 'assets/images/products/black-tiger-shrimp.jpeg',
       'frozen-ribbon-fish-whole': 'assets/images/products/frozen-marine-fish.jpeg',
@@ -241,15 +243,15 @@
       'curry-leaves-fresh-dried': 'assets/images/products/curry-leaves.jpeg',
       'fenugreek-leaves-kasuri-methi': 'assets/images/products/kasuri-methi.jpeg',
       'brahmi-bacopa-monnieri-powder': 'assets/images/products/brahmi-herb.jpeg',
-      'phool-makhana-fox-nuts-gorgon': 'assets/images/makhana-fox-nuts.jpg',
+      'phool-makhana-fox-nuts-gorgon': 'assets/images/products/phool-makhana.jpg',
       'california-indian-badam-almonds': 'assets/images/products/almonds-badam.jpg',
-      'cashew-nuts-w180-w240-w320': 'assets/images/cashew-nuts.jpg',
+      'cashew-nuts-w180-w240-w320': 'assets/images/products/cashew-nuts.jpg',
       'walnuts-akhrot-inshell-kernels': 'assets/images/products/walnuts-akhrot.jpg',
       'pistachios-pista-roasted-salted-green': 'assets/images/products/pistachios-pista.jpg',
       'raisins-sultanas-kismis-golden-green': 'assets/images/products/raisins-kismis.jpg',
       'premium-dates-khajur-medjool-kimia': 'assets/images/products/dates-khajur.jpg',
       'dried-figs-anjeer-garland-round': 'assets/images/products/dried-figs-anjeer.jpg',
-      'custom-merchant-sourcing-specialty': 'assets/images/export-documentation-desk.jpg'
+      'custom-merchant-sourcing-specialty': 'assets/images/products/custom-merchant-sourcing.jpg'
     };
 
     const categoryFallbacks = {
@@ -466,6 +468,9 @@
         const imgSrc = getProductImage(item);
         const detailUrl = `product-detail.html?slug=${encodeURIComponent(item.slug || item.id)}`;
         const catLabel = item.categoryName || item.category || 'Export Grade';
+        const badgeLabel = item.badge || catLabel;
+        const displayName = item.cardTitle || item.name;
+        const displayDesc = item.shortDescription || item.description || 'Export grade Indian commodity compliant with APEDA and international quality standards.';
 
         return `
           <article class="product-card-v2" data-category="${item.category}">
@@ -473,15 +478,15 @@
               <a href="${detailUrl}" aria-label="${item.name}">
                 <img src="${imgSrc}" alt="${item.name}" class="card-media-img" loading="lazy" onerror="this.onerror=null; this.src='assets/images/spices.jpg';">
               </a>
-              <span class="card-badge-v2">${catLabel}</span>
+              <span class="card-badge-v2">${badgeLabel}</span>
             </div>
 
             <div class="card-body-v2">
               <span class="card-category-sub">${catLabel}</span>
               <h3 class="card-title-v2">
-                <a href="${detailUrl}">${item.name}</a>
+                <a href="${detailUrl}">${displayName}</a>
               </h3>
-              <p class="card-desc-v2">${item.description || 'Export grade Indian commodity compliant with APEDA and international quality standards.'}</p>
+              <p class="card-desc-v2">${displayDesc}</p>
 
               <div class="card-specs-v2">
                 ${item.origin ? `<span class="spec-chip-v2"><span class="spec-chip-label">Origin:</span> ${item.origin.split('/')[0].trim()}</span>` : ''}

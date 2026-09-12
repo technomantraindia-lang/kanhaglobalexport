@@ -60,6 +60,7 @@
           </a>
           <div class="dropdown-panel nav-sub-menu">
             <a href="about-us.html">About Kanha</a>
+            <a href="global-presence.html">Global Presence</a>
             <a href="sourcing-approach.html">Sourcing Approach</a>
             <a href="our-strengths.html">Our Strengths</a>
             <a href="mission-vision.html">Mission &amp; Vision</a>
@@ -127,7 +128,7 @@
           <div class="detail-main-img-wrap">
             <span class="detail-image-badge">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              Verified Export Grade
+              <span id="detailImgBadgeText">Verified Export Grade</span>
             </span>
             <img id="detailImg" src="assets/images/spices.jpg" alt="Product Image">
           </div>
@@ -540,9 +541,9 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="js/categories-data.js?v=4.9"></script>
-  <script src="js/products-data.js?v=4.9"></script>
-  <script src="js/main.js?v=4.9"></script>
+  <script src="js/categories-data.js?v=5.5"></script>
+  <script src="js/products-data.js?v=5.5"></script>
+  <script src="js/main.js?v=5.5"></script>
   <script>
     (function() {
       let currentProduct = null;
@@ -637,6 +638,9 @@
         if (slug === 'cardamom' || slug === 'elaichi' || slug === 'green-cardamom') {
           slug = 'green-cardamom-elaichi';
         }
+        if (slug === 'black-cardamom' || slug === 'badi-elaichi') {
+          slug = 'black-cardamom-badi-elaichi';
+        }
         if (slug === 'coriander' || slug === 'dhaniya') {
           slug = 'coriander-seeds-dhaniya';
         }
@@ -696,7 +700,49 @@
           'black-eyed-peas': 'cowpeas-black-eyed-peas-lobia',
           'chawli': 'cowpeas-black-eyed-peas-lobia',
           'white-chawli': 'cowpeas-black-eyed-peas-lobia',
-          'black-eyed-beans': 'cowpeas-black-eyed-peas-lobia'
+          'black-eyed-beans': 'cowpeas-black-eyed-peas-lobia',
+          'makhana': 'phool-makhana-fox-nuts-gorgon',
+          'fox-nuts': 'phool-makhana-fox-nuts-gorgon',
+          'phool-makhana': 'phool-makhana-fox-nuts-gorgon',
+          'almonds': 'california-indian-badam-almonds',
+          'badam': 'california-indian-badam-almonds',
+          'cashews': 'cashew-nuts-w180-w240-w320',
+          'kaju': 'cashew-nuts-w180-w240-w320',
+          'walnuts': 'walnuts-akhrot-inshell-kernels',
+          'akhrot': 'walnuts-akhrot-inshell-kernels',
+          'pistachios': 'pistachios-pista-roasted-salted-green',
+          'pista': 'pistachios-pista-roasted-salted-green',
+          'raisins': 'raisins-sultanas-kismis-golden-green',
+          'kismis': 'raisins-sultanas-kismis-golden-green',
+          'sultanas': 'raisins-sultanas-kismis-golden-green',
+          'dates': 'premium-dates-khajur-medjool-kimia',
+          'khajur': 'premium-dates-khajur-medjool-kimia',
+          'figs': 'dried-figs-anjeer-garland-round',
+          'anjeer': 'dried-figs-anjeer-garland-round',
+          'dried-figs': 'dried-figs-anjeer-garland-round',
+          'custom-merchant-sourcing': 'custom-merchant-sourcing-specialty',
+          'on-demand': 'custom-merchant-sourcing-specialty',
+          'custom-sourcing': 'custom-merchant-sourcing-specialty',
+          'any-indian-agro-food-commodity-on-demand': 'custom-merchant-sourcing-specialty',
+          'spice-powders-blended-spices': 'garam-masala-blended-curry-powder',
+          'spice-powders': 'garam-masala-blended-curry-powder',
+          'blended-spices': 'garam-masala-blended-curry-powder',
+          'spice-powders-and-blended-spices': 'garam-masala-blended-curry-powder',
+          'spice-powders-blended-spices-mix-summary': 'garam-masala-blended-curry-powder',
+          'garam-masala': 'garam-masala-blended-curry-powder',
+          'curry-powder': 'garam-masala-blended-curry-powder',
+          'tandoori-masala': 'garam-masala-blended-curry-powder',
+          'potatoes': 'fresh-potatoes-table-chipsona',
+          'fresh-potatoes': 'fresh-potatoes-table-chipsona',
+          'fresh-potatoes-and-seedless-lemons': 'fresh-potatoes-table-chipsona',
+          'fresh-green-ginger': 'other-seasonal-indian-produce',
+          'seasonal-produce': 'other-seasonal-indian-produce',
+          'traditional-basmati': 'traditional-authentic-basmati-rice',
+          'cumin-seeds': 'cumin-seeds-jeera',
+          'jeera': 'cumin-seeds-jeera',
+          'pr-11': 'pr-11-pr-14-non-basmati-rice',
+          'pr-14': 'pr-11-pr-14-non-basmati-rice',
+          'swarna-rice': 'swarna-rice-parboiled'
         };
         if (slugAliases[slug]) {
           slug = slugAliases[slug];
@@ -728,11 +774,11 @@
         currentProduct = product;
 
         // Update Title & Meta
-        document.title = `${product.name} — Export Details | Kanha Global Exports`;
+        document.title = product.websiteTitle ? `${product.websiteTitle} | Kanha Global Exports` : `${product.name} — Export Details | Kanha Global Exports`;
 
         // Update Hero Elements
         const heroTitle = document.getElementById('heroTitle');
-        if (heroTitle) heroTitle.textContent = `${product.name} — Export Grade`;
+        if (heroTitle) heroTitle.textContent = product.websiteTitle || `${product.name} — Export Grade`;
 
         const heroSubtitle = document.getElementById('heroSubtitle');
         if (heroSubtitle) heroSubtitle.textContent = `Direct farm procurement of export-grade ${product.name}. Comprehensive phytosanitary certifications, customized seaworthy packaging, and international container dispatch.`;
@@ -756,7 +802,16 @@
         if (detailDesc) detailDesc.textContent = product.description || `Premium quality ${product.name} sourced directly from certified Indian farming clusters. Prepared for global supply with complete batch traceability and phytosanitary certification.`;
 
         const detailCatPill = document.getElementById('detailCatPill');
-        if (detailCatPill) detailCatPill.textContent = catName;
+        if (detailCatPill) detailCatPill.textContent = product.badge || catName;
+
+        const detailImgBadgeText = document.getElementById('detailImgBadgeText');
+        if (detailImgBadgeText) detailImgBadgeText.textContent = product.badge || 'Verified Export Grade';
+
+        const mainRfqBtn = document.getElementById('rfqBtn');
+        if (mainRfqBtn && product.ctaText) {
+          const btnSpan = mainRfqBtn.querySelector('span');
+          if (btnSpan) btnSpan.textContent = product.ctaText;
+        }
 
         const originVal = product.origin || 'Gujarat / India';
         const detailOriginPill = document.getElementById('detailOriginPill');
@@ -824,7 +879,7 @@
 
         if (product.specTabs && product.specTabs.length > 0) {
           if (specTabsHeader) {
-            specTabsHeader.style.display = 'flex';
+            specTabsHeader.style.display = product.specTabs.length > 1 ? 'flex' : 'none';
             specTabsHeader.innerHTML = product.specTabs.map((tab, idx) => `
               <button type="button" class="spec-tab-pill ${idx === 0 ? 'active' : ''}" onclick="window.switchProductSpecTab(${idx})">
                 ${tab.tabName}
@@ -846,10 +901,14 @@
               <tr><td>Delivery / IncoTerms</td><td>FOB, CIF, CFR, Ex-Factory as per buyer requirement</td></tr>
             `;
           }
+        }
+
         // Quality & Compliance Statement
         const qaComplianceWrapper = document.getElementById('qaComplianceWrapper');
         if (qaComplianceWrapper) {
-          if (product.category === 'herbs') {
+          if (product.qaHtml) {
+            qaComplianceWrapper.innerHTML = product.qaHtml;
+          } else if (product.category === 'herbs') {
             const regNoteHtml = product.regulatoryNote ? `
               <div style="background: #fffbeb; border: 1px solid #fef3c7; border-left: 3px solid #d97706; padding: 11px 14px; border-radius: 6px; font-size: 0.82rem; color: #92400e; line-height: 1.5; margin-top: 12px;">
                 <strong>Important Website &amp; Regulatory Note:</strong> ${product.regulatoryNote}
