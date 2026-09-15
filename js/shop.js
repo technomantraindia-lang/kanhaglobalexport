@@ -183,10 +183,12 @@
       '1718-basmati-rice-steam-sella': 'assets/images/products/1718-basmati-rice.jpeg',
       '1509-basmati-rice': 'assets/images/products/1509-basmati-rice.jpeg',
       '1401-basmati-rice': 'assets/images/products/1401-basmati-rice.jpeg',
-      'traditional-authentic-basmati-rice': 'assets/images/products/traditional-authentic-basmati.jpg',
+
       'ir-64-parboiled-raw-rice': 'assets/images/products/ir64-long-grain-rice.png',
       'sona-masoori-raw-steam-rice': 'assets/images/products/sona-masoori-rice.jpeg',
-      'pr-11-pr-14-non-basmati-rice': 'assets/images/products/pr-11-non-basmati-rice.jpg',
+
+      'pr-11-non-basmati-rice': 'assets/images/products/pr-11-non-basmati-rice.jpg',
+      'pr-14-non-basmati-rice': 'assets/images/products/pr-11-non-basmati-rice.jpg',
       'swarna-rice-parboiled': 'assets/images/products/swarna-rice.jpg',
       'turmeric-finger-powder': 'assets/images/products/turmeric-finger.jpg',
       'turmeric-finger': 'assets/images/products/turmeric-finger.jpg',
@@ -197,15 +199,21 @@
       'cumin-seeds-jeera': 'assets/images/products/cumin-seeds.jpg',
       'cumin-seeds': 'assets/images/products/cumin-seeds.jpg',
       'cumin-powder': 'assets/images/products/cumin-powder.jpg',
-      'coriander-seeds-dhaniya': 'assets/images/products/coriander-powder.jpg',
+      'coriander-seeds-dhaniya': 'assets/images/products/coriander-seeds-whole.png',
+      'coriander-powder': 'assets/images/products/coriander-powder.jpg',
       'black-pepper-garbled': 'assets/images/products/black-pepper.jpg',
+      'black-pepper-powder': 'assets/images/products/black-pepper.jpg',
       'green-cardamom-elaichi': 'assets/images/products/green-cardamom.jpg',
+      'cardamom-powder': 'assets/images/products/green-cardamom.jpg',
       'fennel-seeds-saunf': 'assets/images/products/fennel-seeds.jpg',
+      'fennel-powder': 'assets/images/products/fennel-seeds.jpg',
       'cloves-whole-laung': 'assets/images/products/cloves.jpg',
       'cinnamon-sticks-cassia': 'assets/images/products/cinnamon-sticks.jpg',
       'cinnamon-powder': 'assets/images/products/cinnamon-powder.jpg',
       'nutmeg-and-mace-whole': 'assets/images/products/nutmeg.jpg',
+      'nutmeg-powder': 'assets/images/products/nutmeg.jpg',
       'black-cardamom-badi-elaichi': 'assets/images/products/black-cardamom.jpg',
+      'black-cardamom-powder': 'assets/images/products/black-cardamom.jpg',
       'garam-masala-blended-curry-powder': 'assets/images/products/garam-masala.jpg',
       'toor-dal-pigeon-peas': 'assets/images/products/toor-dal.jpeg',
       'chana-dal-split-bengal-gram': 'assets/images/products/chana-dal.jpeg',
@@ -482,7 +490,7 @@
             </div>
 
             <div class="card-body-v2">
-              <span class="card-category-sub">${catLabel}</span>
+
               <h3 class="card-title-v2">
                 <a href="${detailUrl}">${displayName}</a>
               </h3>
@@ -490,7 +498,6 @@
 
               <div class="card-specs-v2">
                 ${item.origin ? `<span class="spec-chip-v2"><span class="spec-chip-label">Origin:</span> ${item.origin.split('/')[0].trim()}</span>` : ''}
-                ${item.packaging ? `<span class="spec-chip-v2"><span class="spec-chip-label">Pack:</span> ${item.packaging.split('/')[0].trim()}</span>` : ''}
               </div>
 
               <div class="card-actions-v2">

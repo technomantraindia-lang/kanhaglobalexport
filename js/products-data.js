@@ -12,10 +12,56 @@
     "category": "rice",
     "categoryName": "Rice & Grains",
     "image": "assets/images/products/1121-basmati-rice.jpeg",
-    "origin": "Punjab / Haryana, India",
-    "packaging": "1kg / 5kg / 10kg / 25kg / 50kg Non-Woven & BOPP Bags",
-    "specs": "Grain Length: 8.35mm - 8.40mm, Elongation: 2.5x, Moisture < 12.5%, Sortex 100%",
-    "description": "World-renowned extra long grain 1121 Basmati rice with exquisite aroma and non-sticky fluffy texture upon cooking."
+    "origin": "India",
+    "packaging": "10 / 20 / 25 / 50 kg; PP / Jute / Non-woven bags",
+    "specs": "Varietal Purity Min. 95%, Average Grain Length 8.30–8.40 mm, Moisture Max. 12.5%, Sortex 100%",
+    "description": "World-renowned extra long grain 1121 Basmati rice with exquisite aroma and non-sticky fluffy texture upon cooking.",
+    "specTabs": [
+      {
+        "tabName": "1121 Basmati Rice",
+        "id": "1121-basmati-rice",
+        "parameters": [
+          { "param": "Origin", "spec": "India" },
+          { "param": "Product", "spec": "1121 Basmati Rice" },
+          { "param": "Product Form", "spec": "Raw / Steam / White Sella / Golden Sella / Parboiled" },
+          { "param": "Varietal Purity", "spec": "Min. 95%" },
+          { "param": "Average Grain Length", "spec": "8.30–8.40 mm" },
+          { "param": "Moisture", "spec": "Max. 12.5%" },
+          { "param": "Broken Grains", "spec": "Max. 1–2%" },
+          { "param": "Foreign Matter", "spec": "Max. 0.1%" },
+          { "param": "Damaged / Discoloured Grains", "spec": "Max. 1%" },
+          { "param": "Chalky Grains", "spec": "Max. 5% (Raw); lower for Sella" },
+          { "param": "Admixture / Other Varieties", "spec": "Max. 5%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "White (Raw/Steam) / Creamy to Golden (Sella)" },
+          { "param": "Aroma & Flavour", "spec": "Characteristic Basmati aroma and flavour" },
+          { "param": "Length/Breadth Ratio", "spec": "Min. 3.5" },
+          { "param": "Elongation Ratio", "spec": "Min. 1.7" },
+          { "param": "Sortex", "spec": "100%" },
+          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
+          { "param": "Pesticide Residues", "spec": "Compliant with applicable destination-country MRLs*" },
+          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg" },
+          { "param": "Packaging Material", "spec": "PP / Jute / Non-woven bags" }
+        ]
+      }
+    ],
+    "qaHtml": `<div class="qa-block" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; margin-top:20px;">
+      <h4 style="font-size:0.98rem; font-weight:700; color:#0f172a; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:8px; height:8px; background:#16a34a; border-radius:50%;"></span>
+        Export Quality &amp; Compliance Standards
+      </h4>
+      <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:14px 16px; margin-bottom:12px;">
+        <p style="font-size:0.84rem; color:#334155; line-height:1.6; margin:0;">
+          Specifications are standard commercial export specifications and may be customized according to variety, processing type, grade, buyer requirements and applicable destination-country regulations. Final specifications are confirmed against the agreed purchase specification and COA.
+        </p>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:8px;">
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">100% Sortex Cleaned</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Extra Long Grain (8.30–8.40 mm)</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Elongation Ratio Min. 1.7</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Destination MRL Compliant</span>
+      </div>
+    </div>`
   },
   {
     "id": "rice-1718-basmati",
@@ -24,10 +70,56 @@
     "category": "rice",
     "categoryName": "Rice & Grains",
     "image": "assets/images/products/1718-basmati-rice.jpeg",
-    "origin": "Punjab / Haryana / Uttar Pradesh, India",
-    "packaging": "10kg / 25kg / 50kg PP / Jute Bags",
-    "specs": "Average Grain Length: 8.35mm+, Elongation: 2.4x, Moisture < 12.5%, Broken < 1%",
-    "description": "Premium evolutionary variety derived from 1121 with enhanced resistance, superior cooked grain integrity, and deep aromatic profile."
+    "origin": "India",
+    "packaging": "10 / 20 / 25 / 50 kg; PP / Jute / Non-woven bags",
+    "specs": "Varietal Purity Min. 95%, Average Grain Length 8.20–8.35 mm, Moisture Max. 12.5%, Sortex 100%",
+    "description": "Premium evolutionary variety derived from 1121 with enhanced resistance, superior cooked grain integrity, and deep aromatic profile.",
+    "specTabs": [
+      {
+        "tabName": "1718 Basmati Rice",
+        "id": "1718-basmati-rice",
+        "parameters": [
+          { "param": "Origin", "spec": "India" },
+          { "param": "Product", "spec": "1718 Basmati Rice" },
+          { "param": "Product Form", "spec": "Raw / Steam / White Sella / Golden Sella / Parboiled" },
+          { "param": "Varietal Purity", "spec": "Min. 95%" },
+          { "param": "Average Grain Length", "spec": "8.20–8.35 mm" },
+          { "param": "Moisture", "spec": "Max. 12.5%" },
+          { "param": "Broken Grains", "spec": "Max. 1–2%" },
+          { "param": "Foreign Matter", "spec": "Max. 0.1%" },
+          { "param": "Damaged / Discoloured Grains", "spec": "Max. 1%" },
+          { "param": "Chalky Grains", "spec": "Max. 5% (Raw); lower for Sella" },
+          { "param": "Admixture / Other Varieties", "spec": "Max. 5%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "White (Raw/Steam) / Creamy to Golden (Sella)" },
+          { "param": "Aroma & Flavour", "spec": "Characteristic Basmati aroma and flavour" },
+          { "param": "Length/Breadth Ratio", "spec": "Min. 3.5" },
+          { "param": "Elongation Ratio", "spec": "Min. 1.7" },
+          { "param": "Sortex", "spec": "100%" },
+          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
+          { "param": "Pesticide Residues", "spec": "Compliant with applicable destination-country MRLs*" },
+          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg" },
+          { "param": "Packaging Material", "spec": "PP / Jute / Non-woven bags" }
+        ]
+      }
+    ],
+    "qaHtml": `<div class="qa-block" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; margin-top:20px;">
+      <h4 style="font-size:0.98rem; font-weight:700; color:#0f172a; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:8px; height:8px; background:#16a34a; border-radius:50%;"></span>
+        Export Quality &amp; Compliance Standards
+      </h4>
+      <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:14px 16px; margin-bottom:12px;">
+        <p style="font-size:0.84rem; color:#334155; line-height:1.6; margin:0;">
+          Specifications are standard commercial export specifications and may be customized according to variety, processing type, grade, buyer requirements and applicable destination-country regulations. Final specifications are confirmed against the agreed purchase specification and COA.
+        </p>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:8px;">
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">100% Sortex Cleaned</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Average Grain Length 8.20–8.35 mm</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Elongation Ratio Min. 1.7</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Destination MRL Compliant</span>
+      </div>
+    </div>`
   },
   {
     "id": "rice-1509-basmati",
@@ -36,82 +128,404 @@
     "category": "rice",
     "categoryName": "Rice & Grains",
     "image": "assets/images/products/1509-basmati-rice.jpeg",
-    "origin": "Punjab / Haryana / UP, India",
-    "packaging": "5kg / 25kg / 50kg Export Bags",
-    "specs": "Grain Length: 8.30mm+, Moisture < 12.5%, Sortex Clean 100%, Broken < 1%",
-    "description": "Economical yet ultra-long grain basmati offering outstanding cooking elongation, fast cooking time, and subtle sweet taste."
+    "origin": "India",
+    "packaging": "10 / 20 / 25 / 50 kg; PP / Jute / Non-woven bags",
+    "specs": "Varietal Purity Min. 95%, Average Grain Length 8.30–8.40 mm, Moisture Max. 12.5%, Sortex 100%",
+    "description": "Economical yet ultra-long grain basmati offering outstanding cooking elongation, fast cooking time, and subtle sweet taste.",
+    "specTabs": [
+      {
+        "tabName": "1509 Basmati Rice",
+        "id": "1509-basmati-rice",
+        "parameters": [
+          { "param": "Origin", "spec": "India" },
+          { "param": "Product", "spec": "1509 Basmati Rice" },
+          { "param": "Product Form", "spec": "Raw / Steam / White Sella / Golden Sella / Parboiled" },
+          { "param": "Varietal Purity", "spec": "Min. 95%" },
+          { "param": "Average Grain Length", "spec": "8.30–8.40 mm" },
+          { "param": "Moisture", "spec": "Max. 12.5%" },
+          { "param": "Broken Grains", "spec": "Max. 1–2%" },
+          { "param": "Foreign Matter", "spec": "Max. 0.1%" },
+          { "param": "Damaged / Discoloured Grains", "spec": "Max. 1%" },
+          { "param": "Chalky Grains", "spec": "Max. 5% (Raw); lower for Sella" },
+          { "param": "Admixture / Other Varieties", "spec": "Max. 5%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "White (Raw/Steam) / Creamy to Golden (Sella)" },
+          { "param": "Aroma & Flavour", "spec": "Characteristic Basmati aroma and flavour" },
+          { "param": "Length/Breadth Ratio", "spec": "Min. 3.5" },
+          { "param": "Elongation Ratio", "spec": "Min. 1.7" },
+          { "param": "Sortex", "spec": "100%" },
+          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
+          { "param": "Pesticide Residues", "spec": "Compliant with applicable destination-country MRLs*" },
+          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg" },
+          { "param": "Packaging Material", "spec": "PP / Jute / Non-woven bags" }
+        ]
+      }
+    ],
+    "qaHtml": `<div class="qa-block" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; margin-top:20px;">
+      <h4 style="font-size:0.98rem; font-weight:700; color:#0f172a; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:8px; height:8px; background:#16a34a; border-radius:50%;"></span>
+        Export Quality &amp; Compliance Standards
+      </h4>
+      <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:14px 16px; margin-bottom:12px;">
+        <p style="font-size:0.84rem; color:#334155; line-height:1.6; margin:0;">
+          Specifications are standard commercial export specifications and may be customized according to variety, processing type, grade, buyer requirements and applicable destination-country regulations. Final specifications are confirmed against the agreed purchase specification and COA.
+        </p>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:8px;">
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">100% Sortex Cleaned</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Grain Length 8.30–8.40 mm</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Fast Cooking &amp; Great Elongation</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Destination MRL Compliant</span>
+      </div>
+    </div>`
   },
   {
     "id": "rice-1401-basmati",
     "slug": "1401-basmati-rice",
-    "name": "1401 Basmati Rice (Steam & Sella)",
+    "name": "1401 Basmati Rice (Raw, Steam, Sella & Golden Sella)",
     "category": "rice",
     "categoryName": "Rice & Grains",
     "image": "assets/images/products/1401-basmati-rice.jpeg",
-    "origin": "Haryana / Punjab, India",
-    "packaging": "25kg / 50kg PP / Jute Bags",
-    "specs": "Average Grain Length: 7.70mm+, Moisture < 12.5%, Broken < 1%, High Swelling Index",
-    "description": "Hybrid variety noted for exceptional cooking volume, delightful aroma, and excellent grain integrity preferred across Middle East & Europe."
+    "origin": "India",
+    "packaging": "10 / 20 / 25 / 50 kg; PP / Jute / Non-woven bags",
+    "specs": "Varietal Purity Min. 92–95%, Average Grain Length 7.70–7.90 mm, Moisture Max. 12.5%, Sortex 100%",
+    "description": "Hybrid basmati variety noted for exceptional cooking volume, delightful aroma, and excellent grain integrity preferred across Middle East & Europe.",
+    "specTabs": [
+      {
+        "tabName": "1401 Basmati Rice",
+        "id": "1401-basmati-rice",
+        "parameters": [
+          { "param": "Origin", "spec": "India" },
+          { "param": "Product", "spec": "1401 Basmati Rice" },
+          { "param": "Product Form", "spec": "Raw / Steam / White Sella / Golden Sella / Parboiled" },
+          { "param": "Varietal Purity", "spec": "Min. 92–95%" },
+          { "param": "Average Grain Length", "spec": "7.70–7.90 mm" },
+          { "param": "Moisture", "spec": "Max. 12.5%" },
+          { "param": "Broken Grains", "spec": "Max. 1–2%" },
+          { "param": "Foreign Matter", "spec": "Max. 0.1%" },
+          { "param": "Damaged / Discoloured Grains", "spec": "Max. 1%" },
+          { "param": "Chalky Grains", "spec": "Max. 5% (Raw); lower for Sella" },
+          { "param": "Admixture / Other Varieties", "spec": "Max. 5–8%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "White (Raw/Steam) / Creamy to Golden (Sella)" },
+          { "param": "Aroma & Flavour", "spec": "Characteristic Basmati aroma and flavour" },
+          { "param": "Length/Breadth Ratio", "spec": "Min. 3.5" },
+          { "param": "Elongation Ratio", "spec": "Min. 1.7" },
+          { "param": "Sortex", "spec": "100%" },
+          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
+          { "param": "Pesticide Residues", "spec": "Compliant with applicable destination-country MRLs*" },
+          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg" },
+          { "param": "Packaging Material", "spec": "PP / Jute / Non-woven bags" }
+        ]
+      }
+    ],
+    "qaHtml": `<div class="qa-block" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; margin-top:20px;">
+      <h4 style="font-size:0.98rem; font-weight:700; color:#0f172a; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:8px; height:8px; background:#16a34a; border-radius:50%;"></span>
+        Export Quality &amp; Compliance Standards
+      </h4>
+      <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:14px 16px; margin-bottom:12px;">
+        <p style="font-size:0.84rem; color:#334155; line-height:1.6; margin:0;">
+          Specifications are standard commercial export specifications and may be customized according to variety, processing type, grade, buyer requirements and applicable destination-country regulations. Final specifications are confirmed against the agreed purchase specification and COA.
+        </p>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:8px;">
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">100% Sortex Cleaned</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Grain Length 7.70–7.90 mm</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">High Swelling Index</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Destination MRL Compliant</span>
+      </div>
+    </div>`
   },
-  {
-    "id": "rice-traditional-basmati",
-    "slug": "traditional-authentic-basmati-rice",
-    "name": "Traditional Authentic Basmati Rice (Aged Himalayan)",
-    "category": "rice",
-    "categoryName": "Rice & Grains",
-    "image": "assets/images/products/traditional-authentic-basmati.jpg",
-    "origin": "Himalayan Foothills, India",
-    "packaging": "5kg / 10kg / 25kg Master Bags",
-    "specs": "Aged 1-2 Years, Grain Length 7.3mm, Unmatched Natural Fragrance, Sortex 100%",
-    "description": "Naturally aged classic authentic Basmati rice harvested from the Himalayan foothills, the pinnacle of royal gourmet dining."
-  },
+
   {
     "id": "rice-ir64-non-basmati",
     "slug": "ir-64-parboiled-raw-rice",
-    "name": "IR-64 Long Grain Rice (Parboiled & Raw 5% - 25% Broken)",
+    "name": "IR64 Non-Basmati Rice (Raw, Parboiled & Sella)",
     "category": "rice",
     "categoryName": "Rice & Grains",
     "image": "assets/images/products/ir64-long-grain-rice.png",
-    "origin": "Andhra Pradesh / Maharashtra / Gujarat, India",
-    "packaging": "25kg / 50kg PP Bags / Bulk Containers",
-    "specs": "Grain Length: 6.0mm+, Broken: 5% / 25% / 100%, Moisture < 14%, Double Polished",
-    "description": "India's most exported staple non-basmati rice variety, ideal for global food security tenders, institutional catering, and retail."
+    "origin": "India",
+    "packaging": "25 / 50 kg; PP / Jute / Non-woven bags",
+    "specs": "Varietal Purity Min. 95–99%, Average Grain Length 5.8–6.5 mm, Broken 5% / 15% / 25%, Sortex 100%",
+    "description": "India's premier high-demand staple non-basmati rice variety, ideal for global food security tenders, institutional catering, and international retail distribution.",
+    "specTabs": [
+      {
+        "tabName": "IR64 Non-Basmati Rice",
+        "id": "ir64-non-basmati",
+        "parameters": [
+          { "param": "Origin", "spec": "India" },
+          { "param": "Product", "spec": "IR64 Non-Basmati Rice" },
+          { "param": "Product Form", "spec": "Raw / Parboiled / Sella" },
+          { "param": "Varietal Purity", "spec": "Min. 95–99%" },
+          { "param": "Average Grain Length", "spec": "5.8–6.5 mm" },
+          { "param": "Moisture", "spec": "Max. 13–14%" },
+          { "param": "Broken Grains", "spec": "5% / 15% / 25% (as per grade)" },
+          { "param": "Foreign Matter", "spec": "Max. 0.5%" },
+          { "param": "Damaged / Discoloured Grains", "spec": "Max. 1%" },
+          { "param": "Chalky Grains", "spec": "As per grade" },
+          { "param": "Admixture / Other Varieties", "spec": "Max. 1–5%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "White / Golden-Amber" },
+          { "param": "Aroma & Flavour", "spec": "Mild / Neutral" },
+          { "param": "Length/Breadth Ratio", "spec": "Not Applicable" },
+          { "param": "Elongation Ratio", "spec": "Not Applicable" },
+          { "param": "Sortex", "spec": "100%" },
+          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
+          { "param": "Pesticide Residues", "spec": "Compliant with applicable destination-country MRLs*" },
+          { "param": "Packing", "spec": "25 / 50 kg" },
+          { "param": "Packaging Material", "spec": "PP / Jute / Non-woven bags" }
+        ]
+      }
+    ],
+    "qaHtml": `<div class="qa-block" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; margin-top:20px;">
+      <h4 style="font-size:0.98rem; font-weight:700; color:#0f172a; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:8px; height:8px; background:#16a34a; border-radius:50%;"></span>
+        Export Quality &amp; Compliance Standards
+      </h4>
+      <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:14px 16px; margin-bottom:12px;">
+        <p style="font-size:0.84rem; color:#334155; line-height:1.6; margin:0;">
+          Specifications are standard commercial export specifications and may be customized according to variety, processing type, grade, buyer requirements and applicable destination-country regulations. Final specifications are confirmed against the agreed purchase specification and COA.
+        </p>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:8px;">
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">100% Sortex Cleaned</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Average Grain Length 5.8–6.5 mm</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Available 5% / 15% / 25% Broken</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Destination MRL Compliant</span>
+      </div>
+    </div>`
   },
   {
     "id": "rice-sona-masoori",
     "slug": "sona-masoori-raw-steam-rice",
-    "name": "Sona Masoori Rice (Raw & Steam Table Rice)",
+    "name": "Sona Masoori Rice (Raw, Steam, Sella & Parboiled)",
     "category": "rice",
     "categoryName": "Rice & Grains",
     "image": "assets/images/products/sona-masoori-rice.jpeg",
-    "origin": "Karnataka / Andhra Pradesh, India",
-    "packaging": "5kg / 10kg / 20kg / 25kg Poly Woven Bags",
-    "specs": "Medium Grain, Lightweight, Low Starch, Aged Quality, Moisture < 13%",
-    "description": "Delicate medium-grain aromatic table rice, highly valued across international diaspora communities for its light texture and easy digestibility."
+    "origin": "India",
+    "packaging": "10 / 20 / 25 / 50 kg; PP / Jute / Non-woven bags",
+    "specs": "Varietal Purity Min. 95%, Average Grain Length 5.20–5.50 mm, Moisture Max. 13%, Sortex 100%",
+    "description": "Delicate aromatic medium-grain table rice, widely exported across international markets for its light texture, mild natural aroma, low starch content, and easy digestibility.",
+    "specTabs": [
+      {
+        "tabName": "Sona Masoori Rice",
+        "id": "sona-masoori-rice",
+        "parameters": [
+          { "param": "Origin", "spec": "India" },
+          { "param": "Product", "spec": "Sona Masoori (Sona Masuri) Non-Basmati Rice" },
+          { "param": "Product Form", "spec": "Raw / Steam / Sella / Parboiled" },
+          { "param": "Varietal Purity", "spec": "Min. 95%" },
+          { "param": "Average Grain Length", "spec": "5.20–5.50 mm" },
+          { "param": "Moisture", "spec": "Max. 13%" },
+          { "param": "Broken Grains", "spec": "Max. 1–2% (Premium) / up to 5% (Standard)" },
+          { "param": "Foreign Matter", "spec": "Nil / Max. 0.1–0.5%" },
+          { "param": "Damaged / Discoloured Grains", "spec": "Max. 1–2%" },
+          { "param": "Chalky Grains", "spec": "Max. 2–5%" },
+          { "param": "Admixture / Other Varieties", "spec": "Max. 5%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "White (Raw/Steam) / Light Creamy to Golden (Sella/Parboiled)" },
+          { "param": "Aroma & Flavour", "spec": "Mild natural aroma, light & aromatic" },
+          { "param": "Sortex", "spec": "100%" },
+          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
+          { "param": "Pesticide Residues", "spec": "Compliant with applicable destination-country MRLs*" },
+          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg" },
+          { "param": "Packaging Material", "spec": "PP / Jute / Non-woven bags" }
+        ]
+      }
+    ],
+    "qaHtml": `<div class="qa-block" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; margin-top:20px;">
+      <h4 style="font-size:0.98rem; font-weight:700; color:#0f172a; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:8px; height:8px; background:#16a34a; border-radius:50%;"></span>
+        Export Quality &amp; Compliance Standards
+      </h4>
+      <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:14px 16px; margin-bottom:12px;">
+        <p style="font-size:0.84rem; color:#334155; line-height:1.6; margin:0;">
+          Specifications are standard commercial export specifications and may be customized according to variety, processing type, grade, buyer requirements and applicable destination-country regulations. Final specifications are confirmed against the agreed purchase specification and COA.
+        </p>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:8px;">
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">100% Sortex Cleaned</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Average Grain Length 5.20–5.50 mm</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Light &amp; Aromatic Profile</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Low Starch &amp; Highly Digestible</span>
+      </div>
+    </div>`
   },
+
   {
-    "id": "rice-pr11-pr14",
-    "slug": "pr-11-pr-14-non-basmati-rice",
-    "name": "PR-11 / PR-14 Long Grain Non-Basmati Rice",
+    "id": "rice-pr11-non-basmati",
+    "slug": "pr-11-non-basmati-rice",
+    "name": "PR 11 Non-Basmati Rice (Raw, Parboiled & Sella)",
     "category": "rice",
     "categoryName": "Rice & Grains",
     "image": "assets/images/products/pr-11-non-basmati-rice.jpg",
-    "origin": "Punjab / Haryana, India",
-    "packaging": "25kg / 50kg Bags",
-    "specs": "Grain Length: 6.8mm+, Raw / Steam / Sella, Moisture < 13%, Broken < 5%",
-    "description": "Hard milled long grain non-basmati rice with firm grain texture, bright sheen, and high swelling index."
+    "origin": "India",
+    "packaging": "25 / 50 kg; PP / Jute / Non-woven bags",
+    "specs": "Varietal Purity Min. 95–99%, Average Grain Length 6.8–7.0 mm, Broken 5% / 15% / 25%, Sortex 100%",
+    "description": "Premium PR 11 long grain non-basmati rice with hard firm grain texture, bright sheen, and high swelling index, processed for bulk global export.",
+    "specTabs": [
+      {
+        "tabName": "PR 11 Non-Basmati Rice",
+        "id": "pr-11-non-basmati",
+        "parameters": [
+          { "param": "Origin", "spec": "India" },
+          { "param": "Product", "spec": "PR 11 Non-Basmati Rice" },
+          { "param": "Product Form", "spec": "Raw / Parboiled / Sella" },
+          { "param": "Varietal Purity", "spec": "Min. 95–99%" },
+          { "param": "Average Grain Length", "spec": "6.8–7.0 mm" },
+          { "param": "Moisture", "spec": "Max. 13–14%" },
+          { "param": "Broken Grains", "spec": "5% / 15% / 25% (as per grade)" },
+          { "param": "Foreign Matter", "spec": "Max. 0.5%" },
+          { "param": "Damaged / Discoloured Grains", "spec": "Max. 1%" },
+          { "param": "Chalky Grains", "spec": "As per grade" },
+          { "param": "Admixture / Other Varieties", "spec": "Max. 1–5%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "White / Golden-Amber" },
+          { "param": "Aroma & Flavour", "spec": "Mild / Neutral" },
+          { "param": "Length/Breadth Ratio", "spec": "As per grade" },
+          { "param": "Elongation Ratio", "spec": "As per grade" },
+          { "param": "Sortex", "spec": "100%" },
+          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
+          { "param": "Pesticide Residues", "spec": "Compliant with applicable destination-country MRLs*" },
+          { "param": "Packing", "spec": "25 / 50 kg" },
+          { "param": "Packaging Material", "spec": "PP / Jute / Non-woven bags" }
+        ]
+      }
+    ],
+    "qaHtml": `<div class="qa-block" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; margin-top:20px;">
+      <h4 style="font-size:0.98rem; font-weight:700; color:#0f172a; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:8px; height:8px; background:#16a34a; border-radius:50%;"></span>
+        Export Quality &amp; Compliance Standards
+      </h4>
+      <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:14px 16px; margin-bottom:12px;">
+        <p style="font-size:0.84rem; color:#334155; line-height:1.6; margin:0;">
+          Specifications are standard commercial export specifications and may be customized according to variety, processing type, grade, buyer requirements and applicable destination-country regulations. Final specifications are confirmed against the agreed purchase specification and COA.
+        </p>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:8px;">
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">100% Sortex Cleaned</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Grain Length 6.8–7.0 mm</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Available 5% / 15% / 25% Broken</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Destination MRL Compliant</span>
+      </div>
+    </div>`
+  },
+  {
+    "id": "rice-pr14-non-basmati",
+    "slug": "pr-14-non-basmati-rice",
+    "name": "PR 14 Non-Basmati Rice (Raw, Parboiled & Sella)",
+    "category": "rice",
+    "categoryName": "Rice & Grains",
+    "image": "assets/images/products/pr-11-non-basmati-rice.jpg",
+    "origin": "India",
+    "packaging": "25 / 50 kg; PP / Jute / Non-woven bags",
+    "specs": "Varietal Purity Min. 95–99%, Average Grain Length 6.8–7.0 mm, Broken 5% / 15% / 25%, Sortex 100%",
+    "description": "Premium PR 14 long grain non-basmati rice with hard firm grain texture, bright sheen, and high swelling index, processed for bulk global export.",
+    "specTabs": [
+      {
+        "tabName": "PR 14 Non-Basmati Rice",
+        "id": "pr-14-non-basmati",
+        "parameters": [
+          { "param": "Origin", "spec": "India" },
+          { "param": "Product", "spec": "PR 14 Non-Basmati Rice" },
+          { "param": "Product Form", "spec": "Raw / Parboiled / Sella" },
+          { "param": "Varietal Purity", "spec": "Min. 95–99%" },
+          { "param": "Average Grain Length", "spec": "6.8–7.0 mm" },
+          { "param": "Moisture", "spec": "Max. 13–14%" },
+          { "param": "Broken Grains", "spec": "5% / 15% / 25% (as per grade)" },
+          { "param": "Foreign Matter", "spec": "Max. 0.5%" },
+          { "param": "Damaged / Discoloured Grains", "spec": "Max. 1%" },
+          { "param": "Chalky Grains", "spec": "As per grade" },
+          { "param": "Admixture / Other Varieties", "spec": "Max. 1–5%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "White / Golden-Amber" },
+          { "param": "Aroma & Flavour", "spec": "Mild / Neutral" },
+          { "param": "Length/Breadth Ratio", "spec": "As per grade" },
+          { "param": "Elongation Ratio", "spec": "As per grade" },
+          { "param": "Sortex", "spec": "100%" },
+          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
+          { "param": "Pesticide Residues", "spec": "Compliant with applicable destination-country MRLs*" },
+          { "param": "Packing", "spec": "25 / 50 kg" },
+          { "param": "Packaging Material", "spec": "PP / Jute / Non-woven bags" }
+        ]
+      }
+    ],
+    "qaHtml": `<div class="qa-block" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; margin-top:20px;">
+      <h4 style="font-size:0.98rem; font-weight:700; color:#0f172a; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:8px; height:8px; background:#16a34a; border-radius:50%;"></span>
+        Export Quality &amp; Compliance Standards
+      </h4>
+      <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:14px 16px; margin-bottom:12px;">
+        <p style="font-size:0.84rem; color:#334155; line-height:1.6; margin:0;">
+          Specifications are standard commercial export specifications and may be customized according to variety, processing type, grade, buyer requirements and applicable destination-country regulations. Final specifications are confirmed against the agreed purchase specification and COA.
+        </p>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:8px;">
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">100% Sortex Cleaned</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Grain Length 6.8–7.0 mm</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Available 5% / 15% / 25% Broken</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Destination MRL Compliant</span>
+      </div>
+    </div>`
   },
   {
     "id": "rice-swarna",
     "slug": "swarna-rice-parboiled",
-    "name": "Swarna Rice (Parboiled & Raw Medium Grain)",
+    "name": "Swarna Non-Basmati Rice (Raw & Parboiled Medium Grain)",
     "category": "rice",
     "categoryName": "Rice & Grains",
     "image": "assets/images/products/swarna-rice.jpg",
-    "origin": "West Bengal / Odisha / Andhra, India",
-    "packaging": "50kg PP Bags",
-    "specs": "Short-Medium Grain, Sortex Cleaned, Broken < 5%, Moisture < 14%",
-    "description": "Economical high-energy short grain parboiled rice widely exported to African, Asian, and Middle Eastern bulk markets."
+    "origin": "India",
+    "packaging": "25 / 50 kg; PP / Jute / Non-woven bags",
+    "specs": "Varietal Purity Min. 95–99%, Average Grain Length 5.3–5.8 mm, Broken 5% / 15% / 25%, Sortex 100%",
+    "description": "Economical high-energy short-to-medium grain parboiled and raw rice widely exported to African, Asian, and Middle Eastern bulk markets for institutional and retail supply.",
+    "specTabs": [
+      {
+        "tabName": "Swarna Non-Basmati Rice",
+        "id": "swarna-non-basmati",
+        "parameters": [
+          { "param": "Origin", "spec": "India" },
+          { "param": "Product", "spec": "Swarna Non-Basmati Rice" },
+          { "param": "Product Form", "spec": "Raw / Parboiled" },
+          { "param": "Varietal Purity", "spec": "Min. 95–99%" },
+          { "param": "Average Grain Length", "spec": "5.3–5.8 mm" },
+          { "param": "Moisture", "spec": "Max. 13–14%" },
+          { "param": "Broken Grains", "spec": "5% / 15% / 25% (as per grade)" },
+          { "param": "Foreign Matter", "spec": "Max. 0.5%" },
+          { "param": "Damaged / Discoloured Grains", "spec": "Max. 1%" },
+          { "param": "Chalky Grains", "spec": "As per grade" },
+          { "param": "Admixture / Other Varieties", "spec": "Max. 1–5%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "White / Creamy-White" },
+          { "param": "Aroma & Flavour", "spec": "Mild / Characteristic of Swarna rice" },
+          { "param": "Length/Breadth Ratio", "spec": "As per grade" },
+          { "param": "Elongation Ratio", "spec": "As per grade" },
+          { "param": "Sortex", "spec": "100%" },
+          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
+          { "param": "Pesticide Residues", "spec": "Compliant with applicable destination-country MRLs*" },
+          { "param": "Packing", "spec": "25 / 50 kg" },
+          { "param": "Packaging Material", "spec": "PP / Jute / Non-woven bags" }
+        ]
+      }
+    ],
+    "qaHtml": `<div class="qa-block" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; margin-top:20px;">
+      <h4 style="font-size:0.98rem; font-weight:700; color:#0f172a; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:8px; height:8px; background:#16a34a; border-radius:50%;"></span>
+        Export Quality &amp; Compliance Standards
+      </h4>
+      <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:14px 16px; margin-bottom:12px;">
+        <p style="font-size:0.84rem; color:#334155; line-height:1.6; margin:0;">
+          Specifications are standard commercial export specifications and may be customized according to variety, processing type, grade, buyer requirements and applicable destination-country regulations. Final specifications are confirmed against the agreed purchase specification and COA.
+        </p>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:8px;">
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">100% Sortex Cleaned</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Average Grain Length 5.3–5.8 mm</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Available 5% / 15% / 25% Broken</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Destination MRL Compliant</span>
+      </div>
+    </div>`
   },
 
   // ==========================================
@@ -124,27 +538,38 @@
     "category": "spices",
     "categoryName": "Spices & Seasonings",
     "image": "assets/images/products/cumin-seeds.jpg",
-    "origin": "Gujarat / Rajasthan, India",
+    "origin": "India",
     "packaging": "10 / 20 / 25 / 50 kg; customized retail packs",
-    "specs": "Purity Min. 99%, Moisture Max. 10%, Foreign Matter Max. 1%, Absent Infestation",
-    "description": "Authentic Indian Cumin Seeds (Whole Jeera), machine cleaned and Sortex sorted under rigorous export quality standards with minimum 99% purity and characteristic natural aroma.",
+    "specs": "Europe Quality / Sortex Cleaned, Purity ≥99.5%, Moisture ≤9.0%, Volatile Oil ≥2.5%",
+    "description": "Authentic Indian Cumin Seeds (Whole Cumin Seeds - Cuminum cyminum L.), Europe Quality / Sortex Cleaned under rigorous export quality standards with minimum 99.5% purity and characteristic strong aroma.",
     "specTabs": [
       {
         "tabName": "Cumin Seeds (Jeera Whole)",
         "id": "cumin-seeds",
         "parameters": [
+          { "param": "Product", "spec": "Whole Cumin Seeds" },
+          { "param": "Botanical Name", "spec": "Cuminum cyminum L." },
+          { "param": "Grade", "spec": "Europe Quality / Sortex Cleaned" },
+          { "param": "Purity", "spec": "≥99.5%" },
+          { "param": "Foreign Matter", "spec": "≤0.50%" },
+          { "param": "Admixture", "spec": "≤0.50%" },
+          { "param": "Moisture", "spec": "≤9.0%" },
+          { "param": "Volatile Oil", "spec": "≥2.5%" },
+          { "param": "Total Ash", "spec": "≤9.5%" },
+          { "param": "Acid Insoluble Ash", "spec": "≤1.5%" },
+          { "param": "Extraneous Matter", "spec": "≤0.50%" },
+          { "param": "Insect Damaged", "spec": "≤1.0%" },
+          { "param": "Mouldy Seeds", "spec": "≤1.0%" },
+          { "param": "Aroma", "spec": "Characteristic, strong and aromatic" },
+          { "param": "Salmonella", "spec": "Absent" },
+          { "param": "E. coli", "spec": "Absent / compliant with agreed limit" },
+          { "param": "Aflatoxin", "spec": "Complies with destination-market limits" },
+          { "param": "Ochratoxin A", "spec": "Complies with applicable EU limits" },
+          { "param": "Pesticide Residues", "spec": "Complies with US EPA / EU MRL" },
+          { "param": "Treatment", "spec": "Steam sterilized, if required" },
+          { "param": "GMO", "spec": "Non-GMO" },
           { "param": "Origin", "spec": "India" },
-          { "param": "Product", "spec": "Whole Cumin Seeds (Jeera)" },
-          { "param": "Purity", "spec": "Min. 99%" },
-          { "param": "Moisture", "spec": "Max. 10%" },
-          { "param": "Foreign Matter", "spec": "Max. 1%" },
-          { "param": "Admixture", "spec": "Max. 1%" },
-          { "param": "Damaged Seeds", "spec": "Max. 2%" },
-          { "param": "Insect Infestation", "spec": "Absent" },
-          { "param": "Colour", "spec": "Natural greenish-brown" },
-          { "param": "Aroma", "spec": "Characteristic cumin aroma" },
-          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg" },
-          { "param": "Form", "spec": "Whole Seeds" }
+          { "param": "Packaging", "spec": "10 / 20 / 25 / 50 kg; customized retail packs" }
         ]
       }
     ]
@@ -157,28 +582,35 @@
     "categoryName": "Spices & Seasonings",
     "image": "assets/images/products/cumin-powder.jpg",
     "origin": "India",
-    "packaging": "10 / 20 / 25 kg bulk; customized retail packs",
-    "specs": "Purity Min. 99%, Moisture Max. 10%, 60–100 Mesh, Zero Added Colour",
-    "description": "Export-grade freshly pulverized Indian cumin powder (60–100 Mesh) with natural greenish-brown to brown hue and distinctive robust aroma. 100% pure without preservatives or added colours.",
+    "packaging": "10 / 20 / 25 / 50 kg or as per buyer requirement",
+    "specs": "Purity Min. 99%, Moisture Max. 10%, Volatile Oil Min. 1.5 ml/100 g, Fine Powder",
+    "description": "Export-grade freshly pulverized 100% pure Indian cumin powder with natural greenish-brown to brown hue, characteristic robust aroma, and tested compliant with international standards.",
     "specTabs": [
       {
         "tabName": "Cumin Powder (Ground Jeera)",
         "id": "cumin-powder",
         "parameters": [
-          { "param": "Origin", "spec": "India" },
           { "param": "Product", "spec": "Cumin Powder" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Form", "spec": "Fine Powder" },
           { "param": "Purity", "spec": "Min. 99%" },
           { "param": "Moisture", "spec": "Max. 10%" },
           { "param": "Foreign Matter", "spec": "Max. 0.5%" },
-          { "param": "Admixture", "spec": "Max. 0.5%" },
-          { "param": "Particle Size", "spec": "60–100 Mesh" },
-          { "param": "Colour", "spec": "Natural greenish-brown to brown" },
-          { "param": "Aroma", "spec": "Characteristic cumin aroma" },
+          { "param": "Admixture", "spec": "Max. 1.0%" },
+          { "param": "Damaged / Extraneous Matter", "spec": "Max. 1.0%" },
           { "param": "Insect Infestation", "spec": "Absent" },
-          { "param": "Added Colour", "spec": "None" },
-          { "param": "Added Preservatives", "spec": "None" },
-          { "param": "Packing", "spec": "10 / 20 / 25 kg bulk; customized retail packs" },
-          { "param": "Form", "spec": "Fine Powder" }
+          { "param": "Colour", "spec": "Natural greenish-brown to brown" },
+          { "param": "Aroma & Flavour", "spec": "Characteristic of cumin; free from off-odour" },
+          { "param": "Total Ash", "spec": "Max. 14%" },
+          { "param": "Acid Insoluble Ash", "spec": "Max. 3%" },
+          { "param": "Volatile Oil", "spec": "Min. 1.5 ml/100 g" },
+          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
+          { "param": "Total Aflatoxins", "spec": "Max. 10 µg/kg*" },
+          { "param": "Lead", "spec": "Max. 0.90 mg/kg*" },
+          { "param": "Salmonella", "spec": "Absent in 25 g" },
+          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg or as per buyer requirement" },
+          { "param": "Shelf Life", "spec": "12–24 months, subject to packaging and storage conditions" },
+          { "param": "Storage", "spec": "Store in a cool, dry place away from direct sunlight and moisture" }
         ]
       }
     ]
@@ -186,38 +618,287 @@
   {
     "id": "spices-coriander-seeds",
     "slug": "coriander-seeds-dhaniya",
-    "name": "Coriander Seeds & Ground Powder (Dhaniya)",
+    "name": "Coriander Seeds (Whole Dhaniya & Ground Powder)",
+    "category": "spices",
+    "categoryName": "Spices & Seasonings",
+    "image": "assets/images/products/coriander-seeds-whole.png",
+    "origin": "India",
+    "packaging": "10 / 20 / 25 / 50 kg or as per buyer requirement",
+    "specs": "Europe Quality / Sortex Cleaned, Purity ≥99.0%, Moisture ≤9.0%, Volatile Oil ≥0.3%",
+    "description": "Selected whole green coriander seeds (Coriandrum sativum L.) and pure ground powder, Europe Quality / Sortex Cleaned with distinctive fresh aromatic citrus fragrance.",
+    "specTabs": [
+      {
+        "tabName": "1) Whole Coriander Seeds",
+        "id": "coriander-seeds",
+        "parameters": [
+          { "param": "Product", "spec": "Whole Coriander Seeds" },
+          { "param": "Botanical Name", "spec": "Coriandrum sativum L." },
+          { "param": "Grade", "spec": "Europe Quality / Sortex Cleaned" },
+          { "param": "Purity", "spec": "≥99.0%" },
+          { "param": "Foreign Matter", "spec": "≤0.50%" },
+          { "param": "Admixture", "spec": "≤1.0%" },
+          { "param": "Moisture", "spec": "≤9.0%" },
+          { "param": "Volatile Oil", "spec": "≥0.3%" },
+          { "param": "Total Ash", "spec": "≤7.0%" },
+          { "param": "Acid Insoluble Ash", "spec": "≤1.5%" },
+          { "param": "Damaged / Insect Infested", "spec": "≤1.0%" },
+          { "param": "Mould", "spec": "≤1.0%" },
+          { "param": "Colour", "spec": "Natural greenish-brown to brown" },
+          { "param": "Aroma", "spec": "Characteristic, fresh and aromatic" },
+          { "param": "Salmonella", "spec": "Absent" },
+          { "param": "E. coli", "spec": "Absent / agreed limit" },
+          { "param": "Aflatoxin", "spec": "Complies with destination requirements" },
+          { "param": "Pesticide Residues", "spec": "US/EU MRL compliant" },
+          { "param": "GMO", "spec": "Non-GMO" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Packaging", "spec": "25kg / 40kg Jute / PP Bags; customized bulk & retail packs" }
+        ]
+      },
+      {
+        "tabName": "2) Coriander Powder",
+        "id": "coriander-powder-tab",
+        "parameters": [
+          { "param": "Product", "spec": "Coriander Powder" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Form", "spec": "Fine Powder" },
+          { "param": "Purity", "spec": "Min. 99%" },
+          { "param": "Moisture", "spec": "Max. 10%" },
+          { "param": "Foreign Matter", "spec": "Max. 0.5%" },
+          { "param": "Admixture", "spec": "Max. 1.0%" },
+          { "param": "Damaged / Extraneous Matter", "spec": "Max. 1.0%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "Natural light brown to yellowish-brown" },
+          { "param": "Aroma & Flavour", "spec": "Characteristic coriander aroma and flavour; free from off-odour" },
+          { "param": "Total Ash", "spec": "Max. 7%" },
+          { "param": "Acid Insoluble Ash", "spec": "Max. 1.5%" },
+          { "param": "Volatile Oil", "spec": "Min. 0.3 ml/100 g" },
+          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
+          { "param": "Total Aflatoxins", "spec": "Max. 10 µg/kg*" },
+          { "param": "Lead", "spec": "Max. 0.90 mg/kg*" },
+          { "param": "Salmonella", "spec": "Absent in 25 g" },
+          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg or as per buyer requirement" },
+          { "param": "Shelf Life", "spec": "12–24 months, subject to packaging and storage conditions" },
+          { "param": "Storage", "spec": "Store in a cool, dry place away from direct sunlight and moisture" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "spices-coriander-powder",
+    "slug": "coriander-powder",
+    "name": "Coriander Powder (Pure Ground Dhaniya Powder)",
     "category": "spices",
     "categoryName": "Spices & Seasonings",
     "image": "assets/images/products/coriander-powder.jpg",
-    "origin": "Rajasthan / Madhya Pradesh / Gujarat, India",
-    "packaging": "25kg / 40kg Jute / PP Bags",
-    "specs": "Eagle / Single Parrot / Double Parrot Quality, Greenish Whole & Fine Ground Powder",
-    "description": "Selected whole green coriander seeds and aromatic fine ground powder with distinctive citrusy fragrance and rich essential oil content."
+    "origin": "India",
+    "packaging": "10 / 20 / 25 / 50 kg or as per buyer requirement",
+    "specs": "Purity Min. 99%, Moisture Max. 10%, Volatile Oil Min. 0.3 ml/100 g, Fine Powder",
+    "description": "Export-grade freshly pulverized 100% pure Indian coriander powder with natural light brown to yellowish-brown hue, characteristic coriander aroma and flavour, and tested compliant with international standards.",
+    "specTabs": [
+      {
+        "tabName": "Coriander Powder",
+        "id": "coriander-powder",
+        "parameters": [
+          { "param": "Product", "spec": "Coriander Powder" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Form", "spec": "Fine Powder" },
+          { "param": "Purity", "spec": "Min. 99%" },
+          { "param": "Moisture", "spec": "Max. 10%" },
+          { "param": "Foreign Matter", "spec": "Max. 0.5%" },
+          { "param": "Admixture", "spec": "Max. 1.0%" },
+          { "param": "Damaged / Extraneous Matter", "spec": "Max. 1.0%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "Natural light brown to yellowish-brown" },
+          { "param": "Aroma & Flavour", "spec": "Characteristic coriander aroma and flavour; free from off-odour" },
+          { "param": "Total Ash", "spec": "Max. 7%" },
+          { "param": "Acid Insoluble Ash", "spec": "Max. 1.5%" },
+          { "param": "Volatile Oil", "spec": "Min. 0.3 ml/100 g" },
+          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
+          { "param": "Total Aflatoxins", "spec": "Max. 10 µg/kg*" },
+          { "param": "Lead", "spec": "Max. 0.90 mg/kg*" },
+          { "param": "Salmonella", "spec": "Absent in 25 g" },
+          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg or as per buyer requirement" },
+          { "param": "Shelf Life", "spec": "12–24 months, subject to packaging and storage conditions" },
+          { "param": "Storage", "spec": "Store in a cool, dry place away from direct sunlight and moisture" }
+        ]
+      }
+    ]
   },
   {
     "id": "spices-fennel",
     "slug": "fennel-seeds-saunf",
-    "name": "Fennel Seeds (Lucknowi Green & Bold Saunf)",
+    "name": "Fennel Seeds (Whole Saunf & Ground Powder)",
     "category": "spices",
     "categoryName": "Spices & Seasonings",
     "image": "assets/images/products/fennel-seeds.jpg",
-    "origin": "Gujarat / Rajasthan, India",
-    "packaging": "25kg / 50kg PP Bags",
-    "specs": "Purity 99% / 99.5% Sortex, Green Bold & Small Lucknowi, Moisture < 9%",
-    "description": "Sweet, licorice-scented green fennel seeds meticulously cleaned for seasonings, tea blends, mouth fresheners, and confectionery."
+    "origin": "India",
+    "packaging": "10 / 20 / 25 / 50 kg or as per buyer requirement",
+    "specs": "Europe Quality / Bold Green, Purity ≥99.0%, Moisture ≤10.0%, Volatile Oil ≥1.5%",
+    "description": "Sweet, licorice-scented green fennel seeds (Foeniculum vulgare Mill.) and fine fennel powder meticulously processed for seasonings, tea blends, mouth fresheners, and confectionery.",
+    "specTabs": [
+      {
+        "tabName": "1) Whole Fennel Seeds",
+        "id": "fennel-seeds",
+        "parameters": [
+          { "param": "Product", "spec": "Whole Fennel Seeds" },
+          { "param": "Botanical Name", "spec": "Foeniculum vulgare Mill." },
+          { "param": "Grade", "spec": "Europe Quality / Bold Green" },
+          { "param": "Purity", "spec": "≥99.0%" },
+          { "param": "Foreign Matter", "spec": "≤0.50%" },
+          { "param": "Admixture", "spec": "≤1.0%" },
+          { "param": "Moisture", "spec": "≤10.0%" },
+          { "param": "Volatile Oil", "spec": "≥1.5%" },
+          { "param": "Total Ash", "spec": "≤9.0%" },
+          { "param": "Acid Insoluble Ash", "spec": "≤1.5%" },
+          { "param": "Damaged Seeds", "spec": "≤1.0%" },
+          { "param": "Mould", "spec": "≤1.0%" },
+          { "param": "Colour", "spec": "Green to greenish-brown" },
+          { "param": "Aroma", "spec": "Sweet, characteristic fennel" },
+          { "param": "Salmonella", "spec": "Absent" },
+          { "param": "E. coli", "spec": "Absent / agreed limit" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Packaging", "spec": "25kg / 50kg PP Bags; customized packs" }
+        ]
+      },
+      {
+        "tabName": "2) Fennel Powder",
+        "id": "fennel-powder-tab",
+        "parameters": [
+          { "param": "Product", "spec": "Fennel Powder" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Form", "spec": "Fine Powder" },
+          { "param": "Purity", "spec": "Min. 99%" },
+          { "param": "Moisture", "spec": "Max. 10%" },
+          { "param": "Foreign Matter", "spec": "Max. 0.5%" },
+          { "param": "Admixture", "spec": "Max. 1.0%" },
+          { "param": "Damaged / Extraneous Matter", "spec": "Max. 1.0%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "Natural greenish to light brown" },
+          { "param": "Aroma & Flavour", "spec": "Characteristic sweet fennel aroma and flavour; free from off-odour" },
+          { "param": "Total Ash", "spec": "Max. 10%" },
+          { "param": "Acid Insoluble Ash", "spec": "Max. 2%" },
+          { "param": "Volatile Oil", "spec": "Min. 1.5 ml/100 g" },
+          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
+          { "param": "Total Aflatoxins", "spec": "Max. 10 µg/kg*" },
+          { "param": "Lead", "spec": "Max. 0.90 mg/kg*" },
+          { "param": "Salmonella", "spec": "Absent in 25 g" },
+          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg or as per buyer requirement" },
+          { "param": "Shelf Life", "spec": "12–24 months, subject to packaging and storage conditions" },
+          { "param": "Storage", "spec": "Store in a cool, dry place away from direct sunlight and moisture" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "spices-fennel-powder",
+    "slug": "fennel-powder",
+    "name": "Fennel Powder (Ground Saunf Powder)",
+    "category": "spices",
+    "categoryName": "Spices & Seasonings",
+    "image": "assets/images/products/fennel-seeds.jpg",
+    "origin": "India",
+    "packaging": "10 / 20 / 25 / 50 kg or as per buyer requirement",
+    "specs": "Purity Min. 99%, Moisture Max. 10%, Volatile Oil Min. 1.5 ml/100 g, Fine Powder",
+    "description": "Export-grade freshly pulverized 100% pure Indian fennel powder with natural greenish to light brown hue, sweet licorice-like aroma, and tested compliant with international standards.",
+    "specTabs": [
+      {
+        "tabName": "Fennel Powder",
+        "id": "fennel-powder",
+        "parameters": [
+          { "param": "Product", "spec": "Fennel Powder" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Form", "spec": "Fine Powder" },
+          { "param": "Purity", "spec": "Min. 99%" },
+          { "param": "Moisture", "spec": "Max. 10%" },
+          { "param": "Foreign Matter", "spec": "Max. 0.5%" },
+          { "param": "Admixture", "spec": "Max. 1.0%" },
+          { "param": "Damaged / Extraneous Matter", "spec": "Max. 1.0%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "Natural greenish to light brown" },
+          { "param": "Aroma & Flavour", "spec": "Characteristic sweet fennel aroma and flavour; free from off-odour" },
+          { "param": "Total Ash", "spec": "Max. 10%" },
+          { "param": "Acid Insoluble Ash", "spec": "Max. 2%" },
+          { "param": "Volatile Oil", "spec": "Min. 1.5 ml/100 g" },
+          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
+          { "param": "Total Aflatoxins", "spec": "Max. 10 µg/kg*" },
+          { "param": "Lead", "spec": "Max. 0.90 mg/kg*" },
+          { "param": "Salmonella", "spec": "Absent in 25 g" },
+          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg or as per buyer requirement" },
+          { "param": "Shelf Life", "spec": "12–24 months, subject to packaging and storage conditions" },
+          { "param": "Storage", "spec": "Store in a cool, dry place away from direct sunlight and moisture" }
+        ]
+      }
+    ]
   },
   {
     "id": "spices-turmeric",
     "slug": "turmeric-finger-powder",
-    "name": "Turmeric Finger (Salem & Nizamabad Polished Haldi)",
+    "name": "Turmeric Fingers (Whole Haldi & Pure Powder)",
     "category": "spices",
     "categoryName": "Spices & Seasonings",
     "image": "assets/images/products/turmeric-finger.jpg",
-    "origin": "Salem / Nizamabad / Sangli, India",
-    "packaging": "25kg / 50kg PP / Jute Bags",
-    "specs": "Curcumin 2.5% to 5.0%, Moisture < 10%, Machine Cleaned & Polished",
-    "description": "Golden yellow export-grade Indian turmeric fingers with high natural curcumin content, meticulously dried, machine cleaned, and polished."
+    "origin": "India",
+    "packaging": "10 / 20 / 25 / 50 kg or as per buyer requirement",
+    "specs": "Premium Export Grade, Curcumin ≥3.0%, Purity ≥99.0%, Moisture ≤10.0%",
+    "description": "Bright golden-yellow whole dried turmeric fingers (Curcuma longa L.) and fine pure turmeric powder with high natural active curcumin, meticulously dried, polished, and sorted for global export.",
+    "specTabs": [
+      {
+        "tabName": "1) Turmeric Fingers (Whole)",
+        "id": "turmeric-fingers",
+        "parameters": [
+          { "param": "Product", "spec": "Whole Dried Turmeric Fingers" },
+          { "param": "Botanical Name", "spec": "Curcuma longa L." },
+          { "param": "Grade", "spec": "Premium Export Grade" },
+          { "param": "Purity", "spec": "≥99.0%" },
+          { "param": "Foreign Matter", "spec": "≤0.50%" },
+          { "param": "Admixture", "spec": "≤1.0%" },
+          { "param": "Moisture", "spec": "≤10.0%" },
+          { "param": "Curcumin", "spec": "≥3.0%" },
+          { "param": "Total Ash", "spec": "≤8.0%" },
+          { "param": "Acid Insoluble Ash", "spec": "≤1.5%" },
+          { "param": "Colour", "spec": "Bright yellow to orange-yellow" },
+          { "param": "Aroma", "spec": "Characteristic turmeric" },
+          { "param": "Mould", "spec": "≤1.0%" },
+          { "param": "Insect Damaged", "spec": "≤1.0%" },
+          { "param": "Salmonella", "spec": "Absent" },
+          { "param": "E. coli", "spec": "Absent" },
+          { "param": "Aflatoxin", "spec": "Complies with applicable limits" },
+          { "param": "Pesticide Residues", "spec": "US/EU MRL compliant" },
+          { "param": "GMO", "spec": "Non-GMO" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Packaging", "spec": "25kg / 50kg PP / Jute Bags; customized packs" }
+        ]
+      },
+      {
+        "tabName": "2) Turmeric Powder",
+        "id": "turmeric-powder-tab",
+        "parameters": [
+          { "param": "Product", "spec": "Turmeric Powder" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Form", "spec": "Fine Powder" },
+          { "param": "Purity", "spec": "Min. 99%" },
+          { "param": "Moisture", "spec": "Max. 10%" },
+          { "param": "Foreign Matter", "spec": "Max. 0.5%" },
+          { "param": "Admixture", "spec": "Max. 1.0%" },
+          { "param": "Damaged / Extraneous Matter", "spec": "Max. 1.0%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "Natural bright yellow to orange-yellow" },
+          { "param": "Aroma & Flavour", "spec": "Characteristic turmeric aroma and flavour; free from off-odour" },
+          { "param": "Total Ash", "spec": "Max. 9%" },
+          { "param": "Acid Insoluble Ash", "spec": "Max. 2.5%" },
+          { "param": "Volatile Oil", "spec": "Min. 1.5 ml/100 g" },
+          { "param": "Curcuminoids", "spec": "Min. 2%" },
+          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
+          { "param": "Total Aflatoxins", "spec": "Max. 10 µg/kg*" },
+          { "param": "Lead", "spec": "Max. 1.50 mg/kg*" },
+          { "param": "Lead Chromate", "spec": "Negative" },
+          { "param": "Salmonella", "spec": "Absent in 25 g" },
+          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg or as per buyer requirement" },
+          { "param": "Shelf Life", "spec": "12–24 months, subject to packaging and storage conditions" },
+          { "param": "Storage", "spec": "Store in a cool, dry place away from direct sunlight and moisture" }
+        ]
+      }
+    ]
   },
   {
     "id": "spices-turmeric-powder",
@@ -226,58 +907,368 @@
     "category": "spices",
     "categoryName": "Spices & Seasonings",
     "image": "assets/images/products/turmeric-powder.jpg",
-    "origin": "Salem / Nizamabad / Sangli, India",
-    "packaging": "1kg / 5kg / 25kg / 50kg Food-Grade Foil & Bags",
-    "specs": "Curcumin 3.0% to 5.0%, 80-100 Mesh, Moisture < 9%, Zero Added Color",
-    "description": "Finely pulverized 100% pure Indian turmeric powder with rich golden-yellow hue, intense aroma, and high active curcumin for culinary and wellness formulations."
+    "origin": "India",
+    "packaging": "10 / 20 / 25 / 50 kg or as per buyer requirement",
+    "specs": "Purity Min. 99%, Moisture Max. 10%, Curcuminoids Min. 2%, Lead Chromate Negative",
+    "description": "Finely pulverized 100% pure Indian turmeric powder with natural bright yellow to orange-yellow hue, characteristic turmeric aroma and flavour, zero added lead chromate, and tested compliant with international standards.",
+    "specTabs": [
+      {
+        "tabName": "Turmeric Powder",
+        "id": "turmeric-powder",
+        "parameters": [
+          { "param": "Product", "spec": "Turmeric Powder" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Form", "spec": "Fine Powder" },
+          { "param": "Purity", "spec": "Min. 99%" },
+          { "param": "Moisture", "spec": "Max. 10%" },
+          { "param": "Foreign Matter", "spec": "Max. 0.5%" },
+          { "param": "Admixture", "spec": "Max. 1.0%" },
+          { "param": "Damaged / Extraneous Matter", "spec": "Max. 1.0%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "Natural bright yellow to orange-yellow" },
+          { "param": "Aroma & Flavour", "spec": "Characteristic turmeric aroma and flavour; free from off-odour" },
+          { "param": "Total Ash", "spec": "Max. 9%" },
+          { "param": "Acid Insoluble Ash", "spec": "Max. 2.5%" },
+          { "param": "Volatile Oil", "spec": "Min. 1.5 ml/100 g" },
+          { "param": "Curcuminoids", "spec": "Min. 2%" },
+          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
+          { "param": "Total Aflatoxins", "spec": "Max. 10 µg/kg*" },
+          { "param": "Lead", "spec": "Max. 1.50 mg/kg*" },
+          { "param": "Lead Chromate", "spec": "Negative" },
+          { "param": "Salmonella", "spec": "Absent in 25 g" },
+          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg or as per buyer requirement" },
+          { "param": "Shelf Life", "spec": "12–24 months, subject to packaging and storage conditions" },
+          { "param": "Storage", "spec": "Store in a cool, dry place away from direct sunlight and moisture" }
+        ]
+      }
+    ]
   },
   {
     "id": "spices-black-pepper",
     "slug": "black-pepper-garbled",
-    "name": "Black Pepper (500GL - 570GL Malabar Garbled Whole & Cracked)",
+    "name": "Black Pepper (Whole Peppercorns & Ground Powder)",
     "category": "spices",
     "categoryName": "Spices & Seasonings",
     "image": "assets/images/products/black-pepper.jpg",
-    "origin": "Malabar / Idukki, Kerala, India",
-    "packaging": "25kg / 50kg Paper / Jute Bags",
-    "specs": "Garbled / Ungarbled, Density 500-570 g/l, Piperine > 4%, Moisture < 12%",
-    "description": "The King of Spices: authentic Malabar black peppercorns offering robust heat, sharp bite, and strong essential oil pungency."
+    "origin": "India",
+    "packaging": "10 / 20 / 25 / 50 kg or as per buyer requirement",
+    "specs": "ASTA / MG-1 / TGSEB, Bulk Density ≥570 g/L, Piperine ≥4.0%, Volatile Oil ≥2.0%",
+    "description": "Authentic Indian whole black peppercorns (Piper nigrum L.) and finely pulverized pure black pepper powder offering robust heat, sharp bite, and strong essential oil pungency.",
+    "specTabs": [
+      {
+        "tabName": "1) Whole Black Peppercorns",
+        "id": "black-pepper",
+        "parameters": [
+          { "param": "Product", "spec": "Whole Black Peppercorns" },
+          { "param": "Botanical Name", "spec": "Piper nigrum L." },
+          { "param": "Grade", "spec": "ASTA / MG-1 / TGSEB" },
+          { "param": "Purity", "spec": "≥99.0%" },
+          { "param": "Foreign Matter", "spec": "≤0.50%" },
+          { "param": "Moisture", "spec": "≤12.0%" },
+          { "param": "Bulk Density", "spec": "≥570 g/L" },
+          { "param": "Volatile Oil", "spec": "≥2.0%" },
+          { "param": "Piperine", "spec": "≥4.0%" },
+          { "param": "Total Ash", "spec": "≤6.0%" },
+          { "param": "Acid Insoluble Ash", "spec": "≤1.5%" },
+          { "param": "Light Berries", "spec": "≤3.0%" },
+          { "param": "Mould", "spec": "≤1.0%" },
+          { "param": "Insect Damaged", "spec": "≤1.0%" },
+          { "param": "Aroma", "spec": "Strong, pungent, characteristic" },
+          { "param": "Salmonella", "spec": "Absent" },
+          { "param": "E. coli", "spec": "Absent" },
+          { "param": "Aflatoxin", "spec": "Destination compliant" },
+          { "param": "Pesticide Residues", "spec": "US/EU MRL compliant" },
+          { "param": "Treatment", "spec": "Steam sterilized, if specified" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Packaging", "spec": "25kg / 50kg Paper / Jute Bags; customized packs" }
+        ]
+      },
+      {
+        "tabName": "2) Black Pepper Powder",
+        "id": "black-pepper-powder-tab",
+        "parameters": [
+          { "param": "Product", "spec": "Black Pepper Powder" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Form", "spec": "Fine Powder" },
+          { "param": "Purity", "spec": "Min. 99%" },
+          { "param": "Moisture", "spec": "Max. 10%" },
+          { "param": "Foreign Matter", "spec": "Max. 0.5%" },
+          { "param": "Admixture", "spec": "Max. 1.0%" },
+          { "param": "Damaged / Extraneous Matter", "spec": "Max. 1.0%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "Natural dark greyish-brown to black" },
+          { "param": "Aroma & Flavour", "spec": "Characteristic pungent black pepper aroma and flavour; free from off-odour" },
+          { "param": "Total Ash", "spec": "Max. 7%" },
+          { "param": "Acid Insoluble Ash", "spec": "Max. 1.5%" },
+          { "param": "Volatile Oil", "spec": "Min. 2.0 ml/100 g" },
+          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
+          { "param": "Total Aflatoxins", "spec": "Max. 10 µg/kg*" },
+          { "param": "Lead", "spec": "Max. 0.60 mg/kg*" },
+          { "param": "Salmonella", "spec": "Absent in 25 g" },
+          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg or as per buyer requirement" },
+          { "param": "Shelf Life", "spec": "12–24 months, subject to packaging and storage conditions" },
+          { "param": "Storage", "spec": "Store in a cool, dry place away from direct sunlight and moisture" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "spices-black-pepper-powder",
+    "slug": "black-pepper-powder",
+    "name": "Black Pepper Powder (Ground Kali Mirch Powder)",
+    "category": "spices",
+    "categoryName": "Spices & Seasonings",
+    "image": "assets/images/products/black-pepper.jpg",
+    "origin": "India",
+    "packaging": "10 / 20 / 25 / 50 kg or as per buyer requirement",
+    "specs": "Purity Min. 99%, Moisture Max. 10%, Volatile Oil Min. 2.0 ml/100 g, Fine Powder",
+    "description": "Export-grade freshly pulverized 100% pure Indian black pepper powder with natural dark greyish-brown to black hue, characteristic pungent robust kick, and tested compliant with international food standards.",
+    "specTabs": [
+      {
+        "tabName": "Black Pepper Powder",
+        "id": "black-pepper-powder",
+        "parameters": [
+          { "param": "Product", "spec": "Black Pepper Powder" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Form", "spec": "Fine Powder" },
+          { "param": "Purity", "spec": "Min. 99%" },
+          { "param": "Moisture", "spec": "Max. 10%" },
+          { "param": "Foreign Matter", "spec": "Max. 0.5%" },
+          { "param": "Admixture", "spec": "Max. 1.0%" },
+          { "param": "Damaged / Extraneous Matter", "spec": "Max. 1.0%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "Natural dark greyish-brown to black" },
+          { "param": "Aroma & Flavour", "spec": "Characteristic pungent black pepper aroma and flavour; free from off-odour" },
+          { "param": "Total Ash", "spec": "Max. 7%" },
+          { "param": "Acid Insoluble Ash", "spec": "Max. 1.5%" },
+          { "param": "Volatile Oil", "spec": "Min. 2.0 ml/100 g" },
+          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
+          { "param": "Total Aflatoxins", "spec": "Max. 10 µg/kg*" },
+          { "param": "Lead", "spec": "Max. 0.60 mg/kg*" },
+          { "param": "Salmonella", "spec": "Absent in 25 g" },
+          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg or as per buyer requirement" },
+          { "param": "Shelf Life", "spec": "12–24 months, subject to packaging and storage conditions" },
+          { "param": "Storage", "spec": "Store in a cool, dry place away from direct sunlight and moisture" }
+        ]
+      }
+    ]
   },
   {
     "id": "spices-cardamom",
     "slug": "green-cardamom-elaichi",
-    "name": "Cardamom (6mm - 8.5mm+ Bold Green Elaichi)",
+    "name": "Green Cardamom (Whole Elaichi Pods & Ground Powder)",
     "category": "spices",
     "categoryName": "Spices & Seasonings",
     "image": "assets/images/products/green-cardamom.jpg",
-    "origin": "Idukki, Kerala, India",
-    "packaging": "5kg / 10kg Master Cartons with vacuum liner",
-    "specs": "Sizes: 6mm, 7mm, 8mm, 8.5mm Bold Green, Moisture < 10%",
-    "description": "Premium grade large green cardamom pods with high volatile oil aroma and intact aromatic black seeds for gourmet applications."
+    "origin": "India",
+    "packaging": "5kg / 10kg Master Cartons with vacuum liner or 10 / 25 kg bags",
+    "specs": "Bold / Premium, Green Pods ≥95%, Purity ≥99.0%, Moisture ≤12.0%",
+    "description": "Premium whole green cardamom pods (Elettaria cardamomum (L.) Maton) and finely milled pure green cardamom powder with intact aromatic volatile oils and strong sweet fragrance.",
+    "specTabs": [
+      {
+        "tabName": "1) Whole Green Cardamom",
+        "id": "green-cardamom",
+        "parameters": [
+          { "param": "Product", "spec": "Whole Green Cardamom Pods" },
+          { "param": "Botanical Name", "spec": "Elettaria cardamomum (L.) Maton" },
+          { "param": "Grade", "spec": "Bold / Premium" },
+          { "param": "Purity", "spec": "≥99.0%" },
+          { "param": "Foreign Matter", "spec": "≤1.0%" },
+          { "param": "Moisture", "spec": "≤12.0%" },
+          { "param": "Green Pods", "spec": "≥95%" },
+          { "param": "Broken / Split Pods", "spec": "≤5%" },
+          { "param": "Black / Brown Pods", "spec": "≤2%" },
+          { "param": "Seeds", "spec": "Well developed" },
+          { "param": "Aroma", "spec": "Strong, sweet, characteristic" },
+          { "param": "Colour", "spec": "Natural green" },
+          { "param": "Mould", "spec": "≤1.0%" },
+          { "param": "Insect Damage", "spec": "≤1.0%" },
+          { "param": "Salmonella", "spec": "Absent" },
+          { "param": "E. coli", "spec": "Compliant" },
+          { "param": "Heavy Metals", "spec": "US/EU compliant" },
+          { "param": "Pesticide Residues", "spec": "US/EU MRL compliant" },
+          { "param": "GMO", "spec": "Non-GMO" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Packaging", "spec": "5kg / 10kg Master Cartons with vacuum liner" }
+        ]
+      },
+      {
+        "tabName": "2) Cardamom Powder (Green)",
+        "id": "cardamom-powder-tab",
+        "parameters": [
+          { "param": "Product", "spec": "Cardamom Powder (Green)" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Form", "spec": "Fine Powder" },
+          { "param": "Purity", "spec": "Min. 99%" },
+          { "param": "Moisture", "spec": "Max. 10%" },
+          { "param": "Foreign Matter", "spec": "Max. 0.5%" },
+          { "param": "Admixture", "spec": "Max. 1.0%" },
+          { "param": "Damaged / Extraneous Matter", "spec": "Max. 1.0%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "Natural light greenish-brown" },
+          { "param": "Aroma & Flavour", "spec": "Characteristic strong cardamom aroma and flavour; free from off-odour" },
+          { "param": "Total Ash", "spec": "Max. 9%" },
+          { "param": "Acid Insoluble Ash", "spec": "Max. 2.5%" },
+          { "param": "Volatile Oil", "spec": "Min. 4.0 ml/100 g" },
+          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
+          { "param": "Total Aflatoxins", "spec": "Max. 10 µg/kg*" },
+          { "param": "Lead", "spec": "Max. 0.60 mg/kg*" },
+          { "param": "Salmonella", "spec": "Absent in 25 g" },
+          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg or as per buyer requirement" },
+          { "param": "Shelf Life", "spec": "12–24 months, subject to packaging and storage conditions" },
+          { "param": "Storage", "spec": "Store in a cool, dry place away from direct sunlight and moisture" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "spices-cardamom-powder",
+    "slug": "cardamom-powder",
+    "name": "Cardamom Powder (Green Elaichi Powder)",
+    "category": "spices",
+    "categoryName": "Spices & Seasonings",
+    "image": "assets/images/products/green-cardamom.jpg",
+    "origin": "India",
+    "packaging": "10 / 20 / 25 / 50 kg or as per buyer requirement",
+    "specs": "Purity Min. 99%, Moisture Max. 10%, Volatile Oil Min. 4.0 ml/100 g, Fine Powder",
+    "description": "Export-grade freshly pulverized 100% pure Indian green cardamom powder with natural light greenish-brown hue, intensely sweet aromatic fragrance, and tested compliant with international standards.",
+    "specTabs": [
+      {
+        "tabName": "Cardamom Powder (Green)",
+        "id": "cardamom-powder",
+        "parameters": [
+          { "param": "Product", "spec": "Cardamom Powder (Green)" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Form", "spec": "Fine Powder" },
+          { "param": "Purity", "spec": "Min. 99%" },
+          { "param": "Moisture", "spec": "Max. 10%" },
+          { "param": "Foreign Matter", "spec": "Max. 0.5%" },
+          { "param": "Admixture", "spec": "Max. 1.0%" },
+          { "param": "Damaged / Extraneous Matter", "spec": "Max. 1.0%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "Natural light greenish-brown" },
+          { "param": "Aroma & Flavour", "spec": "Characteristic strong cardamom aroma and flavour; free from off-odour" },
+          { "param": "Total Ash", "spec": "Max. 9%" },
+          { "param": "Acid Insoluble Ash", "spec": "Max. 2.5%" },
+          { "param": "Volatile Oil", "spec": "Min. 4.0 ml/100 g" },
+          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
+          { "param": "Total Aflatoxins", "spec": "Max. 10 µg/kg*" },
+          { "param": "Lead", "spec": "Max. 0.60 mg/kg*" },
+          { "param": "Salmonella", "spec": "Absent in 25 g" },
+          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg or as per buyer requirement" },
+          { "param": "Shelf Life", "spec": "12–24 months, subject to packaging and storage conditions" },
+          { "param": "Storage", "spec": "Store in a cool, dry place away from direct sunlight and moisture" }
+        ]
+      }
+    ]
   },
   {
     "id": "spices-cloves",
     "slug": "cloves-whole-laung",
-    "name": "Cloves (Whole Hand-Picked Laung)",
+    "name": "Cloves (Whole Dried Laung)",
     "category": "spices",
     "categoryName": "Spices & Seasonings",
     "image": "assets/images/products/cloves.jpg",
-    "origin": "Tamil Nadu / Kerala, India",
-    "packaging": "10kg / 25kg PP & Jute Bags",
-    "specs": "Hand-picked Whole, Head intact > 90%, Eugenol > 15%, Moisture < 12%",
-    "description": "Intensely fragrant whole cloves, naturally sun-dried with rich spicy warmth and concentrated therapeutic eugenol."
+    "origin": "India",
+    "packaging": "10kg / 25kg PP & Jute Bags / Cartons",
+    "specs": "Hand/Machine Cleaned Export Grade, Volatile Oil ≥15.0%, Purity ≥99.0%, Moisture ≤10.0%",
+    "description": "Intensely fragrant whole dried cloves (Syzygium aromaticum (L.) Merr. & L.M.Perry) with intact heads, concentrated eugenol essential oil, and rich spicy warmth.",
+    "specTabs": [
+      {
+        "tabName": "Whole Dried Cloves (Laung)",
+        "id": "cloves-whole",
+        "parameters": [
+          { "param": "Product", "spec": "Whole Dried Cloves" },
+          { "param": "Botanical Name", "spec": "Syzygium aromaticum (L.) Merr. & L.M.Perry" },
+          { "param": "Grade", "spec": "Hand/Machine Cleaned Export Grade" },
+          { "param": "Purity", "spec": "≥99.0%" },
+          { "param": "Foreign Matter", "spec": "≤0.50%" },
+          { "param": "Clove Stems", "spec": "≤5.0%" },
+          { "param": "Moisture", "spec": "≤10.0%" },
+          { "param": "Volatile Oil", "spec": "≥15.0%" },
+          { "param": "Total Ash", "spec": "≤8.0%" },
+          { "param": "Acid Insoluble Ash", "spec": "≤1.5%" },
+          { "param": "Broken Cloves", "spec": "≤5.0%" },
+          { "param": "Insect Damaged", "spec": "≤1.0%" },
+          { "param": "Mould", "spec": "≤1.0%" },
+          { "param": "Aroma", "spec": "Strong, characteristic" },
+          { "param": "Salmonella", "spec": "Absent" },
+          { "param": "E. coli", "spec": "Absent / agreed limit" },
+          { "param": "Aflatoxin", "spec": "Compliant" },
+          { "param": "Pesticide Residues", "spec": "US/EU MRL compliant" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Packaging", "spec": "10kg / 25kg PP & Jute Bags / Cartons" }
+        ]
+      }
+    ]
   },
   {
     "id": "spices-cinnamon-cassia",
     "slug": "cinnamon-sticks-cassia",
-    "name": "Cinnamon Sticks & Cassia (Dalchini Round Cut Sticks & Quills)",
+    "name": "Cinnamon Quills & Broken (Dalchini Sticks & Ground Powder)",
     "category": "spices",
     "categoryName": "Spices & Seasonings",
     "image": "assets/images/products/cinnamon-sticks.jpg",
-    "origin": "Kerala / South India",
-    "packaging": "10kg / 25kg Master Cartons",
-    "specs": "Clean Cut Sticks & Split Quills, Volatile Oil > 1.5%, Moisture < 12%",
-    "description": "Sweet, woody aromatic cinnamon sticks and cassia bark widely utilized in baking, confectionery, and spice blends."
+    "origin": "India",
+    "packaging": "10 / 20 / 25 / 50 kg or as per buyer requirement",
+    "specs": "Premium Export Grade, Volatile Oil ≥1.0%, Purity ≥99.0%, Moisture ≤12.0%",
+    "description": "Sweet, woody aromatic whole cinnamon quills, broken bark (Cinnamomum verum / Cinnamomum cassia) and freshly pulverized pure cinnamon powder widely utilized in gourmet bakery and culinary formulations.",
+    "specTabs": [
+      {
+        "tabName": "1) Cinnamon Quills & Broken",
+        "id": "cinnamon-quills",
+        "parameters": [
+          { "param": "Product", "spec": "Whole Cinnamon Quills / Broken" },
+          { "param": "Botanical Name", "spec": "Cinnamomum verum / Cinnamomum cassia" },
+          { "param": "Grade", "spec": "Premium Export Grade" },
+          { "param": "Purity", "spec": "≥99.0%" },
+          { "param": "Foreign Matter", "spec": "≤0.50%" },
+          { "param": "Moisture", "spec": "≤12.0%" },
+          { "param": "Volatile Oil", "spec": "≥1.0%" },
+          { "param": "Total Ash", "spec": "≤7.0%" },
+          { "param": "Acid Insoluble Ash", "spec": "≤1.0%" },
+          { "param": "Broken Pieces", "spec": "≤5.0%" },
+          { "param": "Colour", "spec": "Natural brown" },
+          { "param": "Aroma", "spec": "Sweet, characteristic" },
+          { "param": "Flavour", "spec": "Warm, sweet, characteristic" },
+          { "param": "Mould", "spec": "≤1.0%" },
+          { "param": "Insect Damage", "spec": "≤1.0%" },
+          { "param": "Salmonella", "spec": "Absent" },
+          { "param": "E. coli", "spec": "Absent / compliant" },
+          { "param": "Coumarin", "spec": "Complies with applicable EU requirements where applicable" },
+          { "param": "Pesticide Residues", "spec": "US/EU MRL compliant" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Packaging", "spec": "10kg / 25kg Master Cartons; customized packs" }
+        ]
+      },
+      {
+        "tabName": "2) Cinnamon Powder",
+        "id": "cinnamon-powder-tab",
+        "parameters": [
+          { "param": "Product", "spec": "Cinnamon Powder" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Form", "spec": "Fine Powder" },
+          { "param": "Purity", "spec": "Min. 99%" },
+          { "param": "Moisture", "spec": "Max. 12%" },
+          { "param": "Foreign Matter", "spec": "Max. 0.5%" },
+          { "param": "Admixture", "spec": "Max. 1.0%" },
+          { "param": "Damaged / Extraneous Matter", "spec": "Max. 1.0%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "Natural light brown to reddish-brown" },
+          { "param": "Aroma & Flavour", "spec": "Characteristic sweet cinnamon aroma and flavour; free from off-odour" },
+          { "param": "Total Ash", "spec": "Max. 7%" },
+          { "param": "Acid Insoluble Ash", "spec": "Max. 2%" },
+          { "param": "Volatile Oil", "spec": "Min. 0.5 ml/100 g" },
+          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
+          { "param": "Total Aflatoxins", "spec": "Max. 10 µg/kg*" },
+          { "param": "Lead", "spec": "Max. 2.0 mg/kg*" },
+          { "param": "Salmonella", "spec": "Absent in 25 g" },
+          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg or as per buyer requirement" },
+          { "param": "Shelf Life", "spec": "12–24 months, subject to packaging and storage conditions" },
+          { "param": "Storage", "spec": "Store in a cool, dry place away from direct sunlight and moisture" }
+        ]
+      }
+    ]
   },
   {
     "id": "spices-cinnamon-powder",
@@ -286,69 +1277,226 @@
     "category": "spices",
     "categoryName": "Spices & Seasonings",
     "image": "assets/images/products/cinnamon-powder.jpg",
-    "origin": "Kerala / South India",
-    "packaging": "10kg / 25kg Food-Grade Cartons & Pouches",
-    "specs": "Fine Ground 80-100 Mesh, Pure Dalchini / Cassia, Moisture < 10%",
-    "description": "Finely milled pure aromatic cinnamon powder with rich fragrance and sweet spicy warmth for bakeries, seasonings, and beverages."
+    "origin": "India",
+    "packaging": "10 / 20 / 25 / 50 kg or as per buyer requirement",
+    "specs": "Purity Min. 99%, Moisture Max. 12%, Volatile Oil Min. 0.5 ml/100 g, Fine Powder",
+    "description": "Finely milled pure aromatic cinnamon powder with natural light brown to reddish-brown hue, characteristic sweet cinnamon aroma and flavour, and tested compliant with international standards.",
+    "specTabs": [
+      {
+        "tabName": "Cinnamon Powder",
+        "id": "cinnamon-powder",
+        "parameters": [
+          { "param": "Product", "spec": "Cinnamon Powder" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Form", "spec": "Fine Powder" },
+          { "param": "Purity", "spec": "Min. 99%" },
+          { "param": "Moisture", "spec": "Max. 12%" },
+          { "param": "Foreign Matter", "spec": "Max. 0.5%" },
+          { "param": "Admixture", "spec": "Max. 1.0%" },
+          { "param": "Damaged / Extraneous Matter", "spec": "Max. 1.0%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "Natural light brown to reddish-brown" },
+          { "param": "Aroma & Flavour", "spec": "Characteristic sweet cinnamon aroma and flavour; free from off-odour" },
+          { "param": "Total Ash", "spec": "Max. 7%" },
+          { "param": "Acid Insoluble Ash", "spec": "Max. 2%" },
+          { "param": "Volatile Oil", "spec": "Min. 0.5 ml/100 g" },
+          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
+          { "param": "Total Aflatoxins", "spec": "Max. 10 µg/kg*" },
+          { "param": "Lead", "spec": "Max. 2.0 mg/kg*" },
+          { "param": "Salmonella", "spec": "Absent in 25 g" },
+          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg or as per buyer requirement" },
+          { "param": "Shelf Life", "spec": "12–24 months, subject to packaging and storage conditions" },
+          { "param": "Storage", "spec": "Store in a cool, dry place away from direct sunlight and moisture" }
+        ]
+      }
+    ]
   },
   {
     "id": "spices-nutmeg-mace",
     "slug": "nutmeg-and-mace-whole",
-    "name": "Nutmeg & Mace (Jaiphal Whole Kernels & Powder)",
+    "name": "Whole Nutmeg (Jaiphal Whole Kernels & Pure Powder)",
     "category": "spices",
     "categoryName": "Spices & Seasonings",
     "image": "assets/images/products/nutmeg.jpg",
-    "origin": "Kerala / Karnataka, India",
-    "packaging": "10kg / 25kg Cartons & Jute Bags",
-    "specs": "With Shell / Without Shell Nutmeg & Freshly Grated Kernel Powder, Moisture < 10%",
-    "description": "Intensely warm nutmeg kernels and fine jaiphal powder with complex sweet floral notes for high-end culinary flavoring."
+    "origin": "India",
+    "packaging": "10 / 20 / 25 / 50 kg or as per buyer requirement",
+    "specs": "Premium Whole, Volatile Oil ≥4.0%, Purity ≥99.0%, Moisture ≤10.0%",
+    "description": "Premium whole nutmeg kernels (Myristica fragrans Houtt.) and fine pure nutmeg powder meticulously processed with rich essential volatile oil content and characteristic warm aroma.",
+    "specTabs": [
+      {
+        "tabName": "1) Whole Nutmeg",
+        "id": "whole-nutmeg",
+        "parameters": [
+          { "param": "Product", "spec": "Whole Nutmeg" },
+          { "param": "Botanical Name", "spec": "Myristica fragrans Houtt." },
+          { "param": "Grade", "spec": "Premium Whole" },
+          { "param": "Purity", "spec": "≥99.0%" },
+          { "param": "Foreign Matter", "spec": "≤0.50%" },
+          { "param": "Moisture", "spec": "≤10.0%" },
+          { "param": "Volatile Oil", "spec": "≥4.0%" },
+          { "param": "Total Ash", "spec": "≤3.0%" },
+          { "param": "Acid Insoluble Ash", "spec": "≤0.5%" },
+          { "param": "Shrivelled / Broken", "spec": "≤5.0%" },
+          { "param": "Insect Damaged", "spec": "≤1.0%" },
+          { "param": "Mould", "spec": "≤1.0%" },
+          { "param": "Aroma", "spec": "Strong, characteristic" },
+          { "param": "Salmonella", "spec": "Absent" },
+          { "param": "E. coli", "spec": "Absent" },
+          { "param": "Aflatoxin", "spec": "Complies with applicable EU/US limits" },
+          { "param": "Ochratoxin A", "spec": "Complies with applicable limits" },
+          { "param": "Pesticide Residues", "spec": "US/EU MRL compliant" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Packaging", "spec": "10kg / 25kg Cartons & Jute Bags; customized packs" }
+        ]
+      },
+      {
+        "tabName": "2) Nutmeg Powder",
+        "id": "nutmeg-powder-tab",
+        "parameters": [
+          { "param": "Product", "spec": "Nutmeg Powder" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Form", "spec": "Fine Powder" },
+          { "param": "Purity", "spec": "Min. 99%" },
+          { "param": "Moisture", "spec": "Max. 8%" },
+          { "param": "Foreign Matter", "spec": "Max. 0.5%" },
+          { "param": "Admixture", "spec": "Max. 1.0%" },
+          { "param": "Damaged / Extraneous Matter", "spec": "Max. 1.0%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "Natural light brown" },
+          { "param": "Aroma & Flavour", "spec": "Characteristic warm nutmeg aroma and flavour; free from off-odour" },
+          { "param": "Total Ash", "spec": "Max. 3%" },
+          { "param": "Acid Insoluble Ash", "spec": "Max. 0.5%" },
+          { "param": "Volatile Oil", "spec": "Min. 5.0 ml/100 g" },
+          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
+          { "param": "Total Aflatoxins", "spec": "Max. 10 µg/kg*" },
+          { "param": "Lead", "spec": "Max. 0.90 mg/kg*" },
+          { "param": "Salmonella", "spec": "Absent in 25 g" },
+          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg or as per buyer requirement" },
+          { "param": "Shelf Life", "spec": "12–24 months, subject to packaging and storage conditions" },
+          { "param": "Storage", "spec": "Store in a cool, dry place away from direct sunlight and moisture" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "spices-nutmeg-powder",
+    "slug": "nutmeg-powder",
+    "name": "Nutmeg Powder (Pure Jaiphal Powder)",
+    "category": "spices",
+    "categoryName": "Spices & Seasonings",
+    "image": "assets/images/products/nutmeg.jpg",
+    "origin": "India",
+    "packaging": "10 / 20 / 25 / 50 kg or as per buyer requirement",
+    "specs": "Purity Min. 99%, Moisture Max. 8%, Volatile Oil Min. 5.0 ml/100 g, Fine Powder",
+    "description": "Export-grade freshly pulverized 100% pure Indian nutmeg powder with natural light brown hue, characteristic warm nutmeg aroma and flavour, and tested compliant with international standards.",
+    "specTabs": [
+      {
+        "tabName": "Nutmeg Powder",
+        "id": "nutmeg-powder",
+        "parameters": [
+          { "param": "Product", "spec": "Nutmeg Powder" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Form", "spec": "Fine Powder" },
+          { "param": "Purity", "spec": "Min. 99%" },
+          { "param": "Moisture", "spec": "Max. 8%" },
+          { "param": "Foreign Matter", "spec": "Max. 0.5%" },
+          { "param": "Admixture", "spec": "Max. 1.0%" },
+          { "param": "Damaged / Extraneous Matter", "spec": "Max. 1.0%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "Natural light brown" },
+          { "param": "Aroma & Flavour", "spec": "Characteristic warm nutmeg aroma and flavour; free from off-odour" },
+          { "param": "Total Ash", "spec": "Max. 3%" },
+          { "param": "Acid Insoluble Ash", "spec": "Max. 0.5%" },
+          { "param": "Volatile Oil", "spec": "Min. 5.0 ml/100 g" },
+          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
+          { "param": "Total Aflatoxins", "spec": "Max. 10 µg/kg*" },
+          { "param": "Lead", "spec": "Max. 0.90 mg/kg*" },
+          { "param": "Salmonella", "spec": "Absent in 25 g" },
+          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg or as per buyer requirement" },
+          { "param": "Shelf Life", "spec": "12–24 months, subject to packaging and storage conditions" },
+          { "param": "Storage", "spec": "Store in a cool, dry place away from direct sunlight and moisture" }
+        ]
+      }
+    ],
+    "qaHtml": `<div class="qa-block" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; margin-top:20px;">
+      <h4 style="font-size:0.98rem; font-weight:700; color:#0f172a; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:8px; height:8px; background:#16a34a; border-radius:50%;"></span>
+        Export Quality &amp; Compliance Standards
+      </h4>
+      <div style="background:#fffbeb; border:1px solid #fef3c7; border-left:4px solid #d97706; padding:12px 14px; border-radius:6px; font-size:0.83rem; color:#92400e; line-height:1.5; margin-bottom:12px;">
+        <strong>Website note:</strong> Specifications are indicative and may be customized according to buyer requirements, destination-country regulations, applicable food standards, and mutually agreed purchase specifications. COA and laboratory test reports are available upon request.
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:8px;">
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Purity Min. 99%</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">High Volatile Oil (Min. 5.0 ml/100g)</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Low Moisture (Max. 8%)</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Warm Nutmeg Aroma</span>
+      </div>
+    </div>`
   },
   {
     "id": "spices-black-cardamom",
     "slug": "black-cardamom-badi-elaichi",
-    "name": "Black Cardamom (Badi Elaichi / Bold Smoky Pods)",
+    "name": "Black Cardamom (Whole Badi Elaichi Pods & Ground Powder)",
     "websiteTitle": "Black Cardamom (Badi Elaichi / Bold Smoky Pods) | Indian Origin",
     "category": "spices",
     "categoryName": "Spices & Seasonings",
     "image": "assets/images/products/black-cardamom.jpg",
-    "origin": "India (Primary Sourcing: Sikkim / Himalayan region)",
-    "packaging": "5 kg / 10 kg / 25 kg food-grade bags, cartons, vacuum or customized private-label packaging",
-    "specs": "Grade: Bold / Premium Bold, Pod Size 20–30 mm, Moisture Max. 12%, Volatile Oil Min. 2.0 ml/100g",
-    "description": "Premium Indian Black Cardamom (Amomum subulatum), naturally smoke-dried and carefully cleaned, sorted and graded for bold pod size, dark colour, strong smoky aroma and characteristic warm flavour. Suitable for USA and EU food-service, spice blending, retail and private-label applications. Black cardamom is a distinct species from green cardamom.",
+    "origin": "India",
+    "packaging": "10 / 20 / 25 / 50 kg or as per buyer requirement",
+    "specs": "Premium / Bold, Purity ≥99.0%, Moisture ≤12.0%, Strong Smoky Aroma",
+    "description": "Premium Indian whole black cardamom pods (Amomum subulatum Roxb.) and fine ground black cardamom powder, naturally smoke-dried and graded for bold pod size, dark colour, and characteristic strong smoky aroma.",
     "specTabs": [
       {
-        "tabName": "Export Specifications",
+        "tabName": "1) Whole Black Cardamom",
+        "id": "black-cardamom",
         "parameters": [
-          { "param": "Product", "spec": "Black Cardamom / Badi Elaichi" },
-          { "param": "Botanical Name", "spec": "Amomum subulatum" },
+          { "param": "Product", "spec": "Whole Black Cardamom Pods" },
+          { "param": "Botanical Name", "spec": "Amomum subulatum Roxb." },
+          { "param": "Grade", "spec": "Premium / Bold" },
+          { "param": "Purity", "spec": "≥99.0%" },
+          { "param": "Foreign Matter", "spec": "≤0.50%" },
+          { "param": "Moisture", "spec": "≤12.0%" },
+          { "param": "Broken Pods", "spec": "≤5.0%" },
+          { "param": "Immature Pods", "spec": "≤2.0%" },
+          { "param": "Mould", "spec": "≤1.0%" },
+          { "param": "Insect Damaged", "spec": "≤1.0%" },
+          { "param": "Aroma", "spec": "Strong smoky, characteristic" },
+          { "param": "Colour", "spec": "Dark brown to black" },
+          { "param": "Salmonella", "spec": "Absent" },
+          { "param": "E. coli", "spec": "Absent" },
+          { "param": "Heavy Metals", "spec": "US/EU compliant" },
+          { "param": "Pesticide Residues", "spec": "US/EU MRL compliant" },
+          { "param": "GMO", "spec": "Non-GMO" },
           { "param": "Origin", "spec": "India" },
-          { "param": "Primary Sourcing", "spec": "Sikkim / Himalayan region" },
-          { "param": "Form", "spec": "Whole Pods" },
-          { "param": "Grade", "spec": "Bold / Premium Bold" },
-          { "param": "Pod Size", "spec": "Approx. 20–30 mm, according to agreed grade" },
-          { "param": "Colour", "spec": "Natural dark brown to black" },
-          { "param": "Appearance", "spec": "Whole, mature, well-dried, naturally wrinkled and ribbed pods" },
-          { "param": "Aroma", "spec": "Strong, smoky, earthy and characteristic" },
-          { "param": "Flavour", "spec": "Warm, pungent, smoky and slightly camphoraceous" },
-          { "param": "Moisture", "spec": "Max. 12% recommended commercial specification" },
-          { "param": "Volatile Oil", "spec": "Min. 2.0 ml/100 g" },
-          { "param": "Foreign / Extraneous Matter", "spec": "Max. 1%" },
-          { "param": "Empty / Malformed Pods", "spec": "Controlled according to agreed specification" },
-          { "param": "Immature / Shriveled Pods", "spec": "Controlled according to agreed specification" },
-          { "param": "Insect Damage", "spec": "Free from live infestation; controlled as per agreed specification" },
-          { "param": "Mould", "spec": "Free from visible mould" },
-          { "param": "Microbiological Quality", "spec": "Tested according to buyer and destination-market requirements" },
-          { "param": "Salmonella", "spec": "Absent in 25 g, where specified" },
-          { "param": "Pesticide Residues", "spec": "Compliant with applicable destination-market MRLs" },
-          { "param": "Heavy Metals", "spec": "Compliant with applicable destination requirements" },
-          { "param": "Ethylene Oxide", "spec": "Tested according to buyer/destination requirements" },
-          { "param": "GMO Status", "spec": "Non-GMO, subject to supplier declaration" },
-          { "param": "Processing", "spec": "Cleaning → Sorting → Grading → Quality Inspection → Export Packing" },
-          { "param": "Packaging", "spec": "5 kg / 10 kg / 25 kg food-grade bags, cartons, vacuum or customized private-label packaging" },
-          { "param": "Shelf Life", "spec": "Typically 18–24 months under recommended storage conditions" },
-          { "param": "Storage", "spec": "Store in a cool, dry, clean and well-ventilated area away from moisture, heat and strong odours" },
-          { "param": "Certifications", "spec": "FSSAI / HACCP / ISO / Halal / Kosher / Organic, where applicable and supported by valid certification" },
-          { "param": "Documents", "spec": "COA, Certificate of Origin, Phytosanitary Certificate and other export documents as applicable" }
+          { "param": "Packaging", "spec": "5 kg / 10 kg / 25 kg food-grade bags, cartons or vacuum packaging" }
+        ]
+      },
+      {
+        "tabName": "2) Black Cardamom Powder",
+        "id": "black-cardamom-powder-tab",
+        "parameters": [
+          { "param": "Product", "spec": "Black Cardamom Powder" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Form", "spec": "Fine Powder" },
+          { "param": "Purity", "spec": "Min. 99%" },
+          { "param": "Moisture", "spec": "Max. 10%" },
+          { "param": "Foreign Matter", "spec": "Max. 0.5%" },
+          { "param": "Admixture", "spec": "Max. 1.0%" },
+          { "param": "Damaged / Extraneous Matter", "spec": "Max. 1.0%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "Natural dark brown" },
+          { "param": "Aroma & Flavour", "spec": "Characteristic smoky black cardamom aroma and flavour; free from off-odour" },
+          { "param": "Total Ash", "spec": "Max. 9%" },
+          { "param": "Acid Insoluble Ash", "spec": "Max. 2.5%" },
+          { "param": "Volatile Oil", "spec": "Min. 1.5 ml/100 g" },
+          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
+          { "param": "Total Aflatoxins", "spec": "Max. 10 µg/kg*" },
+          { "param": "Lead", "spec": "Max. 0.90 mg/kg*" },
+          { "param": "Salmonella", "spec": "Absent in 25 g" },
+          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg or as per buyer requirement" },
+          { "param": "Shelf Life", "spec": "12–24 months, subject to packaging and storage conditions" },
+          { "param": "Storage", "spec": "Store in a cool, dry place away from direct sunlight and moisture" }
         ]
       }
     ],
@@ -382,34 +1530,268 @@
         </p>
       </div>
 
-      <div style="background:#fffbeb; border:1px solid #fef3c7; border-left:4px solid #d97706; padding:10px 14px; border-radius:6px; font-size:0.81rem; color:#92400e; line-height:1.45;">
+      <div style="background:#fffbeb; border:1px solid #fef3c7; border-left:4px solid #d97706; padding:10px 14px; border-radius:6px; font-size:0.81rem; color:#92400e; line-height:1.45; margin-bottom:10px;">
+        <strong>Website note:</strong> Specifications are indicative and may be customized according to buyer requirements, destination-country regulations, applicable food standards, and mutually agreed purchase specifications. COA and laboratory test reports are available upon request.
+      </div>
+
+      <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px; padding:10px 14px; font-size:0.81rem; color:#475569; line-height:1.45;">
         <strong>Commercial Note:</strong> The moisture, volatile-oil and physical parameters above are consistent with commercial export specifications published for Indian black cardamom; the exact values should be confirmed on the lot-specific COA and buyer contract.
+      </div>
+    </div>`
+  },
+  {
+    "id": "spices-black-cardamom-powder",
+    "slug": "black-cardamom-powder",
+    "name": "Black Cardamom Powder (Ground Badi Elaichi Powder)",
+    "websiteTitle": "Black Cardamom Powder — Final Website Specification | Indian Origin",
+    "category": "spices",
+    "categoryName": "Spices & Seasonings",
+    "image": "assets/images/products/black-cardamom.jpg",
+    "origin": "India",
+    "packaging": "10 / 20 / 25 / 50 kg or as per buyer requirement",
+    "specs": "Purity Min. 99%, Moisture Max. 10%, Volatile Oil Min. 1.5 ml/100 g, Fine Powder",
+    "description": "Export-grade pure Indian black cardamom powder pulverized from cleaned whole smoky pods with natural dark brown colour, distinctive smoky aroma, and tested compliance with international food safety standards.",
+    "specTabs": [
+      {
+        "tabName": "Black Cardamom Powder",
+        "id": "black-cardamom-powder",
+        "parameters": [
+          { "param": "Product", "spec": "Black Cardamom Powder" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Form", "spec": "Fine Powder" },
+          { "param": "Purity", "spec": "Min. 99%" },
+          { "param": "Moisture", "spec": "Max. 10%" },
+          { "param": "Foreign Matter", "spec": "Max. 0.5%" },
+          { "param": "Admixture", "spec": "Max. 1.0%" },
+          { "param": "Damaged / Extraneous Matter", "spec": "Max. 1.0%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "Natural dark brown" },
+          { "param": "Aroma & Flavour", "spec": "Characteristic smoky black cardamom aroma and flavour; free from off-odour" },
+          { "param": "Total Ash", "spec": "Max. 9%" },
+          { "param": "Acid Insoluble Ash", "spec": "Max. 2.5%" },
+          { "param": "Volatile Oil", "spec": "Min. 1.5 ml/100 g" },
+          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
+          { "param": "Total Aflatoxins", "spec": "Max. 10 µg/kg*" },
+          { "param": "Lead", "spec": "Max. 0.90 mg/kg*" },
+          { "param": "Salmonella", "spec": "Absent in 25 g" },
+          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg or as per buyer requirement" },
+          { "param": "Shelf Life", "spec": "12–24 months, subject to packaging and storage conditions" },
+          { "param": "Storage", "spec": "Store in a cool, dry place away from direct sunlight and moisture" }
+        ]
+      }
+    ],
+    "qaHtml": `<div class="qa-block" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; margin-top:20px;">
+      <h4 style="font-size:0.98rem; font-weight:700; color:#0f172a; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:8px; height:8px; background:#16a34a; border-radius:50%;"></span>
+        Export Quality &amp; Compliance Standards
+      </h4>
+      <div style="background:#fffbeb; border:1px solid #fef3c7; border-left:4px solid #d97706; padding:12px 14px; border-radius:6px; font-size:0.83rem; color:#92400e; line-height:1.5; margin-bottom:12px;">
+        <strong>Website note:</strong> Specifications are indicative and may be customized according to buyer requirements, destination-country regulations, applicable food standards, and mutually agreed purchase specifications. COA and laboratory test reports are available upon request.
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:8px;">
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Purity Min. 99%</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Fine Uniform Powder</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Smoky Aroma Intact</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Aflatoxin &amp; Heavy Metals Tested</span>
       </div>
     </div>`
   },
   {
     "id": "spices-red-chilli",
     "slug": "red-chilli-sannam-teja",
-    "name": "Chilli Powder (Export-Grade Red Chilli / Lal Mirch Powder)",
+    "name": "Whole Dried Red Chilli (Sannam & Teja Whole & Pure Powder)",
     "category": "spices",
     "categoryName": "Spices & Seasonings",
     "image": "assets/images/products/chilli-powder.jpg",
-    "origin": "Guntur, Andhra Pradesh / Byadgi, Karnataka, India",
-    "packaging": "10kg / 25kg / 50kg Jute / PP Bags",
-    "specs": "SHU 20,000 - 75,000 (Teja/S4), ASTA Color 40-120 (Byadgi), Moisture < 11%",
-    "description": "Pungent, vibrant red Indian dry chilli powder sourced directly from Guntur and Byadgi, perfectly ground for intense color and balanced heat."
+    "origin": "India (Guntur / Byadgi)",
+    "packaging": "10 / 20 / 25 / 50 kg or as per buyer requirement",
+    "specs": "Premium Export / Cleaned, Purity ≥99.0%, Moisture ≤12.0%, ASTA ≥80",
+    "description": "Export-grade whole dried red chillies (Capsicum annuum L.) and fine pulverized pure red chilli powder, cleaned and sorted for vibrant red colour, intact pods, characteristic pungency, and tested free from Sudan dyes.",
+    "specTabs": [
+      {
+        "tabName": "1) Whole Dried Red Chilli",
+        "id": "whole-dried-chilli",
+        "parameters": [
+          { "param": "Product", "spec": "Whole Dried Red Chilli" },
+          { "param": "Grade", "spec": "Premium Export / Cleaned" },
+          { "param": "Purity", "spec": "≥99.0%" },
+          { "param": "Foreign Matter", "spec": "≤0.50%" },
+          { "param": "Moisture", "spec": "≤12.0%" },
+          { "param": "Stems", "spec": "≤2.0%" },
+          { "param": "Broken Pods", "spec": "≤5.0%" },
+          { "param": "Insect Damaged", "spec": "≤1.0%" },
+          { "param": "Mould", "spec": "≤1.0%" },
+          { "param": "Colour", "spec": "Natural red" },
+          { "param": "ASTA Colour", "spec": "≥80 ASTA, grade dependent" },
+          { "param": "Capsaicin / SHU", "spec": "As agreed by variety" },
+          { "param": "Aroma", "spec": "Characteristic" },
+          { "param": "Salmonella", "spec": "Absent" },
+          { "param": "E. coli", "spec": "Absent" },
+          { "param": "Aflatoxin", "spec": "Destination-market compliant" },
+          { "param": "Ochratoxin A", "spec": "Destination-market compliant" },
+          { "param": "Sudan Dyes", "spec": "Not Detected" },
+          { "param": "Illegal Colourants", "spec": "Not Detected" },
+          { "param": "Pesticide Residues", "spec": "US/EU MRL compliant" },
+          { "param": "GMO", "spec": "Non-GMO" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Packaging", "spec": "10kg / 25kg / 50kg Jute / PP Bags; customized packs" }
+        ]
+      },
+      {
+        "tabName": "2) Chilli Powder",
+        "id": "chilli-powder-tab",
+        "parameters": [
+          { "param": "Product", "spec": "Chilli Powder" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Form", "spec": "Fine Powder" },
+          { "param": "Purity", "spec": "Min. 99%" },
+          { "param": "Moisture", "spec": "Max. 10%" },
+          { "param": "Foreign Matter", "spec": "Max. 0.5%" },
+          { "param": "Admixture", "spec": "Max. 1.0%" },
+          { "param": "Damaged / Extraneous Matter", "spec": "Max. 1.0%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "Natural bright red to reddish-orange" },
+          { "param": "Aroma & Flavour", "spec": "Characteristic pungent chilli aroma and flavour; free from off-odour" },
+          { "param": "Total Ash", "spec": "Max. 10%" },
+          { "param": "Acid Insoluble Ash", "spec": "Max. 1.6%" },
+          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
+          { "param": "Total Aflatoxins", "spec": "Max. 10 µg/kg*" },
+          { "param": "Ochratoxin A", "spec": "Max. 20 µg/kg*" },
+          { "param": "Lead", "spec": "Max. 0.60 mg/kg*" },
+          { "param": "Sudan Dyes", "spec": "Not Detected" },
+          { "param": "Salmonella", "spec": "Absent in 25 g" },
+          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg or as per buyer requirement" },
+          { "param": "Shelf Life", "spec": "12–24 months, subject to packaging and storage conditions" },
+          { "param": "Storage", "spec": "Store in a cool, dry place away from direct sunlight and moisture" }
+        ]
+      }
+    ],
+    "qaHtml": `<div class="qa-block" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; margin-top:20px;">
+      <h4 style="font-size:0.98rem; font-weight:700; color:#0f172a; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:8px; height:8px; background:#16a34a; border-radius:50%;"></span>
+        Export Quality &amp; Compliance Standards
+      </h4>
+      <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:14px 16px; margin-bottom:12px;">
+        <p style="font-size:0.84rem; color:#334155; line-height:1.6; margin:0 0 6px 0;">
+          <strong>Sudan Dyes &amp; Illegal Colourants:</strong> Strictly Not Detected. Tested and verified in NABL accredited labs.
+        </p>
+        <p style="font-size:0.84rem; color:#334155; line-height:1.6; margin:0;">
+          <strong>Mycotoxins &amp; Aflatoxins:</strong> Fully compliant with EU and USA MRLs (Aflatoxin B1 Max 5 µg/kg, Ochratoxin A Max 20 µg/kg).
+        </p>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:8px;">
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Sudan Dyes: Not Detected</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Purity Min. 99%</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Natural Bright Red Colour</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Stemless Machine Cleaned</span>
+      </div>
+    </div>`
+  },
+  {
+    "id": "spices-chilli-powder",
+    "slug": "chilli-powder",
+    "name": "Chilli Powder (Pure Red Mirch Powder)",
+    "websiteTitle": "Chilli Powder — Final Website-Ready Specification | Indian Origin",
+    "category": "spices",
+    "categoryName": "Spices & Seasonings",
+    "image": "assets/images/products/chilli-powder.jpg",
+    "origin": "India",
+    "packaging": "10 / 20 / 25 / 50 kg or as per buyer requirement",
+    "specs": "Purity Min. 99%, Moisture Max. 10%, Sudan Dyes Not Detected, Fine Powder",
+    "description": "Export-grade pure Indian red chilli powder pulverized from selected stemless whole dried chillies with bright vibrant red to reddish-orange colour, characteristic sharp pungency, zero artificial adulteration, and verified negative for Sudan dyes.",
+    "specTabs": [
+      {
+        "tabName": "Chilli Powder",
+        "id": "chilli-powder",
+        "parameters": [
+          { "param": "Product", "spec": "Chilli Powder" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Form", "spec": "Fine Powder" },
+          { "param": "Purity", "spec": "Min. 99%" },
+          { "param": "Moisture", "spec": "Max. 10%" },
+          { "param": "Foreign Matter", "spec": "Max. 0.5%" },
+          { "param": "Admixture", "spec": "Max. 1.0%" },
+          { "param": "Damaged / Extraneous Matter", "spec": "Max. 1.0%" },
+          { "param": "Insect Infestation", "spec": "Absent" },
+          { "param": "Colour", "spec": "Natural bright red to reddish-orange" },
+          { "param": "Aroma & Flavour", "spec": "Characteristic pungent chilli aroma and flavour; free from off-odour" },
+          { "param": "Total Ash", "spec": "Max. 10%" },
+          { "param": "Acid Insoluble Ash", "spec": "Max. 1.6%" },
+          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
+          { "param": "Total Aflatoxins", "spec": "Max. 10 µg/kg*" },
+          { "param": "Ochratoxin A", "spec": "Max. 20 µg/kg*" },
+          { "param": "Lead", "spec": "Max. 0.60 mg/kg*" },
+          { "param": "Sudan Dyes", "spec": "Not Detected" },
+          { "param": "Salmonella", "spec": "Absent in 25 g" },
+          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg or as per buyer requirement" },
+          { "param": "Shelf Life", "spec": "12–24 months, subject to packaging and storage conditions" },
+          { "param": "Storage", "spec": "Store in a cool, dry place away from direct sunlight and moisture" }
+        ]
+      }
+    ],
+    "qaHtml": `<div class="qa-block" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; margin-top:20px;">
+      <h4 style="font-size:0.98rem; font-weight:700; color:#0f172a; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:8px; height:8px; background:#16a34a; border-radius:50%;"></span>
+        Export Quality &amp; Compliance Standards
+      </h4>
+      <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:14px 16px; margin-bottom:12px;">
+        <p style="font-size:0.84rem; color:#334155; line-height:1.6; margin:0 0 6px 0;">
+          <strong>Sudan Dyes &amp; Illegal Colourants:</strong> Strictly Not Detected. Tested and verified in NABL accredited labs.
+        </p>
+        <p style="font-size:0.84rem; color:#334155; line-height:1.6; margin:0;">
+          <strong>Mycotoxins &amp; Aflatoxins:</strong> Fully compliant with EU and USA MRLs (Aflatoxin B1 Max 5 µg/kg, Ochratoxin A Max 20 µg/kg).
+        </p>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:8px;">
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Sudan Dyes: Not Detected</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Purity Min. 99%</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Natural Bright Red Colour</span>
+        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">100% Pure Stemless Grind</span>
+      </div>
+    </div>`
   },
   {
     "id": "spices-chilli-seeds",
     "slug": "chilli-seeds-whole",
-    "name": "Dried Red Chilli & Chilli Seeds (Teja / S4 Whole & Pure Seeds)",
+    "name": "Whole Dried Red Chilli & Chilli Seeds (Teja / S4)",
     "category": "spices",
     "categoryName": "Spices & Seasonings",
     "image": "assets/images/products/chilli-seeds.jpg",
-    "origin": "Guntur, Andhra Pradesh / Byadgi, Karnataka, India",
-    "packaging": "10kg / 25kg / 50kg Bags",
-    "specs": "Whole Stemless Dried Chillies & High-Purity Separated Seeds, Moisture < 10%",
-    "description": "Premium export-grade whole dried red chillies and pure separated hot chilli seeds sourced from Guntur, ideal for direct grinding, spice processing, and oleoresin extraction."
+    "origin": "India (Guntur / Byadgi)",
+    "packaging": "10kg / 25kg / 50kg Bags; customized packs",
+    "specs": "Premium Export / Cleaned, Purity ≥99.0%, Moisture ≤12.0%, ASTA ≥80",
+    "description": "Premium export-grade whole dried red chillies and pure separated hot chilli seeds sourced from Guntur, ideal for direct grinding, spice processing, and oleoresin extraction.",
+    "specTabs": [
+      {
+        "tabName": "Whole Dried Red Chilli & Seeds",
+        "id": "chilli-seeds",
+        "parameters": [
+          { "param": "Product", "spec": "Whole Dried Red Chilli" },
+          { "param": "Grade", "spec": "Premium Export / Cleaned" },
+          { "param": "Purity", "spec": "≥99.0%" },
+          { "param": "Foreign Matter", "spec": "≤0.50%" },
+          { "param": "Moisture", "spec": "≤12.0%" },
+          { "param": "Stems", "spec": "≤2.0%" },
+          { "param": "Broken Pods", "spec": "≤5.0%" },
+          { "param": "Insect Damaged", "spec": "≤1.0%" },
+          { "param": "Mould", "spec": "≤1.0%" },
+          { "param": "Colour", "spec": "Natural red" },
+          { "param": "ASTA Colour", "spec": "≥80 ASTA, grade dependent" },
+          { "param": "Capsaicin / SHU", "spec": "As agreed by variety" },
+          { "param": "Aroma", "spec": "Characteristic" },
+          { "param": "Salmonella", "spec": "Absent" },
+          { "param": "E. coli", "spec": "Absent" },
+          { "param": "Aflatoxin", "spec": "Destination-market compliant" },
+          { "param": "Ochratoxin A", "spec": "Destination-market compliant" },
+          { "param": "Sudan Dyes", "spec": "Not Detected" },
+          { "param": "Illegal Colourants", "spec": "Not Detected" },
+          { "param": "Pesticide Residues", "spec": "US/EU MRL compliant" },
+          { "param": "GMO", "spec": "Non-GMO" },
+          { "param": "Origin", "spec": "India" },
+          { "param": "Packaging", "spec": "10kg / 25kg / 50kg Bags; customized packs" }
+        ]
+      }
+    ]
   },
   {
     "id": "spices-garam-masala",

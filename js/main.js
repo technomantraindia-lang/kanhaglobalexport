@@ -20,9 +20,9 @@
     const currentPath = window.location.pathname.split('/').pop() || 'index.html';
     const aboutPages = [
       'about-us.html',
-      'what-we-supply.html',
-      'sourcing-approach.html',
       'our-strengths.html',
+      'sourcing-approach.html',
+      'global-presence.html',
       'mission-vision.html',
       'leadership.html'
     ];

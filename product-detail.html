@@ -60,12 +60,11 @@
           </a>
           <div class="dropdown-panel nav-sub-menu">
             <a href="about-us.html">About Kanha</a>
-            <a href="global-presence.html">Global Presence</a>
-            <a href="sourcing-approach.html">Sourcing Approach</a>
             <a href="our-strengths.html">Our Strengths</a>
+            <a href="sourcing-approach.html">Sourcing Approach</a>
+            <a href="global-presence.html">Global Presence</a>
             <a href="mission-vision.html">Mission &amp; Vision</a>
             <a href="leadership.html">Our Leadership</a>
-            <a href="careers.html">Careers</a>
           </div>
         </div>
         <div class="has-dropdown">
@@ -82,6 +81,7 @@
             </div>
           </div>
         </div>
+        <a href="our-brand.html" class="nav-link">Our Brand</a>
         <a href="quality-compliance.html" class="nav-link">Quality &amp; Compliance</a>
         <a href="careers.html" class="nav-link">Careers</a>
         <a href="contact-us.html" class="nav-link">Contact</a>
@@ -475,6 +475,7 @@
           <h4>Company</h4>
           <ul>
             <li><a href="about-us.html">About</a></li>
+            <li><a href="our-brand.html">Our Brand</a></li>
             <li><a href="quality-compliance.html">Quality</a></li>
             <li><a href="quality-compliance.html#certifications">Compliance</a></li>
             <li><a href="index.html#export-process">Export Process</a></li>
@@ -541,9 +542,9 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="js/categories-data.js?v=5.5"></script>
-  <script src="js/products-data.js?v=5.5"></script>
-  <script src="js/main.js?v=5.5"></script>
+  <script src="js/categories-data.js?v=5.6"></script>
+  <script src="js/products-data.js?v=5.6"></script>
+  <script src="js/main.js?v=5.6"></script>
   <script>
     (function() {
       let currentProduct = null;
@@ -623,7 +624,7 @@
         if (slug === 'turmeric' || slug === 'haldi' || slug === 'turmeric-finger') {
           slug = 'turmeric-finger-powder';
         }
-        if (slug === 'chilli' || slug === 'red-chilli') {
+        if (slug === 'chilli' || slug === 'red-chilli' || slug === 'whole-dried-chilli' || slug === 'whole-dried-red-chilli' || slug === 'dried-chilli' || slug === 'whole-chilli') {
           slug = 'red-chilli-sannam-teja';
         }
         if (slug === 'cinnamon' || slug === 'dalchini') {
@@ -738,11 +739,37 @@
           'fresh-green-ginger': 'other-seasonal-indian-produce',
           'seasonal-produce': 'other-seasonal-indian-produce',
           'traditional-basmati': 'traditional-authentic-basmati-rice',
+          '1121': '1121-basmati-rice-steam-sella',
+          '1121-basmati': '1121-basmati-rice-steam-sella',
+          '1121-rice': '1121-basmati-rice-steam-sella',
+          '1718': '1718-basmati-rice-steam-sella',
+          '1718-basmati': '1718-basmati-rice-steam-sella',
+          '1718-rice': '1718-basmati-rice-steam-sella',
+          '1509': '1509-basmati-rice',
+          '1509-basmati': '1509-basmati-rice',
+          '1509-rice': '1509-basmati-rice',
+          '1401': '1401-basmati-rice',
+          '1401-basmati': '1401-basmati-rice',
+          '1401-rice': '1401-basmati-rice',
+          'ir64': 'ir-64-parboiled-raw-rice',
+          'ir-64': 'ir-64-parboiled-raw-rice',
+          'ir64-rice': 'ir-64-parboiled-raw-rice',
+          'ir-64-rice': 'ir-64-parboiled-raw-rice',
+          'ir64-non-basmati-rice': 'ir-64-parboiled-raw-rice',
+          'sona-masoori': 'sona-masoori-raw-steam-rice',
+          'sona-masuri': 'sona-masoori-raw-steam-rice',
+          'sona-masoori-rice': 'sona-masoori-raw-steam-rice',
           'cumin-seeds': 'cumin-seeds-jeera',
           'jeera': 'cumin-seeds-jeera',
-          'pr-11': 'pr-11-pr-14-non-basmati-rice',
-          'pr-14': 'pr-11-pr-14-non-basmati-rice',
-          'swarna-rice': 'swarna-rice-parboiled'
+          'pr-11': 'pr-11-non-basmati-rice',
+          'pr11': 'pr-11-non-basmati-rice',
+          'pr-14': 'pr-14-non-basmati-rice',
+          'pr14': 'pr-14-non-basmati-rice',
+          'pr-11-pr-14': 'pr-11-pr-14-non-basmati-rice',
+          'pr11-pr14': 'pr-11-pr-14-non-basmati-rice',
+          'swarna': 'swarna-rice-parboiled',
+          'swarna-rice': 'swarna-rice-parboiled',
+          'swarna-non-basmati-rice': 'swarna-rice-parboiled'
         };
         if (slugAliases[slug]) {
           slug = slugAliases[slug];

@@ -1,0 +1,642 @@
+/* ==========================================================================
+   VAIVIKA™ Brand / Home Landing Styling
+   "Natural Goodness for a Healthier Tomorrow"
+   A brand of Kanha Global Exports
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=DM+Serif+Display&family=DM+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --v-green: #15803d;
+  --v-green-light: #22c55e;
+  --v-green-pale: #f0fdf4;
+  --v-green-border: #bbf7d0;
+  --v-navy: #0c2340;
+  --v-dark: #0f172a;
+  --v-slate: #1e293b;
+  --v-muted: #64748b;
+  --v-bg-light: #f8fafc;
+  --v-font: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --v-font-serif: 'DM Serif Display', Georgia, serif;
+  --v-font-script: 'Caveat', cursive;
+  --v-max-w: 1280px;
+}
+
+/* Base resets scoped to main */
+.vaivika-page main,
+.home-brand-mode main {
+  font-family: var(--v-font);
+  color: var(--v-slate);
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+.vaivika-page main a,
+.home-brand-mode main a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.25s ease;
+}
+
+.vaivika-container {
+  width: 100%;
+  max-width: var(--v-max-w);
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+/* ---------------- 1. HERO SECTION ---------------- */
+.v-hero {
+  position: relative;
+  background: #ffffff;
+  padding: 0;
+  overflow: hidden;
+}
+
+.v-hero-banner {
+  position: relative;
+  width: 100%;
+  min-height: 520px;
+  background-image: url('../assets/images/vaivika-hero.jpg');
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.v-hero-inner {
+  position: relative;
+  width: 100%;
+  max-width: var(--v-max-w);
+  margin: 0 auto;
+  padding: 48px 24px 32px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 2;
+  flex: 1;
+}
+
+.v-hero-left {
+  max-width: 580px;
+}
+
+.v-hero-eyebrow {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #15803d;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 14px;
+}
+
+.v-hero-title {
+  font-family: var(--v-font-serif);
+  font-size: clamp(2.3rem, 4vw, 3.4rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: #0c2340;
+  margin-bottom: 16px;
+  letter-spacing: -0.01em;
+}
+
+.v-hero-title span.v-highlight {
+  color: #15803d;
+  display: inline-block;
+}
+
+.v-hero-desc {
+  font-size: 1.05rem;
+  color: #334155;
+  line-height: 1.65;
+  margin-bottom: 28px;
+  max-width: 500px;
+  font-weight: 450;
+}
+
+.v-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.v-btn-primary {
+  background: #15803d;
+  color: #ffffff !important;
+  font-size: 0.94rem;
+  font-weight: 700;
+  padding: 12px 26px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 14px rgba(21, 128, 61, 0.25);
+  transition: all 0.25s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.v-btn-primary:hover {
+  background: #166534;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(21, 128, 61, 0.35);
+}
+
+.v-btn-outline {
+  background: rgba(255, 255, 255, 0.92);
+  color: #15803d !important;
+  font-size: 0.94rem;
+  font-weight: 700;
+  padding: 11px 24px;
+  border: 1.5px solid #15803d;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  backdrop-filter: blur(4px);
+  transition: all 0.25s ease;
+}
+
+.v-btn-outline:hover {
+  background: #f0fdf4;
+  transform: translateY(-2px);
+}
+
+.v-hero-script-wrap {
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+.v-hero-script {
+  font-family: var(--v-font-script);
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #1e293b;
+  transform: rotate(-5deg);
+  white-space: nowrap;
+  line-height: 1.15;
+  display: inline-block;
+}
+
+.v-script-swoosh {
+  display: block;
+  margin: 2px auto 0;
+}
+
+/* ---------------- 2. HERO ACCENT BAR (4 PILLARS) ---------------- */
+.v-hero-pillars-bar {
+  background: #192734;
+  color: #ffffff;
+  padding: 16px 24px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 2;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.v-pillars-grid {
+  width: 100%;
+  max-width: var(--v-max-w);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.v-pillar-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+.v-pillar-item svg {
+  color: #4ade80;
+  flex-shrink: 0;
+}
+
+/* ---------------- 3. PRODUCT CATEGORIES ---------------- */
+.v-section {
+  padding: 70px 0;
+}
+
+.v-section-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.v-title-with-line {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.v-title-with-line h2 {
+  font-family: var(--v-font-serif);
+  font-size: 1.85rem;
+  font-weight: 400;
+  color: var(--v-navy);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.v-accent-line {
+  width: 44px;
+  height: 3px;
+  background: var(--v-green);
+  border-radius: 2px;
+}
+
+.v-view-all-link {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--v-green);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.v-view-all-link:hover {
+  color: #166534;
+  transform: translateX(4px);
+}
+
+.v-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 14px;
+}
+
+.v-category-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 14px rgba(8, 47, 73, 0.03);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.v-category-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--v-green-border);
+  box-shadow: 0 10px 24px rgba(21, 128, 61, 0.12);
+}
+
+.v-category-img-wrap {
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  background: #f1f5f9;
+}
+
+.v-category-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.v-category-card:hover .v-category-img-wrap img {
+  transform: scale(1.08);
+}
+
+.v-category-body {
+  padding: 12px 6px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.v-category-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--v-navy);
+  line-height: 1.3;
+  margin: 0;
+}
+
+/* ---------------- 4. CAPABILITIES / GLOBAL PARTNER SECTION ---------------- */
+.v-capabilities-section {
+  background: #fcfdfd;
+  padding: 75px 0 70px;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid #f1f5f9;
+}
+
+.v-leaf-decor {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 95px;
+  height: auto;
+  pointer-events: none;
+  opacity: 0.95;
+  z-index: 1;
+}
+
+.v-capabilities-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.v-capabilities-header h2 {
+  font-family: var(--v-font-serif);
+  font-size: clamp(1.75rem, 2.8vw, 2.25rem);
+  font-weight: 400;
+  color: var(--v-navy);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.v-capabilities-wrapper {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(8, 47, 73, 0.04);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  overflow: hidden;
+}
+
+.v-capability-item {
+  padding: 34px 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #f1f5f9;
+  transition: background 0.25s ease;
+}
+
+.v-capability-item:last-child {
+  border-right: none;
+}
+
+.v-capability-item:hover {
+  background: #fcfdfd;
+}
+
+.v-cap-icon-wrap {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0c4a6e;
+}
+
+.v-capability-item h3 {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--v-navy);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.v-capability-item p {
+  font-size: 0.80rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.45;
+}
+
+/* ---------------- 5. OUR BRAND SHOWCASE ---------------- */
+.v-brand-showcase-section {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.v-brand-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 45px;
+  align-items: center;
+}
+
+.v-brand-copy .v-section-tag {
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: var(--v-green);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.v-brand-copy .v-brand-title {
+  font-family: var(--v-font-serif);
+  font-size: clamp(2rem, 3.2vw, 2.7rem);
+  font-weight: 400;
+  color: var(--v-navy);
+  line-height: 1.2;
+  margin-bottom: 18px;
+  letter-spacing: -0.01em;
+}
+
+.v-brand-copy .v-brand-lead {
+  font-size: 1.05rem;
+  color: #475569;
+  line-height: 1.65;
+  margin-bottom: 28px;
+}
+
+.v-brand-pouches-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* ---------------- 6. GLOBAL MARKETS ---------------- */
+.v-markets-section {
+  padding: 75px 0 85px;
+  background: #fbfcfd;
+  border-top: 1px solid #f1f5f9;
+}
+
+.v-markets-subtitle {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--v-green);
+  letter-spacing: 0.02em;
+}
+
+.v-markets-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+}
+
+.v-market-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(8, 47, 73, 0.03);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.v-market-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--v-green-border);
+  box-shadow: 0 10px 24px rgba(21, 128, 61, 0.12);
+}
+
+.v-market-img-wrap {
+  width: 100%;
+  height: 125px;
+  overflow: hidden;
+}
+
+.v-market-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.v-market-card:hover .v-market-img-wrap img {
+  transform: scale(1.08);
+}
+
+.v-market-content {
+  padding: 14px 12px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.v-market-title {
+  font-size: 0.90rem;
+  font-weight: 700;
+  color: var(--v-navy);
+  margin-bottom: 5px;
+  line-height: 1.3;
+}
+
+.v-market-desc {
+  font-size: 0.77rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.45;
+}
+
+/* ---------------- 7. UNIFORM HEADER & BRAND LOGO STYLING ---------------- */
+.brand-header-logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.brand-header-logo img {
+  height: 46px;
+  width: auto;
+  max-width: 210px;
+  display: block;
+}
+
+.vaivika-page .nav-link.active {
+  color: #15803d !important;
+  background: rgba(21, 128, 61, 0.08) !important;
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+/* ---------------- 8. RESPONSIVE BREAKPOINTS ---------------- */
+@media (max-width: 1200px) {
+  .v-categories-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .v-capabilities-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .v-capability-item:nth-child(3) {
+    border-right: none;
+  }
+  .v-capability-item:nth-child(1),
+  .v-capability-item:nth-child(2),
+  .v-capability-item:nth-child(3) {
+    border-bottom: 1px solid #f1f5f9;
+  }
+  .v-markets-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .v-hero-banner {
+    min-height: auto;
+    background-position: 85% center;
+  }
+  .v-hero-inner {
+    flex-direction: column;
+    padding: 40px 20px 24px;
+    gap: 24px;
+  }
+  .v-hero-left {
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(6px);
+    padding: 24px;
+    border-radius: 12px;
+  }
+  .v-hero-script-wrap {
+    margin: 0;
+    align-self: flex-start;
+  }
+  .v-brand-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .v-pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .v-categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .v-capabilities-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .v-markets-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 540px) {
+  .v-pillars-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .v-capabilities-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .v-markets-grid {
+    grid-template-columns: 1fr;
+  }
+  .v-hero-left {
+    padding: 16px;
+  }
+}

@@ -18,7 +18,7 @@ The extension refreshes this file automatically. Prefer its concise state over o
 - Workspace ID: tm-ws-e5ee0516dc97774036cfaadb
 - Window ID: tm-win-6560b32ad13e88ea26a05613
 - Project: kanhaglobalexport
-- Framework: html-static
+- Framework: 
 - Developer mode: smart
 - Model mode: paid/manual
 - Active file: index.html
