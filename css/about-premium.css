@@ -720,17 +720,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 26px;
+  gap: 28px;
   margin-top: 48px;
-  max-width: 1240px;
+  max-width: 1120px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .leadership-team-card {
-  flex: 0 1 calc(25% - 20px);
-  min-width: 255px;
-  max-width: 280px;
+  flex: 0 1 calc(33.333% - 20px);
+  min-width: 290px;
+  max-width: 340px;
   background: #ffffff;
   border: 1.5px solid #e2e8f0;
   border-radius: 20px;
@@ -1332,8 +1332,16 @@
 
 .cert-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
+}
+
+.cert-grid.cert-grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.cert-grid.cert-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .cert-card {
@@ -1475,7 +1483,7 @@
     grid-template-columns: 1fr;
   }
   .cert-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
   .about-cta-banner {
     flex-direction: column;
@@ -2070,7 +2078,7 @@
 
 .about-subnav-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
@@ -2168,7 +2176,7 @@
 /* Value Cards in Mission & Vision */
 .values-grid-v2 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   margin-top: 36px;
 }
@@ -2203,6 +2211,7 @@
 .value-icon-amber { background: #fffbeb; color: #f59e0b; }
 .value-icon-purple { background: #f5f3ff; color: #8b5cf6; }
 .value-icon-teal { background: #f0fdfa; color: #14b8a6; }
+.value-icon-rose { background: #fff1f2; color: #e11d48; }
 
 .value-card-v2 h3 {
   font-size: 1.15rem;
@@ -2221,6 +2230,10 @@
 @media (max-width: 1024px) {
   .about-subnav-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .leadership-team-card {
+    flex: 0 1 calc(50% - 15px);
+    max-width: 360px;
   }
 }
 
@@ -2242,14 +2255,14 @@
     gap: 14px;
   }
   .value-card-v2:last-child {
-    grid-column: span 2;
+    grid-column: span 1;
   }
   .about-subnav-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 14px;
   }
   .about-subnav-card:last-child {
-    grid-column: span 2;
+    grid-column: span 1;
   }
 }
 
