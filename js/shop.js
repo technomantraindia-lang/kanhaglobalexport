@@ -39,7 +39,7 @@
       { slug: 'herbs', name: 'Herbs & Botanical' },
       { slug: 'more-products', name: 'Nuts & Dry Fruits' },
       { slug: 'fresh-fruits', name: 'Fresh Produce' },
-      { slug: 'seafood', name: 'Frozen Sea food' },
+      { slug: 'seafood', name: 'Frozen Seafood' },
       { slug: 'other', name: 'Other Category' }
     ];
 

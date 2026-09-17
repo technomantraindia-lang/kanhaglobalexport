@@ -1,3 +1,12 @@
 node_modules/
 .DS_Store
 Thumbs.db
+scratch/
+assets/images/products/master_clean/
+assets/images/products/polished_clean/
+assets/images/products/test_out/
+assets/images/products/ultra_clean/
+inspect_target_categories.js
+process_all_9_perfect.js
+
+

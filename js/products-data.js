@@ -1592,98 +1592,6 @@
         <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Purity Min. 99%</span>
         <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Fine Uniform Powder</span>
         <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Smoky Aroma Intact</span>
-        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Aflatoxin &amp; Heavy Metals Tested</span>
-      </div>
-    </div>`
-  },
-  {
-    "id": "spices-red-chilli",
-    "slug": "red-chilli-sannam-teja",
-    "name": "Whole Dried Red Chilli (Sannam & Teja Whole & Pure Powder)",
-    "category": "spices",
-    "categoryName": "Spices & Seasonings",
-    "image": "assets/images/products/whole-red-chilli.jpg",
-    "origin": "India (Guntur / Byadgi)",
-    "packaging": "10 / 20 / 25 / 50 kg or as per buyer requirement",
-    "specs": "Premium Export / Cleaned, Purity ≥99.0%, Moisture ≤12.0%, ASTA ≥80",
-    "description": "Export-grade whole dried red chillies (Capsicum annuum L.) and fine pulverized pure red chilli powder, cleaned and sorted for vibrant red colour, intact pods, characteristic pungency, and tested free from Sudan dyes.",
-    "specTabs": [
-      {
-        "tabName": "1) Whole Dried Red Chilli",
-        "id": "whole-dried-chilli",
-        "parameters": [
-          { "param": "Product", "spec": "Whole Dried Red Chilli" },
-          { "param": "Grade", "spec": "Premium Export / Cleaned" },
-          { "param": "Purity", "spec": "≥99.0%" },
-          { "param": "Foreign Matter", "spec": "≤0.50%" },
-          { "param": "Moisture", "spec": "≤12.0%" },
-          { "param": "Stems", "spec": "≤2.0%" },
-          { "param": "Broken Pods", "spec": "≤5.0%" },
-          { "param": "Insect Damaged", "spec": "≤1.0%" },
-          { "param": "Mould", "spec": "≤1.0%" },
-          { "param": "Colour", "spec": "Natural red" },
-          { "param": "ASTA Colour", "spec": "≥80 ASTA, grade dependent" },
-          { "param": "Capsaicin / SHU", "spec": "As agreed by variety" },
-          { "param": "Aroma", "spec": "Characteristic" },
-          { "param": "Salmonella", "spec": "Absent" },
-          { "param": "E. coli", "spec": "Absent" },
-          { "param": "Aflatoxin", "spec": "Destination-market compliant" },
-          { "param": "Ochratoxin A", "spec": "Destination-market compliant" },
-          { "param": "Sudan Dyes", "spec": "Not Detected" },
-          { "param": "Illegal Colourants", "spec": "Not Detected" },
-          { "param": "Pesticide Residues", "spec": "US/EU MRL compliant" },
-          { "param": "GMO", "spec": "Non-GMO" },
-          { "param": "Origin", "spec": "India" },
-          { "param": "Packaging", "spec": "10kg / 25kg / 50kg Jute / PP Bags; customized packs" }
-        ]
-      },
-      {
-        "tabName": "2) Chilli Powder",
-        "id": "chilli-powder-tab",
-        "parameters": [
-          { "param": "Product", "spec": "Chilli Powder" },
-          { "param": "Origin", "spec": "India" },
-          { "param": "Form", "spec": "Fine Powder" },
-          { "param": "Purity", "spec": "Min. 99%" },
-          { "param": "Moisture", "spec": "Max. 10%" },
-          { "param": "Foreign Matter", "spec": "Max. 0.5%" },
-          { "param": "Admixture", "spec": "Max. 1.0%" },
-          { "param": "Damaged / Extraneous Matter", "spec": "Max. 1.0%" },
-          { "param": "Insect Infestation", "spec": "Absent" },
-          { "param": "Colour", "spec": "Natural bright red to reddish-orange" },
-          { "param": "Aroma & Flavour", "spec": "Characteristic pungent chilli aroma and flavour; free from off-odour" },
-          { "param": "Total Ash", "spec": "Max. 10%" },
-          { "param": "Acid Insoluble Ash", "spec": "Max. 1.6%" },
-          { "param": "Aflatoxin B1", "spec": "Max. 5 µg/kg*" },
-          { "param": "Total Aflatoxins", "spec": "Max. 10 µg/kg*" },
-          { "param": "Ochratoxin A", "spec": "Max. 20 µg/kg*" },
-          { "param": "Lead", "spec": "Max. 0.60 mg/kg*" },
-          { "param": "Sudan Dyes", "spec": "Not Detected" },
-          { "param": "Salmonella", "spec": "Absent in 25 g" },
-          { "param": "Packing", "spec": "10 / 20 / 25 / 50 kg or as per buyer requirement" },
-          { "param": "Shelf Life", "spec": "12–24 months, subject to packaging and storage conditions" },
-          { "param": "Storage", "spec": "Store in a cool, dry place away from direct sunlight and moisture" }
-        ]
-      }
-    ],
-    "qaHtml": `<div class="qa-block" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; margin-top:20px;">
-      <h4 style="font-size:0.98rem; font-weight:700; color:#0f172a; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
-        <span style="display:inline-block; width:8px; height:8px; background:#16a34a; border-radius:50%;"></span>
-        Export Quality &amp; Compliance Standards
-      </h4>
-      <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:14px 16px; margin-bottom:12px;">
-        <p style="font-size:0.84rem; color:#334155; line-height:1.6; margin:0 0 6px 0;">
-          <strong>Sudan Dyes &amp; Illegal Colourants:</strong> Strictly Not Detected. Tested and verified in NABL accredited labs.
-        </p>
-        <p style="font-size:0.84rem; color:#334155; line-height:1.6; margin:0;">
-          <strong>Mycotoxins &amp; Aflatoxins:</strong> Fully compliant with EU and USA MRLs (Aflatoxin B1 Max 5 µg/kg, Ochratoxin A Max 20 µg/kg).
-        </p>
-      </div>
-      <div style="display:flex; flex-wrap:wrap; gap:8px;">
-        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Sudan Dyes: Not Detected</span>
-        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Purity Min. 99%</span>
-        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Natural Bright Red Colour</span>
-        <span style="background:#ffffff; border:1px solid #cbd5e1; padding:4px 10px; border-radius:20px; font-size:0.8rem; color:#334155; font-weight:500;">Stemless Machine Cleaned</span>
       </div>
     </div>`
   },
@@ -3167,14 +3075,14 @@
   },
 
   // ==========================================
-  // 6. FROZEN SEA FOOD (seafood)
+  // 6. FROZEN SEAFOOD (seafood)
   // ==========================================
   {
     "id": "seafood-vannamei-shrimp",
     "slug": "frozen-vannamei-white-shrimp",
     "name": "Frozen Shrimp / Prawns (Vannamei White Shrimp - HOSO, HLSO, PD, PUD)",
     "category": "seafood",
-    "categoryName": "Frozen Sea food",
+    "categoryName": "Frozen Seafood",
     "image": "assets/images/products/vannamei-white-shrimp.jpeg",
     "origin": "Coastal Andhra Pradesh / Gujarat, India",
     "packaging": "Block Frozen (6x1.8kg / 6x2kg) & IQF (10x1kg bags)",
@@ -3186,7 +3094,7 @@
     "slug": "frozen-black-tiger-shrimp",
     "name": "Frozen Black Tiger Shrimp (Jumbo IQF & Block Frozen)",
     "category": "seafood",
-    "categoryName": "Frozen Sea food",
+    "categoryName": "Frozen Seafood",
     "image": "assets/images/products/black-tiger-shrimp.jpeg",
     "origin": "West Bengal / Odisha, India",
     "packaging": "IQF / Block Frozen in master export cartons",
@@ -3198,7 +3106,7 @@
     "slug": "frozen-ribbon-fish-whole",
     "name": "Frozen Marine Fish (Ribbon Fish, Indian Mackerel, Yellowfin Tuna & Silver Croaker)",
     "category": "seafood",
-    "categoryName": "Frozen Sea food",
+    "categoryName": "Frozen Seafood",
     "image": "assets/images/products/frozen-marine-fish.jpeg",
     "origin": "Gujarat / Kerala / Maharashtra Coast, India",
     "packaging": "10kg / 20kg Master Cartons (Block & Blast Frozen)",
@@ -3210,7 +3118,7 @@
     "slug": "frozen-squid-and-cuttlefish",
     "name": "Other Seafood Products (Squid & Cuttlefish Whole, Rings & Tubes)",
     "category": "seafood",
-    "categoryName": "Frozen Sea food",
+    "categoryName": "Frozen Seafood",
     "image": "assets/images/products/squid-cuttlefish.jpeg",
     "origin": "Veraval / Kochi Coast, India",
     "packaging": "IQF / Block 10kg Master Cartons",
