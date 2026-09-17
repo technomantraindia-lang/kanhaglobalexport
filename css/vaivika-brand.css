@@ -253,10 +253,7 @@
 }
 
 .v-accent-line {
-  width: 44px;
-  height: 3px;
-  background: var(--v-green);
-  border-radius: 2px;
+  display: none !important;
 }
 
 .v-view-all-link {
