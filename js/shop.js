@@ -717,7 +717,7 @@
         const subject = encodeURIComponent(`Export Quotation Request: ${prod}`);
         const body = encodeURIComponent(`Dear Kanha Global Exports Team,\n\nI am interested in sourcing the following commodity:\nProduct: ${prod}\nEstimated Quantity: ${qty}\nDestination Port: ${port}\nImporter Name/Company: ${name}\n\nPlease share your FOB/CIF rates, packaging options, and certificate specifications.\n\nThank you.`);
         
-        window.location.href = `mailto:info@kanhaglobalexports.com?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:sales@kanhaglobalexports.com?cc=info@kanhaglobalexports.com&subject=${subject}&body=${body}`;
         closeRfqModal();
       });
     }

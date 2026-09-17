@@ -845,12 +845,19 @@
             <span class="region-pill">Asia</span>
           </div>
 
-          <h4 style="margin-top: 26px;">Contact</h4>
+                    <h4 style="margin-top: 26px;">Contact</h4>
           <div class="footer-contact-item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
             </svg>
             <a href="tel:+919726396898">+91 97263 96898</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <path d="M22 6l-10 7L2 6" />
+            </svg>
+            <a href="mailto:sales@kanhaglobalexports.com">sales@kanhaglobalexports.com</a>
           </div>
           <div class="footer-contact-item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -916,7 +923,7 @@
         const subject = encodeURIComponent(`Market Sourcing Inquiry (${region}): ${prod}`);
         const body = encodeURIComponent(`Dear Kanha Global Exports Trade Desk,\n\nWe would like to request export sourcing information and pricing for our destination market:\n\nTarget Region: ${region}\nCommodity: ${prod}\nEstimated Quantity: ${qty}\nDischarge Port: ${port}\nCompany / Importer: ${name}\n\nPlease provide your latest FOB/CIF export pricing, specification sheet, and documentation requirements.\n\nBest regards,\n${name}`);
 
-        window.location.href = `mailto:info@kanhaglobalexports.com?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:sales@kanhaglobalexports.com?cc=info@kanhaglobalexports.com&subject=${subject}&body=${body}`;
         closeMarketModal();
       });
     }
