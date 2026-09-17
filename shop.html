@@ -280,29 +280,35 @@
       </div>
 
       <form id="rfqForm">
+        <!-- Web3Forms API Configuration -->
+        <input type="hidden" name="access_key" value="f7fa79a2-ddfd-4ae7-aaf1-845e7cd6047e">
+        <input type="hidden" name="from_name" value="Kanha Global Exports - Product Quick RFQ">
+        <input type="hidden" name="subject" value="New Product RFQ Quotation Request - Kanha Global Exports">
+        <input type="checkbox" name="botcheck" style="display: none;">
+
         <div class="rfq-form-group">
           <label for="rfqProductName">Product / Commodity</label>
-          <input type="text" id="rfqProductName" readonly style="background: #f8fafc; font-weight: 600; color: var(--kanha-blue);">
+          <input type="text" id="rfqProductName" name="product_name" readonly style="background: #f8fafc; font-weight: 600; color: var(--kanha-blue);">
         </div>
 
         <div class="rfq-form-group">
           <label for="rfqProductCategory">Category Division</label>
-          <input type="text" id="rfqProductCategory" readonly style="background: #f8fafc; color: #64748b;">
+          <input type="text" id="rfqProductCategory" name="category" readonly style="background: #f8fafc; color: #64748b;">
         </div>
 
         <div class="rfq-form-group">
           <label for="rfqBuyerName">Your Name / Company Name</label>
-          <input type="text" id="rfqBuyerName" placeholder="e.g. Al-Madina Trading LLC" required>
+          <input type="text" id="rfqBuyerName" name="buyer_name" placeholder="e.g. Al-Madina Trading LLC" required>
         </div>
 
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
           <div class="rfq-form-group">
             <label for="rfqQuantity">Quantity / Order Size</label>
-            <input type="text" id="rfqQuantity" placeholder="e.g. 1x20ft Container (25 MT)">
+            <input type="text" id="rfqQuantity" name="quantity" placeholder="e.g. 1x20ft Container (25 MT)">
           </div>
           <div class="rfq-form-group">
             <label for="rfqPort">Destination Port (CIF)</label>
-            <input type="text" id="rfqPort" placeholder="e.g. Jebel Ali / Rotterdam">
+            <input type="text" id="rfqPort" name="destination_port" placeholder="e.g. Jebel Ali / Rotterdam">
           </div>
         </div>
 

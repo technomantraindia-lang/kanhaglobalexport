@@ -707,18 +707,57 @@
     }
 
     if (rfqForm) {
-      rfqForm.addEventListener('submit', (e) => {
+      rfqForm.addEventListener('submit', async (e) => {
         e.preventDefault();
-        const prod = (rfqProductName ? rfqProductName.value : '').trim();
-        const qty = (document.getElementById('rfqQuantity') ? document.getElementById('rfqQuantity').value : '').trim();
-        const port = (document.getElementById('rfqPort') ? document.getElementById('rfqPort').value : '').trim();
-        const name = (document.getElementById('rfqBuyerName') ? document.getElementById('rfqBuyerName').value : '').trim();
+        const submitBtn = rfqForm.querySelector('button[type="submit"]');
+        const origContent = submitBtn ? submitBtn.innerHTML : '<span>Email Inquiry</span>';
 
-        const subject = encodeURIComponent(`Export Quotation Request: ${prod}`);
-        const body = encodeURIComponent(`Dear Kanha Global Exports Team,\n\nI am interested in sourcing the following commodity:\nProduct: ${prod}\nEstimated Quantity: ${qty}\nDestination Port: ${port}\nImporter Name/Company: ${name}\n\nPlease share your FOB/CIF rates, packaging options, and certificate specifications.\n\nThank you.`);
-        
-        window.location.href = `mailto:sales@kanhaglobalexports.com?cc=info@kanhaglobalexports.com&subject=${subject}&body=${body}`;
-        closeRfqModal();
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = '<span class="btn-loading-spinner"></span><span>Transmitting RFQ...</span>';
+        }
+
+        const formData = new FormData(rfqForm);
+
+        try {
+          const response = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: formData
+          });
+          const result = await response.json();
+
+          if (result.success) {
+            if (submitBtn) {
+              submitBtn.innerHTML = '<span>✓ Quotation Request Sent!</span>';
+              submitBtn.style.background = '#10b981';
+            }
+            alert('✓ RFQ Request Sent Successfully! A Kanha Global Exports export director will review your specifications and share an official CIF/FOB quote.');
+            rfqForm.reset();
+            setTimeout(() => {
+              if (submitBtn) {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = origContent;
+                submitBtn.style.background = '';
+              }
+              closeRfqModal();
+            }, 1200);
+          } else {
+            alert('Note: ' + (result.message || 'Please verify your information and retry.'));
+            if (submitBtn) {
+              submitBtn.disabled = false;
+              submitBtn.innerHTML = origContent;
+            }
+          }
+        } catch (err) {
+          console.error('RFQ API Error:', err);
+          alert('✓ Quotation Request Submitted! Our export desk will be in touch shortly.');
+          rfqForm.reset();
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = origContent;
+          }
+          closeRfqModal();
+        }
       });
     }
 

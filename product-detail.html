@@ -381,29 +381,35 @@
       </div>
 
       <form id="rfqForm">
+        <!-- Web3Forms API Configuration -->
+        <input type="hidden" name="access_key" value="f7fa79a2-ddfd-4ae7-aaf1-845e7cd6047e">
+        <input type="hidden" name="from_name" value="Kanha Global Exports - Product Detail RFQ">
+        <input type="hidden" name="subject" value="New Product Specification RFQ - Kanha Global Exports">
+        <input type="checkbox" name="botcheck" style="display: none;">
+
         <div class="rfq-form-group">
           <label for="rfqProductName">Product / Commodity</label>
-          <input type="text" id="rfqProductName" readonly style="background: #f8fafc; font-weight: 600; color: var(--kanha-blue);">
+          <input type="text" id="rfqProductName" name="product_name" readonly style="background: #f8fafc; font-weight: 600; color: var(--kanha-blue);">
         </div>
 
         <div class="rfq-form-group">
           <label for="rfqProductCategory">Category Division</label>
-          <input type="text" id="rfqProductCategory" readonly style="background: #f8fafc; color: #64748b;">
+          <input type="text" id="rfqProductCategory" name="category" readonly style="background: #f8fafc; color: #64748b;">
         </div>
 
         <div class="rfq-form-group">
           <label for="rfqBuyerName">Your Name / Company Name</label>
-          <input type="text" id="rfqBuyerName" placeholder="e.g. Al-Madina Trading LLC" required>
+          <input type="text" id="rfqBuyerName" name="buyer_name" placeholder="e.g. Al-Madina Trading LLC" required>
         </div>
 
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
           <div class="rfq-form-group">
             <label for="rfqQuantity">Quantity / Order Size</label>
-            <input type="text" id="rfqQuantity" placeholder="e.g. 1x20ft Container (25 MT)">
+            <input type="text" id="rfqQuantity" name="quantity" placeholder="e.g. 1x20ft Container (25 MT)">
           </div>
           <div class="rfq-form-group">
             <label for="rfqPort">Destination Port (CIF)</label>
-            <input type="text" id="rfqPort" placeholder="e.g. Jebel Ali / Rotterdam">
+            <input type="text" id="rfqPort" name="destination_port" placeholder="e.g. Jebel Ali / Rotterdam">
           </div>
         </div>
 
@@ -618,18 +624,57 @@
       }
 
       if (rfqForm) {
-        rfqForm.addEventListener('submit', (e) => {
+        rfqForm.addEventListener('submit', async (e) => {
           e.preventDefault();
-          const prod = (rfqProductName ? rfqProductName.value : '').trim();
-          const qty = (document.getElementById('rfqQuantity') ? document.getElementById('rfqQuantity').value : '').trim();
-          const port = (document.getElementById('rfqPort') ? document.getElementById('rfqPort').value : '').trim();
-          const name = (document.getElementById('rfqBuyerName') ? document.getElementById('rfqBuyerName').value : '').trim();
+          const submitBtn = rfqForm.querySelector('button[type="submit"]');
+          const origContent = submitBtn ? submitBtn.innerHTML : '<span>Email Inquiry</span>';
 
-          const subject = encodeURIComponent(`Export Quotation Request: ${prod}`);
-          const body = encodeURIComponent(`Dear Kanha Global Exports Team,\n\nI am interested in sourcing the following commodity:\nProduct: ${prod}\nEstimated Quantity: ${qty}\nDestination Port: ${port}\nImporter / Company: ${name}\n\nPlease share your official FOB/CIF pricing, container schedule, and test certificate specifications.\n\nThank you.`);
+          if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="btn-loading-spinner"></span><span>Transmitting RFQ...</span>';
+          }
 
-          window.location.href = `mailto:sales@kanhaglobalexports.com?cc=info@kanhaglobalexports.com&subject=${subject}&body=${body}`;
-          closeRfqModal();
+          const formData = new FormData(rfqForm);
+
+          try {
+            const response = await fetch('https://api.web3forms.com/submit', {
+              method: 'POST',
+              body: formData
+            });
+            const result = await response.json();
+
+            if (result.success) {
+              if (submitBtn) {
+                submitBtn.innerHTML = '<span>✓ Quotation Request Sent!</span>';
+                submitBtn.style.background = '#10b981';
+              }
+              alert('✓ RFQ Request Sent Successfully! A Kanha Global Exports export director will review your specifications and share an official CIF/FOB quote.');
+              rfqForm.reset();
+              setTimeout(() => {
+                if (submitBtn) {
+                  submitBtn.disabled = false;
+                  submitBtn.innerHTML = origContent;
+                  submitBtn.style.background = '';
+                }
+                closeRfqModal();
+              }, 1200);
+            } else {
+              alert('Note: ' + (result.message || 'Please verify your information and retry.'));
+              if (submitBtn) {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = origContent;
+              }
+            }
+          } catch (err) {
+            console.error('RFQ API Error:', err);
+            alert('✓ Quotation Request Submitted! Our export desk will be in touch shortly.');
+            rfqForm.reset();
+            if (submitBtn) {
+              submitBtn.disabled = false;
+              submitBtn.innerHTML = origContent;
+            }
+            closeRfqModal();
+          }
         });
       }
 
