@@ -297,8 +297,19 @@
         </div>
 
         <div class="rfq-form-group">
-          <label for="rfqBuyerName">Your Name / Company Name</label>
+          <label for="rfqBuyerName">Your Name / Company Name *</label>
           <input type="text" id="rfqBuyerName" name="buyer_name" placeholder="e.g. Al-Madina Trading LLC" required>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+          <div class="rfq-form-group">
+            <label for="rfqBuyerEmail">Work Email *</label>
+            <input type="email" id="rfqBuyerEmail" name="email" placeholder="e.g. buyer@company.com" required>
+          </div>
+          <div class="rfq-form-group">
+            <label for="rfqBuyerPhone">WhatsApp / Phone *</label>
+            <input type="tel" id="rfqBuyerPhone" name="phone" placeholder="e.g. +971 50 123 4567" required>
+          </div>
         </div>
 
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
